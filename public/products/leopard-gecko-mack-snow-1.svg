@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <defs><radialGradient id="g" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#f8f3e8"/><stop offset="1" stop-color="#efe6d3"/></radialGradient></defs>
+  <rect width="1600" height="1200" fill="url(#g)"/>
+  <circle cx="800" cy="470" r="300" fill="#fff" fill-opacity=".45"/>
+  <g transform="translate(600 270)"><path d="M330 260 q40 30 40 70 q-40 -10 -80 -60" fill="#1f4d3a"/>
+    <ellipse cx="210" cy="230" rx="110" ry="46" fill="#1f4d3a"/>
+    <ellipse cx="80" cy="200" rx="52" ry="36" fill="#1f4d3a"/>
+    <circle cx="66" cy="190" r="7" fill="#efe6d3"/>
+    <path d="M150 260 l-30 60 M270 260 l30 60 M150 200 l-30 -60 M270 200 l30 -60" stroke="#1f4d3a" stroke-width="22" stroke-linecap="round"/>
+    <path d="M150 230 h120" stroke="#3f7d5c" stroke-width="10" stroke-linecap="round" stroke-dasharray="14 18"/></g>
+  <text x="800" y="905" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#2b2f2c" text-anchor="middle">Leopard Gecko – Mack Snow</text>
+  <text x="800" y="1140" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="6" fill="#1f4d3a" text-anchor="middle">SCALEHAVEN REPTILES</text>
+</svg>

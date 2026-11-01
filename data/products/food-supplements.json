@@ -11,7 +11,19 @@
     "currency": "USD",
     "stock_quantity": 40,
     "sku": "FS-FR-PINK25",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/frozen-mice-pinkies-25-1.webp",
+        "thumbnail_url": "/products/frozen-mice-pinkies-25-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Frozen Pinky Mice – 25 Pack",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -47,7 +59,19 @@
     "currency": "USD",
     "stock_quantity": 35,
     "sku": "FS-FR-ADMS10",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/frozen-mice-adult-10-1.webp",
+        "thumbnail_url": "/products/frozen-mice-adult-10-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Frozen Adult Mice – 10 Pack",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -82,7 +106,19 @@
     "currency": "USD",
     "stock_quantity": 25,
     "sku": "FS-FR-SMRT5",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/frozen-rats-small-5-1.webp",
+        "thumbnail_url": "/products/frozen-rats-small-5-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Frozen Small Rats – 5 Pack",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -117,7 +153,19 @@
     "currency": "USD",
     "stock_quantity": 20,
     "sku": "FS-FR-MDRT3",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/frozen-rats-medium-3-1.webp",
+        "thumbnail_url": "/products/frozen-rats-medium-3-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Frozen Medium Rats – 3 Pack",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -152,7 +200,18 @@
     "currency": "USD",
     "stock_quantity": 30,
     "sku": "FS-LF-DUB100",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/live-dubia-roaches-medium-100-1.webp",
+        "thumbnail_url": "/products/live-dubia-roaches-medium-100-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Live dubia roaches feeder insects",
+        "credit": "Drägüs via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Blaptica_dubia_-_various.jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": false,
@@ -188,7 +247,18 @@
     "currency": "USD",
     "stock_quantity": 30,
     "sku": "FS-LF-CRK500",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/live-crickets-500-1.webp",
+        "thumbnail_url": "/products/live-crickets-500-1-thumb.webp",
+        "width": 1600,
+        "height": 1198,
+        "alt": "Banded cricket (Gryllodes sigillatus) feeder insect",
+        "credit": "(c) Lachlan Copeland, some rights reserved (CC BY-SA) via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Tropical_House_Cricket,_Darwin_NT,_Australia_imported_from_iNaturalist_photo_523669131.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -208,8 +278,8 @@
     "seo_title": "Buy Live Banded Crickets – 500 Online",
     "seo_description": "500 live banded crickets in your choice of size — active prey that stimulates a strong feeding response.",
     "image_search": {
-      "query": "cricket insect",
-      "alt": "Live banded crickets feeder insects"
+      "query": "Gryllodes sigillatus",
+      "alt": "Banded cricket (Gryllodes sigillatus) feeder insect"
     }
   },
   {
@@ -224,7 +294,18 @@
     "currency": "USD",
     "stock_quantity": 25,
     "sku": "FS-LF-BSF250",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/live-black-soldier-fly-larvae-250-1.webp",
+        "thumbnail_url": "/products/live-black-soldier-fly-larvae-250-1-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Live black soldier fly larvae feeder insects",
+        "credit": "Vladlen Terezhe via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hermetia_illucens1.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -243,8 +324,8 @@
     "seo_title": "Buy Live Black Soldier Fly Larvae – 250 Online",
     "seo_description": "250 live black soldier fly larvae — naturally high in calcium, so no dusting required.",
     "image_search": {
-      "query": "black soldier fly larvae",
-      "alt": "Live black soldier fly larvae"
+      "query": "Hermetia illucens larvae",
+      "alt": "Live black soldier fly larvae feeder insects"
     }
   },
   {
@@ -259,7 +340,19 @@
     "currency": "USD",
     "stock_quantity": 30,
     "sku": "FS-DF-BSF4",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/dried-black-soldier-fly-larvae-1.webp",
+        "thumbnail_url": "/products/dried-black-soldier-fly-larvae-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Dried Black Soldier Fly Larvae – 4 oz",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -296,7 +389,19 @@
     "currency": "USD",
     "stock_quantity": 50,
     "sku": "FS-SP-CALD3",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/calcium-with-d3-1.webp",
+        "thumbnail_url": "/products/calcium-with-d3-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Calcium with D3 Supplement",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": false,
@@ -332,7 +437,19 @@
     "currency": "USD",
     "stock_quantity": 45,
     "sku": "FS-SP-CAL0",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/calcium-without-d3-1.webp",
+        "thumbnail_url": "/products/calcium-without-d3-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Calcium without D3 Supplement",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -368,7 +485,19 @@
     "currency": "USD",
     "stock_quantity": 40,
     "sku": "FS-SP-MULTI",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/reptile-multivitamin-1.webp",
+        "thumbnail_url": "/products/reptile-multivitamin-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Reptile Multivitamin with Beta Carotene",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -404,7 +533,19 @@
     "currency": "USD",
     "stock_quantity": 35,
     "sku": "FS-PD-CGD8",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/crested-gecko-diet-8oz-1.webp",
+        "thumbnail_url": "/products/crested-gecko-diet-8oz-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Complete Crested Gecko Diet – 8 oz",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -440,7 +581,19 @@
     "currency": "USD",
     "stock_quantity": 30,
     "sku": "FS-PD-TORT",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/tortoise-diet-pellets-1.webp",
+        "thumbnail_url": "/products/tortoise-diet-pellets-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Grassland Tortoise Diet Pellets",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,

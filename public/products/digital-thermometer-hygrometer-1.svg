@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <defs><radialGradient id="g" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#f8f3e8"/><stop offset="1" stop-color="#efe6d3"/></radialGradient></defs>
+  <rect width="1600" height="1200" fill="url(#g)"/>
+  <circle cx="800" cy="470" r="300" fill="#fff" fill-opacity=".45"/>
+  <g transform="translate(600 270)"><rect x="80" y="70" width="240" height="260" rx="24" fill="#fff" fill-opacity=".6" stroke="#1f4d3a" stroke-width="14"/>
+    <rect x="115" y="110" width="170" height="80" rx="8" fill="#1f4d3a"/>
+    <text x="200" y="168" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#efe6d3" text-anchor="middle">88°</text>
+    <circle cx="150" cy="250" r="24" fill="#3f7d5c"/><circle cx="250" cy="250" r="24" fill="#3f7d5c"/></g>
+  <text x="800" y="905" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#2b2f2c" text-anchor="middle">Digital Thermometer &amp;</text><text x="800" y="971" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#2b2f2c" text-anchor="middle">Hygrometer with Probe</text>
+  <text x="800" y="1140" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="6" fill="#1f4d3a" text-anchor="middle">SCALEHAVEN REPTILES</text>
+</svg>

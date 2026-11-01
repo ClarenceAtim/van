@@ -11,7 +11,18 @@
     "currency": "USD",
     "stock_quantity": 60,
     "sku": "SD-SUB-COCO3",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/coco-fiber-brick-3-pack-1.webp",
+        "thumbnail_url": "/products/coco-fiber-brick-3-pack-1-thumb.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Bundles of natural coconut coir fiber",
+        "credit": "TheOilLamp via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Coir_Fibre_EX_Stock.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -31,8 +42,8 @@
     "seo_title": "Buy Coco Fiber Substrate Brick – 3 Pack Online",
     "seo_description": "Three compressed coco fiber bricks that expand to 24 quarts of humidity-holding substrate.",
     "image_search": {
-      "query": "coconut coir",
-      "alt": "Coco fiber coconut substrate bricks"
+      "query": "coir fibre",
+      "alt": "Bundles of natural coconut coir fiber"
     }
   },
   {
@@ -47,7 +58,19 @@
     "currency": "USD",
     "stock_quantity": 35,
     "sku": "SD-SUB-TROP8",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/bioactive-soil-tropical-8qt-1.webp",
+        "thumbnail_url": "/products/bioactive-soil-tropical-8qt-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Tropical Bioactive Soil Mix – 8 qt",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": false,
@@ -83,7 +106,19 @@
     "currency": "USD",
     "stock_quantity": 25,
     "sku": "SD-SUB-ARID10",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/arid-bioactive-substrate-10qt-1.webp",
+        "thumbnail_url": "/products/arid-bioactive-substrate-10qt-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Arid Bioactive Substrate – 10 qt",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -119,7 +154,18 @@
     "currency": "USD",
     "stock_quantity": 30,
     "sku": "SD-SUB-CYP24",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/cypress-mulch-24qt-1.webp",
+        "thumbnail_url": "/products/cypress-mulch-24qt-1-thumb.webp",
+        "width": 1600,
+        "height": 1071,
+        "alt": "Cypress mulch reptile substrate",
+        "credit": "Shadowmeld Photography via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wood_Chip_Mulch_Texture_DTXR-WD-CP-1.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -154,7 +200,18 @@
     "currency": "USD",
     "stock_quantity": 40,
     "sku": "SD-SUB-SPHG",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/sphagnum-moss-long-fiber-1.webp",
+        "thumbnail_url": "/products/sphagnum-moss-long-fiber-1-thumb.webp",
+        "width": 1600,
+        "height": 898,
+        "alt": "Green sphagnum moss growing in a wetland",
+        "credit": "Agnes Monkelbaan via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nationaal_Park_Drents-Friese_Wold._Locatie_Fochtelo%C3%ABrveen_01-09-2020._(actm.)_13.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -174,7 +231,7 @@
     "seo_description": "Premium long-fiber sphagnum moss for humid hides, egg-laying boxes and plant mounting.",
     "image_search": {
       "query": "sphagnum moss",
-      "alt": "Long fiber sphagnum moss"
+      "alt": "Green sphagnum moss growing in a wetland"
     }
   },
   {
@@ -189,7 +246,18 @@
     "currency": "USD",
     "stock_quantity": 45,
     "sku": "SD-SUB-LEAF",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/leaf-litter-mix-1.webp",
+        "thumbnail_url": "/products/leaf-litter-mix-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Dry leaf litter covering a forest floor",
+        "credit": "Alexeyevitch via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Fuchsia_excorticata_leaf_litter.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -209,8 +277,8 @@
     "seo_title": "Buy Oak & Magnolia Leaf Litter Online",
     "seo_description": "Sterilized oak and magnolia leaves that feed isopods and add natural cover to any bioactive enclosure.",
     "image_search": {
-      "query": "dry oak leaves",
-      "alt": "Dried oak and magnolia leaf litter"
+      "query": "leaf litter forest floor",
+      "alt": "Dry leaf litter covering a forest floor"
     }
   },
   {
@@ -225,7 +293,18 @@
     "currency": "USD",
     "stock_quantity": 25,
     "sku": "SD-DEC-CORKF",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/cork-bark-flat-medium-1.webp",
+        "thumbnail_url": "/products/cork-bark-flat-medium-1-thumb.webp",
+        "width": 1600,
+        "height": 1085,
+        "alt": "Stacked natural cork oak bark slabs",
+        "credit": "Jules Verne Times Two via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Stacked_cork_oak_(Quercus_suber)_bark,_Ponte_de_Sor,_Portugal_julesvernex2.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -245,8 +324,8 @@
     "seo_title": "Buy Cork Bark Flat – Medium Online",
     "seo_description": "Natural cork bark flat for hides, climbing walls and mounting plants — lightweight and rot-resistant.",
     "image_search": {
-      "query": "cork bark",
-      "alt": "Natural cork bark flat piece"
+      "query": "cork bark Quercus suber",
+      "alt": "Stacked natural cork oak bark slabs"
     }
   },
   {
@@ -261,7 +340,18 @@
     "currency": "USD",
     "stock_quantity": 18,
     "sku": "SD-DEC-CORKR",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/cork-round-tube-1.webp",
+        "thumbnail_url": "/products/cork-round-tube-1-thumb.webp",
+        "width": 1600,
+        "height": 1033,
+        "alt": "Curved natural cork oak bark pieces",
+        "credit": "pedrik via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_(25753850818).jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -281,8 +371,8 @@
     "seo_title": "Buy Cork Round Tube – Medium Online",
     "seo_description": "Hollow cork round that works as a hide, a vertical climbing tube or a planter.",
     "image_search": {
-      "query": "cork tube log",
-      "alt": "Hollow cork round tube hide"
+      "query": "cork oak bark tube",
+      "alt": "Curved natural cork oak bark pieces"
     }
   },
   {
@@ -297,7 +387,19 @@
     "currency": "USD",
     "stock_quantity": 22,
     "sku": "SD-DEC-HLOG",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/half-log-hide-large-1.webp",
+        "thumbnail_url": "/products/half-log-hide-large-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Half Log Hide – Large",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -332,7 +434,19 @@
     "currency": "USD",
     "stock_quantity": 28,
     "sku": "SD-DEC-HUMID",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/humid-hide-cave-1.webp",
+        "thumbnail_url": "/products/humid-hide-cave-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Humid Hide Cave with Lid",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -368,7 +482,19 @@
     "currency": "USD",
     "stock_quantity": 15,
     "sku": "SD-DEC-GRAPE",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/grapevine-branches-3-pack-1.webp",
+        "thumbnail_url": "/products/grapevine-branches-3-pack-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Grapevine Branches – 3 Pack",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -388,7 +514,7 @@
     "seo_title": "Buy Grapevine Branches – 3 Pack Online",
     "seo_description": "Three twisted grapevine branches for climbing, basking and perching in arboreal enclosures.",
     "image_search": {
-      "query": "grapevine branch",
+      "query": "grapevine wood",
       "alt": "Twisted grapevine branches for terrariums"
     }
   },
@@ -404,7 +530,19 @@
     "currency": "USD",
     "stock_quantity": 50,
     "sku": "SD-DEC-POTH",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/artificial-pothos-vine-1.webp",
+        "thumbnail_url": "/products/artificial-pothos-vine-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Artificial Pothos Hanging Vine",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -440,7 +578,19 @@
     "currency": "USD",
     "stock_quantity": 26,
     "sku": "SD-DEC-WDISH",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/ceramic-water-dish-large-1.webp",
+        "thumbnail_url": "/products/ceramic-water-dish-large-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Ceramic Water Dish – Large",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -475,7 +625,19 @@
     "currency": "USD",
     "stock_quantity": 12,
     "sku": "SD-DEC-LEDGE",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/basking-rock-ledge-1.webp",
+        "thumbnail_url": "/products/basking-rock-ledge-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Basking Rock Ledge",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,

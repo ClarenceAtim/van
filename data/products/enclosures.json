@@ -11,7 +11,19 @@
     "currency": "USD",
     "stock_quantity": 15,
     "sku": "EN-GT-121218",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/glass-terrarium-12x12x18-1.webp",
+        "thumbnail_url": "/products/glass-terrarium-12x12x18-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Front-Opening Glass Terrarium 12×12×18 in",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -47,7 +59,19 @@
     "currency": "USD",
     "stock_quantity": 12,
     "sku": "EN-GT-181824",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/glass-terrarium-18x18x24-1.webp",
+        "thumbnail_url": "/products/glass-terrarium-18x18x24-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Front-Opening Glass Terrarium 18×18×24 in",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": false,
@@ -83,7 +107,19 @@
     "currency": "USD",
     "stock_quantity": 10,
     "sku": "EN-GT-241818",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/glass-terrarium-24x18x18-1.webp",
+        "thumbnail_url": "/products/glass-terrarium-24x18x18-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Front-Opening Glass Terrarium 24×18×18 in",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -118,7 +154,19 @@
     "currency": "USD",
     "stock_quantity": 8,
     "sku": "EN-GT-361818",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/glass-terrarium-36x18x18-1.webp",
+        "thumbnail_url": "/products/glass-terrarium-36x18x18-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Front-Opening Glass Terrarium 36×18×18 in",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -154,7 +202,19 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "EN-GT-181836",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/glass-terrarium-18x18x36-arboreal-1.webp",
+        "thumbnail_url": "/products/glass-terrarium-18x18x36-arboreal-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Tall Arboreal Glass Terrarium 18×18×36 in",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -190,7 +250,19 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "EN-PVC-322",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/pvc-enclosure-3x2x2-1.webp",
+        "thumbnail_url": "/products/pvc-enclosure-3x2x2-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of PVC Reptile Enclosure 3×2×2 ft",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -226,7 +298,19 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "EN-PVC-422",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/pvc-enclosure-4x2x2-1.webp",
+        "thumbnail_url": "/products/pvc-enclosure-4x2x2-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of PVC Reptile Enclosure 4×2×2 ft",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": false,
@@ -262,7 +346,19 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "EN-PVC-622",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/pvc-enclosure-6x2x2-1.webp",
+        "thumbnail_url": "/products/pvc-enclosure-6x2x2-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of PVC Reptile Enclosure 6×2×2 ft",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -298,7 +394,19 @@
     "currency": "USD",
     "stock_quantity": 7,
     "sku": "EN-SC-242448",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/screen-chameleon-cage-24x24x48-1.webp",
+        "thumbnail_url": "/products/screen-chameleon-cage-24x24x48-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Screen Chameleon Cage 24×24×48 in",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -334,7 +442,19 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "EN-TT-4824",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/tortoise-table-48x24-1.webp",
+        "thumbnail_url": "/products/tortoise-table-48x24-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Tortoise Table 48×24 in",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -369,7 +489,19 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "EN-BK-TROP",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/bioactive-kit-tropical-1.webp",
+        "thumbnail_url": "/products/bioactive-kit-tropical-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Tropical Bioactive Kit (18×18×24)",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": false,
@@ -405,7 +537,19 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "EN-BK-ARID",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/bioactive-kit-arid-1.webp",
+        "thumbnail_url": "/products/bioactive-kit-arid-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Arid Bioactive Kit (36×18×18)",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -441,7 +585,19 @@
     "currency": "USD",
     "stock_quantity": 8,
     "sku": "EN-SK-LEO",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/leopard-gecko-starter-kit-1.webp",
+        "thumbnail_url": "/products/leopard-gecko-starter-kit-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Leopard Gecko Complete Starter Kit",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": false,
@@ -476,7 +632,19 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "EN-SK-BP",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/ball-python-starter-kit-1.webp",
+        "thumbnail_url": "/products/ball-python-starter-kit-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Ball Python Complete Starter Kit",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -512,7 +680,19 @@
     "currency": "USD",
     "stock_quantity": 4,
     "sku": "EN-SK-BD",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/bearded-dragon-starter-kit-1.webp",
+        "thumbnail_url": "/products/bearded-dragon-starter-kit-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Bearded Dragon Complete Starter Kit",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -548,7 +728,19 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "EN-SK-CG",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/crested-gecko-starter-kit-1.webp",
+        "thumbnail_url": "/products/crested-gecko-starter-kit-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Crested Gecko Complete Starter Kit",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,

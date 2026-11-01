@@ -11,7 +11,19 @@
     "currency": "USD",
     "stock_quantity": 50,
     "sku": "CA-MN-THHY",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/digital-thermometer-hygrometer-1.webp",
+        "thumbnail_url": "/products/digital-thermometer-hygrometer-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Digital Thermometer & Hygrometer with Probe",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -47,7 +59,19 @@
     "currency": "USD",
     "stock_quantity": 25,
     "sku": "CA-MN-IRGUN",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/infrared-temperature-gun-1.webp",
+        "thumbnail_url": "/products/infrared-temperature-gun-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Infrared Temperature Gun",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": false,
@@ -82,7 +106,19 @@
     "currency": "USD",
     "stock_quantity": 20,
     "sku": "CA-MN-SCALE",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/digital-gram-scale-1.webp",
+        "thumbnail_url": "/products/digital-gram-scale-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Digital Gram Scale with Bowl",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -117,7 +153,19 @@
     "currency": "USD",
     "stock_quantity": 8,
     "sku": "CA-HU-MIST",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/automatic-misting-system-1.webp",
+        "thumbnail_url": "/products/automatic-misting-system-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Automatic Misting System",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -153,7 +201,19 @@
     "currency": "USD",
     "stock_quantity": 30,
     "sku": "CA-HU-SPRY",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/pressure-sprayer-2l-1.webp",
+        "thumbnail_url": "/products/pressure-sprayer-2l-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Handheld Pressure Sprayer – 2 L",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -189,7 +249,19 @@
     "currency": "USD",
     "stock_quantity": 40,
     "sku": "CA-HD-TONG",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/feeding-tongs-12in-1.webp",
+        "thumbnail_url": "/products/feeding-tongs-12in-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Stainless Steel Feeding Tongs – 12 in",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -224,7 +296,19 @@
     "currency": "USD",
     "stock_quantity": 20,
     "sku": "CA-HD-HOOK",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/collapsible-snake-hook-1.webp",
+        "thumbnail_url": "/products/collapsible-snake-hook-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Collapsible Snake Hook",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -259,7 +343,19 @@
     "currency": "USD",
     "stock_quantity": 35,
     "sku": "CA-CL-CLEAN",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/reptile-safe-cleaner-1.webp",
+        "thumbnail_url": "/products/reptile-safe-cleaner-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Reptile-Safe Enclosure Cleaner – 16 oz",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -294,7 +390,19 @@
     "currency": "USD",
     "stock_quantity": 25,
     "sku": "CA-BK-BPMAN",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/ball-python-care-guide-book-1.webp",
+        "thumbnail_url": "/products/ball-python-care-guide-book-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of The Ball Python Manual (Care Guide Book)",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,

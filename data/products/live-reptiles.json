@@ -11,7 +11,18 @@
     "currency": "USD",
     "stock_quantity": 14,
     "sku": "LR-BP-NORM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/normal-ball-python-1.webp",
+        "thumbnail_url": "/products/normal-ball-python-1-thumb.webp",
+        "width": 1600,
+        "height": 1143,
+        "alt": "Close-up of a classic normal ball python head with brown and gold pattern",
+        "credit": "Holger Krisp via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Python-regius-kopf-k%C3%B6nigspython.jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -32,7 +43,7 @@
     "seo_description": "A calm, captive-bred classic ball python hatchling with rich chocolate and gold banding — the ideal first snake.",
     "image_search": {
       "query": "ball python Python regius",
-      "alt": "Classic normal ball python coiled with brown and gold banding"
+      "alt": "Close-up of a classic normal ball python head with brown and gold pattern"
     }
   },
   {
@@ -47,7 +58,19 @@
     "currency": "USD",
     "stock_quantity": 9,
     "sku": "LR-BP-PAST",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/pastel-ball-python-1.webp",
+        "thumbnail_url": "/products/pastel-ball-python-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Ball Python – Pastel",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -83,7 +106,19 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "LR-BP-BAN",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/banana-ball-python-1.webp",
+        "thumbnail_url": "/products/banana-ball-python-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Ball Python – Banana",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -103,7 +138,7 @@
     "seo_title": "Ball Python – Banana for Sale – Captive Bred",
     "seo_description": "Lavender and buttery-yellow banana ball python that develops charming dark freckles with age.",
     "image_search": {
-      "query": "banana ball python morph",
+      "query": "banana ball python",
       "alt": "Banana morph ball python with lavender and yellow coloring"
     }
   },
@@ -119,7 +154,18 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "LR-BP-PIED",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/piebald-ball-python-1.webp",
+        "thumbnail_url": "/products/piebald-ball-python-1-thumb.webp",
+        "width": 1600,
+        "height": 980,
+        "alt": "Piebald ball python with white patches and patterned bands",
+        "credit": "Eclipse Exotics via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Piebald_(Pied)_Ball_Python.jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -155,7 +201,19 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "LR-BP-CLWN",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/clown-ball-python-1.webp",
+        "thumbnail_url": "/products/clown-ball-python-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Ball Python – Clown",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -191,7 +249,19 @@
     "currency": "USD",
     "stock_quantity": 4,
     "sku": "LR-BP-AXAN",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/axanthic-ball-python-1.webp",
+        "thumbnail_url": "/products/axanthic-ball-python-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Ball Python – Axanthic",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -227,7 +297,18 @@
     "currency": "USD",
     "stock_quantity": 7,
     "sku": "LR-BP-MOJ",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/mojave-ball-python-1.webp",
+        "thumbnail_url": "/products/mojave-ball-python-1-thumb.webp",
+        "width": 1600,
+        "height": 769,
+        "alt": "Mojave ball python with caramel and dark brown keyhole pattern",
+        "credit": "WingedWolfPsion via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:JuvenileMojaveBallPython.png"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -263,7 +344,18 @@
     "currency": "USD",
     "stock_quantity": 12,
     "sku": "LR-CS-OKEE",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/okeetee-corn-snake-1.webp",
+        "thumbnail_url": "/products/okeetee-corn-snake-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Red Okeetee-type corn snake with black-bordered saddles on aspen bedding",
+        "credit": "Dustin Miller via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Corn_snake_eating_baby_mouse.jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -283,8 +375,8 @@
     "seo_title": "Corn Snake – Okeetee (Normal) for Sale – Captive Bred",
     "seo_description": "A bold Okeetee-type corn snake hatchling with deep red saddles outlined in thick black borders.",
     "image_search": {
-      "query": "corn snake Pantherophis guttatus",
-      "alt": "Okeetee corn snake with red saddles outlined in black"
+      "query": "corn snake",
+      "alt": "Red Okeetee-type corn snake with black-bordered saddles on aspen bedding"
     }
   },
   {
@@ -299,7 +391,18 @@
     "currency": "USD",
     "stock_quantity": 10,
     "sku": "LR-CS-AMEL",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/amelanistic-corn-snake-1.webp",
+        "thumbnail_url": "/products/amelanistic-corn-snake-1-thumb.webp",
+        "width": 1600,
+        "height": 998,
+        "alt": "Amelanistic corn snake with orange and red saddles and white borders",
+        "credit": "me via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Corn_snake_swallowing_cropped.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -320,7 +423,7 @@
     "seo_description": "Glowing orange and red amelanistic corn snake with white borders and ruby-red eyes.",
     "image_search": {
       "query": "amelanistic corn snake",
-      "alt": "Amelanistic red albino corn snake with orange and red saddles"
+      "alt": "Amelanistic corn snake with orange and red saddles and white borders"
     }
   },
   {
@@ -335,7 +438,19 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "LR-CS-SNOW",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/snow-corn-snake-1.webp",
+        "thumbnail_url": "/products/snow-corn-snake-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Corn Snake – Snow",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -371,7 +486,18 @@
     "currency": "USD",
     "stock_quantity": 8,
     "sku": "LR-CS-ANRY",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/anerythristic-corn-snake-1.webp",
+        "thumbnail_url": "/products/anerythristic-corn-snake-1-thumb.webp",
+        "width": 1600,
+        "height": 1616,
+        "alt": "Close-up of an anerythristic corn snake head with grey and black markings",
+        "credit": "EthanPo via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -392,7 +518,7 @@
     "seo_description": "Grey, black and silver anerythristic corn snake — a classic monochrome morph with a hint of yellow at the neck.",
     "image_search": {
       "query": "anerythristic corn snake",
-      "alt": "Anerythristic corn snake with grey and black pattern"
+      "alt": "Close-up of an anerythristic corn snake head with grey and black markings"
     }
   },
   {
@@ -407,7 +533,18 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "LR-KS-CAL",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/california-kingsnake-1.webp",
+        "thumbnail_url": "/products/california-kingsnake-1-thumb.webp",
+        "width": 1600,
+        "height": 1043,
+        "alt": "Banded California kingsnake with black and white rings",
+        "credit": "Calibas via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Californiakingsnake.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -443,7 +580,18 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "LR-KS-MBK",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/mexican-black-kingsnake-1.webp",
+        "thumbnail_url": "/products/mexican-black-kingsnake-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Jet-black Mexican black kingsnake on aspen bedding",
+        "credit": "Yercaud-elango via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Mexican_black_kingsnake-3-karnataka_aquarium-J_P_Nagar-bangalore-India.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -464,7 +612,7 @@
     "seo_description": "Glossy, jet-black Mexican black kingsnake that shines with a blue-purple iridescence under light.",
     "image_search": {
       "query": "Mexican black kingsnake",
-      "alt": "Glossy jet-black Mexican black kingsnake"
+      "alt": "Jet-black Mexican black kingsnake on aspen bedding"
     }
   },
   {
@@ -479,7 +627,18 @@
     "currency": "USD",
     "stock_quantity": 4,
     "sku": "LR-KS-FLA",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/florida-kingsnake-1.webp",
+        "thumbnail_url": "/products/florida-kingsnake-1-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Florida kingsnake with speckled cream and dark scales in grass",
+        "credit": "evergladesnps via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Kingsnake_(49860531106).jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -498,8 +657,8 @@
     "seo_title": "Florida Kingsnake for Sale – Captive Bred",
     "seo_description": "Speckled cream-and-chocolate Florida kingsnake with faint banding and a robust, easygoing build.",
     "image_search": {
-      "query": "Florida kingsnake",
-      "alt": "Florida kingsnake with speckled cream and brown scales"
+      "query": "Lampropeltis getula floridana",
+      "alt": "Florida kingsnake with speckled cream and dark scales in grass"
     }
   },
   {
@@ -514,7 +673,18 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "LR-MS-HOND",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/honduran-milk-snake-1.webp",
+        "thumbnail_url": "/products/honduran-milk-snake-1-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Tricolor Honduran milk snake with red, black and yellow bands",
+        "credit": "Tylwyth Eldar via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ferme_des_Reptiles_-_Lampropeltis_triangulum_hondurensis.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -550,7 +720,18 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "LR-MS-PUEB",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/pueblan-milk-snake-1.webp",
+        "thumbnail_url": "/products/pueblan-milk-snake-1-thumb.webp",
+        "width": 1600,
+        "height": 986,
+        "alt": "Pueblan milk snake with white, black and red bands",
+        "credit": "Bernard DUPONT from FRANCE via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pueblan_Milksnake_(Lampropeltis_triangulum_campbelli)_female_juvenile_(36013472342).jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -586,7 +767,18 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "LR-HN-NORM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/western-hognose-snake-1.webp",
+        "thumbnail_url": "/products/western-hognose-snake-1-thumb.webp",
+        "width": 1600,
+        "height": 775,
+        "alt": "Western hognose snake showing upturned snout",
+        "credit": "NasserHalaweh via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dipsadidae_Heterodon_nasicus_1.jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -622,7 +814,19 @@
     "currency": "USD",
     "stock_quantity": 2,
     "sku": "LR-HN-ALB",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/albino-western-hognose-1.webp",
+        "thumbnail_url": "/products/albino-western-hognose-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Western Hognose Snake – Albino",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -642,7 +846,7 @@
     "seo_title": "Western Hognose Snake – Albino for Sale – Captive Bred",
     "seo_description": "Peach, cream and orange albino western hognose with pink eyes and all the classic hognose attitude.",
     "image_search": {
-      "query": "albino western hognose snake",
+      "query": "albino Heterodon nasicus",
       "alt": "Albino western hognose snake with peach and orange pattern"
     }
   },
@@ -658,7 +862,18 @@
     "currency": "USD",
     "stock_quantity": 4,
     "sku": "LR-RB-MEX",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/rosy-boa-1.webp",
+        "thumbnail_url": "/products/rosy-boa-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Striped rosy boa resting on sandy rocks",
+        "credit": "Robb Hannawacker, while working for Joshua Tree National Park via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rosy_boa_(Lichanura_trivirgata).jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -694,7 +909,18 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "LR-SB-KEN",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/kenyan-sand-boa-1.webp",
+        "thumbnail_url": "/products/kenyan-sand-boa-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Kenyan sand boa with a yellow and dark brown blotched pattern",
+        "credit": "Viki at German Wikipedia via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gongylophis_colubrinus_loveridgei.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -714,8 +940,8 @@
     "seo_title": "Kenyan Sand Boa for Sale – Captive Bred",
     "seo_description": "Stocky orange-and-brown Kenyan sand boa that burrows, ambushes its food and handles calmly.",
     "image_search": {
-      "query": "Kenyan sand boa Eryx colubrinus",
-      "alt": "Kenyan sand boa with orange and brown blotches in sand"
+      "query": "Eryx colubrinus loveridgei",
+      "alt": "Kenyan sand boa with a yellow and dark brown blotched pattern"
     }
   },
   {
@@ -730,7 +956,18 @@
     "currency": "USD",
     "stock_quantity": 20,
     "sku": "LR-LG-NORM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/leopard-gecko-normal-1.webp",
+        "thumbnail_url": "/products/leopard-gecko-normal-1-thumb.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Wild-type leopard gecko with spotted pattern walking on sand",
+        "credit": "George Chernilevsky via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eublepharis_macularius_2009_G6.jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -751,7 +988,7 @@
     "seo_description": "Friendly captive-bred leopard gecko with yellow skin and black leopard spots — the classic starter lizard.",
     "image_search": {
       "query": "leopard gecko Eublepharis macularius",
-      "alt": "Normal leopard gecko with yellow skin and black spots"
+      "alt": "Wild-type leopard gecko with spotted pattern walking on sand"
     }
   },
   {
@@ -766,7 +1003,19 @@
     "currency": "USD",
     "stock_quantity": 10,
     "sku": "LR-LG-TANG",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/leopard-gecko-tangerine-1.webp",
+        "thumbnail_url": "/products/leopard-gecko-tangerine-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Leopard Gecko – Tangerine",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -802,7 +1051,19 @@
     "currency": "USD",
     "stock_quantity": 8,
     "sku": "LR-LG-MACK",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/leopard-gecko-mack-snow-1.webp",
+        "thumbnail_url": "/products/leopard-gecko-mack-snow-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Leopard Gecko – Mack Snow",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -838,7 +1099,18 @@
     "currency": "USD",
     "stock_quantity": 8,
     "sku": "LR-CG-HARL",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/crested-gecko-harlequin-1.webp",
+        "thumbnail_url": "/products/crested-gecko-harlequin-1-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Harlequin crested gecko walking along a wooden branch",
+        "credit": "Jazium via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lil_B_the_Crested_Gecko.jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -858,8 +1130,8 @@
     "seo_title": "Crested Gecko – Harlequin for Sale – Captive Bred",
     "seo_description": "Harlequin crested gecko with heavy cream patterning across the sides and legs over a rich base color.",
     "image_search": {
-      "query": "crested gecko Correlophus ciliatus",
-      "alt": "Harlequin crested gecko clinging to a branch"
+      "query": "harlequin crested gecko",
+      "alt": "Harlequin crested gecko walking along a wooden branch"
     }
   },
   {
@@ -874,7 +1146,19 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "LR-CG-DALM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/crested-gecko-dalmatian-1.webp",
+        "thumbnail_url": "/products/crested-gecko-dalmatian-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of Crested Gecko – Dalmatian",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -910,7 +1194,18 @@
     "currency": "USD",
     "stock_quantity": 10,
     "sku": "LR-CG-FLAM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/crested-gecko-flame-1.webp",
+        "thumbnail_url": "/products/crested-gecko-flame-1-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Flame crested gecko with a cream dorsal stripe on a branch",
+        "credit": "Lennart Hudel via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Correlophus_ciliatus_33605230.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -929,8 +1224,8 @@
     "seo_title": "Crested Gecko – Flame for Sale – Captive Bred",
     "seo_description": "Affordable flame crested gecko with a cream dorsal stripe over a deep red-brown body.",
     "image_search": {
-      "query": "flame crested gecko",
-      "alt": "Flame crested gecko with cream dorsal stripe"
+      "query": "Correlophus ciliatus",
+      "alt": "Flame crested gecko with a cream dorsal stripe on a branch"
     }
   },
   {
@@ -945,7 +1240,18 @@
     "currency": "USD",
     "stock_quantity": 4,
     "sku": "LR-GG-RETI",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/gargoyle-gecko-reticulated-1.webp",
+        "thumbnail_url": "/products/gargoyle-gecko-reticulated-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Reticulated gargoyle gecko perched on a branch",
+        "credit": "Eveha via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rhacodactylus_auriculatus_14.11.2013.JPG"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -964,8 +1270,8 @@
     "seo_title": "Gargoyle Gecko – Reticulated for Sale – Captive Bred",
     "seo_description": "Chunky gargoyle gecko with a net-like reticulated pattern and knobby 'horns' on the head.",
     "image_search": {
-      "query": "gargoyle gecko Rhacodactylus auriculatus",
-      "alt": "Reticulated gargoyle gecko perched on cork bark"
+      "query": "Rhacodactylus auriculatus",
+      "alt": "Reticulated gargoyle gecko perched on a branch"
     }
   },
   {
@@ -980,7 +1286,18 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "LR-GG-REDS",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/gargoyle-gecko-red-stripe-1.webp",
+        "thumbnail_url": "/products/gargoyle-gecko-red-stripe-1-thumb.webp",
+        "width": 1600,
+        "height": 1063,
+        "alt": "Red stripe gargoyle gecko with bold orange-red stripes",
+        "credit": "Generish via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gargoylegecko_2017_(cropped).png"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -999,8 +1316,8 @@
     "seo_title": "Gargoyle Gecko – Red Stripe for Sale – Captive Bred",
     "seo_description": "Red-striped gargoyle gecko with bold rust-red bands running from nose to tail.",
     "image_search": {
-      "query": "red stripe gargoyle gecko",
-      "alt": "Red striped gargoyle gecko on a branch"
+      "query": "Gargoylegecko 2017",
+      "alt": "Red stripe gargoyle gecko with bold orange-red stripes"
     }
   },
   {
@@ -1015,7 +1332,18 @@
     "currency": "USD",
     "stock_quantity": 8,
     "sku": "LR-FT-NORM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/african-fat-tailed-gecko-1.webp",
+        "thumbnail_url": "/products/african-fat-tailed-gecko-1-thumb.webp",
+        "width": 1600,
+        "height": 1409,
+        "alt": "African fat-tailed geckos on sand in a terrarium",
+        "credit": "Stolbovsky via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hemitheconyx_caudicinctus_in_Yaroslavl_Zoo.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1034,8 +1362,8 @@
     "seo_title": "African Fat-Tailed Gecko – Normal for Sale – Captive Bred",
     "seo_description": "Gentle African fat-tailed gecko with chocolate and tan bands and a perpetual 'smile'.",
     "image_search": {
-      "query": "African fat-tailed gecko Hemitheconyx caudicinctus",
-      "alt": "African fat-tailed gecko with brown and tan bands"
+      "query": "Hemitheconyx caudicinctus",
+      "alt": "African fat-tailed geckos on sand in a terrarium"
     }
   },
   {
@@ -1050,7 +1378,19 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "LR-FT-WOUT",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/african-fat-tailed-gecko-whiteout-1.webp",
+        "thumbnail_url": "/products/african-fat-tailed-gecko-whiteout-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Illustration of African Fat-Tailed Gecko – Whiteout",
+        "credit": "ScaleHaven Reptiles (placeholder illustration)",
+        "license": "Own work",
+        "source_url": "",
+        "placeholder": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1070,7 +1410,7 @@
     "seo_title": "African Fat-Tailed Gecko – Whiteout for Sale – Captive Bred",
     "seo_description": "Whiteout fat-tailed gecko with washed-out, pastel banding and a pale, frosted look.",
     "image_search": {
-      "query": "fat-tailed gecko morph",
+      "query": "Hemitheconyx caudicinctus white",
       "alt": "Pale whiteout African fat-tailed gecko"
     }
   },
@@ -1086,7 +1426,18 @@
     "currency": "USD",
     "stock_quantity": 12,
     "sku": "LR-BD-NORM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/bearded-dragon-normal-1.webp",
+        "thumbnail_url": "/products/bearded-dragon-normal-1-thumb.webp",
+        "width": 1600,
+        "height": 1600,
+        "alt": "Close-up of a central bearded dragon perched on a branch",
+        "credit": "Virtual-Pano via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:383_-_Head_of_central_bearded_dragon_(Pogona_vitticeps).jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -1106,22 +1457,33 @@
     "seo_description": "Personable juvenile bearded dragon that loves to bask, explore and ride on your shoulder.",
     "image_search": {
       "query": "bearded dragon Pogona vitticeps",
-      "alt": "Bearded dragon basking on a rock under warm light"
+      "alt": "Close-up of a central bearded dragon perched on a branch"
     }
   },
   {
-    "slug": "bearded-dragon-hypo-citrus",
-    "name": "Bearded Dragon – Hypo Citrus",
+    "slug": "bearded-dragon-hypo-red",
+    "name": "Bearded Dragon – Hypo Red",
     "category": "live-reptiles",
     "subcategory": "lizards",
-    "short_description": "Hypomelanistic citrus bearded dragon with clear nails and bright lemon-yellow coloring.",
-    "long_description": "Hypo dragons produce less dark pigment, giving them lighter overall coloring and clear nails. Combined with citrus line breeding, the result is a vivid yellow dragon that stands out in a naturalistic desert vivarium.\n\n## Care summary\n\n- **Scientific name:** *Pogona vitticeps*\n- **Care level:** Beginner\n- **Adult size:** 18–24 in (45–60 cm)\n- **Lifespan:** 10–15 years\n- **Diet:** Insects and leafy greens, shifting toward greens as an adult\n- **Temperature:** Basking 100–110°F, cool side 75–85°F\n- **Humidity:** 30–40%\n\n## Keeper tip\n\nLighter dragons show stress marks (dark ovals on the belly) easily — a useful early-warning signal for husbandry issues.",
+    "short_description": "Hypomelanistic red bearded dragon with clear nails and fiery orange-red coloring from snout to tail.",
+    "long_description": "Hypo dragons produce less dark pigment, giving them lighter overall coloring and clear nails. Combined with red line breeding, the result is a vivid orange-red dragon that stands out in a naturalistic desert vivarium.\n\n## Care summary\n\n- **Scientific name:** *Pogona vitticeps*\n- **Care level:** Beginner\n- **Adult size:** 18–24 in (45–60 cm)\n- **Lifespan:** 10–15 years\n- **Diet:** Insects and leafy greens, shifting toward greens as an adult\n- **Temperature:** Basking 100–110°F, cool side 75–85°F\n- **Humidity:** 30–40%\n\n## Keeper tip\n\nLighter dragons show stress marks (dark ovals on the belly) easily — a useful early-warning signal for husbandry issues.",
     "price_cents": 22900,
     "compare_at_price_cents": null,
     "currency": "USD",
     "stock_quantity": 4,
-    "sku": "LR-BD-HCIT",
-    "images": [],
+    "sku": "LR-BD-HRED",
+    "images": [
+      {
+        "url": "/products/bearded-dragon-hypo-red-1.webp",
+        "thumbnail_url": "/products/bearded-dragon-hypo-red-1-thumb.webp",
+        "width": 1600,
+        "height": 1280,
+        "alt": "Hypo red bearded dragon with orange scales held in a hand",
+        "credit": "Egandragon via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:EgantheDragon.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1135,14 +1497,14 @@
     "tags": [
       "bearded dragon",
       "hypo",
-      "citrus",
+      "red bearded dragon",
       "morph"
     ],
-    "seo_title": "Bearded Dragon – Hypo Citrus for Sale – Captive Bred",
-    "seo_description": "Hypomelanistic citrus bearded dragon with clear nails and bright lemon-yellow coloring.",
+    "seo_title": "Bearded Dragon – Hypo Red for Sale – Captive Bred",
+    "seo_description": "Hypomelanistic red bearded dragon with clear nails and fiery orange-red coloring from snout to tail.",
     "image_search": {
-      "query": "yellow citrus bearded dragon",
-      "alt": "Yellow hypo citrus bearded dragon"
+      "query": "EgantheDragon",
+      "alt": "Hypo red bearded dragon with orange scales held in a hand"
     }
   },
   {
@@ -1157,7 +1519,18 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "LR-BT-NORT",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/northern-blue-tongued-skink-1.webp",
+        "thumbnail_url": "/products/northern-blue-tongued-skink-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Northern blue-tongued skink with banded body beside its food dish",
+        "credit": "Rabbott656 via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bird,_a_northern_blue-tongued_skink_eating_dinner.jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -1177,8 +1550,8 @@
     "seo_title": "Northern Blue-Tongued Skink for Sale – Captive Bred",
     "seo_description": "Hefty, docile northern blue-tongued skink with bright orange-gold flanks and a cobalt tongue.",
     "image_search": {
-      "query": "blue-tongued skink Tiliqua scincoides",
-      "alt": "Northern blue-tongued skink showing blue tongue"
+      "query": "Tiliqua scincoides intermedia",
+      "alt": "Northern blue-tongued skink with banded body beside its food dish"
     }
   },
   {
@@ -1193,7 +1566,18 @@
     "currency": "USD",
     "stock_quantity": 2,
     "sku": "LR-AM-RED",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/ackie-monitor-1.webp",
+        "thumbnail_url": "/products/ackie-monitor-1-thumb.webp",
+        "width": 1600,
+        "height": 1199,
+        "alt": "Two red ackie monitors climbing on driftwood",
+        "credit": "NasserHalaweh via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Varanidae_Varanus_acanthurus_1.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1213,8 +1597,8 @@
     "seo_title": "Ackie Monitor – Red for Sale – Captive Bred",
     "seo_description": "Active red ackie monitor — a dwarf monitor species with intelligence, curiosity and a spiny tail.",
     "image_search": {
-      "query": "ackie monitor Varanus acanthurus",
-      "alt": "Red ackie monitor lizard on sandy substrate"
+      "query": "Varanus acanthurus",
+      "alt": "Two red ackie monitors climbing on driftwood"
     }
   },
   {
@@ -1229,7 +1613,18 @@
     "currency": "USD",
     "stock_quantity": 2,
     "sku": "LR-TG-ABW",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/argentine-tegu-1.webp",
+        "thumbnail_url": "/products/argentine-tegu-1-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Argentine black and white tegu lizard",
+        "credit": "Charles J. Sharp via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Argentine_black_and_white_tegu_(Salvator_merianae)_male_Vicente_Lopez.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1265,7 +1660,18 @@
     "currency": "USD",
     "stock_quantity": 4,
     "sku": "LR-UR-MALI",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/mali-uromastyx-1.webp",
+        "thumbnail_url": "/products/mali-uromastyx-1-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Mali uromastyx with yellow and black coloring basking",
+        "credit": "Squamata55 via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wally,_Male_Mali_uromastyx_(Uromastyx_maliensis).jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1301,7 +1707,18 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "LR-UR-SAHR",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/saharan-uromastyx-1.webp",
+        "thumbnail_url": "/products/saharan-uromastyx-1-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Red Saharan uromastyx basking on a rock",
+        "credit": "Manfred Werner - Tsui via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Blumeng%C3%A4rten_Hirschstetten_2016-02-21_Dornschwanzagame_(Uromastyx_geyri)_g.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1337,7 +1754,18 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "LR-VC-MALE",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/veiled-chameleon-male-1.webp",
+        "thumbnail_url": "/products/veiled-chameleon-male-1-thumb.webp",
+        "width": 1334,
+        "height": 1000,
+        "alt": "Male veiled chameleon with tall casque on a branch",
+        "credit": "Kristof Magnusson via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Veiled_chameleon_Chamaeleo_calyptratus_Aquarium_Berlin_Zoo.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1372,7 +1800,18 @@
     "currency": "USD",
     "stock_quantity": 5,
     "sku": "LR-VC-FEM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/veiled-chameleon-female-1.webp",
+        "thumbnail_url": "/products/veiled-chameleon-female-1-thumb.webp",
+        "width": 1600,
+        "height": 1050,
+        "alt": "Female veiled chameleon in green on a plant",
+        "credit": "Matt Reinbold via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Chamaeleo_calyptratus1.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1407,7 +1846,18 @@
     "currency": "USD",
     "stock_quantity": 2,
     "sku": "LR-PC-AMBI",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/panther-chameleon-ambilobe-1.webp",
+        "thumbnail_url": "/products/panther-chameleon-ambilobe-1-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Close-up of a colorful Ambilobe panther chameleon head",
+        "credit": "Daniel Schwen via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ambilobe_panther_chameleon.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1427,8 +1877,8 @@
     "seo_title": "Panther Chameleon – Ambilobe for Sale – Captive Bred",
     "seo_description": "Captive-bred male Ambilobe panther chameleon showing rainbow bars of red, blue, green and yellow.",
     "image_search": {
-      "query": "panther chameleon Furcifer pardalis",
-      "alt": "Colorful Ambilobe panther chameleon on a branch"
+      "query": "Furcifer pardalis Ambilobe",
+      "alt": "Close-up of a colorful Ambilobe panther chameleon head"
     }
   },
   {
@@ -1443,7 +1893,18 @@
     "currency": "USD",
     "stock_quantity": 4,
     "sku": "LR-TT-REDF",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/red-footed-tortoise-1.webp",
+        "thumbnail_url": "/products/red-footed-tortoise-1-thumb.webp",
+        "width": 1600,
+        "height": 1540,
+        "alt": "Red-footed tortoise with red scales on its legs",
+        "credit": "Bernard DUPONT from FRANCE via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Red-footed_Tortoise_(Chelonoidis_carbonarius)_(34611375013).jpg"
+      }
+    ],
     "featured": true,
     "active": true,
     "is_live_animal": true,
@@ -1479,7 +1940,18 @@
     "currency": "USD",
     "stock_quantity": 6,
     "sku": "LR-TT-RUSS",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/russian-tortoise-1.webp",
+        "thumbnail_url": "/products/russian-tortoise-1-thumb.webp",
+        "width": 1448,
+        "height": 956,
+        "alt": "Russian tortoise resting on bark substrate beside a hide",
+        "credit": "Futureman1199 via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Russian_tortoise_(Testudo_horsfieldii)_2.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
@@ -1500,7 +1972,7 @@
     "seo_description": "Small, hardy captive-bred Russian tortoise that loves to dig and graze on weeds.",
     "image_search": {
       "query": "Russian tortoise Testudo horsfieldii",
-      "alt": "Russian tortoise walking on grass"
+      "alt": "Russian tortoise resting on bark substrate beside a hide"
     }
   },
   {
@@ -1515,7 +1987,18 @@
     "currency": "USD",
     "stock_quantity": 3,
     "sku": "LR-TT-HERM",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/hermanns-tortoise-1.webp",
+        "thumbnail_url": "/products/hermanns-tortoise-1-thumb.webp",
+        "width": 1600,
+        "height": 1218,
+        "alt": "Hermann's tortoise with gold and black shell",
+        "credit": "Palauenc05 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hermanni_boettgeri_Pag.jpg"
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": true,
