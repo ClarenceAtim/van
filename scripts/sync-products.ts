@@ -29,7 +29,6 @@ const CONTENT_TYPES: Record<string, string> = { ".webp": "image/webp", ".jpg": "
 type Summary = { added: string[]; updated: string[]; skipped: string[]; deactivated: string[]; uploaded: number; errors: string[] };
 
 function toRow(p: ProductInput) {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { images, image_search, ...row } = p;
   return { ...row, compare_at_price_cents: row.compare_at_price_cents ?? null, subcategory: row.subcategory ?? null };
 }

@@ -1,103 +1,167 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, BookOpen, Box, Bug, Leaf, Sun, Thermometer, Turtle } from "lucide-react";
+import { JsonLd } from "@/components/json-ld";
+import { NewsletterForm } from "@/components/newsletter-form";
+import { ProductCard } from "@/components/product-card";
+import { TrustBadges } from "@/components/trust-badges";
+import { buttonVariants } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import { getBestSellers, getCategories, getFeatured, getProductsByCategory, toCard } from "@/lib/catalog";
+import { getGuides } from "@/lib/guides";
+import { pageMetadata, websiteJsonLd } from "@/lib/seo";
+import { cn } from "@/lib/utils";
 
-export default function Home() {
+export const revalidate = 3600;
+
+export const metadata = {
+  ...pageMetadata({
+    title: `${siteConfig.name} – Captive-Bred Reptiles & Supplies`,
+    description: siteConfig.description,
+    path: "/",
+  }),
+  title: { absolute: `${siteConfig.name} – Captive-Bred Reptiles & Supplies` },
+};
+
+const CATEGORY_ICONS: Record<string, typeof Turtle> = {
+  "live-reptiles": Turtle,
+  enclosures: Box,
+  "heating-lighting": Sun,
+  "substrate-decor": Leaf,
+  "food-supplements": Bug,
+  "care-accessories": Thermometer,
+};
+
+export default async function HomePage() {
+  const [featured, bestSellers, categories, animals] = await Promise.all([getFeatured(12), getBestSellers(8), getCategories(), getProductsByCategory("live-reptiles")]);
+  const featuredAnimals = featured.filter((p) => p.is_live_animal).slice(0, 4);
+  const featuredSupplies = bestSellers.filter((p) => !p.is_live_animal).slice(0, 4);
+  const guides = getGuides().slice(0, 3);
+  const hero = animals.find((p) => p.slug === "panther-chameleon-ambilobe")?.images[0] ?? animals[0]?.images[0];
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <section className="relative overflow-hidden bg-forest text-primary-foreground">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-20">
+          <div className="space-y-6">
+            <p className="text-sm font-semibold tracking-[0.2em] text-sand uppercase">Captive bred · Health guaranteed</p>
+            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl">Healthy reptiles, raised right.</h1>
+            <p className="max-w-lg text-lg text-primary-foreground/85">
+              Hand-raised snakes, geckos, lizards and tortoises — plus the enclosures, UVB and heating we actually use in our own facility.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/shop/live-reptiles" className={cn(buttonVariants({ size: "lg" }), "bg-sand text-forest hover:bg-sand/90")}>
+                Shop live reptiles
+              </Link>
+              <Link href="/shop" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "border-sand/60 bg-transparent text-primary-foreground hover:bg-white/10 hover:text-primary-foreground")}>
+                Browse supplies
+              </Link>
+            </div>
+          </div>
+          {hero && (
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/10">
+              <Image src={hero.url} alt={hero.alt} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
+            </div>
+          )}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <div className="mx-auto max-w-7xl space-y-20 px-4 py-14">
+        <section aria-labelledby="trust-heading">
+          <h2 id="trust-heading" className="sr-only">
+            Why buy from us
+          </h2>
+          <TrustBadges />
+        </section>
+
+        <section aria-labelledby="featured-heading">
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <div>
+              <h2 id="featured-heading" className="text-3xl font-semibold">Featured animals</h2>
+              <p className="mt-1 text-muted-foreground">Feeding well, handled daily and ready for their new homes.</p>
+            </div>
+            <Link href="/shop/live-reptiles" className="hidden shrink-0 items-center gap-1 font-medium text-primary hover:underline sm:inline-flex">
+              All animals <ArrowRight className="size-4" aria-hidden />
+            </Link>
+          </div>
+          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {featuredAnimals.map((p) => (
+              <li key={p.id} className="relative">
+                <ProductCard product={toCard(p)} />
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section aria-labelledby="categories-heading">
+          <h2 id="categories-heading" className="mb-6 text-3xl font-semibold">Shop by category</h2>
+          <ul className="grid grid-cols-2 gap-4 md:grid-cols-3">
+            {categories.map((c) => {
+              const Icon = CATEGORY_ICONS[c.slug] ?? Leaf;
+              return (
+                <li key={c.slug}>
+                  <Link href={`/shop/${c.slug}`} className="group flex h-full flex-col gap-3 rounded-2xl bg-sand/50 p-5 transition-colors hover:bg-sand sm:p-6">
+                    <Icon className="size-9 text-primary" aria-hidden />
+                    <span className="font-heading text-lg font-semibold sm:text-xl">{c.name}</span>
+                    <span className="hidden text-sm text-muted-foreground sm:block">{c.description}</span>
+                    <span className="mt-auto inline-flex items-center gap-1 text-sm font-medium text-primary">
+                      Shop now <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+
+        <section aria-labelledby="bestsellers-heading">
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <div>
+              <h2 id="bestsellers-heading" className="text-3xl font-semibold">Best-selling supplies</h2>
+              <p className="mt-1 text-muted-foreground">The gear our keepers reorder most.</p>
+            </div>
+            <Link href="/shop?sort=popular" className="hidden shrink-0 items-center gap-1 font-medium text-primary hover:underline sm:inline-flex">
+              Shop supplies <ArrowRight className="size-4" aria-hidden />
+            </Link>
+          </div>
+          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {featuredSupplies.map((p) => (
+              <li key={p.id} className="relative">
+                <ProductCard product={toCard(p)} />
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {guides.length > 0 && (
+          <section aria-labelledby="guides-heading" className="rounded-3xl bg-muted p-6 sm:p-10">
+            <div className="mb-6 flex items-center gap-3">
+              <BookOpen className="size-7 text-primary" aria-hidden />
+              <h2 id="guides-heading" className="text-3xl font-semibold">Free care guides</h2>
+            </div>
+            <ul className="grid gap-5 md:grid-cols-3">
+              {guides.map((g) => (
+                <li key={g.slug}>
+                  <Link href={`/care-guides/${g.slug}`} className="block h-full rounded-2xl bg-card p-5 transition-shadow hover:shadow-md">
+                    <p className="text-xs font-semibold tracking-wide text-leaf uppercase">{g.readingMinutes} min read</p>
+                    <h3 className="mt-2 text-xl font-semibold">{g.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{g.description}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <section aria-labelledby="newsletter-heading" className="grid items-center gap-6 rounded-3xl border p-6 sm:p-10 md:grid-cols-2">
+          <div>
+            <h2 id="newsletter-heading" className="text-3xl font-semibold">Get care tips & first pick of new hatchlings</h2>
+            <p className="mt-2 text-muted-foreground">One email a month. Unsubscribe any time.</p>
+          </div>
+          <NewsletterForm />
+        </section>
+      </div>
+      <JsonLd data={websiteJsonLd()} />
+    </>
   );
 }
