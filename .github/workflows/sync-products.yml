@@ -1,0 +1,45 @@
+name: Sync products to Supabase
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/products/**"
+      - "data/categories.json"
+      - "public/products/**"
+  pull_request:
+    paths:
+      - "data/products/**"
+      - "data/categories.json"
+      - "public/products/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-products
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Pull requests only validate, so a bad edit is caught before it reaches main.
+      - name: Validate product data
+        run: npm run validate:products
+      - name: Sync to Supabase
+        if: github.event_name != 'pull_request'
+        run: npm run sync:products
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.SITE_URL }}
+          REVALIDATE_SECRET: ${{ secrets.REVALIDATE_SECRET }}

@@ -48,3 +48,17 @@ describe("product schema", () => {
     expect(productInputSchema.safeParse({ ...base, price_cents: 10.5 }).success).toBe(false);
   });
 });
+
+describe("loadProductData error messages", () => {
+  it("names the file, product and field that is wrong", async () => {
+    const fs = await import("node:fs");
+    const os = await import("node:os");
+    const path = await import("node:path");
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "products-"));
+    const bad = { ...products[0], price_cents: "79.00" };
+    fs.writeFileSync(path.join(dir, "broken.json"), JSON.stringify([bad]));
+    fs.writeFileSync(path.join(dir, "syntax.json"), "[{ oops");
+    expect(() => loadProductData(dir)).toThrow(`broken.json → product #0 (${bad.slug}) → price_cents`);
+    expect(() => loadProductData(dir)).toThrow(/syntax\.json: not valid JSON/);
+  });
+});
