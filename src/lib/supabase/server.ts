@@ -1,7 +1,7 @@
 import "server-only";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
-import { publicEnv } from "@/lib/env";
+import { isSupabaseConfigured, publicEnv } from "@/lib/env";
 
 /** Supabase client acting as the signed-in user (RLS applies). */
 export async function createClient() {
@@ -21,12 +21,14 @@ export async function createClient() {
 }
 
 export async function getUser() {
+  if (!isSupabaseConfigured) return null;
   const supabase = await createClient();
   const { data } = await supabase.auth.getUser();
   return data.user;
 }
 
 export async function getProfile() {
+  if (!isSupabaseConfigured) return null;
   const supabase = await createClient();
   const { data: auth } = await supabase.auth.getUser();
   if (!auth.user) return null;
