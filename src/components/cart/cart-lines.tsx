@@ -48,7 +48,7 @@ export function CartLines({ lines, compact = false, onNavigate }: { lines: CartL
                   <Button
                     variant="ghost"
                     size="icon-sm"
-                    aria-label="Decrease quantity"
+                    aria-label={`Decrease quantity of ${line.name}`}
                     disabled={pending}
                     onClick={() => update(line.slug, line.quantity - 1)}
                   >
@@ -60,7 +60,7 @@ export function CartLines({ lines, compact = false, onNavigate }: { lines: CartL
                   <Button
                     variant="ghost"
                     size="icon-sm"
-                    aria-label="Increase quantity"
+                    aria-label={`Increase quantity of ${line.name}`}
                     disabled={pending || line.quantity >= max}
                     onClick={() => update(line.slug, line.quantity + 1)}
                   >
