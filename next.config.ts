@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const supabaseHost = process.env.NEXT_PUBLIC_SUPABASE_URL ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).host : null;
 const isDev = process.env.NODE_ENV !== "production";
+const isHttps = (process.env.NEXT_PUBLIC_SITE_URL ?? "").startsWith("https://");
 
 const supabaseSources = supabaseHost ? `https://${supabaseHost} wss://${supabaseHost}` : "";
 
@@ -22,7 +23,8 @@ const csp = [
   "form-action 'self' https://checkout.stripe.com",
   "base-uri 'self'",
   "object-src 'none'",
-  ...(isDev ? [] : ["upgrade-insecure-requests"]),
+  // Only upgrade when the site is served over HTTPS (keeps local `next start` on http working).
+  ...(isHttps ? ["upgrade-insecure-requests"] : []),
 ]
   .map((d) => d.replace(/\s+/g, " ").trim())
   .join("; ");
@@ -40,6 +42,8 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Admin product image uploads (validated to 5 MB in the action).
+  experimental: { serverActions: { bodySizeLimit: "6mb" } },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: supabaseHost ? [{ protocol: "https", hostname: supabaseHost, pathname: "/storage/v1/object/public/**" }] : [],
