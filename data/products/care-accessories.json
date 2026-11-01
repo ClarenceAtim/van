@@ -15,13 +15,13 @@
       {
         "url": "/products/digital-thermometer-hygrometer-1.webp",
         "thumbnail_url": "/products/digital-thermometer-hygrometer-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Digital Thermometer & Hygrometer with Probe",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "width": 1243,
+        "height": 1244,
+        "alt": "Digital thermometer and hygrometer",
+        "credit": "Pogrebnoj-Alexandroff via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hygrometer-Thermometer.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -43,8 +43,8 @@
     "seo_title": "Buy Digital Thermometer & Hygrometer with Probe Online",
     "seo_description": "Two-in-one digital thermometer and hygrometer with a remote probe and min/max memory.",
     "image_search": {
-      "query": "digital thermometer",
-      "alt": "Digital thermometer and hygrometer with probe"
+      "query": "digital hygrometer",
+      "alt": "Digital thermometer and hygrometer"
     }
   },
   {
@@ -63,13 +63,13 @@
       {
         "url": "/products/infrared-temperature-gun-1.webp",
         "thumbnail_url": "/products/infrared-temperature-gun-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Infrared Temperature Gun",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "width": 1570,
+        "height": 1380,
+        "alt": "Handheld infrared thermometer",
+        "credit": "Ph0705 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_thermometer_(Innovo).jpg",
+        "representative": true
       }
     ],
     "featured": true,
@@ -91,7 +91,7 @@
     "seo_description": "Point-and-shoot infrared thermometer for checking basking surfaces in seconds.",
     "image_search": {
       "query": "infrared thermometer",
-      "alt": "Handheld infrared temperature gun"
+      "alt": "Handheld infrared thermometer"
     }
   },
   {
@@ -112,11 +112,11 @@
         "thumbnail_url": "/products/digital-gram-scale-1-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Illustration of Digital Gram Scale with Bowl",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "alt": "Digital kitchen scale",
+        "credit": "Ser Amantio di Nicolao via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Escali_digital_kitchen_scale.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -137,8 +137,8 @@
     "seo_title": "Buy Digital Gram Scale with Bowl Online",
     "seo_description": "Precise digital gram scale with a tare function — track your reptile's weight and health.",
     "image_search": {
-      "query": "kitchen scale",
-      "alt": "Digital gram scale for weighing reptiles"
+      "query": "digital kitchen scale",
+      "alt": "Digital kitchen scale"
     }
   },
   {
@@ -158,12 +158,12 @@
         "url": "/products/automatic-misting-system-1.webp",
         "thumbnail_url": "/products/automatic-misting-system-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Automatic Misting System",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 2133,
+        "alt": "Pressure sprayer for misting enclosures",
+        "credit": "Lars van der Heide via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gardena_vintage_sproeispuit.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -185,8 +185,8 @@
     "seo_title": "Buy Automatic Misting System Online",
     "seo_description": "Programmable misting system with two nozzles and a 1.5 L reservoir for chameleons and tropical setups.",
     "image_search": {
-      "query": "water mist spray",
-      "alt": "Automatic misting system for terrariums"
+      "query": "misting plants",
+      "alt": "Pressure sprayer for misting enclosures"
     }
   },
   {
@@ -206,12 +206,12 @@
         "url": "/products/pressure-sprayer-2l-1.webp",
         "thumbnail_url": "/products/pressure-sprayer-2l-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Handheld Pressure Sprayer – 2 L",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 2133,
+        "alt": "Hand pressure sprayer",
+        "credit": "Lars van der Heide via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gardena_vintage_sproeispuit.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -234,7 +234,7 @@
     "seo_description": "Pump-action 2 L pressure sprayer that delivers a fine, continuous mist with no hand fatigue.",
     "image_search": {
       "query": "pressure sprayer",
-      "alt": "Handheld 2 liter pressure sprayer"
+      "alt": "Hand pressure sprayer"
     }
   },
   {
@@ -253,13 +253,13 @@
       {
         "url": "/products/feeding-tongs-12in-1.webp",
         "thumbnail_url": "/products/feeding-tongs-12in-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Stainless Steel Feeding Tongs – 12 in",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "width": 1500,
+        "height": 1050,
+        "alt": "Stainless steel tongs",
+        "credit": "Sac86738 at English Wikipedia via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Grilling-tongs.png",
+        "representative": true
       }
     ],
     "featured": false,
@@ -280,8 +280,8 @@
     "seo_title": "Buy Stainless Steel Feeding Tongs – 12 in Online",
     "seo_description": "12-inch stainless steel feeding tongs with rubber-tipped jaws — keep your fingers clear of strikes.",
     "image_search": {
-      "query": "steel tongs",
-      "alt": "Stainless steel reptile feeding tongs"
+      "query": "tongs",
+      "alt": "Stainless steel tongs"
     }
   },
   {
@@ -301,12 +301,12 @@
         "url": "/products/collapsible-snake-hook-1.webp",
         "thumbnail_url": "/products/collapsible-snake-hook-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Collapsible Snake Hook",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1201,
+        "alt": "Snake hook",
+        "credit": "Pogrebnoj-Alexandroff via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hook_for_snakes.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -328,7 +328,7 @@
     "seo_description": "Lightweight telescoping snake hook — safely lift and guide snakes out of their enclosure.",
     "image_search": {
       "query": "snake hook",
-      "alt": "Collapsible telescoping snake hook"
+      "alt": "Snake hook"
     }
   },
   {
@@ -347,13 +347,13 @@
       {
         "url": "/products/reptile-safe-cleaner-1.webp",
         "thumbnail_url": "/products/reptile-safe-cleaner-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Reptile-Safe Enclosure Cleaner – 16 oz",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "width": 960,
+        "height": 1280,
+        "alt": "Spray bottle",
+        "credit": "Kaviyadharshini Selvakumar via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:SPRAY_BOTTLE.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -374,8 +374,8 @@
     "seo_title": "Buy Reptile-Safe Enclosure Cleaner – 16 oz Online",
     "seo_description": "Fragrance-free, biodegradable enclosure cleaner that breaks down organic waste and odor.",
     "image_search": {
-      "query": "spray bottle cleaner",
-      "alt": "Reptile-safe enclosure cleaner spray bottle"
+      "query": "spray bottle",
+      "alt": "Spray bottle"
     }
   },
   {
@@ -396,11 +396,11 @@
         "thumbnail_url": "/products/ball-python-care-guide-book-1-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Illustration of The Ball Python Manual (Care Guide Book)",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "alt": "Books on a shelf",
+        "credit": "Algeyav via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Books_on_the_shelf_%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8_%D0%BD%D0%B0_%D0%BF%D0%BE%D0%BB%D0%BA%D0%B5.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -421,8 +421,8 @@
     "seo_title": "Buy The Ball Python Manual (Care Guide Book) Online",
     "seo_description": "A practical, illustrated care guide covering ball python housing, feeding, shedding and health.",
     "image_search": {
-      "query": "book reading",
-      "alt": "Ball python care guide book"
+      "query": "books shelf",
+      "alt": "Books on a shelf"
     }
   }
 ]

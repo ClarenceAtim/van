@@ -16,12 +16,12 @@
         "url": "/products/t5-ho-uvb-6-22in-1.webp",
         "thumbnail_url": "/products/t5-ho-uvb-6-22in-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of T5 HO UVB 6% Tube – 22 in",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1355,
+        "alt": "T5, T8 and T12 fluorescent tubes compared",
+        "credit": "Temdor via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Linear_fluorescent_lamps_T5_T8_T12.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -44,8 +44,8 @@
     "seo_title": "Buy T5 HO UVB 6% Tube – 22 in Online",
     "seo_description": "Moderate-output T5 HO 6% UVB tube for shade-dwelling and crepuscular species.",
     "image_search": {
-      "query": "fluorescent tube light",
-      "alt": "22 inch T5 HO 6 percent UVB fluorescent tube"
+      "query": "T5 Leuchtstoffröhre",
+      "alt": "T5, T8 and T12 fluorescent tubes compared"
     }
   },
   {
@@ -65,12 +65,12 @@
         "url": "/products/t5-ho-uvb-12-34in-1.webp",
         "thumbnail_url": "/products/t5-ho-uvb-12-34in-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of T5 HO UVB 12% Tube – 34 in",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1355,
+        "alt": "T5 fluorescent lamp tube",
+        "credit": "Temdor via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Linear_fluorescent_lamps_T5_T8_T12.jpg",
+        "representative": true
       }
     ],
     "featured": true,
@@ -93,8 +93,8 @@
     "seo_title": "Buy T5 HO UVB 12% Tube – 34 in Online",
     "seo_description": "High-output 12% UVB tube for bearded dragons, uromastyx and other full-sun desert reptiles.",
     "image_search": {
-      "query": "fluorescent lamp tube",
-      "alt": "34 inch T5 HO 12 percent desert UVB tube"
+      "query": "T5 fluorescent lamp",
+      "alt": "T5 fluorescent lamp tube"
     }
   },
   {
@@ -114,12 +114,12 @@
         "url": "/products/t8-uvb-5-18in-1.webp",
         "thumbnail_url": "/products/t8-uvb-5-18in-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of T8 UVB 5% Tube – 18 in",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1355,
+        "alt": "T5, T8 and T12 fluorescent tubes compared",
+        "credit": "Temdor via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Linear_fluorescent_lamps_T5_T8_T12.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -142,8 +142,8 @@
     "seo_title": "Buy T8 UVB 5% Tube – 18 in Online",
     "seo_description": "Budget-friendly T8 5% UVB tube for small terrariums and low-UV species.",
     "image_search": {
-      "query": "T8 fluorescent tube",
-      "alt": "18 inch T8 5 percent UVB tube"
+      "query": "fluorescent tube light",
+      "alt": "T5, T8 and T12 fluorescent tubes compared"
     }
   },
   {
@@ -163,12 +163,12 @@
         "url": "/products/t5-ho-fixture-22in-1.webp",
         "thumbnail_url": "/products/t5-ho-fixture-22in-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of T5 HO Reflector Fixture – 22 in",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1060,
+        "alt": "Fluorescent tube light fixture",
+        "credit": "Alan via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:L%C3%A1mpara_de_cocina_encendida.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -190,8 +190,8 @@
     "seo_title": "Buy T5 HO Reflector Fixture – 22 in Online",
     "seo_description": "Slim aluminum T5 HO fixture with a polished reflector that nearly doubles usable UVB output.",
     "image_search": {
-      "query": "light fixture reflector",
-      "alt": "Slim 22 inch T5 HO reflector fixture"
+      "query": "fluorescent fixture ceiling",
+      "alt": "Fluorescent tube light fixture"
     }
   },
   {
@@ -211,12 +211,12 @@
         "url": "/products/t5-ho-fixture-34in-1.webp",
         "thumbnail_url": "/products/t5-ho-fixture-34in-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of T5 HO Reflector Fixture – 34 in",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1060,
+        "alt": "Fluorescent tube light fixture",
+        "credit": "Alan via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:L%C3%A1mpara_de_cocina_encendida.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -238,8 +238,8 @@
     "seo_title": "Buy T5 HO Reflector Fixture – 34 in Online",
     "seo_description": "34-inch T5 HO fixture with a high-efficiency reflector, sized for 4-foot enclosures.",
     "image_search": {
-      "query": "fluorescent fixture",
-      "alt": "34 inch T5 HO fixture with reflector"
+      "query": "fluorescent light",
+      "alt": "Fluorescent tube light fixture"
     }
   },
   {
@@ -259,12 +259,12 @@
         "url": "/products/halogen-basking-bulb-50w-1.webp",
         "thumbnail_url": "/products/halogen-basking-bulb-50w-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Halogen Basking Flood Bulb – 50 W",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1063,
+        "alt": "Halogen reflector flood bulb",
+        "credit": "Nord794ub via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Reflectors_of_halogen_lamp.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -286,8 +286,8 @@
     "seo_title": "Buy Halogen Basking Flood Bulb – 50 W Online",
     "seo_description": "50 W halogen flood for focused basking spots in small and medium terrariums.",
     "image_search": {
-      "query": "halogen lamp bulb",
-      "alt": "50 watt halogen basking flood bulb"
+      "query": "halogen reflector lamp",
+      "alt": "Halogen reflector flood bulb"
     }
   },
   {
@@ -308,11 +308,11 @@
         "thumbnail_url": "/products/halogen-basking-bulb-100w-1-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Illustration of Halogen Basking Flood Bulb – 100 W",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "alt": "PAR38 halogen flood bulb",
+        "credit": "Leon Brooks via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Floodlamp_bulb_screw_fitting.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -334,8 +334,8 @@
     "seo_title": "Buy Halogen Basking Flood Bulb – 100 W Online",
     "seo_description": "100 W halogen flood for high-temperature basking zones for bearded dragons and uromastyx.",
     "image_search": {
-      "query": "heat lamp bulb",
-      "alt": "100 watt halogen basking flood bulb"
+      "query": "PAR38 lamp",
+      "alt": "PAR38 halogen flood bulb"
     }
   },
   {
@@ -355,12 +355,12 @@
         "url": "/products/deep-dome-lamp-fixture-1.webp",
         "thumbnail_url": "/products/deep-dome-lamp-fixture-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Deep Dome Lamp Fixture – 8.5 in",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 2133,
+        "alt": "Clamp heat lamps with reflector domes",
+        "credit": "SAgbley via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_Heat_Lamp.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -382,8 +382,8 @@
     "seo_title": "Buy Deep Dome Lamp Fixture – 8.5 in Online",
     "seo_description": "Deep 8.5-inch dome with a ceramic socket rated to 150 W for basking bulbs and heat emitters.",
     "image_search": {
-      "query": "dome lamp reptile",
-      "alt": "Deep dome lamp fixture with ceramic socket"
+      "query": "brooder lamp",
+      "alt": "Clamp heat lamps with reflector domes"
     }
   },
   {
@@ -403,12 +403,12 @@
         "url": "/products/ceramic-heat-emitter-100w-1.webp",
         "thumbnail_url": "/products/ceramic-heat-emitter-100w-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Ceramic Heat Emitter – 100 W",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1243,
+        "alt": "Infrared radiant heater glowing red",
+        "credit": "Siarhei Besarab via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Portable_infrared_electric_heater_used_on_a_film_set.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -430,8 +430,8 @@
     "seo_title": "Buy Ceramic Heat Emitter – 100 W Online",
     "seo_description": "Light-free 100 W ceramic heat emitter for 24-hour warmth without disturbing sleep cycles.",
     "image_search": {
-      "query": "ceramic heater bulb",
-      "alt": "100 watt ceramic heat emitter for reptiles"
+      "query": "infrared lamp",
+      "alt": "Infrared radiant heater glowing red"
     }
   },
   {
@@ -451,12 +451,12 @@
         "url": "/products/ceramic-heat-emitter-150w-1.webp",
         "thumbnail_url": "/products/ceramic-heat-emitter-150w-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Ceramic Heat Emitter – 150 W",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1243,
+        "alt": "Infrared radiant heater glowing red",
+        "credit": "Siarhei Besarab via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Portable_infrared_electric_heater_used_on_a_film_set.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -477,8 +477,8 @@
     "seo_title": "Buy Ceramic Heat Emitter – 150 W Online",
     "seo_description": "Higher-output 150 W ceramic heat emitter for large enclosures and cool rooms.",
     "image_search": {
-      "query": "infrared ceramic heater",
-      "alt": "150 watt ceramic heat emitter"
+      "query": "infrared bulb",
+      "alt": "Infrared radiant heater glowing red"
     }
   },
   {
@@ -498,12 +498,12 @@
         "url": "/products/deep-heat-projector-80w-1.webp",
         "thumbnail_url": "/products/deep-heat-projector-80w-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Deep Heat Projector – 80 W",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 2133,
+        "alt": "Infrared heat lamp",
+        "credit": "SAgbley via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_Heat_Lamp.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -526,7 +526,7 @@
     "seo_description": "Infrared-B/C heat projector that warms deep tissue while emitting almost no visible light.",
     "image_search": {
       "query": "infrared heat lamp",
-      "alt": "80 watt deep heat projector infrared lamp"
+      "alt": "Infrared heat lamp"
     }
   },
   {
@@ -546,12 +546,12 @@
         "url": "/products/heat-mat-small-1.webp",
         "thumbnail_url": "/products/heat-mat-small-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Under-Tank Heat Mat – Small (8 W)",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1019,
+        "alt": "Electric heating mat with power cord",
+        "credit": "Gumswaal via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Heizmatte_Unterseite.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -572,8 +572,8 @@
     "seo_title": "Buy Under-Tank Heat Mat – Small (8 W) Online",
     "seo_description": "8 W adhesive heat mat for 10–20 gallon terrariums. Always use with a thermostat.",
     "image_search": {
-      "query": "heating pad",
-      "alt": "Small under-tank heat mat for reptiles"
+      "query": "Heizmatte",
+      "alt": "Electric heating mat with power cord"
     }
   },
   {
@@ -593,12 +593,12 @@
         "url": "/products/heat-mat-large-1.webp",
         "thumbnail_url": "/products/heat-mat-large-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Under-Tank Heat Mat – Large (24 W)",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1937,
+        "alt": "Heating mat",
+        "credit": "K&K Data Service Inc. via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Underfloor_heating_cable_laid_in_bathroom,_Stone_County_Missouri,_2026-07-24.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -620,8 +620,8 @@
     "seo_title": "Buy Under-Tank Heat Mat – Large (24 W) Online",
     "seo_description": "24 W heat mat for 30–40 gallon enclosures, providing a broad warm zone on the floor.",
     "image_search": {
-      "query": "heat mat",
-      "alt": "Large 24 watt under-tank heat mat"
+      "query": "heating mat",
+      "alt": "Heating mat"
     }
   },
   {
@@ -640,13 +640,13 @@
       {
         "url": "/products/proportional-thermostat-1.webp",
         "thumbnail_url": "/products/proportional-thermostat-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Proportional Thermostat with Day/Night",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "width": 1000,
+        "height": 929,
+        "alt": "Digital thermostat with temperature display",
+        "credit": "Andy Butkaj via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Room_Thermostat_Vaillant.jpg",
+        "representative": true
       }
     ],
     "featured": true,
@@ -668,8 +668,8 @@
     "seo_title": "Buy Proportional Thermostat with Day/Night Online",
     "seo_description": "Precision proportional thermostat that smoothly varies power to hold temperatures within 0.5°F.",
     "image_search": {
-      "query": "digital thermostat",
-      "alt": "Proportional digital thermostat with probe"
+      "query": "room thermostat",
+      "alt": "Digital thermostat with temperature display"
     }
   },
   {
@@ -689,12 +689,12 @@
         "url": "/products/on-off-thermostat-1.webp",
         "thumbnail_url": "/products/on-off-thermostat-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of On/Off Thermostat",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1068,
+        "alt": "Thermostat control panel with temperature display",
+        "credit": "Shixart1985 via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:The_thermostat_control_unit.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -716,8 +716,8 @@
     "seo_title": "Buy On/Off Thermostat Online",
     "seo_description": "Simple, reliable on/off thermostat for heat mats, heat cable and ceramic emitters.",
     "image_search": {
-      "query": "temperature controller",
-      "alt": "On off reptile thermostat with probe"
+      "query": "thermostat display",
+      "alt": "Thermostat control panel with temperature display"
     }
   },
   {
@@ -737,12 +737,12 @@
         "url": "/products/dimming-thermostat-1.webp",
         "thumbnail_url": "/products/dimming-thermostat-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Dimming Thermostat",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1599,
+        "alt": "Digital thermostat with temperature display",
+        "credit": "Ayla Yang via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bc105_thermostat_front_view.png",
+        "representative": true
       }
     ],
     "featured": false,
@@ -764,8 +764,8 @@
     "seo_title": "Buy Dimming Thermostat Online",
     "seo_description": "Dimming thermostat that gently lowers bulb output instead of flickering lights on and off.",
     "image_search": {
-      "query": "thermostat controller",
-      "alt": "Dimming thermostat for reptile basking bulbs"
+      "query": "Temperaturregler",
+      "alt": "Digital thermostat with temperature display"
     }
   },
   {
@@ -785,12 +785,12 @@
         "url": "/products/digital-lighting-timer-1.webp",
         "thumbnail_url": "/products/digital-lighting-timer-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Digital Dual-Outlet Lighting Timer",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1300,
+        "alt": "Plug-in timer switch",
+        "credit": "Pittigrilli via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Plug-in_timer_switch_model_DIEHL_timer-T.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -811,8 +811,8 @@
     "seo_title": "Buy Digital Dual-Outlet Lighting Timer Online",
     "seo_description": "Programmable two-outlet timer to automate day lights and UVB on a consistent photoperiod.",
     "image_search": {
-      "query": "digital timer",
-      "alt": "Digital dual outlet lighting timer"
+      "query": "timer switch",
+      "alt": "Plug-in timer switch"
     }
   }
 ]

@@ -122,6 +122,9 @@
             },
             "placeholder": {
               "type": "boolean"
+            },
+            "representative": {
+              "type": "boolean"
             }
           },
           "required": [

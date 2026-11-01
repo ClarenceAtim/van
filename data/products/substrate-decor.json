@@ -62,13 +62,13 @@
       {
         "url": "/products/bioactive-soil-tropical-8qt-1.webp",
         "thumbnail_url": "/products/bioactive-soil-tropical-8qt-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Tropical Bioactive Soil Mix – 8 qt",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "width": 1000,
+        "height": 667,
+        "alt": "Dark organic soil mix",
+        "credit": "Unknown author Unknown author via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pro-Mix_Potting_Soil.jpg",
+        "representative": true
       }
     ],
     "featured": true,
@@ -91,7 +91,7 @@
     "seo_description": "Ready-to-use tropical bioactive soil: organic topsoil, coco, sphagnum, charcoal and leaf matter.",
     "image_search": {
       "query": "potting soil",
-      "alt": "Tropical bioactive soil mix for terrariums"
+      "alt": "Dark organic soil mix"
     }
   },
   {
@@ -111,12 +111,12 @@
         "url": "/products/arid-bioactive-substrate-10qt-1.webp",
         "thumbnail_url": "/products/arid-bioactive-substrate-10qt-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Arid Bioactive Substrate – 10 qt",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 2133,
+        "alt": "Sandy soil substrate",
+        "credit": "Ready Street via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sandy_Soil_Image.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -138,8 +138,8 @@
     "seo_title": "Buy Arid Bioactive Substrate – 10 qt Online",
     "seo_description": "Burrow-holding arid substrate of topsoil, play sand and clay for desert bioactive setups.",
     "image_search": {
-      "query": "desert sand soil",
-      "alt": "Arid bioactive desert substrate"
+      "query": "sandy soil",
+      "alt": "Sandy soil substrate"
     }
   },
   {
@@ -205,11 +205,12 @@
         "url": "/products/sphagnum-moss-long-fiber-1.webp",
         "thumbnail_url": "/products/sphagnum-moss-long-fiber-1-thumb.webp",
         "width": 1600,
-        "height": 898,
-        "alt": "Green sphagnum moss growing in a wetland",
+        "height": 792,
+        "alt": "Living sphagnum moss growing in a bog",
         "credit": "Agnes Monkelbaan via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Nationaal_Park_Drents-Friese_Wold._Locatie_Fochtelo%C3%ABrveen_01-09-2020._(actm.)_13.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nationaal_Park_Drents-Friese_Wold._Locatie_Fochtelo%C3%ABrveen_01-09-2020._(actm.)_15.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -230,8 +231,8 @@
     "seo_title": "Buy Long-Fiber Sphagnum Moss Online",
     "seo_description": "Premium long-fiber sphagnum moss for humid hides, egg-laying boxes and plant mounting.",
     "image_search": {
-      "query": "sphagnum moss",
-      "alt": "Green sphagnum moss growing in a wetland"
+      "query": "Sphagnum",
+      "alt": "Living sphagnum moss growing in a bog"
     }
   },
   {
@@ -392,12 +393,12 @@
         "url": "/products/half-log-hide-large-1.webp",
         "thumbnail_url": "/products/half-log-hide-large-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Half Log Hide – Large",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1090,
+        "alt": "Natural hollow log",
+        "credit": "W.carter via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hollow_pine_log_at_Holma.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -418,8 +419,8 @@
     "seo_title": "Buy Half Log Hide – Large Online",
     "seo_description": "Natural-wood half log hide that gives ground-dwelling reptiles a dark, secure retreat.",
     "image_search": {
-      "query": "half log wood",
-      "alt": "Wooden half log reptile hide"
+      "query": "hollow log",
+      "alt": "Natural hollow log"
     }
   },
   {
@@ -439,12 +440,12 @@
         "url": "/products/humid-hide-cave-1.webp",
         "thumbnail_url": "/products/humid-hide-cave-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Humid Hide Cave with Lid",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1090,
+        "alt": "Natural hollow log hide",
+        "credit": "W.carter via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hollow_pine_log_at_Holma.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -466,8 +467,8 @@
     "seo_title": "Buy Humid Hide Cave with Lid Online",
     "seo_description": "Resin humid-hide cave with a removable lid — fill with damp moss for perfect sheds.",
     "image_search": {
-      "query": "rock cave",
-      "alt": "Humid hide rock cave with removable lid"
+      "query": "Terrarium Versteck",
+      "alt": "Natural hollow log hide"
     }
   },
   {
@@ -487,12 +488,12 @@
         "url": "/products/grapevine-branches-3-pack-1.webp",
         "thumbnail_url": "/products/grapevine-branches-3-pack-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Grapevine Branches – 3 Pack",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1033,
+        "alt": "Twisted grapevine trunk and branches",
+        "credit": "Jules Verne Times Two via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Common_grape_vine_(Vitis_vinifera)_trunk,_Ponte_de_Sor_(approx._GPS_location)_julesvernex2.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -514,8 +515,8 @@
     "seo_title": "Buy Grapevine Branches – 3 Pack Online",
     "seo_description": "Three twisted grapevine branches for climbing, basking and perching in arboreal enclosures.",
     "image_search": {
-      "query": "grapevine wood",
-      "alt": "Twisted grapevine branches for terrariums"
+      "query": "Vitis vinifera trunk",
+      "alt": "Twisted grapevine trunk and branches"
     }
   },
   {
@@ -535,12 +536,12 @@
         "url": "/products/artificial-pothos-vine-1.webp",
         "thumbnail_url": "/products/artificial-pothos-vine-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Artificial Pothos Hanging Vine",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1063,
+        "alt": "Pothos vine leaves",
+        "credit": "Joydeep via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum_31082012.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -562,8 +563,8 @@
     "seo_title": "Buy Artificial Pothos Hanging Vine Online",
     "seo_description": "Realistic silk pothos vine with suction cup — adds cover and climbing surfaces without upkeep.",
     "image_search": {
-      "query": "pothos plant",
-      "alt": "Pothos vine leaves for terrarium cover"
+      "query": "Epipremnum aureum",
+      "alt": "Pothos vine leaves"
     }
   },
   {
@@ -584,11 +585,11 @@
         "thumbnail_url": "/products/ceramic-water-dish-large-1-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Illustration of Ceramic Water Dish – Large",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "alt": "Glazed ceramic bowl",
+        "credit": "W.carter via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Light_green_ceramic_bowl_1.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -610,7 +611,7 @@
     "seo_description": "Heavy glazed ceramic water dish that won't tip — large enough for snakes to soak.",
     "image_search": {
       "query": "ceramic bowl",
-      "alt": "Large ceramic water dish for reptiles"
+      "alt": "Glazed ceramic bowl"
     }
   },
   {
@@ -630,12 +631,12 @@
         "url": "/products/basking-rock-ledge-1.webp",
         "thumbnail_url": "/products/basking-rock-ledge-1-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Illustration of Basking Rock Ledge",
-        "credit": "ScaleHaven Reptiles (placeholder illustration)",
-        "license": "Own work",
-        "source_url": "",
-        "placeholder": true
+        "height": 1035,
+        "alt": "Lizard basking on a rock ledge",
+        "credit": "Manidip1995 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Peninsular_rock_agama_basking_2.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -656,8 +657,8 @@
     "seo_title": "Buy Basking Rock Ledge Online",
     "seo_description": "Natural-look resin rock ledge that creates an elevated basking platform close to the heat.",
     "image_search": {
-      "query": "rock ledge stone",
-      "alt": "Natural rock basking ledge for lizards"
+      "query": "Agama basking rock",
+      "alt": "Lizard basking on a rock ledge"
     }
   }
 ]

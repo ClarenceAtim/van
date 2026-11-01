@@ -62,6 +62,7 @@ export function ProductGallery({ images, name }: { images: ProductImage[]; name:
 
       {image.credit && !image.placeholder && (
         <p className="text-xs text-muted-foreground">
+          {image.representative && <strong className="font-medium text-foreground">Representative photo. </strong>}
           Photo: {image.credit} ({image.license}).{" "}
           <Link href="/credits" className="underline underline-offset-2">
             Image credits

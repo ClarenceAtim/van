@@ -19,6 +19,8 @@ export const productImageSchema = z.object({
   source_url: z.union([z.url(), z.literal("")]),
   /** true when the image is a generated illustration that should be replaced with a real photo */
   placeholder: z.boolean().optional(),
+  /** true when the photo shows this type of item or species, not the exact product/morph sold */
+  representative: z.boolean().optional(),
 });
 
 /**
