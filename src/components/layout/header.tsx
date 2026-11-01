@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { User } from "lucide-react";
 import categories from "../../../data/categories.json";
-import { CartButton } from "@/components/cart/cart-drawer";
+import { CartButton } from "@/components/cart/cart-button";
 import { Logo } from "@/components/logo";
 import { MobileMenu } from "@/components/layout/mobile-menu";
 import { SearchBox } from "@/components/search-box";

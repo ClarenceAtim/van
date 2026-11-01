@@ -1,11 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist } from "next/font/google";
-import { CartDrawer } from "@/components/cart/cart-drawer";
 import { CartProvider } from "@/components/cart/cart-provider";
 import { JsonLd } from "@/components/json-ld";
 import { Footer } from "@/components/layout/footer";
+import { DeferredUi } from "@/components/layout/deferred-ui";
 import { Header } from "@/components/layout/header";
-import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/config/site";
 import { publicEnv } from "@/lib/env";
 import { organizationJsonLd } from "@/lib/seo";
@@ -43,9 +42,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             {children}
           </main>
           <Footer />
-          <CartDrawer />
+          <DeferredUi />
         </CartProvider>
-        <Toaster theme="light" position="top-center" richColors />
         <JsonLd data={organizationJsonLd()} />
       </body>
     </html>

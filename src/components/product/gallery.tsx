@@ -4,8 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ZoomIn } from "lucide-react";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import dynamic from "next/dynamic";
 import type { ProductImage } from "@/lib/products/schema";
+
+const ZoomDialog = dynamic(() => import("@/components/product/zoom-dialog").then((m) => m.ZoomDialog), { ssr: false });
 
 /** Product image gallery with hover zoom (desktop) and a full-screen view (tap/click). */
 export function ProductGallery({ images, name }: { images: ProductImage[]; name: string }) {
@@ -79,14 +81,7 @@ export function ProductGallery({ images, name }: { images: ProductImage[]; name:
       )}
       {image.placeholder && <p className="text-xs text-muted-foreground">Illustration — product photo coming soon.</p>}
 
-      <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-[min(96vw,1400px)] p-2 sm:max-w-[min(96vw,1400px)]">
-          <DialogTitle className="sr-only">{name}</DialogTitle>
-          <div className="relative aspect-[4/3] w-full">
-            <Image src={image.url} alt={image.alt} fill sizes="96vw" className="rounded-lg object-contain" />
-          </div>
-        </DialogContent>
-      </Dialog>
+      {open && <ZoomDialog image={image} name={name} onClose={() => setOpen(false)} />}
     </div>
   );
 }

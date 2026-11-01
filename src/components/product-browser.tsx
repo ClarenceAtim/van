@@ -1,7 +1,7 @@
 "use client";
 
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useMemo } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
 import { Button } from "@/components/ui/button";
@@ -30,9 +30,21 @@ type Props = {
 };
 
 export function ProductBrowser({ products, categories }: Props) {
-  const router = useRouter();
   const pathname = usePathname();
-  const params = useSearchParams();
+  // Filters live in the URL, but the server renders the default view (so the grid and its links are in the HTML).
+  const [params, setParams] = useState(() => new URLSearchParams());
+  useEffect(() => {
+    setParams(new URLSearchParams(window.location.search));
+    const onPop = () => setParams(new URLSearchParams(window.location.search));
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  function navigate(next: URLSearchParams) {
+    const qs = next.toString();
+    window.history.replaceState(null, "", qs ? `${pathname}?${qs}` : pathname);
+    setParams(new URLSearchParams(next));
+  }
 
   const category = params.get("category") ?? "";
   const price = params.get("price") ?? "";
@@ -47,8 +59,7 @@ export function ProductBrowser({ products, categories }: Props) {
     mutator(next);
     if (!next.has("page-keep")) next.delete("page");
     next.delete("page-keep");
-    const qs = next.toString();
-    router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    navigate(next);
   }
 
   const filtered = useMemo(() => {
@@ -130,7 +141,7 @@ export function ProductBrowser({ products, categories }: Props) {
         In stock only
       </label>
       {activeFilters > 0 && (
-        <Button variant="outline" size="sm" onClick={() => router.replace(pathname, { scroll: false })}>
+        <Button variant="outline" size="sm" onClick={() => navigate(new URLSearchParams())}>
           Clear filters
         </Button>
       )}

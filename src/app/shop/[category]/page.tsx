@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ProductBrowser } from "@/components/product-browser";
 import { siteConfig } from "@/config/site";
@@ -41,9 +40,7 @@ export default async function CategoryPage({ params }: Props) {
           </Link>
         </p>
       )}
-      <Suspense>
-        <ProductBrowser products={products.map(toCard)} />
-      </Suspense>
+      <ProductBrowser products={products.map(toCard)} />
     </div>
   );
 }

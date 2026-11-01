@@ -24,13 +24,14 @@ export function pageMetadata({
   type?: "website" | "article";
   noIndex?: boolean;
 }): Metadata {
-  const images = image ? [{ url: absoluteUrl(image), alt: imageAlt ?? title }] : undefined;
+  // Pages without their own image share the default social card (src/app/opengraph-image.tsx).
+  const images = [{ url: absoluteUrl(image ?? "/opengraph-image"), alt: imageAlt ?? title }];
   return {
     title,
     description,
     alternates: { canonical: path },
     openGraph: { title, description, url: path, type, siteName: siteConfig.name, images },
-    twitter: { card: image ? "summary_large_image" : "summary", title, description, images: images?.map((i) => i.url) },
+    twitter: { card: "summary_large_image", title, description, images: images.map((i) => i.url) },
     robots: noIndex ? { index: false, follow: false } : undefined,
   };
 }

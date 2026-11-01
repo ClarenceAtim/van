@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ProductBrowser } from "@/components/product-browser";
 import { getAllProducts, getCategories, toCard } from "@/lib/catalog";
@@ -19,9 +18,7 @@ export default async function ShopPage() {
       <Breadcrumbs items={[{ name: "Shop", href: "/shop" }]} />
       <h1 className="mt-4 mb-2 text-4xl font-semibold">Shop all</h1>
       <p className="mb-8 max-w-2xl text-muted-foreground">Everything we sell, from hatchling geckos to the UVB tubes and thermostats we trust in our own animal rooms.</p>
-      <Suspense>
-        <ProductBrowser products={products.map(toCard)} categories={categories.map((c) => ({ slug: c.slug, name: c.name }))} />
-      </Suspense>
+      <ProductBrowser products={products.map(toCard)} categories={categories.map((c) => ({ slug: c.slug, name: c.name }))} />
     </div>
   );
 }
