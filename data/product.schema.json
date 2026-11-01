@@ -1,0 +1,288 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ClarenceAtim/van/data/product.schema.json",
+  "title": "Product catalog file",
+  "description": "Each file in data/products/ is an array of products. Validated by scripts/sync-products.ts.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "slug": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 120
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "live-reptiles",
+          "enclosures",
+          "heating-lighting",
+          "substrate-decor",
+          "food-supplements",
+          "care-accessories"
+        ]
+      },
+      "subcategory": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "short_description": {
+        "type": "string",
+        "minLength": 20,
+        "maxLength": 300
+      },
+      "long_description": {
+        "type": "string",
+        "minLength": 80
+      },
+      "price_cents": {
+        "type": "integer",
+        "exclusiveMinimum": 0,
+        "maximum": 9007199254740991
+      },
+      "compare_at_price_cents": {
+        "anyOf": [
+          {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "currency": {
+        "default": "USD",
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 3
+      },
+      "stock_quantity": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 9007199254740991
+      },
+      "sku": {
+        "type": "string",
+        "pattern": "^[A-Z0-9-]{4,32}$"
+      },
+      "images": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "minLength": 1
+            },
+            "thumbnail_url": {
+              "type": "string",
+              "minLength": 1
+            },
+            "alt": {
+              "type": "string",
+              "minLength": 10
+            },
+            "width": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "height": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "credit": {
+              "type": "string",
+              "minLength": 1
+            },
+            "license": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "string",
+                  "const": ""
+                }
+              ]
+            },
+            "placeholder": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "url",
+            "alt",
+            "width",
+            "height",
+            "credit",
+            "license",
+            "source_url"
+          ]
+        }
+      },
+      "featured": {
+        "default": false,
+        "type": "boolean"
+      },
+      "active": {
+        "default": true,
+        "type": "boolean"
+      },
+      "is_live_animal": {
+        "default": false,
+        "type": "boolean"
+      },
+      "species_scientific_name": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "care_level": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "beginner",
+              "intermediate",
+              "advanced"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "adult_size": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "lifespan": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "diet": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "temperature_range": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "humidity_range": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "tags": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "seo_title": {
+        "type": "string",
+        "minLength": 10,
+        "maxLength": 70
+      },
+      "seo_description": {
+        "type": "string",
+        "minLength": 50,
+        "maxLength": 170
+      },
+      "image_search": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 2
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "required": [
+          "query",
+          "alt"
+        ]
+      }
+    },
+    "required": [
+      "slug",
+      "name",
+      "category",
+      "short_description",
+      "long_description",
+      "price_cents",
+      "stock_quantity",
+      "sku",
+      "seo_title",
+      "seo_description"
+    ],
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "is_live_animal": {
+              "const": true
+            }
+          },
+          "required": [
+            "is_live_animal"
+          ]
+        },
+        "then": {
+          "required": [
+            "species_scientific_name",
+            "care_level",
+            "adult_size",
+            "lifespan",
+            "diet",
+            "temperature_range",
+            "humidity_range"
+          ],
+          "properties": {
+            "species_scientific_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "care_level": {
+              "enum": [
+                "beginner",
+                "intermediate",
+                "advanced"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

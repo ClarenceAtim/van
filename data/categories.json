@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "live-reptiles",
+    "name": "Live Reptiles",
+    "description": "Captive-bred snakes, lizards, geckos, chameleons and tortoises raised in our facility and shipped overnight with a live arrival guarantee.",
+    "seo_title": "Captive-Bred Reptiles for Sale | Snakes, Geckos & Tortoises",
+    "seo_description": "Shop healthy captive-bred ball pythons, corn snakes, leopard geckos, crested geckos, bearded dragons and tortoises. Overnight shipping with a live arrival guarantee.",
+    "sort_order": 1
+  },
+  {
+    "slug": "enclosures",
+    "name": "Enclosures & Habitats",
+    "description": "Glass terrariums, PVC enclosures, bioactive kits and complete starter setups sized for the species you keep.",
+    "seo_title": "Reptile Enclosures, Terrariums & Starter Kits",
+    "seo_description": "Front-opening glass terrariums, insulated PVC enclosures, bioactive kits and species-specific starter kits for snakes, geckos, dragons and tortoises.",
+    "sort_order": 2
+  },
+  {
+    "slug": "heating-lighting",
+    "name": "Heating & Lighting",
+    "description": "UVB tubes, basking bulbs, ceramic heat emitters, heat mats and thermostats for building a safe thermal gradient.",
+    "seo_title": "Reptile UVB Lighting, Basking Bulbs & Thermostats",
+    "seo_description": "T5 HO UVB tubes, halogen basking bulbs, ceramic heat emitters, deep heat projectors, heat mats and proportional thermostats for reptile enclosures.",
+    "sort_order": 3
+  },
+  {
+    "slug": "substrate-decor",
+    "name": "Substrate & Décor",
+    "description": "Bioactive soils, coco fiber, leaf litter, cork bark, hides, branches, plants and water dishes.",
+    "seo_title": "Reptile Substrate, Hides & Terrarium Décor",
+    "seo_description": "Bioactive soil, coco fiber, cypress mulch, leaf litter, cork bark, hides, branches, plants and water dishes for naturalistic reptile habitats.",
+    "sort_order": 4
+  },
+  {
+    "slug": "food-supplements",
+    "name": "Food & Supplements",
+    "description": "Frozen rodents, feeder insects, calcium, multivitamins and prepared diets for geckos and tortoises.",
+    "seo_title": "Reptile Food, Feeder Insects & Supplements",
+    "seo_description": "Frozen mice and rats, live dubia roaches and crickets, calcium with D3, multivitamins, crested gecko diet and tortoise food.",
+    "sort_order": 5
+  },
+  {
+    "slug": "care-accessories",
+    "name": "Care & Accessories",
+    "description": "Thermometers, hygrometers, misting systems, feeding tongs, snake hooks, cleaners and care guides.",
+    "seo_title": "Reptile Care Tools & Accessories",
+    "seo_description": "Digital thermometers, infrared temp guns, misting systems, feeding tongs, snake hooks, gram scales and reptile-safe cleaners.",
+    "sort_order": 6
+  }
+]

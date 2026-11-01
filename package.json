@@ -14,7 +14,8 @@
     "sync:products": "tsx scripts/sync-products.ts",
     "fetch:images": "tsx scripts/fetch-images.ts",
     "export:products": "tsx scripts/export-products.ts",
-    "db:types": "supabase gen types typescript --project-id $SUPABASE_PROJECT_ID > src/lib/supabase/database.types.ts"
+    "db:types": "supabase gen types typescript --project-id $SUPABASE_PROJECT_ID > src/lib/supabase/database.types.ts",
+    "schema:json": "tsx scripts/generate-json-schema.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
