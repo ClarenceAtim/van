@@ -63,12 +63,12 @@
       {
         "url": "/products/infrared-temperature-gun-1.webp",
         "thumbnail_url": "/products/infrared-temperature-gun-1-thumb.webp",
-        "width": 1570,
-        "height": 1380,
-        "alt": "Handheld infrared thermometer",
-        "credit": "Ph0705 via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_thermometer_(Innovo).jpg",
+        "alt": "Handheld infrared temperature gun with a backlit display reading 60.5 °F",
+        "width": 1600,
+        "height": 1200,
+        "credit": "Tony Webster via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_Thermometer_Handheld_Gun.jpg",
         "representative": true
       }
     ],
@@ -91,7 +91,7 @@
     "seo_description": "Point-and-shoot infrared thermometer for checking basking surfaces in seconds.",
     "image_search": {
       "query": "infrared thermometer",
-      "alt": "Handheld infrared thermometer"
+      "alt": "Handheld infrared temperature gun with a backlit display reading 60.5 °F"
     }
   },
   {
@@ -157,12 +157,12 @@
       {
         "url": "/products/automatic-misting-system-1.webp",
         "thumbnail_url": "/products/automatic-misting-system-1-thumb.webp",
+        "alt": "Overhead misting nozzles spraying a fine mist over plants",
         "width": 1600,
-        "height": 2133,
-        "alt": "Pressure sprayer for misting enclosures",
-        "credit": "Lars van der Heide via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gardena_vintage_sproeispuit.jpg",
+        "height": 983,
+        "credit": "The original uploader was Gmihail at Serbian Wikipedia . via Wikimedia Commons",
+        "license": "CC BY-SA 3.0 rs",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rooting_of_softwood_cuttings_of_elm_under_the_mist_propagation_system.jpg",
         "representative": true
       }
     ],
@@ -186,7 +186,7 @@
     "seo_description": "Programmable misting system with two nozzles and a 1.5 L reservoir for chameleons and tropical setups.",
     "image_search": {
       "query": "misting plants",
-      "alt": "Pressure sprayer for misting enclosures"
+      "alt": "Overhead misting nozzles spraying a fine mist over plants"
     }
   },
   {
@@ -347,12 +347,12 @@
       {
         "url": "/products/reptile-safe-cleaner-1.webp",
         "thumbnail_url": "/products/reptile-safe-cleaner-1-thumb.webp",
-        "width": 960,
-        "height": 1280,
-        "alt": "Spray bottle",
-        "credit": "Kaviyadharshini Selvakumar via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:SPRAY_BOTTLE.jpg",
+        "alt": "Two green trigger spray bottles used for enclosure cleaner",
+        "width": 1600,
+        "height": 2253,
+        "credit": "Handlegirl via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:PakTechTK.jpg",
         "representative": true
       }
     ],
@@ -375,7 +375,7 @@
     "seo_description": "Fragrance-free, biodegradable enclosure cleaner that breaks down organic waste and odor.",
     "image_search": {
       "query": "spray bottle",
-      "alt": "Spray bottle"
+      "alt": "Two green trigger spray bottles used for enclosure cleaner"
     }
   },
   {

@@ -204,12 +204,12 @@
       {
         "url": "/products/sphagnum-moss-long-fiber-1.webp",
         "thumbnail_url": "/products/sphagnum-moss-long-fiber-1-thumb.webp",
+        "alt": "Dried long-fiber moss in a bowl",
         "width": 1600,
-        "height": 792,
-        "alt": "Living sphagnum moss growing in a bog",
-        "credit": "Agnes Monkelbaan via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Nationaal_Park_Drents-Friese_Wold._Locatie_Fochtelo%C3%ABrveen_01-09-2020._(actm.)_15.jpg",
+        "height": 2400,
+        "credit": "Ahmed Boujaafar on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/green-kush-on-white-ceramic-bowl-VAAcVueo7v0",
         "representative": true
       }
     ],
@@ -232,7 +232,7 @@
     "seo_description": "Premium long-fiber sphagnum moss for humid hides, egg-laying boxes and plant mounting.",
     "image_search": {
       "query": "Sphagnum",
-      "alt": "Living sphagnum moss growing in a bog"
+      "alt": "Dried long-fiber moss in a bowl"
     }
   },
   {
@@ -392,12 +392,12 @@
       {
         "url": "/products/half-log-hide-large-1.webp",
         "thumbnail_url": "/products/half-log-hide-large-1-thumb.webp",
+        "alt": "Snake curled up inside a hollow cork log hide among plants",
         "width": 1600,
-        "height": 1090,
-        "alt": "Natural hollow log",
-        "credit": "W.carter via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hollow_pine_log_at_Holma.jpg",
+        "height": 1200,
+        "credit": "Sascha Baltes on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-snake-curled-inside-a-hollow-log-with-green-plants-uyUSVXaCDYw",
         "representative": true
       }
     ],
@@ -420,7 +420,7 @@
     "seo_description": "Natural-wood half log hide that gives ground-dwelling reptiles a dark, secure retreat.",
     "image_search": {
       "query": "hollow log",
-      "alt": "Natural hollow log"
+      "alt": "Snake curled up inside a hollow cork log hide among plants"
     }
   },
   {
@@ -439,12 +439,12 @@
       {
         "url": "/products/humid-hide-cave-1.webp",
         "thumbnail_url": "/products/humid-hide-cave-1-thumb.webp",
+        "alt": "Leopard gecko peeking out of a rock-look reptile hide cave",
         "width": 1600,
-        "height": 1090,
-        "alt": "Natural hollow log hide",
-        "credit": "W.carter via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hollow_pine_log_at_Holma.jpg",
+        "height": 1067,
+        "credit": "Christian von Faber-Castell via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:EUBLEPHARIS-MACULARIUS_Leopard-Gecko_Leopardgecko_201705276012.jpg",
         "representative": true
       }
     ],
@@ -468,7 +468,7 @@
     "seo_description": "Resin humid-hide cave with a removable lid — fill with damp moss for perfect sheds.",
     "image_search": {
       "query": "Terrarium Versteck",
-      "alt": "Natural hollow log hide"
+      "alt": "Leopard gecko peeking out of a rock-look reptile hide cave"
     }
   },
   {
@@ -630,12 +630,12 @@
       {
         "url": "/products/basking-rock-ledge-1.webp",
         "thumbnail_url": "/products/basking-rock-ledge-1-thumb.webp",
+        "alt": "Bearded dragon resting on a flat basking rock inside a warm-lit enclosure",
         "width": 1600,
-        "height": 1035,
-        "alt": "Lizard basking on a rock ledge",
-        "credit": "Manidip1995 via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Peninsular_rock_agama_basking_2.jpg",
+        "height": 1067,
+        "credit": "Garrett Hayes on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-lizard-on-a-rock-qarymf8BfAg",
         "representative": true
       }
     ],
@@ -658,7 +658,7 @@
     "seo_description": "Natural-look resin rock ledge that creates an elevated basking platform close to the heat.",
     "image_search": {
       "query": "Agama basking rock",
-      "alt": "Lizard basking on a rock ledge"
+      "alt": "Bearded dragon resting on a flat basking rock inside a warm-lit enclosure"
     }
   }
 ]

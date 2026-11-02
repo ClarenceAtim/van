@@ -20,8 +20,8 @@ export default async function CreditsPage() {
       <h1 className="text-4xl font-semibold">Image credits</h1>
       <p className="mt-4 max-w-3xl text-muted-foreground">
         Many of our product photos are generously shared by photographers under free licenses. We thank them and credit each one below. Licenses marked “CC BY”
-        or “CC BY-SA” require attribution; follow the source link for the full license and original file. Products without a photo listed here use our own
-        illustrations.
+        or “CC BY-SA” require attribution; follow the source link for the full license and original file. Photos marked “Representative photo” on a product
+        page show the same species or type of item rather than the exact one you will receive.
       </p>
       <div className="mt-8 overflow-x-auto rounded-xl border">
         <table className="w-full text-left text-sm">

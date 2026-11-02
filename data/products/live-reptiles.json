@@ -109,13 +109,12 @@
       {
         "url": "/products/banana-ball-python-1.webp",
         "thumbnail_url": "/products/banana-ball-python-1-thumb.webp",
+        "alt": "Banana ball python with pale yellow and lavender pattern and scattered dark freckles on a white background",
         "width": 1600,
-        "height": 962,
-        "alt": "Light yellow ball python morph (representative of the banana morph)",
-        "credit": "WingedWolfPsion via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Python_regius_-_hypomelanistic.png",
-        "representative": true
+        "height": 1067,
+        "credit": "Timothy Dykes on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/brown-and-beige-snake-on-white-background-JHNS4Flf9u0"
       }
     ],
     "featured": true,
@@ -138,7 +137,7 @@
     "seo_description": "Lavender and buttery-yellow banana ball python that develops charming dark freckles with age.",
     "image_search": {
       "query": "Python regius morph",
-      "alt": "Light yellow ball python morph (representative of the banana morph)"
+      "alt": "Banana ball python with pale yellow and lavender pattern and scattered dark freckles on a white background"
     }
   },
   {
@@ -393,12 +392,12 @@
       {
         "url": "/products/amelanistic-corn-snake-1.webp",
         "thumbnail_url": "/products/amelanistic-corn-snake-1-thumb.webp",
+        "alt": "Amelanistic corn snake with orange-red saddles outlined in white, resting on sand",
         "width": 1600,
-        "height": 998,
-        "alt": "Amelanistic corn snake with orange and red saddles and white borders",
-        "credit": "me via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Corn_snake_swallowing_cropped.jpg"
+        "height": 1067,
+        "credit": "Igor Rodrigues on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-pizza-with-a-slice-missing-iIeYKwUqr_U"
       }
     ],
     "featured": false,
@@ -421,7 +420,7 @@
     "seo_description": "Glowing orange and red amelanistic corn snake with white borders and ruby-red eyes.",
     "image_search": {
       "query": "amelanistic corn snake",
-      "alt": "Amelanistic corn snake with orange and red saddles and white borders"
+      "alt": "Amelanistic corn snake with orange-red saddles outlined in white, resting on sand"
     }
   },
   {
@@ -440,12 +439,12 @@
       {
         "url": "/products/snow-corn-snake-1.webp",
         "thumbnail_url": "/products/snow-corn-snake-1-thumb.webp",
+        "alt": "Pink and white snow corn snake with red eyes coiled on the ground",
         "width": 1600,
-        "height": 1041,
-        "alt": "Corn snake (species photo; snow morph is pink and white)",
-        "credit": "Peter Paplanus via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Kornnatter_(Pantherophis_guttatus),_Seitenansicht.jpg",
+        "height": 1183,
+        "credit": "Sanket Rajurkar on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-small-white-snake-laying-on-the-ground-8JLrcdcCd5Y",
         "representative": true
       }
     ],
@@ -469,7 +468,7 @@
     "seo_description": "Pale pink-and-white snow corn snake that develops soft yellow and lime highlights as an adult.",
     "image_search": {
       "query": "Kornnatter",
-      "alt": "Corn snake (species photo; snow morph is pink and white)"
+      "alt": "Pink and white snow corn snake with red eyes coiled on the ground"
     }
   },
   {
@@ -582,9 +581,9 @@
       {
         "url": "/products/mexican-black-kingsnake-1.webp",
         "thumbnail_url": "/products/mexican-black-kingsnake-1-thumb.webp",
+        "alt": "Glossy jet-black Mexican black kingsnake coiled on aspen bedding",
         "width": 1600,
-        "height": 1200,
-        "alt": "Jet-black Mexican black kingsnake on aspen bedding",
+        "height": 975,
         "credit": "Yercaud-elango via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
         "source_url": "https://commons.wikimedia.org/wiki/File:Mexican_black_kingsnake-3-karnataka_aquarium-J_P_Nagar-bangalore-India.jpg"
@@ -610,7 +609,7 @@
     "seo_description": "Glossy, jet-black Mexican black kingsnake that shines with a blue-purple iridescence under light.",
     "image_search": {
       "query": "Mexican black kingsnake",
-      "alt": "Jet-black Mexican black kingsnake on aspen bedding"
+      "alt": "Glossy jet-black Mexican black kingsnake coiled on aspen bedding"
     }
   },
   {
@@ -675,12 +674,12 @@
       {
         "url": "/products/honduran-milk-snake-1.webp",
         "thumbnail_url": "/products/honduran-milk-snake-1-thumb.webp",
-        "width": 1600,
-        "height": 1067,
-        "alt": "Tricolor Honduran milk snake with red, black and yellow bands",
-        "credit": "Tylwyth Eldar via Wikimedia Commons",
+        "alt": "Tricolor Honduran milk snake with bold red, black and orange bands coiled on wood chips",
+        "width": 1159,
+        "height": 1362,
+        "credit": "Rod Galloway Jr via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ferme_des_Reptiles_-_Lampropeltis_triangulum_hondurensis.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Honduran_milk_snake.jpg"
       }
     ],
     "featured": false,
@@ -703,7 +702,7 @@
     "seo_description": "Vivid red, black and yellow tricolor Honduran milk snake that matures into an impressive, sturdy adult.",
     "image_search": {
       "query": "Honduran milk snake",
-      "alt": "Tricolor Honduran milk snake with red, black and yellow bands"
+      "alt": "Tricolor Honduran milk snake with bold red, black and orange bands coiled on wood chips"
     }
   },
   {
@@ -722,12 +721,12 @@
       {
         "url": "/products/pueblan-milk-snake-1.webp",
         "thumbnail_url": "/products/pueblan-milk-snake-1-thumb.webp",
+        "alt": "Pueblan milk snake with red, black and cream bands coiled on moss beside a clutch of eggs",
         "width": 1600,
-        "height": 986,
-        "alt": "Pueblan milk snake with white, black and red bands",
+        "height": 1064,
         "credit": "Bernard DUPONT from FRANCE via Wikimedia Commons",
         "license": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Pueblan_Milksnake_(Lampropeltis_triangulum_campbelli)_female_juvenile_(36013472342).jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pueblan_Milk_Snake_(Lampropeltis_polyzona)_female_with_eggs_..._(Captive_specimen)_(43875165374).jpg"
       }
     ],
     "featured": false,
@@ -750,7 +749,7 @@
     "seo_description": "Compact Pueblan milk snake with wide white bands framed in black and red — great for smaller spaces.",
     "image_search": {
       "query": "Pueblan milk snake Lampropeltis campbelli",
-      "alt": "Pueblan milk snake with white, black and red bands"
+      "alt": "Pueblan milk snake with red, black and cream bands coiled on moss beside a clutch of eggs"
     }
   },
   {
@@ -1052,12 +1051,13 @@
       {
         "url": "/products/leopard-gecko-mack-snow-1.webp",
         "thumbnail_url": "/products/leopard-gecko-mack-snow-1-thumb.webp",
-        "width": 900,
-        "height": 524,
-        "alt": "Pale snow leopard gecko with dark spots peeking over a leaf",
-        "credit": "Irhanz via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gecko_leopard.jpg"
+        "alt": "Pale leopard gecko with fine black spots resting on cork bark",
+        "width": 1600,
+        "height": 1072,
+        "credit": "Kaira Picard on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/leopard-gecko-on-textured-bark-QiewOsZz0iI",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1080,7 +1080,7 @@
     "seo_description": "Black-and-white banded mack snow leopard gecko that softens to cream and lavender as an adult.",
     "image_search": {
       "query": "Eublepharis macularius snow",
-      "alt": "Snow leopard gecko with pale spotted pattern"
+      "alt": "Pale leopard gecko with fine black spots resting on cork bark"
     }
   },
   {
@@ -1146,12 +1146,12 @@
       {
         "url": "/products/crested-gecko-dalmatian-1.webp",
         "thumbnail_url": "/products/crested-gecko-dalmatian-1-thumb.webp",
+        "alt": "Yellow crested gecko with black dalmatian-style spots on its head and side",
         "width": 1600,
         "height": 1067,
-        "alt": "Crested gecko on a leaf (species photo; dalmatian morph has black spots)",
-        "credit": "Lennart Hudel via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Correlophus_ciliatus_34354132.jpg",
+        "credit": "Pierre Bamin on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/brown-and-gray-reptile-closeup-photo-5AkpMoG8Srw",
         "representative": true
       }
     ],
@@ -1175,7 +1175,7 @@
     "seo_description": "Spotted dalmatian crested gecko with dozens of ink-black dots scattered over a warm base.",
     "image_search": {
       "query": "Correlophus ciliatus",
-      "alt": "Crested gecko on a leaf (species photo; dalmatian morph has black spots)"
+      "alt": "Yellow crested gecko with black dalmatian-style spots on its head and side"
     }
   },
   {

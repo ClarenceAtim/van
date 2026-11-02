@@ -15,12 +15,12 @@
       {
         "url": "/products/frozen-mice-pinkies-25-1.webp",
         "thumbnail_url": "/products/frozen-mice-pinkies-25-1-thumb.webp",
+        "alt": "Single thawed pinky mouse feeder on a plain white background",
         "width": 1600,
-        "height": 2133,
-        "alt": "Frozen feeder mice",
-        "credit": "istolethetv via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:FROZEN_Mice_%26_Rats_(3458259780).jpg",
+        "height": 1202,
+        "credit": "Pogrebnoj-Alexandroff via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pinky_mice_1.JPG",
         "representative": true
       }
     ],
@@ -44,7 +44,7 @@
     "seo_description": "25 humanely euthanized, flash-frozen pinky mice for hatchling corn snakes, kingsnakes and hognoses.",
     "image_search": {
       "query": "frozen mice",
-      "alt": "Frozen feeder mice"
+      "alt": "Single thawed pinky mouse feeder on a plain white background"
     }
   },
   {
@@ -110,12 +110,12 @@
       {
         "url": "/products/frozen-rats-small-5-1.webp",
         "thumbnail_url": "/products/frozen-rats-small-5-1-thumb.webp",
+        "alt": "White domestic rat, the type of feeder rat supplied frozen in this pack",
         "width": 1600,
-        "height": 2133,
-        "alt": "Frozen mice and rats sold as reptile feeders",
-        "credit": "istolethetv via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:FROZEN_Mice_%26_Rats_(3458259780).jpg",
+        "height": 2400,
+        "credit": "Nikolett Emmert on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-white-rat-sitting-on-top-of-a-black-surface-FRDB09PqVz4",
         "representative": true
       }
     ],
@@ -138,7 +138,7 @@
     "seo_description": "Five frozen small rats (60–90 g) — the ideal meal for subadult and adult male ball pythons.",
     "image_search": {
       "query": "fancy rat",
-      "alt": "Frozen mice and rats sold as reptile feeders"
+      "alt": "White domestic rat, the type of feeder rat supplied frozen in this pack"
     }
   },
   {
@@ -344,12 +344,12 @@
       {
         "url": "/products/dried-black-soldier-fly-larvae-1.webp",
         "thumbnail_url": "/products/dried-black-soldier-fly-larvae-1-thumb.webp",
+        "alt": "Pile of dried black soldier fly larvae",
         "width": 1600,
-        "height": 900,
-        "alt": "Insect larvae used as reptile feeder treats",
-        "credit": "Raimond Spekking via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Mealworms_as_food-2389.jpg",
+        "height": 1067,
+        "credit": "Lets Fly on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-large-pile-of-worms-is-shown-in-this-image-tE4bd7XEOvM",
         "representative": true
       }
     ],
@@ -374,7 +374,7 @@
     "seo_description": "Dried BSFL treats for blue-tongued skinks, tortoises (sparingly) and mixed omnivore diets.",
     "image_search": {
       "query": "dried mealworms",
-      "alt": "Insect larvae used as reptile feeder treats"
+      "alt": "Pile of dried black soldier fly larvae"
     }
   },
   {
@@ -441,12 +441,12 @@
       {
         "url": "/products/calcium-without-d3-1.webp",
         "thumbnail_url": "/products/calcium-without-d3-1-thumb.webp",
+        "alt": "Mound of fine white calcium supplement powder",
         "width": 1600,
-        "height": 1422,
-        "alt": "Calcium supplement powder",
-        "credit": "Mx. Granger via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Vegan_calcium_supplements.jpg",
+        "height": 1067,
+        "credit": "Maria Kovalets on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-pile-of-white-powder-sitting-on-top-of-a-wooden-table-y6r0r77k4ek",
         "representative": true
       }
     ],
@@ -470,7 +470,7 @@
     "seo_description": "Pure calcium carbonate with no D3 — for reptiles with strong UVB that make their own vitamin D.",
     "image_search": {
       "query": "calcium supplement",
-      "alt": "Calcium supplement powder"
+      "alt": "Mound of fine white calcium supplement powder"
     }
   },
   {
@@ -489,12 +489,12 @@
       {
         "url": "/products/reptile-multivitamin-1.webp",
         "thumbnail_url": "/products/reptile-multivitamin-1-thumb.webp",
+        "alt": "Fine supplement powder spread out with a measuring scoop",
         "width": 1600,
-        "height": 1277,
-        "alt": "Vitamin supplement powder",
-        "credit": "Ragesoss via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:B_vitamin_supplement_tablets.jpg",
+        "height": 1067,
+        "credit": "Alex Saks on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-scoop-of-powder-and-a-scoop-of-powder-on-a-white-background-iYWf4PEd-lI",
         "representative": true
       }
     ],
@@ -518,7 +518,7 @@
     "seo_description": "Balanced reptile multivitamin with beta carotene and trace minerals — dust feeders weekly.",
     "image_search": {
       "query": "vitamin powder",
-      "alt": "Vitamin supplement powder"
+      "alt": "Fine supplement powder spread out with a measuring scoop"
     }
   },
   {
@@ -585,12 +585,12 @@
       {
         "url": "/products/tortoise-diet-pellets-1.webp",
         "thumbnail_url": "/products/tortoise-diet-pellets-1-thumb.webp",
+        "alt": "Tortoise eating dry pellet food from a bowl",
         "width": 1600,
-        "height": 1067,
-        "alt": "Tortoise grazing on leafy greens",
-        "credit": "© Nicolas Völcker via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:20180809-Gal%C3%A1pagos_giant_tortoise_eating_leaves_(9960).jpg",
+        "height": 2133,
+        "credit": "Suban Karunalingam on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-bowl-of-food-with-a-tortoise-TqKjkxN0h8g",
         "representative": true
       }
     ],
@@ -614,7 +614,7 @@
     "seo_description": "High-fiber timothy-hay pellet diet for Russian, Hermann's and other grazing tortoises.",
     "image_search": {
       "query": "tortoise eating",
-      "alt": "Tortoise grazing on leafy greens"
+      "alt": "Tortoise eating dry pellet food from a bowl"
     }
   }
 ]

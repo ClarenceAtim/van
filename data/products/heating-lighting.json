@@ -162,12 +162,12 @@
       {
         "url": "/products/t5-ho-fixture-22in-1.webp",
         "thumbnail_url": "/products/t5-ho-fixture-22in-1-thumb.webp",
+        "alt": "Wall-mounted linear fluorescent tube fixture switched on",
         "width": 1600,
-        "height": 1060,
-        "alt": "Fluorescent tube light fixture",
-        "credit": "Alan via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:L%C3%A1mpara_de_cocina_encendida.JPG",
+        "height": 1600,
+        "credit": "Sophie Barbier on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/turned-on-white-fluorescent-light-9PAvINMu3nU",
         "representative": true
       }
     ],
@@ -191,7 +191,7 @@
     "seo_description": "Slim aluminum T5 HO fixture with a polished reflector that nearly doubles usable UVB output.",
     "image_search": {
       "query": "fluorescent fixture ceiling",
-      "alt": "Fluorescent tube light fixture"
+      "alt": "Wall-mounted linear fluorescent tube fixture switched on"
     }
   },
   {
@@ -210,12 +210,12 @@
       {
         "url": "/products/t5-ho-fixture-34in-1.webp",
         "thumbnail_url": "/products/t5-ho-fixture-34in-1-thumb.webp",
+        "alt": "Slim linear fluorescent light fixture glowing on a dark wall",
         "width": 1600,
-        "height": 1060,
-        "alt": "Fluorescent tube light fixture",
-        "credit": "Alan via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:L%C3%A1mpara_de_cocina_encendida.JPG",
+        "height": 1200,
+        "credit": "Bhumik Photography on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/white-fluorescent-light-turned-on-in-dark-room-HdfXNAQ5TvM",
         "representative": true
       }
     ],
@@ -239,7 +239,7 @@
     "seo_description": "34-inch T5 HO fixture with a high-efficiency reflector, sized for 4-foot enclosures.",
     "image_search": {
       "query": "fluorescent light",
-      "alt": "Fluorescent tube light fixture"
+      "alt": "Slim linear fluorescent light fixture glowing on a dark wall"
     }
   },
   {
@@ -354,12 +354,12 @@
       {
         "url": "/products/deep-dome-lamp-fixture-1.webp",
         "thumbnail_url": "/products/deep-dome-lamp-fixture-1-thumb.webp",
+        "alt": "Dome reflector heat lamp shining down on a turtle basking on a rock",
         "width": 1600,
-        "height": 2133,
-        "alt": "Clamp heat lamps with reflector domes",
-        "credit": "SAgbley via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_Heat_Lamp.jpg",
+        "height": 1065,
+        "credit": "Oskari Räsänen on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-turtle-rests-on-a-rock-under-a-heat-lamp-DQjfJJbRc6w",
         "representative": true
       }
     ],
@@ -383,7 +383,7 @@
     "seo_description": "Deep 8.5-inch dome with a ceramic socket rated to 150 W for basking bulbs and heat emitters.",
     "image_search": {
       "query": "brooder lamp",
-      "alt": "Clamp heat lamps with reflector domes"
+      "alt": "Dome reflector heat lamp shining down on a turtle basking on a rock"
     }
   },
   {
@@ -497,12 +497,12 @@
       {
         "url": "/products/deep-heat-projector-80w-1.webp",
         "thumbnail_url": "/products/deep-heat-projector-80w-1-thumb.webp",
+        "alt": "Red-tinted infrared reflector heat bulb",
         "width": 1600,
-        "height": 2133,
-        "alt": "Infrared heat lamp",
-        "credit": "SAgbley via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_Heat_Lamp.jpg",
+        "height": 2400,
+        "credit": "dxiane on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/red-and-white-light-bulb-PATnZ07jw-4",
         "representative": true
       }
     ],
@@ -526,7 +526,7 @@
     "seo_description": "Infrared-B/C heat projector that warms deep tissue while emitting almost no visible light.",
     "image_search": {
       "query": "infrared heat lamp",
-      "alt": "Infrared heat lamp"
+      "alt": "Red-tinted infrared reflector heat bulb"
     }
   },
   {
