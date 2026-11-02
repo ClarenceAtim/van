@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { paymentMethodName } from "@/config/payments";
+import { paymentMethodsLabel } from "@/config/payments";
+import { countryName } from "@/config/countries";
 import { formatDate, formatMoney } from "@/lib/format";
 import { StatusBadge, type Order } from "@/lib/orders";
 
@@ -21,7 +22,7 @@ export function OrdersTable({ orders, hrefBase, admin = false }: { orders: Order
         </thead>
         <tbody>
           {orders.map((o) => {
-            const isNew = admin && o.status === "awaiting_payment_details";
+            const isNew = admin && o.status === "awaiting_confirmation";
             return (
               <tr key={o.id} className={`border-t ${isNew ? "bg-amber-50 dark:bg-amber-950/30" : ""}`}>
                 <td className="px-4 py-3">
@@ -29,7 +30,12 @@ export function OrdersTable({ orders, hrefBase, admin = false }: { orders: Order
                     {o.order_number}
                   </Link>
                   {isNew && <span className="ml-2 rounded-full bg-amber-500 px-2 py-0.5 text-xs font-semibold text-white">New</span>}
-                  {admin && o.contains_live_animals && <span className="block text-xs text-muted-foreground">Live animal</span>}
+                  {admin && (
+                    <span className="block text-xs text-muted-foreground">
+                      {countryName(o.shipping_address?.country)}
+                      {o.contains_live_animals && " · Live animal"}
+                    </span>
+                  )}
                 </td>
                 <td className="px-4 py-3 whitespace-nowrap">{formatDate(o.created_at)}</td>
                 {admin && (
@@ -41,7 +47,7 @@ export function OrdersTable({ orders, hrefBase, admin = false }: { orders: Order
                 <td className="px-4 py-3">
                   <StatusBadge status={o.status} />
                 </td>
-                {admin && <td className="px-4 py-3">{paymentMethodName(o.payment_method)}</td>}
+                {admin && <td className="px-4 py-3">{paymentMethodsLabel(o.payment_methods, o.payment_other)}</td>}
                 <td className="px-4 py-3 text-right">{formatMoney(o.total_cents, o.currency)}</td>
               </tr>
             );

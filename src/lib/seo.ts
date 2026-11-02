@@ -97,7 +97,6 @@ export function breadcrumbJsonLd(items: { name: string; href: string }[]) {
 }
 
 export function productJsonLd(p: CatalogProduct, rating: Rating | null, reviews: Review[]) {
-  const s = siteConfig.shipping;
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -117,16 +116,7 @@ export function productJsonLd(p: CatalogProduct, rating: Rating | null, reviews:
       availability: p.stock_quantity > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       itemCondition: "https://schema.org/NewCondition",
       seller: { "@id": `${absoluteUrl("/")}#organization` },
-      shippingDetails: {
-        "@type": "OfferShippingDetails",
-        shippingRate: { "@type": "MonetaryAmount", value: money(p.is_live_animal ? s.liveAnimalOvernightCents : s.standardCents), currency: p.currency },
-        shippingDestination: { "@type": "DefinedRegion", addressCountry: "US" },
-        deliveryTime: {
-          "@type": "ShippingDeliveryTime",
-          handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 2, unitCode: "DAY" },
-          transitTime: { "@type": "QuantitativeValue", minValue: 1, maxValue: p.is_live_animal ? 1 : 5, unitCode: "DAY" },
-        },
-      },
+      // No shippingDetails: shipping is quoted per order by email, so there is no fixed rate to publish.
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
         applicableCountry: "US",

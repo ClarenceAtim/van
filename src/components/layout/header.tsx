@@ -13,7 +13,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b bg-background">
       <div className="bg-forest text-primary-foreground">
         <p className="mx-auto max-w-7xl px-4 py-1.5 text-center text-xs sm:text-sm">
-          Live Arrival Guarantee on every animal · Free shipping on supplies over $99
+          Live Arrival Guarantee on every animal · Supplies ship worldwide
         </p>
       </div>
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">

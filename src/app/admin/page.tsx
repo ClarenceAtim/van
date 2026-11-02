@@ -17,8 +17,8 @@ export default async function AdminOverview() {
   const stats = [
     { label: "Sales (30 days)", value: formatMoney(stats30.revenue) },
     { label: "Orders (30 days)", value: String(stats30.orders) },
-    { label: "New orders (send payment details)", value: String(stats30.new_orders), href: "/admin/orders?status=awaiting_payment_details" },
-    { label: "Waiting for payment", value: String(stats30.awaiting_payment), href: "/admin/orders?status=payment_details_sent" },
+    { label: "New orders (send confirmation)", value: String(stats30.new_orders), href: "/admin/orders?status=awaiting_confirmation" },
+    { label: "Waiting for payment", value: String(stats30.awaiting_payment), href: "/admin/orders?status=confirmation_sent" },
     { label: "Paid, to ship", value: String(stats30.to_ship), href: "/admin/orders?status=paid" },
     { label: "Reviews to moderate", value: String(stats30.pending_reviews), href: "/admin/reviews" },
     { label: "Unread messages", value: String(stats30.unread), href: "/admin/messages" },

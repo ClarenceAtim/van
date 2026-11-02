@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { PrintButton } from "@/components/admin/print-button";
+import { countryName, regionName } from "@/config/countries";
 import { siteConfig } from "@/config/site";
 import { requireAdmin } from "@/lib/admin";
 import { getOrder } from "@/lib/db/orders";
@@ -36,6 +37,12 @@ export default async function PackingSlip({ params }: { params: Promise<{ id: st
           {a && (
             <p>
               {a.name}
+              {a.company && (
+                <>
+                  <br />
+                  {a.company}
+                </>
+              )}
               <br />
               {a.line1}
               {a.line2 && (
@@ -45,9 +52,9 @@ export default async function PackingSlip({ params }: { params: Promise<{ id: st
                 </>
               )}
               <br />
-              {a.city}, {a.state} {a.postal_code}
+              {[a.city, a.state ? regionName(a.country ?? "", a.state) : "", a.postal_code].filter(Boolean).join(", ")}
               <br />
-              {a.country}
+              {countryName(a.country)}
             </p>
           )}
           {order.phone && <p>{order.phone}</p>}

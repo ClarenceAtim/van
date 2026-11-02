@@ -1,6 +1,6 @@
 export const ORDER_STATUSES = [
-  "awaiting_payment_details",
-  "payment_details_sent",
+  "awaiting_confirmation",
+  "confirmation_sent",
   "paid",
   "processing",
   "shipped",
@@ -11,8 +11,8 @@ export const ORDER_STATUSES = [
 export type OrderStatus = (typeof ORDER_STATUSES)[number];
 
 export const STATUS_LABELS: Record<OrderStatus, string> = {
-  awaiting_payment_details: "Awaiting payment details",
-  payment_details_sent: "Payment details sent",
+  awaiting_confirmation: "Awaiting confirmation",
+  confirmation_sent: "Confirmation sent",
   paid: "Paid",
   processing: "Processing",
   shipped: "Shipped",
@@ -22,16 +22,10 @@ export const STATUS_LABELS: Record<OrderStatus, string> = {
 };
 
 /** Orders whose stock is still held for the customer but that haven't been paid. */
-export const UNPAID_STATUSES: readonly OrderStatus[] = ["awaiting_payment_details", "payment_details_sent"];
+export const UNPAID_STATUSES: readonly OrderStatus[] = ["awaiting_confirmation", "confirmation_sent"];
 
-const DELIVERY_LABELS: Record<string, string> = {
-  standard: "Standard shipping",
-  "free-standard": "Free standard shipping",
-  express: "Express shipping",
-  "live-overnight": "Overnight live animal shipping",
-  pickup: "Local pickup",
-};
-export const deliveryLabel = (o: { shipping_method: string }) => DELIVERY_LABELS[o.shipping_method] ?? o.shipping_method;
+/** Live-animal orders ship overnight; everything else by the method agreed in the confirmation email. */
+export const deliveryLabel = (o: { shipping_method: string }) => (o.shipping_method === "live-overnight" ? "Overnight live animal shipping" : "Shipping");
 
 export type OrderItem = {
   id: string;
@@ -47,11 +41,12 @@ export type OrderItem = {
 
 export type ShippingAddress = {
   name?: string;
+  company?: string | null;
   line1?: string;
   line2?: string | null;
   city?: string;
-  state?: string;
-  postal_code?: string;
+  state?: string | null;
+  postal_code?: string | null;
   country?: string;
 };
 
@@ -64,10 +59,12 @@ export type Order = {
   email: string;
   customer_name: string | null;
   phone: string | null;
-  whatsapp: string | null;
+  company: string | null;
   status: OrderStatus;
   subtotal_cents: number;
   shipping_cents: number;
+  /** False until the store confirms the shipping cost by email. */
+  shipping_confirmed: boolean;
   tax_cents: number;
   total_cents: number;
   currency: string;
@@ -77,9 +74,13 @@ export type Order = {
   preferred_delivery_date: string | null;
   contains_live_animals: boolean;
   live_animal_ack_at: string | null;
-  payment_method: string | null;
+  /** Every method the customer ticked at checkout. */
+  payment_methods: string[];
+  payment_other: string | null;
+  /** The method the store sent payment details for. */
+  confirmed_payment_method: string | null;
   payment_reference: string | null;
-  payment_details_sent_at: string | null;
+  confirmation_sent_at: string | null;
   payment_due_at: string | null;
   paid_at: string | null;
   stock_reserved: boolean;
@@ -92,8 +93,8 @@ export type Order = {
 };
 
 export const STATUS_STYLES: Record<OrderStatus, string> = {
-  awaiting_payment_details: "bg-amber-100 text-amber-900",
-  payment_details_sent: "bg-sky-100 text-sky-900",
+  awaiting_confirmation: "bg-amber-100 text-amber-900",
+  confirmation_sent: "bg-sky-100 text-sky-900",
   paid: "bg-sand text-secondary-foreground",
   processing: "bg-orange-100 text-orange-900",
   shipped: "bg-indigo-100 text-indigo-900",

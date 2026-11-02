@@ -1,15 +1,15 @@
 import "server-only";
-import { paymentMethodName, paymentMethods, paymentSettings } from "@/config/payments";
+import { countryName } from "@/config/countries";
+import { paymentMethodName, paymentMethods, paymentMethodsLabel, paymentSettings } from "@/config/payments";
 import { siteConfig } from "@/config/site";
-import type { PlaceOrderData } from "@/lib/checkout-schema";
+import { checkoutSchema, errorMap, type CheckoutInput } from "@/lib/checkout-schema";
 import { saveAddress } from "@/lib/db/account";
-import { regionAllowed } from "@/lib/db/catalog";
 import * as orders from "@/lib/db/orders";
 import type { Queryable } from "@/lib/db/types";
 import * as email from "@/lib/email";
-import { formatMoney } from "@/lib/format";
+import { formatDate, formatMoney } from "@/lib/format";
 import type { Order, OrderStatus } from "@/lib/orders";
-import { liveDeliveryDates, totalsWithDelivery, validateLines, type PricedLine } from "@/lib/pricing";
+import { computeTotals, liveDeliveryDates, validateLines, type PricedLine } from "@/lib/pricing";
 
 /**
  * Order rules, independent of HTTP: the checkout server action and /admin call these, and tests
@@ -21,45 +21,29 @@ const DAY = 86_400_000;
 
 export type PlaceOrderResult =
   | { ok: true; orderId: string; orderNumber: string }
-  | { ok: false; message: string; step?: "contact" | "delivery" | "payment" | "review"; errors?: Record<string, string> };
+  | { ok: false; message: string; errors?: Record<string, string> };
 
 /**
- * Creates an order request from the server-side cart. Prices, delivery cost and totals are
- * recalculated here; nothing price-related is taken from the browser.
+ * Creates an order request from the server-side cart. Everything is validated again here, and
+ * prices and totals are recalculated from the catalog: nothing price-related comes from the browser.
  */
 export async function placeOrderRequest(
   db: Db,
-  input: { data: PlaceOrderData; lines: PricedLine[]; userId: string | null; cartId: string | null; now?: Date },
+  input: { form: CheckoutInput; lines: PricedLine[]; userId: string | null; cartId: string | null; now?: Date },
 ): Promise<PlaceOrderResult> {
-  const { data, lines, userId, cartId } = input;
+  const { lines, userId, cartId } = input;
   const now = input.now ?? new Date();
   if (!lines.length) return { ok: false, message: "Your cart is empty." };
   const problems = validateLines(lines);
   if (problems.length) return { ok: false, message: problems.map((p) => p.message).join(" ") };
 
-  const { contact, delivery, payment, review } = data;
-  const totals = totalsWithDelivery(lines, delivery.deliveryMethod);
-  if (!totals) return { ok: false, step: "delivery", message: "Please choose an available delivery method.", errors: { deliveryMethod: "Choose an available delivery method" } };
+  const totals = computeTotals(lines);
+  const parsed = checkoutSchema({ containsLiveAnimals: totals.containsLiveAnimals, deliveryDates: liveDeliveryDates(now) }).safeParse(input.form);
+  if (!parsed.success) return { ok: false, message: "Please check the highlighted fields.", errors: errorMap(parsed.error) };
+  const f = parsed.data;
 
-  let preferredDate: string | null = null;
-  if (totals.containsLiveAnimals) {
-    const errors: Record<string, string> = {};
-    if (!delivery.ageConfirmed) errors.ageConfirmed = `You must be ${siteConfig.liveAnimals.minimumAge} or older to buy live animals`;
-    if (!delivery.livePolicyAccepted) errors.livePolicyAccepted = "Please agree to the Live Animal Policy";
-    if (totals.shippingMethod === "live-overnight") {
-      if (!liveDeliveryDates(now).includes(delivery.preferredDate)) errors.preferredDate = "Choose one of the available delivery dates";
-      else preferredDate = delivery.preferredDate;
-      if (contact.country !== "US") errors.deliveryMethod = "Live animals can only ship within the United States";
-      else {
-        const region = await regionAllowed(db.q, `US-${contact.region}`);
-        if (!region?.allowed) errors.deliveryMethod = `Sorry, we can't ship live animals to ${region?.name ?? contact.region}. Remove the animals to order supplies.`;
-      }
-    }
-    if (Object.keys(errors).length) return { ok: false, step: "delivery", message: "Please check the delivery details.", errors };
-  }
-
-  if (review.expectedTotalCents !== totals.totalCents) {
-    return { ok: false, step: "review", message: `Your order total changed to ${formatMoney(totals.totalCents)} (a price or stock change). Please review your order and place it again.` };
+  if (f.expectedTotalCents !== totals.totalCents) {
+    return { ok: false, message: `Your order total changed to ${formatMoney(totals.totalCents)} (a price or stock change). Please check your order and place it again.` };
   }
 
   const placedAt = now.toISOString();
@@ -70,31 +54,30 @@ export async function placeOrderRequest(
         q,
         {
           user_id: userId,
-          email: contact.email,
-          customer_name: contact.fullName,
-          phone: contact.phone,
-          whatsapp: contact.whatsapp || null,
+          email: f.email,
+          customer_name: f.fullName,
+          phone: f.phone,
+          company: f.company || null,
           subtotal_cents: totals.subtotalCents,
-          shipping_cents: totals.shippingCents,
           tax_cents: totals.taxCents,
           total_cents: totals.totalCents,
           currency: siteConfig.currency,
-          shipping_method: totals.shippingMethod,
+          shipping_method: totals.containsLiveAnimals ? "live-overnight" : "standard",
           shipping_address: {
-            name: contact.fullName,
-            line1: contact.line1,
-            line2: contact.line2 || null,
-            city: contact.city,
-            state: contact.region,
-            postal_code: contact.postalCode,
-            country: contact.country,
+            name: f.fullName,
+            company: f.company || null,
+            line1: f.address,
+            city: f.city,
+            state: f.region || null,
+            postal_code: f.postalCode || null,
+            country: f.country,
           },
-          delivery_notes: contact.deliveryNotes || null,
-          preferred_delivery_date: preferredDate,
+          delivery_notes: f.notes || null,
+          preferred_delivery_date: totals.containsLiveAnimals ? f.preferredDate : null,
           contains_live_animals: totals.containsLiveAnimals,
           live_animal_ack_at: totals.containsLiveAnimals ? placedAt : null,
-          payment_method: payment.paymentMethod,
-          terms_accepted_at: placedAt,
+          payment_methods: f.paymentMethods,
+          payment_other: f.paymentMethods.includes("other") ? f.paymentOther : null,
           cart_id: cartId,
         },
         lines.map((l) => ({
@@ -113,15 +96,16 @@ export async function placeOrderRequest(
     throw e;
   }
 
-  if (userId && contact.saveAddress && contact.country === "US" && !contact.savedAddressId) {
+  if (userId && f.saveAddress && !f.savedAddressId) {
     await saveAddress(db.q, userId, {
-      full_name: contact.fullName,
-      line1: contact.line1,
-      line2: contact.line2 || null,
-      city: contact.city,
-      region: contact.region,
-      postal_code: contact.postalCode,
-      phone: contact.phone,
+      full_name: f.fullName,
+      company: f.company || null,
+      line1: f.address,
+      city: f.city,
+      region: f.region || null,
+      postal_code: f.postalCode || null,
+      country: f.country,
+      phone: f.phone,
       is_default: false,
     });
   }
@@ -132,51 +116,111 @@ export async function placeOrderRequest(
     db.q,
     order.id,
     null,
-    `"Order received" email ${toCustomer ? "sent to the customer" : "not sent (email isn't set up)"}; owner notification ${toOwner ? "sent" : "not sent"}.`,
+    `Customer chose: ${paymentMethodsLabel(order.payment_methods, order.payment_other)}. "Order received" email ${toCustomer ? "sent" : "not sent (email isn't set up)"}; owner notification ${toOwner ? "sent" : "not sent"}.`,
   );
   return { ok: true, orderId: order.id, orderNumber: order.order_number };
 }
 
-// ───────────── Admin ─────────────
+// ───────────── Order confirmation (admin) ─────────────
 
 export type AdminResult = { ok: boolean; message: string };
 
-/** Default payment email for a method, used until the template is saved in /admin. */
+/** Placeholders available in confirmation templates. */
+export const TEMPLATE_VARIABLES = [
+  "customer_name", "order_number", "items", "subtotal", "tax", "shipping_cost", "total", "totals",
+  "payment_method", "payment_details", "due_date", "store_name",
+] as const;
+
+/** Default confirmation email for a method, used until you save your own in /admin. */
 export function defaultTemplate(methodId: string) {
-  const name = paymentMethodName(methodId);
   return {
-    subject: `Payment details for order {{order_number}}`,
+    subject: "Order {{order_number}} confirmed: shipping and payment details",
     body: `Hi {{customer_name}},
 
-Thank you for your order {{order_number}}. Here is how to pay {{amount}} by ${name}:
+Thank you for your order {{order_number}}. Here it is with the shipping cost:
 
-[Add your ${name} details here in /admin → Settings → Payment templates.]
+{{items}}
 
-Please include your order number {{order_number}} as the payment reference, and pay by {{due_date}}. Your items are reserved until then.
+{{totals}}
+
+How to pay by {{payment_method}}:
+{{payment_details}}
+
+Please use {{order_number}} as the payment reference and pay by {{due_date}}. Your items are reserved until then.
 
 Reply to this email once you've paid, or if you have any questions.
 
 Thank you,
 {{store_name}}`,
+    details: {} as Record<string, string>,
+    isDefault: true,
+    methodId,
   };
 }
 
-export async function paymentEmailDraft(q: Queryable, order: Order, now = new Date()) {
-  const saved = order.payment_method ? await orders.getPaymentTemplate(q, order.payment_method) : null;
-  const t = saved ?? defaultTemplate(order.payment_method ?? "");
-  const due = new Date(now.getTime() + paymentSettings.payWithinDays * DAY);
-  return { subject: email.fillTemplate(t.subject, order, due), body: email.fillTemplate(t.body, order, due), isDefault: !saved };
+/** "Label: value" lines from the details saved for a method. */
+export function paymentDetailsText(methodId: string, details: Record<string, string>) {
+  const method = paymentMethods.find((m) => m.id === methodId);
+  const lines = (method?.fields ?? []).filter((f) => details[f.key]?.trim()).map((f) => `${f.label.replace(" (optional)", "")}: ${details[f.key].trim()}`);
+  return lines.length ? lines.join("\n") : `[Add your ${paymentMethodName(methodId)} details in /admin → Settings → Payment templates, or type them here.]`;
 }
 
-export async function sendPaymentDetails(q: Queryable, orderId: string, subject: string, body: string, now = new Date()): Promise<AdminResult> {
-  const order = await orders.getOrder(q, orderId);
-  if (!order) return { ok: false, message: "Order not found." };
-  if (!(await orders.markPaymentDetailsSent(q, orderId, new Date(now.getTime() + paymentSettings.payWithinDays * DAY)))) {
-    return { ok: false, message: "Payment details can only be sent for unpaid orders." };
+/** Fills a template for an order, a shipping cost and the method to send details for. */
+export function confirmationVariables(order: Order, methodId: string, shippingCents: number, details: Record<string, string>, dueAt: Date) {
+  const money = (c: number) => formatMoney(c, order.currency);
+  const total = order.subtotal_cents + order.tax_cents + shippingCents;
+  const methodName = methodId === "other" && order.payment_other ? order.payment_other : paymentMethodName(methodId);
+  const totals = [
+    `Subtotal: ${money(order.subtotal_cents)}`,
+    ...(order.tax_cents ? [`${siteConfig.tax.label}: ${money(order.tax_cents)}`] : []),
+    `Shipping to ${countryName(order.shipping_address?.country)}: ${shippingCents ? money(shippingCents) : "Free"}`,
+    `Total to pay: ${money(total)}`,
+  ].join("\n");
+  return {
+    customer_name: order.customer_name ?? "there",
+    order_number: order.order_number,
+    items: (order.order_items ?? []).map((i) => `- ${i.product_name} × ${i.quantity}: ${money(i.line_total_cents)}`).join("\n"),
+    subtotal: money(order.subtotal_cents),
+    tax: money(order.tax_cents),
+    shipping_cost: shippingCents ? money(shippingCents) : "Free",
+    total: money(total),
+    totals,
+    payment_method: methodName,
+    payment_details: paymentDetailsText(methodId, details),
+    due_date: formatDate(dueAt.toISOString()),
+    store_name: siteConfig.name,
+  };
+}
+
+export async function confirmationDraft(q: Queryable, order: Order, methodId: string, shippingCents: number, now = new Date()) {
+  const saved = await orders.getPaymentTemplate(q, methodId);
+  const t = saved ?? defaultTemplate(methodId);
+  const vars = confirmationVariables(order, methodId, shippingCents, t.details, new Date(now.getTime() + paymentSettings.payWithinDays * DAY));
+  return { subject: email.fillTemplate(t.subject, vars), body: email.fillTemplate(t.body, vars), detailsMissing: !Object.values(t.details).some((v) => v?.trim()) };
+}
+
+/** Sends the order confirmation (shipping cost + payment details) and starts the payment deadline. */
+export async function sendConfirmation(
+  q: Queryable,
+  orderId: string,
+  c: { methodId: string; shippingCents: number; subject: string; body: string },
+  now = new Date(),
+): Promise<AdminResult> {
+  if (!paymentMethods.some((m) => m.id === c.methodId)) return { ok: false, message: "Choose a payment method." };
+  if (!Number.isInteger(c.shippingCents) || c.shippingCents < 0) return { ok: false, message: "Enter the shipping cost." };
+  const dueAt = new Date(now.getTime() + paymentSettings.payWithinDays * DAY);
+  if (!(await orders.markConfirmationSent(q, orderId, { shippingCents: c.shippingCents, paymentMethod: c.methodId, dueAt }))) {
+    return { ok: false, message: "Confirmations can only be sent for unpaid orders." };
   }
-  const sent = await email.sendPaymentDetails(order, subject, body);
-  await orders.addOrderEvent(q, orderId, "payment_details_sent", `${paymentMethodName(order.payment_method)} payment details ${sent ? "emailed" : "recorded (email not sent — check email settings)"}: "${subject}". Pay within ${paymentSettings.payWithinDays} days.`);
-  return { ok: true, message: sent ? "Payment details sent." : "Status updated, but the email wasn't sent (check RESEND_API_KEY)." };
+  const order = (await orders.getOrder(q, orderId))!;
+  const sent = await email.sendOrderConfirmation(order, c.subject, c.body);
+  await orders.addOrderEvent(
+    q,
+    orderId,
+    "confirmation_sent",
+    `Confirmation ${sent ? "emailed" : "recorded (email not sent — check email settings)"}: shipping ${formatMoney(c.shippingCents, order.currency)}, total ${formatMoney(order.total_cents, order.currency)}, payment details for ${paymentMethodName(c.methodId)}. Pay within ${paymentSettings.payWithinDays} days.`,
+  );
+  return { ok: true, message: sent ? "Order confirmation sent." : "Status updated, but the email wasn't sent (check RESEND_API_KEY)." };
 }
 
 export async function markOrderPaid(q: Queryable, orderId: string, reference: string | null): Promise<AdminResult> {

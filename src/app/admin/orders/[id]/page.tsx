@@ -3,12 +3,11 @@ import { notFound } from "next/navigation";
 import { Printer } from "lucide-react";
 import { OrderDetail } from "@/components/account/order-detail";
 import { OrderActions } from "@/components/admin/order-actions";
-import { paymentMethodName } from "@/config/payments";
+import { paymentMethodName, paymentMethods, paymentMethodsLabel } from "@/config/payments";
 import { requireAdmin } from "@/lib/admin";
 import { getOrder } from "@/lib/db/orders";
 import { formatDate } from "@/lib/format";
-import { paymentEmailDraft } from "@/lib/order-service";
-import { deliveryLabel, STATUS_LABELS } from "@/lib/orders";
+import { STATUS_LABELS } from "@/lib/orders";
 
 export const metadata = { title: "Order" };
 
@@ -21,11 +20,13 @@ export default async function AdminOrderPage({ params }: { params: Promise<{ id:
   const { q } = await requireAdmin();
   const order = await getOrder(q, id);
   if (!order) notFound();
-  const draft = await paymentEmailDraft(q, order);
-  const a = order.shipping_address;
+  const chosen = order.payment_methods ?? [];
+  const methods = paymentMethods.map((m) => ({ id: m.id, name: m.id === "other" && order.payment_other ? `Other: ${order.payment_other}` : paymentMethodName(m.id), chosen: chosen.includes(m.id) }));
+  const defaultMethod = order.confirmed_payment_method ?? chosen[0] ?? paymentMethods[0].id;
+  const defaultShipping = order.shipping_confirmed ? (order.shipping_cents / 100).toFixed(2) : "";
 
   return (
-    <div className="grid gap-10 lg:grid-cols-[1fr_380px]">
+    <div className="grid gap-10 lg:grid-cols-[1fr_400px]">
       <div className="min-w-0 space-y-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <Link href="/admin/orders" className="text-sm text-primary underline">
@@ -39,12 +40,15 @@ export default async function AdminOrderPage({ params }: { params: Promise<{ id:
 
         <section aria-labelledby="customer-heading" className="grid gap-4 rounded-xl border p-4 text-sm sm:grid-cols-2">
           <h2 id="customer-heading" className="text-lg font-semibold sm:col-span-2">
-            Customer &amp; delivery
+            Customer &amp; payment
           </h2>
           <dl className="space-y-2">
             <div>
               <dt className="font-medium">Name</dt>
-              <dd>{order.customer_name ?? a?.name ?? "—"}</dd>
+              <dd>
+                {order.customer_name ?? "—"}
+                {order.company && <span className="text-muted-foreground"> · {order.company}</span>}
+              </dd>
             </div>
             <div>
               <dt className="font-medium">Email</dt>
@@ -57,19 +61,12 @@ export default async function AdminOrderPage({ params }: { params: Promise<{ id:
             {order.phone && (
               <div>
                 <dt className="font-medium">Phone</dt>
-                <dd>
+                <dd className="flex flex-wrap gap-x-3">
                   <a href={`tel:+${digits(order.phone)}`} className="text-primary underline">
                     {order.phone}
                   </a>
-                </dd>
-              </div>
-            )}
-            {order.whatsapp && (
-              <div>
-                <dt className="font-medium">WhatsApp</dt>
-                <dd>
-                  <a href={`https://wa.me/${digits(order.whatsapp)}`} target="_blank" rel="noopener noreferrer" className="text-primary underline">
-                    {order.whatsapp}
+                  <a href={`https://wa.me/${digits(order.phone)}`} target="_blank" rel="noopener noreferrer" className="text-primary underline">
+                    WhatsApp
                   </a>
                 </dd>
               </div>
@@ -81,25 +78,18 @@ export default async function AdminOrderPage({ params }: { params: Promise<{ id:
           </dl>
           <dl className="space-y-2">
             <div>
-              <dt className="font-medium">Delivery</dt>
-              <dd>
-                {deliveryLabel(order)}
-                {order.preferred_delivery_date && ` · preferred ${formatDate(`${order.preferred_delivery_date}T12:00:00Z`)}`}
-              </dd>
+              <dt className="font-medium">Would like to pay by</dt>
+              <dd>{paymentMethodsLabel(order.payment_methods, order.payment_other)}</dd>
             </div>
-            {order.delivery_notes && (
+            {order.confirmed_payment_method && (
               <div>
-                <dt className="font-medium">Delivery notes</dt>
-                <dd className="whitespace-pre-line">{order.delivery_notes}</dd>
+                <dt className="font-medium">Payment details sent for</dt>
+                <dd>
+                  {paymentMethodName(order.confirmed_payment_method)}
+                  {order.payment_reference && ` · ref ${order.payment_reference}`}
+                </dd>
               </div>
             )}
-            <div>
-              <dt className="font-medium">Payment method</dt>
-              <dd>
-                {paymentMethodName(order.payment_method)}
-                {order.payment_reference && ` · ref ${order.payment_reference}`}
-              </dd>
-            </div>
             {order.payment_due_at && !order.paid_at && (
               <div>
                 <dt className="font-medium">Payment due</dt>
@@ -112,13 +102,22 @@ export default async function AdminOrderPage({ params }: { params: Promise<{ id:
                 <dd>{dateTime(order.paid_at)}</dd>
               </div>
             )}
-            {order.contains_live_animals && order.live_animal_ack_at && (
+            {order.contains_live_animals && (
               <div>
                 <dt className="font-medium">Live animals</dt>
-                <dd>18+ and Live Animal Policy confirmed {dateTime(order.live_animal_ack_at)}</dd>
+                <dd>
+                  {order.preferred_delivery_date && <>Preferred delivery {formatDate(`${order.preferred_delivery_date}T12:00:00Z`)}. </>}
+                  {order.live_animal_ack_at && <>18+ and Live Animal Policy confirmed {dateTime(order.live_animal_ack_at)}.</>}
+                </dd>
               </div>
             )}
           </dl>
+          {order.delivery_notes && (
+            <div className="sm:col-span-2">
+              <p className="font-medium">Order notes</p>
+              <p className="whitespace-pre-line">{order.delivery_notes}</p>
+            </div>
+          )}
         </section>
 
         <section aria-labelledby="history-heading">
@@ -130,7 +129,7 @@ export default async function AdminOrderPage({ params }: { params: Promise<{ id:
               <li key={e.id}>
                 <p className="text-xs text-muted-foreground">
                   {dateTime(e.created_at)}
-                  {e.status && <> · {STATUS_LABELS[e.status]}</>}
+                  {e.status && <> · {STATUS_LABELS[e.status] ?? e.status}</>}
                 </p>
                 <p>{e.message}</p>
               </li>
@@ -140,7 +139,15 @@ export default async function AdminOrderPage({ params }: { params: Promise<{ id:
       </div>
       <aside className="h-fit space-y-3 lg:sticky lg:top-24">
         <h2 className="text-lg font-semibold">Next steps</h2>
-        <OrderActions id={order.id} status={order.status} draft={draft} carrier={order.carrier} tracking={order.tracking_number} />
+        <OrderActions
+          id={order.id}
+          status={order.status}
+          methods={methods}
+          defaultMethod={defaultMethod}
+          defaultShipping={defaultShipping}
+          carrier={order.carrier}
+          tracking={order.tracking_number}
+        />
       </aside>
     </div>
   );

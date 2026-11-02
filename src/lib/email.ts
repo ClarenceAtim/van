@@ -1,10 +1,10 @@
 import "server-only";
 import { Resend } from "resend";
-import { paymentMethodName, paymentSettings } from "@/config/payments";
+import { countryName, regionName } from "@/config/countries";
+import { paymentMethodName, paymentMethodsLabel, paymentSettings } from "@/config/payments";
 import { siteConfig } from "@/config/site";
 import { formatDate, formatMoney } from "@/lib/format";
-import { deliveryLabel, type Order } from "@/lib/orders";
-export { deliveryLabel };
+import type { Order } from "@/lib/orders";
 import { absoluteUrl } from "@/lib/seo";
 
 /**
@@ -80,58 +80,54 @@ function send(to: string, subject: string, title: string, body: string, opts: { 
 const box = (inner: string) => `<div style="background:#f6f2e8;border-radius:8px;padding:14px 16px;margin:16px 0">${inner}</div>`;
 const button = (href: string, label: string) =>
   `<p style="margin:20px 0"><a href="${esc(href)}" style="display:inline-block;background:#1f4d3a;color:#ffffff;text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:bold">${esc(label)}</a></p>`;
+const hours = paymentSettings.confirmWithinHours;
+const hi = (o: Order) => `<p>Hi ${esc(o.customer_name ?? "there")},</p>`;
+const methods = (o: Order) => paymentMethodsLabel(o.payment_methods, o.payment_other);
 
 function orderTable(o: Order) {
   const money = (c: number) => formatMoney(c, o.currency);
-  const rows = (o.order_items ?? [])
-    .map((i) => `<tr><td style="padding:6px 0">${esc(i.product_name)} × ${i.quantity}</td><td align="right" style="padding:6px 0;white-space:nowrap">${money(i.line_total_cents)}</td></tr>`)
-    .join("");
-  return `<table role="presentation" width="100%" style="border-collapse:collapse;margin:16px 0;font-size:14px">${rows}
-    <tr><td style="padding-top:10px;border-top:1px solid #ddd">Subtotal</td><td align="right" style="padding-top:10px;border-top:1px solid #ddd">${money(o.subtotal_cents)}</td></tr>
-    <tr><td>Delivery (${esc(deliveryLabel(o))})</td><td align="right">${o.shipping_cents ? money(o.shipping_cents) : "Free"}</td></tr>
-    <tr><td style="font-weight:bold;padding-top:6px">Total</td><td align="right" style="font-weight:bold;padding-top:6px">${money(o.total_cents)}</td></tr></table>`;
+  const row = (label: string, value: string, style = "") =>
+    `<tr><td style="padding:4px 0;${style}">${label}</td><td align="right" style="padding:4px 0;white-space:nowrap;${style}">${value}</td></tr>`;
+  const items = (o.order_items ?? []).map((i) => row(`${esc(i.product_name)} × ${i.quantity}`, money(i.line_total_cents))).join("");
+  return `<table role="presentation" width="100%" style="border-collapse:collapse;margin:16px 0;font-size:14px">${items}
+    ${row("Subtotal", money(o.subtotal_cents), "border-top:1px solid #ddd;padding-top:10px")}
+    ${o.tax_cents ? row(esc(siteConfig.tax.label), money(o.tax_cents)) : ""}
+    ${row("Shipping", o.shipping_confirmed ? (o.shipping_cents ? money(o.shipping_cents) : "Free") : "Confirmed before you pay")}
+    ${row(o.shipping_confirmed ? "Total" : "Total (before shipping)", money(o.total_cents), "font-weight:bold;padding-top:6px")}</table>`;
 }
-
 
 function addressBlock(o: Order) {
   const a = o.shipping_address;
   if (!a?.line1) return "";
-  return `<p style="margin:0;line-height:1.5"><strong>${esc(a.name ?? "")}</strong><br>${esc(a.line1)}${a.line2 ? `<br>${esc(a.line2)}` : ""}<br>${esc(a.city ?? "")}, ${esc(a.state ?? "")} ${esc(a.postal_code ?? "")}<br>${esc(a.country ?? "")}</p>`;
+  const cityLine = [a.city, a.state ? regionName(a.country ?? "", a.state) : "", a.postal_code].filter(Boolean).join(", ");
+  return `<p style="margin:0;line-height:1.5"><strong>${esc(a.name ?? "")}</strong>${a.company ? `<br>${esc(a.company)}` : ""}<br>${esc(a.line1)}<br>${esc(cityLine)}<br>${esc(countryName(a.country))}</p>`;
 }
 
 // ───────────── To the customer ─────────────
 
 export function sendOrderReceived(o: Order) {
-  const method = paymentMethodName(o.payment_method);
   return send(
     o.email,
     `We've received your order ${o.order_number}`,
-    "Thanks — we've received your order",
-    `<p>Hi ${esc(o.customer_name ?? "there")}, thanks for ordering from ${esc(siteConfig.name)}. Your order number is <strong>${esc(o.order_number)}</strong>.</p>
-    ${box(`<strong>Payment details coming soon.</strong><br>You chose to pay by <strong>${esc(method)}</strong>. We'll email you the payment details within ${paymentSettings.detailsWithinHours} hours. Your items are reserved while you pay — no payment has been taken yet.`)}
+    `Thank you — your order ${o.order_number} has been received`,
+    `${hi(o)}<p>Thanks for ordering from ${esc(siteConfig.name)}. Your order number is <strong>${esc(o.order_number)}</strong>.</p>
+    ${box(`<strong>What happens next:</strong> within ${hours} hours we'll email you the shipping cost and the payment details for your chosen method (<strong>${esc(methods(o))}</strong>). No payment has been taken, and your items are reserved.`)}
     ${orderTable(o)}
     ${o.preferred_delivery_date ? `<p>Preferred delivery date: <strong>${esc(formatDate(o.preferred_delivery_date))}</strong> (we'll confirm the ship date by email).</p>` : ""}
     ${addressBlock(o)}`,
-    { preheader: `Order ${o.order_number}: payment details for ${method} coming within ${paymentSettings.detailsWithinHours} hours.` },
+    { preheader: `Order ${o.order_number}: we'll confirm shipping and payment details within ${hours} hours.` },
   );
 }
 
-/** Variables available in payment templates: {{customer_name}}, {{order_number}}, {{amount}}, {{payment_method}}, {{due_date}}, {{store_name}}. */
-export function fillTemplate(template: string, o: Order, dueAt: Date) {
-  const vars: Record<string, string> = {
-    customer_name: o.customer_name ?? "there",
-    order_number: o.order_number,
-    amount: formatMoney(o.total_cents, o.currency),
-    payment_method: paymentMethodName(o.payment_method),
-    due_date: formatDate(dueAt.toISOString()),
-    store_name: siteConfig.name,
-  };
+/** Replaces {{name}} placeholders; unknown ones are left as they are so mistakes are visible. */
+export function fillTemplate(template: string, vars: Record<string, string>) {
   return template.replace(/\{\{\s*([a-z_]+)\s*\}\}/g, (m, key: string) => vars[key] ?? m);
 }
 
-export function sendPaymentDetails(o: Order, subject: string, body: string) {
-  return send(o.email, subject, `Payment details for order ${o.order_number}`, `${textToHtml(body)}${orderTable(o)}`, {
-    preheader: `How to pay ${formatMoney(o.total_cents, o.currency)} for order ${o.order_number}.`,
+/** The order confirmation written in /admin (items, shipping cost, total and payment details are in the text). */
+export function sendOrderConfirmation(o: Order, subject: string, body: string) {
+  return send(o.email, subject, `Your order ${o.order_number} is confirmed`, textToHtml(body), {
+    preheader: `Total ${formatMoney(o.total_cents, o.currency)} including shipping. Payment details inside.`,
   });
 }
 
@@ -140,8 +136,8 @@ export function sendPaymentReminder(o: Order) {
     o.email,
     `Reminder: payment for order ${o.order_number}`,
     "A friendly reminder about your order",
-    `<p>Hi ${esc(o.customer_name ?? "there")}, we haven't received payment for order <strong>${esc(o.order_number)}</strong> (${formatMoney(o.total_cents, o.currency)}) yet.</p>
-    ${box(`Please pay by <strong>${esc(o.payment_due_at ? formatDate(o.payment_due_at) : "tomorrow")}</strong> using the ${esc(paymentMethodName(o.payment_method))} details we sent you. After that the order is cancelled and the items are released.`)}
+    `${hi(o)}<p>We haven't received payment for order <strong>${esc(o.order_number)}</strong> (${formatMoney(o.total_cents, o.currency)}) yet.</p>
+    ${box(`Please pay by <strong>${esc(o.payment_due_at ? formatDate(o.payment_due_at) : "tomorrow")}</strong> using the ${esc(paymentMethodName(o.confirmed_payment_method))} details we sent you. After that the order is cancelled and the items are released.`)}
     <p>Already paid? Just reply with your payment reference and we'll match it up.</p>`,
   );
 }
@@ -151,7 +147,7 @@ export function sendPaymentConfirmed(o: Order) {
     o.email,
     `Payment received for order ${o.order_number}`,
     "Payment received — thank you!",
-    `<p>We've received your payment for order <strong>${esc(o.order_number)}</strong>. We're getting it ready now and will email tracking as soon as it ships.</p>
+    `${hi(o)}<p>We've received your payment for order <strong>${esc(o.order_number)}</strong>. We're getting it ready now and will email tracking as soon as it ships.</p>
     ${o.contains_live_animals ? box(`Your order includes live animals. They ship overnight (${esc(siteConfig.shipping.liveAnimalShipDays)}) when the weather along the route is safe${o.preferred_delivery_date ? `, aiming for delivery on ${esc(formatDate(o.preferred_delivery_date))}` : ""}. Please make sure an adult can receive the package.`) : ""}
     ${orderTable(o)}`,
   );
@@ -162,7 +158,7 @@ export function sendShippingUpdate(o: Order) {
     o.email,
     `Order ${o.order_number} has shipped`,
     "Your order is on its way",
-    `<p>Order <strong>${esc(o.order_number)}</strong> has shipped${o.carrier ? ` with ${esc(o.carrier)}` : ""}.</p>
+    `${hi(o)}<p>Order <strong>${esc(o.order_number)}</strong> has shipped${o.carrier ? ` with ${esc(o.carrier)}` : ""}.</p>
     ${box(`<span style="font-size:17px">Tracking number: <strong>${esc(o.tracking_number ?? "")}</strong></span>`)}
     ${o.contains_live_animals ? `<p>Please open live animal boxes on arrival and check on your new reptile right away. If anything is wrong, email photos within 2 hours of delivery under our <a href="${absoluteUrl("/live-arrival-guarantee")}" style="color:#1f4d3a">Live Arrival Guarantee</a>.</p>` : ""}`,
   );
@@ -173,7 +169,7 @@ export function sendOrderCancelled(o: Order, reason: string) {
     o.email,
     `Order ${o.order_number} has been cancelled`,
     "Your order has been cancelled",
-    `<p>Order <strong>${esc(o.order_number)}</strong> has been cancelled. ${esc(reason)}</p>
+    `${hi(o)}<p>Order <strong>${esc(o.order_number)}</strong> has been cancelled. ${esc(reason)}</p>
     <p>If you've already paid or think this is a mistake, just reply to this email and we'll sort it out.</p>
     ${button(absoluteUrl("/shop"), "Visit the shop")}`,
   );
@@ -182,17 +178,16 @@ export function sendOrderCancelled(o: Order, reason: string) {
 // ───────────── To the store owner ─────────────
 
 export function sendNewOrderNotification(o: Order) {
-  const a = o.shipping_address;
   return send(
     ownerEmail(),
-    `New order ${o.order_number} — ${formatMoney(o.total_cents, o.currency)} by ${paymentMethodName(o.payment_method)}`,
+    `New order ${o.order_number} — ${formatMoney(o.total_cents, o.currency)} + shipping · ${countryName(o.shipping_address?.country)}`,
     `New order ${o.order_number}`,
-    `${box(`<strong>Next step:</strong> send ${esc(o.customer_name ?? "the customer")} the ${esc(paymentMethodName(o.payment_method))} payment details within ${paymentSettings.detailsWithinHours} hours.`)}
+    `${box(`<strong>Next step:</strong> within ${hours} hours, send ${esc(o.customer_name ?? "the customer")} the order confirmation with the shipping cost and payment details. They chose: <strong>${esc(methods(o))}</strong>.`)}
     ${button(absoluteUrl(`/admin/orders/${o.id}`), "Open order in admin")}
-    <p style="line-height:1.6"><strong>Customer:</strong> ${esc(o.customer_name ?? "")}<br><strong>Email:</strong> ${esc(o.email)}<br><strong>Phone:</strong> ${esc(o.phone ?? "")}${o.whatsapp ? `<br><strong>WhatsApp:</strong> ${esc(o.whatsapp)}` : ""}
-    <br><strong>Delivery:</strong> ${esc(deliveryLabel(o))}${o.preferred_delivery_date ? ` · preferred ${esc(formatDate(o.preferred_delivery_date))}` : ""}${o.contains_live_animals ? "<br><strong>Live animals:</strong> yes (18+ and policy confirmed)" : ""}</p>
-    ${a ? addressBlock(o) : ""}
-    ${o.delivery_notes ? `<p><strong>Notes:</strong> ${esc(o.delivery_notes)}</p>` : ""}
+    <p style="line-height:1.6"><strong>Customer:</strong> ${esc(o.customer_name ?? "")}${o.company ? ` (${esc(o.company)})` : ""}<br><strong>Email:</strong> ${esc(o.email)}<br><strong>Phone:</strong> ${esc(o.phone ?? "")}
+    ${o.contains_live_animals ? `<br><strong>Live animals:</strong> yes (18+ and policy confirmed)${o.preferred_delivery_date ? `, preferred delivery ${esc(formatDate(o.preferred_delivery_date))}` : ""}` : ""}</p>
+    ${addressBlock(o)}
+    ${o.delivery_notes ? `<p><strong>Order notes:</strong> ${esc(o.delivery_notes)}</p>` : ""}
     ${orderTable(o)}`,
     { replyTo: o.email },
   );

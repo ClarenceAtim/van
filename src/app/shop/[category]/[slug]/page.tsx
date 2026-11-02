@@ -120,8 +120,8 @@ export default async function ProductPage({ params }: Props) {
                 <AlertTriangle className="size-4" aria-hidden /> Live animal notice
               </p>
               <p>
-                Ships overnight ({formatMoney(siteConfig.shipping.liveAnimalOvernightCents)}) {siteConfig.shipping.liveAnimalShipDays}, only when weather along the route is safe.
-                Shipping depends on your local laws; at checkout you&apos;ll confirm your state and that you are {siteConfig.liveAnimals.minimumAge}+ and agree to our{" "}
+                Ships overnight {siteConfig.shipping.liveAnimalShipDays} within the US, only when weather along the route is safe. Shipping depends on your local laws; at
+                checkout you&apos;ll confirm that you are {siteConfig.liveAnimals.minimumAge}+ and agree to our{" "}
                 <Link href="/terms#live-animals" className="font-medium underline underline-offset-2">
                   Live Animal Policy
                 </Link>
@@ -137,7 +137,7 @@ export default async function ProductPage({ params }: Props) {
             </li>
             <li className="flex items-center gap-2">
               <Truck className="size-5 text-primary" aria-hidden />
-              {product.is_live_animal ? "Insulated overnight packaging" : `Free shipping over ${formatMoney(siteConfig.shipping.freeStandardOverCents)}`}
+              {product.is_live_animal ? "Insulated overnight packaging" : "Ships worldwide"}
             </li>
           </ul>
           <p className="text-xs text-muted-foreground">SKU: {product.sku}</p>

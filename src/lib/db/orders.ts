@@ -6,10 +6,10 @@ export type NewOrder = {
   email: string;
   customer_name: string;
   phone: string;
-  whatsapp: string | null;
+  company: string | null;
   subtotal_cents: number;
-  shipping_cents: number;
   tax_cents: number;
+  /** Subtotal + tax; shipping is added when the order is confirmed. */
   total_cents: number;
   currency: string;
   shipping_method: string;
@@ -18,8 +18,8 @@ export type NewOrder = {
   preferred_delivery_date: string | null;
   contains_live_animals: boolean;
   live_animal_ack_at: string | null;
-  payment_method: string;
-  terms_accepted_at: string;
+  payment_methods: string[];
+  payment_other: string | null;
   cart_id: string | null;
 };
 
@@ -41,21 +41,21 @@ export class OutOfStockError extends Error {
 }
 
 /**
- * Creates an order awaiting payment details, with a price snapshot of every line, and reserves
- * the stock. Call inside a transaction: if any item can't be reserved, the whole order rolls back.
+ * Creates an order awaiting confirmation, with a price snapshot of every line, and reserves the
+ * stock. Call inside a transaction: if any item can't be reserved, the whole order rolls back.
  */
 export async function createOrder(q: Queryable, o: NewOrder, items: NewOrderItem[]) {
   const order = (await one<{ id: string; order_number: string }>(
     q,
-    `insert into orders (user_id, email, customer_name, phone, whatsapp, status, subtotal_cents, shipping_cents, tax_cents, total_cents, currency,
+    `insert into orders (user_id, email, customer_name, phone, company, status, subtotal_cents, shipping_cents, tax_cents, total_cents, currency,
                          shipping_method, shipping_address, delivery_notes, preferred_delivery_date, contains_live_animals, live_animal_ack_at,
-                         payment_method, terms_accepted_at, cart_id, stock_reserved)
-     values ($1, $2, $3, $4, $5, 'awaiting_payment_details', $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, true)
+                         payment_methods, payment_other, cart_id, stock_reserved)
+     values ($1, $2, $3, $4, $5, 'awaiting_confirmation', $6, 0, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, true)
      returning id, order_number`,
     [
-      o.user_id, o.email, o.customer_name, o.phone, o.whatsapp, o.subtotal_cents, o.shipping_cents, o.tax_cents, o.total_cents, o.currency,
+      o.user_id, o.email, o.customer_name, o.phone, o.company, o.subtotal_cents, o.tax_cents, o.total_cents, o.currency,
       o.shipping_method, JSON.stringify(o.shipping_address), o.delivery_notes, o.preferred_delivery_date, o.contains_live_animals, o.live_animal_ack_at,
-      o.payment_method, o.terms_accepted_at, o.cart_id,
+      o.payment_methods, o.payment_other, o.cart_id,
     ],
   ))!;
   for (const i of items) {
@@ -71,7 +71,7 @@ export async function createOrder(q: Queryable, o: NewOrder, items: NewOrderItem
       [order.id, i.product_id, i.product_slug, i.product_name, i.sku, i.unit_price_cents, i.quantity, i.unit_price_cents * i.quantity, i.is_live_animal],
     );
   }
-  await addOrderEvent(q, order.id, "awaiting_payment_details", "Order placed. Stock reserved.");
+  await addOrderEvent(q, order.id, "awaiting_confirmation", "Order placed. Stock reserved.");
   return order;
 }
 
@@ -90,13 +90,14 @@ export async function listOrdersForUser(q: Queryable, userId: string, limit = 10
   return rows.map((r) => r.order);
 }
 
-/** Returns the order only if it belongs to this user. */
-export async function getOrderForUser(q: Queryable, userId: string, orderId: string): Promise<Order | null> {
-  return (await one<{ order: Order }>(q, `select ${ORDER_JSON} from orders o where o.id = $1 and o.user_id = $2`, [orderId, userId]))?.order ?? null;
+/** One order, only if it belongs to this user. */
+export async function getOrderForUser(q: Queryable, userId: string, id: string): Promise<Order | null> {
+  return (await one<{ order: Order }>(q, `select ${ORDER_JSON} from orders o where o.id = $1 and o.user_id = $2`, [id, userId]))?.order ?? null;
 }
 
-export async function getOrder(q: Queryable, orderId: string): Promise<Order | null> {
-  return (await one<{ order: Order }>(q, `select ${ORDER_JSON} from orders o where o.id = $1`, [orderId]))?.order ?? null;
+/** Admin: any order. */
+export async function getOrder(q: Queryable, id: string): Promise<Order | null> {
+  return (await one<{ order: Order }>(q, `select ${ORDER_JSON} from orders o where o.id = $1`, [id]))?.order ?? null;
 }
 
 export async function getOrderByNumber(q: Queryable, orderNumber: string): Promise<Order | null> {
@@ -108,7 +109,7 @@ export async function listOrders(q: Queryable, filters: { status?: OrderStatus |
   const where: string[] = [];
   const params: unknown[] = [];
   if (filters.status) where.push(`o.status = $${params.push(filters.status)}`);
-  if (filters.paymentMethod) where.push(`o.payment_method = $${params.push(filters.paymentMethod)}`);
+  if (filters.paymentMethod) where.push(`$${params.push(filters.paymentMethod)} = any(o.payment_methods)`);
   const sql = `select ${ORDER_JSON} from orders o ${where.length ? `where ${where.join(" and ")}` : ""} order by o.created_at desc limit $${params.push(limit)}`;
   const { rows } = await q.query<{ order: Order }>(sql, params);
   return rows.map((r) => r.order);
@@ -124,13 +125,22 @@ async function transition(q: Queryable, id: string, from: readonly OrderStatus[]
   return !!r;
 }
 
-export async function markPaymentDetailsSent(q: Queryable, id: string, dueAt: Date) {
-  return transition(q, id, ["awaiting_payment_details", "payment_details_sent"], "payment_details_sent", "payment_details_sent_at = now(), payment_due_at = $4, reminder_sent_at = null", [dueAt.toISOString()]);
+/** Records the confirmation email: shipping cost, the method payment details were sent for, and the deadline. */
+export async function markConfirmationSent(q: Queryable, id: string, c: { shippingCents: number; paymentMethod: string; dueAt: Date }) {
+  return transition(
+    q,
+    id,
+    ["awaiting_confirmation", "confirmation_sent"],
+    "confirmation_sent",
+    `shipping_cents = $4, shipping_confirmed = true, total_cents = subtotal_cents + tax_cents + $4, confirmed_payment_method = $5,
+     confirmation_sent_at = now(), payment_due_at = $6, reminder_sent_at = null`,
+    [c.shippingCents, c.paymentMethod, c.dueAt.toISOString()],
+  );
 }
 
 /** Marks paid and counts the sale. Stock was already reserved when the order was placed. */
 export async function markPaid(q: Queryable, id: string, reference: string | null) {
-  const ok = await transition(q, id, ["awaiting_payment_details", "payment_details_sent"], "paid", "paid_at = now(), payment_reference = $4", [reference]);
+  const ok = await transition(q, id, ["awaiting_confirmation", "confirmation_sent"], "paid", "paid_at = now(), payment_reference = $4", [reference]);
   if (ok) {
     await q.query(
       `update products p set sales_count = p.sales_count + oi.quantity from order_items oi where oi.order_id = $1 and oi.product_id = p.id`,
@@ -161,7 +171,7 @@ export async function releaseStock(q: Queryable, id: string) {
 
 /** Cancels an order that hasn't shipped and releases its stock. */
 export async function cancelOrder(q: Queryable, id: string) {
-  const ok = await transition(q, id, ["awaiting_payment_details", "payment_details_sent", "paid", "processing"], "cancelled", "cancelled_at = now()");
+  const ok = await transition(q, id, ["awaiting_confirmation", "confirmation_sent", "paid", "processing"], "cancelled", "cancelled_at = now()");
   if (ok) await releaseStock(q, id);
   return ok;
 }
@@ -169,7 +179,7 @@ export async function cancelOrder(q: Queryable, id: string) {
 /** Unpaid orders whose reminder is due (not yet reminded, due date within `beforeMs`). */
 export async function ordersNeedingReminder(q: Queryable, now: Date, beforeMs: number) {
   const { rows } = await q.query<{ id: string }>(
-    `select id from orders where status = 'payment_details_sent' and reminder_sent_at is null
+    `select id from orders where status = 'confirmation_sent' and reminder_sent_at is null
         and payment_due_at > $1 and payment_due_at <= $2`,
     [now.toISOString(), new Date(now.getTime() + beforeMs).toISOString()],
   );
@@ -182,27 +192,29 @@ export async function markReminderSent(q: Queryable, id: string) {
 
 /** Unpaid orders past their payment deadline. */
 export async function expiredUnpaidOrders(q: Queryable, now: Date) {
-  const { rows } = await q.query<{ id: string }>("select id from orders where status = 'payment_details_sent' and payment_due_at <= $1", [now.toISOString()]);
+  const { rows } = await q.query<{ id: string }>("select id from orders where status = 'confirmation_sent' and payment_due_at <= $1", [now.toISOString()]);
   return rows.map((r) => r.id);
 }
 
 // ───────────── Payment templates (admin only) ─────────────
 
-export type PaymentTemplate = { method_id: string; subject: string; body: string; updated_at: string | null };
+export type PaymentTemplate = { method_id: string; subject: string; body: string; details: Record<string, string>; updated_at: string | null };
+
+const TEMPLATE_COLUMNS = "method_id, subject, body, details, updated_at::text";
 
 export async function listPaymentTemplates(q: Queryable): Promise<PaymentTemplate[]> {
-  const { rows } = await q.query<PaymentTemplate>("select method_id, subject, body, updated_at::text from payment_templates");
+  const { rows } = await q.query<PaymentTemplate>(`select ${TEMPLATE_COLUMNS} from payment_templates`);
   return rows;
 }
 
 export async function getPaymentTemplate(q: Queryable, methodId: string): Promise<PaymentTemplate | null> {
-  return one<PaymentTemplate>(q, "select method_id, subject, body, updated_at::text from payment_templates where method_id = $1", [methodId]);
+  return one<PaymentTemplate>(q, `select ${TEMPLATE_COLUMNS} from payment_templates where method_id = $1`, [methodId]);
 }
 
-export async function savePaymentTemplate(q: Queryable, methodId: string, subject: string, body: string) {
+export async function savePaymentTemplate(q: Queryable, methodId: string, t: { subject: string; body: string; details: Record<string, string> }) {
   await q.query(
-    `insert into payment_templates (method_id, subject, body) values ($1, $2, $3)
-     on conflict (method_id) do update set subject = excluded.subject, body = excluded.body`,
-    [methodId, subject, body],
+    `insert into payment_templates (method_id, subject, body, details) values ($1, $2, $3, $4)
+     on conflict (method_id) do update set subject = excluded.subject, body = excluded.body, details = excluded.details`,
+    [methodId, t.subject, t.body, JSON.stringify(t.details)],
   );
 }

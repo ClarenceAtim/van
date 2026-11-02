@@ -1,24 +1,28 @@
 # Orders and payments
 
-The website does **not** take payments. Customers place an *order request*, choose how they want to pay, and you email them the payment details. When the money arrives, you mark the order as paid in /admin.
+The website does **not** take payments. Customers place an *order request*: they enter their shipping details, tick how they'd like to pay, and click **Place Order**. You then email them an **order confirmation** with the shipping cost, the final total and your payment details. When the money arrives, you mark the order as paid in /admin.
 
 ## 1. How an order flows
 
-1. **Customer checks out** in 4 steps: contact and shipping, then delivery, then payment method, then review and **Place order**.
-   - Prices, shipping and totals are recalculated on the server. The items are **reserved** (taken out of stock) straight away.
+1. **The customer checks out** on one page. They fill in shipping details, tick one or more payment methods, and click **Place Order**.
+   - Prices and totals are recalculated on the server. The items are **reserved** (taken out of stock) straight away.
    - The customer sees their order number (for example `SH-10234`) and gets an **"Order received"** email.
-   - You get a **"New order"** email with every detail and a link to the order in /admin.
-2. **You send payment details.** Open the order in **/admin → Orders** (new orders are highlighted), check the pre-filled email and click **Send email to customer**.
-   - Status: *Awaiting payment details* → *Payment details sent*.
+   - You get a **"New order"** email with all the details and a button that opens the order in /admin.
+2. **You send the order confirmation.** Open the order in **/admin → Orders** (new orders are highlighted in yellow). In **Send order confirmation**:
+   1. Type the **shipping cost** (for example `14.95`, or `0` for free).
+   2. Choose which **payment method** to send details for. The methods the customer ticked are listed first.
+   3. Click **Fill in confirmation email**. Your template is filled in with the items, shipping, total and your payment details.
+   4. Read it, change anything you like, and click **Send confirmation to customer**.
+   - The status changes from *Awaiting confirmation* to *Confirmation sent*.
    - The customer now has **3 days** to pay.
-3. **The customer pays**, using your bank, PayPal, Zelle or other details.
-4. **You mark it as paid.** On the order page, click **Mark as paid**. You can add a reference such as the transfer ID. The customer gets a "Payment received" email.
-5. **You pack and ship.** You can click **Mark as processing** and **Print packing slip**. When it ships, use **Add tracking number**, and the customer gets the tracking by email.
-6. **Delivered.** Click **Mark as delivered** if you want to close it off.
+3. **The customer pays** using the details you sent.
+4. **You mark it as paid.** On the order page, click **Mark as paid**. You can add a reference, such as the transfer ID. The customer gets a "Payment received" email.
+5. **You pack and ship.** You can click **Mark as processing** and **Print packing slip**. When it ships, use **Add tracking number**, and the customer gets the tracking number by email.
+6. **Delivered.** Click **Mark as delivered** to close the order.
 
-**If the customer doesn't pay:** they get a reminder **1 day before** the deadline. When the deadline passes, the order is **cancelled automatically**, the items go back into stock and the customer is told by email. This job runs once a day (see section 6).
+**If the customer doesn't pay:** they get a reminder **1 day before** the deadline. When the deadline passes, the order is **cancelled automatically**, the items go back into stock and the customer is told by email. This job runs once a day (see section 7).
 
-**Cancelling by hand:** use **Cancel order** on the order page. The stock goes back on sale and the customer gets an email with the reason you typed.
+**Cancelling by hand:** use **Cancel order**. The stock goes back on sale and the customer gets an email with the reason you typed.
 
 **Refunds:** send the money back yourself, then click **Mark as refunded** to record it. If the order had not shipped yet, its stock goes back on sale.
 
@@ -26,8 +30,8 @@ Every step is listed under **History** on the order page, including which emails
 
 | Status | Meaning |
 |---|---|
-| Awaiting payment details | New order: you need to send payment details |
-| Payment details sent | Waiting for the customer to pay |
+| Awaiting confirmation | New order: send the confirmation with shipping and payment details |
+| Confirmation sent | Waiting for the customer to pay |
 | Paid | Money received, ready to pack |
 | Processing | Being packed |
 | Shipped | Tracking number sent |
@@ -35,70 +39,81 @@ Every step is listed under **History** on the order page, including which emails
 | Cancelled | Cancelled by you, or automatically for non-payment (stock released) |
 | Refunded | You refunded the customer |
 
-## 2. Set your payment details (do this first)
+## 2. Put in your payment details (do this first)
 
 1. Go to **/admin → Settings → Edit payment templates**.
-2. Each payment method has one email template. Replace the line `[Add your … details here …]` with your real details, for example:
-   - **Bank transfer:** bank name, account name, account and routing number (or IBAN and SWIFT)
-   - **PayPal:** your PayPal email, plus whether customers should use "Friends and Family"
-   - **Zelle:** your Zelle email or phone and the name it shows
-   - **Cash App:** your $Cashtag
-   - **Mobile Money:** provider, number and registered name
-   - **Crypto:** coin, network and wallet address
-3. Click **Save template**.
+2. Open each method you use and fill in **Your payment details**. Each method has its own boxes:
 
-You can use these placeholders. They are filled in automatically for each order:
+   | Method | Details |
+   |---|---|
+   | Zelle | Email or phone, and the name on the account |
+   | Cash App | $Cashtag |
+   | Venmo | @username |
+   | Chime | $ChimeSign |
+   | Apple Pay | Phone or email for Apple Cash |
+   | ACH | Account name, bank, routing number and account number |
+   | SEPA bank transfer | Account name, IBAN, BIC and bank |
+   | Revolut | @Revtag or phone |
+   | Wise | Email or account details |
+   | iDEAL, Bancontact, Credit or debit card | Your payment link |
+   | PayPal | PayPal email or PayPal.me link, plus optional instructions |
+   | Other | Default instructions |
+
+3. You can also change the **subject** and **email text**, then click **Save template**.
+
+These details are stored in your database and only admins can see them. They are **never shown on the website**: they only appear in the confirmation emails you send.
+
+You can use these placeholders in the subject and text:
 
 | Placeholder | Becomes |
 |---|---|
 | `{{customer_name}}` | The customer's name |
 | `{{order_number}}` | For example, SH-10234 |
-| `{{amount}}` | The order total, for example $129.98 |
+| `{{items}}` | One line per item, with the price |
+| `{{subtotal}}`, `{{tax}}`, `{{shipping_cost}}`, `{{total}}` | The amounts |
+| `{{totals}}` | Subtotal, tax (if any), shipping and total to pay, on separate lines |
 | `{{payment_method}}` | For example, Zelle |
-| `{{due_date}}` | The date the payment is due |
+| `{{payment_details}}` | Your saved details for that method, as "Label: value" lines |
+| `{{due_date}}` | The payment deadline |
 | `{{store_name}}` | Your store name |
 
-You can still edit the email on each order before you send it.
-
-Payment details are only ever sent by email. They never appear on the website.
-
-## 3. Add, remove or rename payment methods
+## 3. Add, remove, rename or reorder payment methods
 
 All payment methods are in **`src/config/payments.ts`**. Each one looks like this:
 
 ```ts
-{ id: "zelle", name: "Zelle", description: "Instant US bank payment with Zelle.", icon: "zelle", enabled: true, kind: "manual" },
+{ id: "zelle", name: "Zelle", description: "Send from your US bank app", group: "us", enabled: true, kind: "manual",
+  fields: [{ key: "recipient", label: "Zelle email or phone" }, { key: "name", label: "Name on the account" }] },
 ```
 
-- **Hide a method:** set `enabled: false`. It disappears from checkout, but old orders keep it.
-- **Rename it:** change `name` and `description`. Leave `id` as it is, because existing orders and templates use it.
-- **Add one:** copy a line and give it a new, unique `id` (lowercase, with dashes). For `icon`, use one of `bank`, `paypal`, `zelle`, `cashapp`, `mobile` or `crypto`. Then write its template in /admin.
-- **Change the timings** in the same file:
-  - `detailsWithinHours` (24): the promise shown to customers
+- **Switch a method off:** set `enabled: false`. It disappears from checkout, but old orders keep showing it.
+- **Rename it:** change `name` and `description`. Leave `id` as it is, because orders and templates use it.
+- **Reorder:** move the line. Methods appear in this order within their group.
+- **Move it to another group:** change `group` to `"us"`, `"europe"` or `"worldwide"`.
+- **Add a method:** copy a line and give it a new, unique `id` (lowercase, with dashes). List the details you'll need in `fields`. Then fill them in on the templates page.
+- **Change the timings** in `paymentSettings` in the same file:
+  - `confirmWithinHours` (24): the promise shown to customers
   - `payWithinDays` (3): the payment deadline
   - `reminderDaysBefore` (1): when the reminder goes out
 
-After editing the file, commit and redeploy.
+Customers see all groups, but their own region comes first: US customers see United States first, and European customers see Europe first. The list of countries counted as Europe is also in this file.
 
-> **Online payments later:** each method has `kind: "manual"`. To add a card or online provider, add a method with a new kind and handle it in `placeOrder` (`src/app/actions/checkout.ts`) after the order is created. The note at the top of that file explains where.
+After editing, commit and redeploy.
 
-### Delivery options
+> **Online payments later:** every method has `kind: "manual"`. To add a card or online provider, add a method with a new kind and redirect to the provider in `placeOrder` (`src/app/actions/checkout.ts`). The note at the top of that file shows where.
 
-Delivery options are set in **`src/config/site.ts`** under `shipping`:
+## 4. Countries, live animals, currency and tax
 
-| Setting | What it does |
-|---|---|
-| `standardCents` | Price of standard shipping, in cents |
-| `expressCents` | Price of express shipping, in cents |
-| `freeStandardOverCents` | Free standard shipping threshold (9900 = $99) |
-| `liveAnimalOvernightCents` | Price of overnight live-animal shipping, in cents |
-| `liveAnimalShipWeekdays` | Days that live animals ship |
-| `liveAnimalLeadDays` | Days needed before the first live-animal ship day |
-| `localPickup.enabled` | Turns local pickup on or off |
+- **Countries at checkout:** `src/config/countries.ts`. Delete a line to stop shipping to that country.
+  - State or region is required for the US, Canada and Australia.
+  - A few countries without postal codes skip the postal code field.
+- **Where live animals can ship:** `liveAnimals` in `src/config/site.ts`.
+  - Right now: the United States, but not Alaska or Hawaii.
+  - If a customer with an animal in their cart chooses anywhere else, checkout explains why and won't let them place the order. Supplies ship worldwide.
+- **Currency:** `currency` and `locale` in `src/config/site.ts`. For euros, use `currency: "EUR"` and, for example, `locale: "nl-NL"`, then update your product prices.
+- **Tax or VAT:** `tax` in `src/config/site.ts`. For example, `{ enabled: true, rate: 0.21, label: "VAT (21%)", note: "Prices exclude VAT." }` adds 21% VAT to every order and shows the note at checkout.
 
-The countries offered at checkout are in `shippingCountries` in the same file. The states that live animals can ship to are under **/admin → Settings**.
-
-## 4. Email addresses
+## 5. Email addresses
 
 Set these in `.env.local` for your computer, and in Vercel under **Project → Settings → Environment Variables** for the live site:
 
@@ -118,22 +133,22 @@ Set these in `.env.local` for your computer, and in Vercel under **Project → S
 
 Until you verify a domain, Resend only delivers to **your own Resend account email**. That is enough to test, but customers won't receive anything yet.
 
-### After you buy a domain
+### After you buy a domain and business email
 
 1. In Resend, go to **Domains → Add domain**. Add the DNS records it shows at your domain registrar and wait for "Verified".
 2. Set `ORDER_FROM_EMAIL` to, for example, `ScaleHaven Reptiles <orders@yourdomain.com>`.
-3. Change `ORDER_REPLY_TO_EMAIL` and `ORDER_NOTIFICATION_EMAIL` to your new inbox, if you want to.
+3. Set `ORDER_REPLY_TO_EMAIL` and `ORDER_NOTIFICATION_EMAIL` to your business inbox.
 4. Also update `contact.email` in `src/config/site.ts`. It is shown on the website and in emails.
-5. Redeploy. Then send yourself a test order.
+5. Redeploy. Then place a test order to yourself.
 
-## 5. Day-to-day checklist
+## 6. Day-to-day checklist
 
-- [ ] Check **/admin** for highlighted **New orders**. Send payment details within 24 hours.
-- [ ] Check your bank, PayPal, Zelle and other accounts. **Mark as paid** any orders you have received payment for.
+- [ ] Check **/admin** for highlighted **New orders**. Send each confirmation within 24 hours.
+- [ ] Check your Zelle, PayPal, bank and other accounts. **Mark as paid** any orders you have received payment for.
 - [ ] Pack paid orders. Print the packing slip. Add the tracking number when shipped.
 - [ ] Live animals ship Monday to Wednesday only. Check the weather and email the customer if you need to delay.
 
-## 6. The daily job (reminders and auto-cancel)
+## 7. The daily job (reminders and auto-cancel)
 
 `vercel.json` tells Vercel to call `/api/cron/orders` once a day, at 14:00 UTC. Vercel sends your `CRON_SECRET` with the call automatically, as long as the variable is set in the project.
 

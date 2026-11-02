@@ -90,8 +90,8 @@ export async function overview(q: Queryable, lowStock: number) {
   );
   const counts = await one<{ new_orders: number; awaiting_payment: number; to_ship: number; pending_reviews: number; unread: number }>(
     q,
-    `select (select count(*) from orders where status = 'awaiting_payment_details')::int as new_orders,
-            (select count(*) from orders where status = 'payment_details_sent')::int as awaiting_payment,
+    `select (select count(*) from orders where status = 'awaiting_confirmation')::int as new_orders,
+            (select count(*) from orders where status = 'confirmation_sent')::int as awaiting_payment,
             (select count(*) from orders where status in ('paid', 'processing'))::int as to_ship,
             (select count(*) from reviews where status = 'pending')::int as pending_reviews,
             (select count(*) from contact_messages where not read)::int as unread`,
@@ -126,13 +126,4 @@ export async function listMessages(q: Queryable) {
 
 export async function setMessageRead(q: Queryable, id: string, read: boolean) {
   await q.query("update contact_messages set read = $2 where id = $1", [id, read]);
-}
-
-export async function listRegions(q: Queryable) {
-  const { rows } = await q.query<{ code: string; name: string; allowed: boolean }>("select code, name, allowed from live_animal_regions order by name");
-  return rows;
-}
-
-export async function setRegionAllowed(q: Queryable, code: string, allowed: boolean) {
-  await q.query("update live_animal_regions set allowed = $2 where code = $1", [code, allowed]);
 }

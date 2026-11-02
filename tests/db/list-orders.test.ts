@@ -17,9 +17,8 @@ const order = (email: string, payment_method: string): orders.NewOrder => ({
   email,
   customer_name: "Test Customer",
   phone: "+1 512 555 0134",
-  whatsapp: null,
+  company: null,
   subtotal_cents: 1000,
-  shipping_cents: 0,
   tax_cents: 0,
   total_cents: 1000,
   currency: "USD",
@@ -29,8 +28,8 @@ const order = (email: string, payment_method: string): orders.NewOrder => ({
   preferred_delivery_date: null,
   contains_live_animals: false,
   live_animal_ack_at: null,
-  payment_method,
-  terms_accepted_at: new Date().toISOString(),
+  payment_methods: [payment_method],
+  payment_other: null,
   cart_id: null,
 });
 
@@ -65,7 +64,7 @@ describe("listOrders", () => {
 
   it("filters by status", async () => {
     expect((await orders.listOrders(q, { status: "paid" })).map((o) => o.email)).toEqual(["paid@example.com"]);
-    expect((await orders.listOrders(q, { status: "awaiting_payment_details" })).map((o) => o.email)).toEqual(["new@example.com"]);
+    expect((await orders.listOrders(q, { status: "awaiting_confirmation" })).map((o) => o.email)).toEqual(["new@example.com"]);
   });
 
   it("filters by payment method, alone and with a status", async () => {

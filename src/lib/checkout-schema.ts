@@ -1,11 +1,13 @@
 import { z } from "zod";
+import { COUNTRIES, NO_POSTAL_CODE, REGIONS } from "@/config/countries";
 import { enabledPaymentMethods } from "@/config/payments";
 import { siteConfig } from "@/config/site";
-import { US_STATES } from "@/lib/validation";
+import { liveAnimalShippingProblem } from "@/lib/pricing";
 
 /**
  * Checkout validation, shared by the browser (instant field errors) and the server (the source of
- * truth: every step is validated again when the order is placed).
+ * truth: everything is validated again when the order is placed). The schema depends on the cart:
+ * live animals add a delivery date, two confirmations and the destination rules.
  */
 
 const text = (max: number) =>
@@ -13,8 +15,6 @@ const text = (max: number) =>
     .string()
     .transform((s) => s.replace(/[\u0000-\u001F\u007F]/g, " ").replace(/\s+/g, " ").trim())
     .pipe(z.string().max(max, `Keep this under ${max} characters`));
-
-const optionalText = (max: number) => text(max).optional().default("");
 
 /** International format: + then country code and number, e.g. +1 512 555 0134. */
 const phone = z
@@ -24,66 +24,75 @@ const phone = z
     message: "Include your country code, e.g. +1 512 555 0134",
   });
 
-const COUNTRY_CODES = siteConfig.shippingCountries.map((c) => c.code) as [string, ...string[]];
+const COUNTRY_CODES = new Set(COUNTRIES.map((c) => c.code));
 
-export const contactSchema = z
-  .object({
-    savedAddressId: z.string().optional().default(""),
-    fullName: text(100).pipe(z.string().min(2, "Enter your full name")),
-    email: z.string().trim().toLowerCase().pipe(z.email("Enter a valid email address").max(254)),
-    confirmEmail: z.string().trim().toLowerCase(),
-    phone,
-    whatsapp: z.union([z.literal(""), phone]).optional().default(""),
-    country: z.enum(COUNTRY_CODES, { message: "Choose a country we ship to" }),
-    line1: text(200).pipe(z.string().min(3, "Enter your street address")),
-    line2: optionalText(200),
-    city: text(100).pipe(z.string().min(2, "Enter your city")),
-    region: text(100).pipe(z.string().min(2, "Enter your state or region")),
-    postalCode: z.string().trim().max(12),
-    deliveryNotes: optionalText(500),
-    saveAddress: z.boolean().optional().default(false),
-  })
-  .superRefine((v, ctx) => {
-    if (v.confirmEmail !== v.email) ctx.addIssue({ code: "custom", path: ["confirmEmail"], message: "Email addresses don't match" });
-    if (v.country === "US") {
-      if (!(US_STATES as readonly string[]).includes(v.region)) ctx.addIssue({ code: "custom", path: ["region"], message: "Choose your state" });
-      if (!/^\d{5}(-\d{4})?$/.test(v.postalCode)) ctx.addIssue({ code: "custom", path: ["postalCode"], message: "Enter a 5-digit ZIP code" });
-    } else if (!/^[A-Za-z0-9][A-Za-z0-9 -]{1,10}$/.test(v.postalCode)) {
-      ctx.addIssue({ code: "custom", path: ["postalCode"], message: "Enter your postal code" });
-    }
-  });
+/** Countries where State / Region is required (and chosen from a list). */
+export const regionRequired = (country: string) => country in REGIONS;
+export const postalCodeRequired = (country: string) => !NO_POSTAL_CODE.has(country);
 
-export const deliverySchema = z.object({
-  deliveryMethod: z.string().min(1, "Choose a delivery method"),
-  preferredDate: z.string().optional().default(""),
-  ageConfirmed: z.boolean().optional().default(false),
-  livePolicyAccepted: z.boolean().optional().default(false),
-});
+export type CheckoutContext = { containsLiveAnimals: boolean; deliveryDates: readonly string[] };
 
-export const paymentSchema = z.object({
-  paymentMethod: z.string().refine((id) => enabledPaymentMethods().some((m) => m.id === id), { message: "Choose how you'd like to pay" }),
-});
+export function checkoutSchema(ctx: CheckoutContext) {
+  return z
+    .object({
+      savedAddressId: z.string().max(64).optional().default(""),
+      fullName: text(100).pipe(z.string().min(2, "Enter your full name")),
+      email: z.string().trim().toLowerCase().pipe(z.email("Enter a valid email address").max(254)),
+      phone,
+      company: text(100).optional().default(""),
+      country: z.string().refine((c) => COUNTRY_CODES.has(c), "Select a country"),
+      region: text(100).optional().default(""),
+      city: text(100).pipe(z.string().min(2, "Enter your city")),
+      address: text(300).pipe(z.string().min(3, "Enter your shipping address")),
+      postalCode: z.string().trim().max(12, "Enter a valid postal code").optional().default(""),
+      notes: text(1000).optional().default(""),
+      saveAddress: z.boolean().optional().default(false),
+      preferredDate: z.string().optional().default(""),
+      ageConfirmed: z.boolean().optional().default(false),
+      livePolicyAccepted: z.boolean().optional().default(false),
+      paymentMethods: z.array(z.string()).max(20).optional().default([]),
+      paymentOther: text(100).optional().default(""),
+      turnstileToken: z.string().max(4096).optional().nullable(),
+      /** The total the customer saw (before shipping); the order is rejected if the server's total differs. */
+      expectedTotalCents: z.number().int().min(0),
+    })
+    .superRefine((v, ctx2) => {
+      const issue = (path: string, message: string) => ctx2.addIssue({ code: "custom", path: [path], message });
 
-export const reviewSchema = z.object({
-  termsAccepted: z.literal(true, { message: "Please accept the Terms of Service" }),
-  turnstileToken: z.string().max(4096).optional().nullable(),
-  /** The total the customer saw on the review step; the order is rejected if the server's total differs. */
-  expectedTotalCents: z.number().int().min(0),
-});
+      const regions = REGIONS[v.country];
+      if (regions) {
+        if (!regions.some((r) => r.code === v.region)) issue("region", v.country === "US" ? "Select your state" : "Select your state or province");
+      }
+      if (v.country === "US") {
+        if (!/^\d{5}(-\d{4})?$/.test(v.postalCode)) issue("postalCode", "Enter a 5-digit ZIP code");
+      } else if (v.country === "CA") {
+        if (!/^[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d$/.test(v.postalCode)) issue("postalCode", "Enter a postal code like K1A 0B1");
+      } else if (v.postalCode) {
+        if (!/^[A-Za-z0-9][A-Za-z0-9 -]{1,11}$/.test(v.postalCode)) issue("postalCode", "Enter a valid postal code");
+      } else if (postalCodeRequired(v.country)) {
+        issue("postalCode", "Enter your postal code");
+      }
 
-export type ContactInput = z.input<typeof contactSchema>;
-export type ContactData = z.output<typeof contactSchema>;
-export type DeliveryData = z.output<typeof deliverySchema>;
-export type PaymentData = z.output<typeof paymentSchema>;
+      const enabled = enabledPaymentMethods();
+      if (!v.paymentMethods.length) issue("paymentMethods", "Tick at least one way to pay");
+      else if (v.paymentMethods.some((id) => !enabled.some((m) => m.id === id)) || new Set(v.paymentMethods).size !== v.paymentMethods.length) {
+        issue("paymentMethods", "Choose from the payment methods listed");
+      }
+      const needsText = enabled.filter((m) => m.needsText).map((m) => m.id);
+      if (v.paymentMethods.some((id) => needsText.includes(id)) && v.paymentOther.length < 2) issue("paymentOther", "Tell us which payment method you'd like to use");
 
-export const placeOrderSchema = z.object({
-  contact: contactSchema,
-  delivery: deliverySchema,
-  payment: paymentSchema,
-  review: reviewSchema,
-});
-export type PlaceOrderInput = z.input<typeof placeOrderSchema>;
-export type PlaceOrderData = z.output<typeof placeOrderSchema>;
+      if (ctx.containsLiveAnimals) {
+        const problem = liveAnimalShippingProblem(v.country, v.region);
+        if (problem) issue(v.country === "US" ? "region" : "country", problem);
+        if (!ctx.deliveryDates.includes(v.preferredDate)) issue("preferredDate", "Choose a delivery date");
+        if (!v.ageConfirmed) issue("ageConfirmed", `You must be ${siteConfig.liveAnimals.minimumAge} or older to buy live animals`);
+        if (!v.livePolicyAccepted) issue("livePolicyAccepted", "Please agree to the Live Animal Policy");
+      }
+    });
+}
+
+export type CheckoutInput = z.input<ReturnType<typeof checkoutSchema>>;
+export type CheckoutData = z.output<ReturnType<typeof checkoutSchema>>;
 
 /** Field → first error message, for showing next to each input. */
 export function errorMap(error: z.ZodError): Record<string, string> {

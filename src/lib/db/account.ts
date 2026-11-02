@@ -24,16 +24,23 @@ export type Address = {
   line1: string;
   line2: string | null;
   city: string;
-  region: string;
-  postal_code: string;
+  region: string | null;
+  postal_code: string | null;
+  country: string;
+  company: string | null;
   phone: string | null;
   is_default: boolean;
 };
-export type AddressInput = Omit<Address, "id" | "line2" | "phone"> & { line2?: string | null; phone?: string | null };
+export type AddressInput = Omit<Address, "id" | "line2" | "phone" | "country" | "company"> & {
+  line2?: string | null;
+  phone?: string | null;
+  country?: string;
+  company?: string | null;
+};
 
 export async function listAddresses(q: Queryable, userId: string): Promise<Address[]> {
   const { rows } = await q.query<Address>(
-    "select id, full_name, line1, line2, city, region, postal_code, phone, is_default from addresses where user_id = $1 order by is_default desc, created_at",
+    "select id, full_name, line1, line2, city, region, postal_code, country, company, phone, is_default from addresses where user_id = $1 order by is_default desc, created_at",
     [userId],
   );
   return rows;
@@ -42,17 +49,18 @@ export async function listAddresses(q: Queryable, userId: string): Promise<Addre
 /** Inserts, or updates an address owned by this user. Returns false if the id isn't theirs. */
 export async function saveAddress(q: Queryable, userId: string, a: AddressInput, id?: string): Promise<boolean> {
   if (a.is_default) await q.query("update addresses set is_default = false where user_id = $1", [userId]);
-  const values = [userId, a.full_name, a.line1, a.line2 || null, a.city, a.region, a.postal_code, a.phone || null, a.is_default];
+  const values = [userId, a.full_name, a.line1, a.line2 || null, a.city, a.region || null, a.postal_code || null, a.phone || null, a.is_default, a.country ?? "US", a.company || null];
   if (id) {
     const r = await q.query<{ id: string }>(
-      `update addresses set full_name = $2, line1 = $3, line2 = $4, city = $5, region = $6, postal_code = $7, phone = $8, is_default = $9
-        where user_id = $1 and id = $10 returning id`,
+      `update addresses set full_name = $2, line1 = $3, line2 = $4, city = $5, region = $6, postal_code = $7, phone = $8, is_default = $9,
+                           country = $10, company = $11
+        where user_id = $1 and id = $12 returning id`,
       [...values, id],
     );
     return r.rows.length === 1;
   }
   await q.query(
-    "insert into addresses (user_id, full_name, line1, line2, city, region, postal_code, phone, is_default) values ($1, $2, $3, $4, $5, $6, $7, $8, $9)",
+    "insert into addresses (user_id, full_name, line1, line2, city, region, postal_code, phone, is_default, country, company) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)",
     values,
   );
   return true;

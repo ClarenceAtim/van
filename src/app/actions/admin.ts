@@ -7,7 +7,8 @@ import { z } from "zod";
 import { requireAdmin } from "@/lib/admin";
 import { CATALOG_TAG } from "@/lib/catalog";
 import * as admin from "@/lib/db/admin";
-import { savePaymentTemplate as savePaymentTemplateRow } from "@/lib/db/orders";
+import { paymentMethods } from "@/config/payments";
+import { getOrder, savePaymentTemplate as savePaymentTemplateRow } from "@/lib/db/orders";
 import type { Queryable } from "@/lib/db/types";
 import * as service from "@/lib/order-service";
 import { productInputSchema } from "@/lib/products/schema";
@@ -168,9 +169,23 @@ function revalidateOrder(id: string) {
 }
 
 const text = (max: number) => z.string().trim().max(max);
+/** "12.50" → 1250. Empty is not allowed: the confirmation must state a shipping cost (0 for free). */
+const money = z
+  .string()
+  .trim()
+  .regex(/^\d{1,6}([.,]\d{1,2})?$/, "Enter the shipping cost, e.g. 12.50 (0 for free shipping)")
+  .transform((v) => Math.round(Number(v.replace(",", ".")) * 100));
+const methodId = z.string().refine((id) => service.knownPaymentMethodIds().includes(id), "Choose a payment method");
 
 const orderActionInput = z.discriminatedUnion("action", [
-  z.object({ action: z.literal("send-payment-details"), id: z.uuid(), subject: text(200).min(3, "Add a subject"), body: text(10_000).min(20, "The email body is too short") }),
+  z.object({
+    action: z.literal("send-confirmation"),
+    id: z.uuid(),
+    method_id: methodId,
+    shipping: money,
+    subject: text(200).min(3, "Add a subject"),
+    body: text(20_000).min(20, "The email is too short"),
+  }),
   z.object({ action: z.literal("mark-paid"), id: z.uuid(), reference: text(200).optional() }),
   z.object({
     action: z.literal("add-tracking"),
@@ -190,8 +205,8 @@ export async function orderAction(_prev: FormState, form: FormData): Promise<For
   const d = parsed.data;
   let result: { ok: boolean; message: string };
   switch (d.action) {
-    case "send-payment-details":
-      result = await service.sendPaymentDetails(q, d.id, d.subject, d.body);
+    case "send-confirmation":
+      result = await service.sendConfirmation(q, d.id, { methodId: d.method_id, shippingCents: d.shipping, subject: d.subject, body: d.body });
       break;
     case "mark-paid":
       result = await service.markOrderPaid(q, d.id, d.reference || null);
@@ -211,22 +226,39 @@ export async function orderAction(_prev: FormState, form: FormData): Promise<For
   return result;
 }
 
+/** Fills the confirmation template for a method and shipping cost, for the admin to edit before sending. */
+export async function draftConfirmation(input: { id: string; methodId: string; shipping: string }) {
+  const { q } = await requireAdmin();
+  const parsed = z.object({ id: z.uuid(), methodId, shipping: money }).safeParse(input);
+  if (!parsed.success) return { ok: false as const, message: parsed.error.issues[0].message };
+  const order = await getOrder(q, parsed.data.id);
+  if (!order) return { ok: false as const, message: "Order not found." };
+  const draft = await service.confirmationDraft(q, order, parsed.data.methodId, parsed.data.shipping);
+  return { ok: true as const, ...draft };
+}
+
 const templateInput = z.object({
-  method_id: z.string().refine((id) => service.knownPaymentMethodIds().includes(id), "Unknown payment method"),
+  method_id: methodId,
   subject: text(200).min(3, "Add a subject"),
-  body: text(10_000).min(20, "The template is too short"),
+  body: text(20_000).min(20, "The template is too short"),
 });
 
 export async function savePaymentTemplate(_prev: FormState, form: FormData): Promise<FormState> {
   const { q } = await requireAdmin();
   const parsed = templateInput.safeParse(Object.fromEntries(form));
   if (!parsed.success) return { ok: false, message: parsed.error.issues[0].message };
-  await savePaymentTemplateRow(q, parsed.data.method_id, parsed.data.subject, parsed.data.body);
+  const method = paymentMethods.find((m) => m.id === parsed.data.method_id)!;
+  const details: Record<string, string> = {};
+  for (const f of method.fields) {
+    const v = form.get(`detail_${f.key}`);
+    if (typeof v === "string" && v.trim()) details[f.key] = v.trim().slice(0, 500);
+  }
+  await savePaymentTemplateRow(q, method.id, { subject: parsed.data.subject, body: parsed.data.body, details });
   revalidatePath("/admin/settings/payment-templates");
-  return { ok: true, message: "Template saved." };
+  return { ok: true, message: `${method.name} template saved.` };
 }
 
-// ───────────── Reviews, messages, regions ─────────────
+// ───────────── Reviews and messages ─────────────
 
 export async function moderateReview(form: FormData) {
   const { q } = await requireAdmin();
@@ -244,12 +276,4 @@ export async function markMessageRead(form: FormData) {
   if (!id.success) return;
   await admin.setMessageRead(q, id.data, form.get("read") === "true");
   revalidatePath("/admin/messages");
-}
-
-export async function setRegionAllowed(form: FormData) {
-  const { q } = await requireAdmin();
-  const code = z.string().regex(/^US-[A-Z]{2}$/).safeParse(form.get("code"));
-  if (!code.success) return;
-  await admin.setRegionAllowed(q, code.data, form.get("allowed") === "true");
-  revalidatePath("/admin/settings");
 }

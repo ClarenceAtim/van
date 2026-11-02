@@ -1,6 +1,16 @@
 import { describe, expect, it } from "vitest";
 import { siteConfig } from "@/config/site";
-import { MAX_LIVE_ANIMALS_PER_ORDER, MAX_QUANTITY_PER_LINE, computeTotals, lineTotal, validateLines, type PricedLine } from "@/lib/pricing";
+import {
+  MAX_LIVE_ANIMALS_PER_ORDER,
+  MAX_QUANTITY_PER_LINE,
+  computeTotals,
+  lineTotal,
+  liveAnimalShippingProblem,
+  liveDeliveryDates,
+  taxFor,
+  validateLines,
+  type PricedLine,
+} from "@/lib/pricing";
 
 const line = (over: Partial<PricedLine> = {}): PricedLine => ({
   productId: "p1",
@@ -13,7 +23,6 @@ const line = (over: Partial<PricedLine> = {}): PricedLine => ({
   isLiveAnimal: false,
   ...over,
 });
-const s = siteConfig.shipping;
 
 describe("lineTotal", () => {
   it("multiplies integer cents", () => {
@@ -27,27 +36,47 @@ describe("lineTotal", () => {
 });
 
 describe("computeTotals", () => {
-  it("charges standard shipping below the free threshold", () => {
-    const t = computeTotals([line({ unitPriceCents: 2500, quantity: 2 })]);
-    expect(t).toMatchObject({ subtotalCents: 5000, shippingCents: s.standardCents, totalCents: 5000 + s.standardCents, shippingMethod: "standard" });
+  it("totals the cart before shipping (shipping is confirmed by email)", () => {
+    const t = computeTotals([line({ unitPriceCents: 2500, quantity: 2 }), line({ slug: "b", unitPriceCents: 1000 })]);
+    expect(t).toMatchObject({ subtotalCents: 6000, taxCents: 0, totalCents: 6000, itemCount: 3, containsLiveAnimals: false });
   });
 
-  it("ships supplies free at or above the threshold", () => {
-    const t = computeTotals([line({ unitPriceCents: s.freeStandardOverCents })]);
-    expect(t.shippingCents).toBe(0);
-    expect(t.shippingMethod).toBe("free-standard");
+  it("flags carts with live animals", () => {
+    expect(computeTotals([line({ isLiveAnimal: true })]).containsLiveAnimals).toBe(true);
   });
 
-  it("uses one overnight rate for any order containing live animals", () => {
-    const t = computeTotals([line({ unitPriceCents: 39900, isLiveAnimal: true }), line({ slug: "b", unitPriceCents: 16900 })]);
-    expect(t.shippingCents).toBe(s.liveAnimalOvernightCents);
-    expect(t.shippingMethod).toBe("live-overnight");
-    expect(t.containsLiveAnimals).toBe(true);
-    expect(t.totalCents).toBe(39900 + 16900 + s.liveAnimalOvernightCents);
+  it("adds tax only when it is switched on in the config", () => {
+    expect(taxFor(10000)).toBe(0);
+    const tax = siteConfig.tax as { enabled: boolean; rate: number };
+    const before = { ...tax };
+    try {
+      Object.assign(tax, { enabled: true, rate: 0.21 });
+      expect(computeTotals([line({ unitPriceCents: 1999 })])).toMatchObject({ subtotalCents: 1999, taxCents: 420, totalCents: 2419 });
+    } finally {
+      Object.assign(tax, before);
+    }
   });
 
   it("returns zero for an empty cart", () => {
-    expect(computeTotals([])).toMatchObject({ subtotalCents: 0, shippingCents: 0, totalCents: 0 });
+    expect(computeTotals([])).toMatchObject({ subtotalCents: 0, totalCents: 0, itemCount: 0 });
+  });
+});
+
+describe("liveAnimalShippingProblem", () => {
+  it("allows the countries and states in the config", () => {
+    expect(liveAnimalShippingProblem("US", "TX")).toBeNull();
+  });
+  it("blocks other countries and excluded US states", () => {
+    expect(liveAnimalShippingProblem("DE", "")).toContain("Germany");
+    expect(liveAnimalShippingProblem("US", "HI")).toContain("Hawaii");
+  });
+});
+
+describe("liveDeliveryDates", () => {
+  it("offers weekday deliveries after the lead time", () => {
+    const dates = liveDeliveryDates(new Date("2026-11-02T15:00:00Z"), 6); // Monday
+    expect(dates[0]).toBe("2026-11-05"); // ships Wed after the 2-day lead, delivered Thu
+    for (const d of dates) expect([2, 3, 4]).toContain(new Date(`${d}T12:00:00Z`).getUTCDay());
   });
 });
 

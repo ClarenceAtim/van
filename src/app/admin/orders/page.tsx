@@ -41,11 +41,11 @@ export default async function AdminOrders({ searchParams }: { searchParams: Prom
         </Link>
         {paymentMethods.map((m) => (
           <Link key={m.id} href={href(status, m.id)} aria-current={payment === m.id ? "page" : undefined} className={pill(payment === m.id)}>
-            {m.name}
+            {m.name.replace(" (tell us which)", "")}
           </Link>
         ))}
       </nav>
-      <p className="text-sm text-muted-foreground">Highlighted orders are new: send the customer payment details.</p>
+      <p className="text-sm text-muted-foreground">Highlighted orders are new: send the customer an order confirmation with the shipping cost and payment details. Totals exclude shipping until it is confirmed.</p>
       <OrdersTable orders={data} hrefBase="/admin/orders" admin />
     </div>
   );

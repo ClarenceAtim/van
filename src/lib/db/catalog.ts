@@ -47,7 +47,3 @@ export async function approvedReviews(q: Queryable, productId: string): Promise<
   );
   return rows;
 }
-
-export async function regionAllowed(q: Queryable, code: string): Promise<{ allowed: boolean; name: string } | null> {
-  return one(q, "select allowed, name from live_animal_regions where code = $1", [code]);
-}

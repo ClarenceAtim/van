@@ -1,3 +1,4 @@
+import { countryName, regionName } from "@/config/countries";
 import { siteConfig } from "@/config/site";
 
 /** Everything price-related is computed here, on the server, from catalog prices — never from the browser. */
@@ -12,15 +13,16 @@ export type PricedLine = {
   isLiveAnimal: boolean;
 };
 
-export type ShippingMethod = "standard" | "free-standard" | "express" | "live-overnight" | "pickup";
-
+/**
+ * Totals before shipping. Shipping depends on the destination and is confirmed by email per
+ * order, so it isn't part of the checkout total. Tax/VAT comes from siteConfig.tax.
+ */
 export type OrderTotals = {
   subtotalCents: number;
-  shippingCents: number;
   taxCents: number;
+  /** Subtotal + tax (shipping is added when the order is confirmed). */
   totalCents: number;
-  shippingMethod: ShippingMethod;
-  shippingLabel: string;
+  itemCount: number;
   containsLiveAnimals: boolean;
 };
 
@@ -33,56 +35,38 @@ export function lineTotal(line: Pick<PricedLine, "unitPriceCents" | "quantity">)
   return line.unitPriceCents * line.quantity;
 }
 
-export function shippingFor(subtotalCents: number, containsLiveAnimals: boolean): Pick<OrderTotals, "shippingCents" | "shippingMethod" | "shippingLabel"> {
-  const s = siteConfig.shipping;
-  if (containsLiveAnimals) {
-    // One overnight insulated box covers the animals and any supplies in the order.
-    return { shippingCents: s.liveAnimalOvernightCents, shippingMethod: "live-overnight", shippingLabel: "Overnight live animal shipping" };
-  }
-  if (subtotalCents >= s.freeStandardOverCents) {
-    return { shippingCents: 0, shippingMethod: "free-standard", shippingLabel: "Free standard shipping" };
-  }
-  return { shippingCents: s.standardCents, shippingMethod: "standard", shippingLabel: "Standard shipping (3–5 business days)" };
+/** Tax on the subtotal, rounded to the cent. 0 unless siteConfig.tax is enabled. */
+export function taxFor(subtotalCents: number) {
+  const t = siteConfig.tax;
+  return t.enabled ? Math.round(subtotalCents * t.rate) : 0;
 }
 
 export function computeTotals(lines: Pick<PricedLine, "unitPriceCents" | "quantity" | "isLiveAnimal">[]): OrderTotals {
   const subtotalCents = lines.reduce((sum, l) => sum + lineTotal(l), 0);
-  const containsLiveAnimals = lines.some((l) => l.isLiveAnimal);
-  const shipping = lines.length ? shippingFor(subtotalCents, containsLiveAnimals) : { shippingCents: 0, shippingMethod: "standard" as const, shippingLabel: "" };
-  // No sales tax is charged yet; add it here if you start collecting it.
-  const taxCents = 0;
-  return { subtotalCents, ...shipping, taxCents, totalCents: subtotalCents + shipping.shippingCents + taxCents, containsLiveAnimals };
+  const taxCents = taxFor(subtotalCents);
+  return {
+    subtotalCents,
+    taxCents,
+    totalCents: subtotalCents + taxCents,
+    itemCount: lines.reduce((n, l) => n + l.quantity, 0),
+    containsLiveAnimals: lines.some((l) => l.isLiveAnimal),
+  };
 }
 
-// ───────────── Delivery options (checkout step 2) ─────────────
-
-export type DeliveryOption = { id: ShippingMethod; label: string; description: string; cents: number };
-
-/** The delivery methods a cart can use. Live animals must go overnight (or be collected). */
-export function deliveryOptions(subtotalCents: number, containsLiveAnimals: boolean): DeliveryOption[] {
-  const s = siteConfig.shipping;
-  const options: DeliveryOption[] = [];
-  if (containsLiveAnimals) {
-    options.push({ id: "live-overnight", label: "Overnight live animal shipping", description: `Insulated box, ships ${s.liveAnimalShipDays} for next-day delivery.`, cents: s.liveAnimalOvernightCents });
-  } else {
-    const free = subtotalCents >= s.freeStandardOverCents;
-    options.push(
-      free
-        ? { id: "free-standard", label: "Free standard shipping", description: "3–5 business days.", cents: 0 }
-        : { id: "standard", label: "Standard shipping", description: "3–5 business days.", cents: s.standardCents },
-      { id: "express", label: "Express shipping", description: "1–2 business days.", cents: s.expressCents },
-    );
+/**
+ * Why live animals can't ship to this address, or null if they can. Uses the list in
+ * siteConfig.liveAnimals; supplies ship everywhere.
+ */
+export function liveAnimalShippingProblem(country: string, region: string): string | null {
+  const l = siteConfig.liveAnimals;
+  if (!country) return null;
+  if (!l.shipToCountries.includes(country)) {
+    return `Sorry, we can't ship live animals to ${countryName(country)}. Remove the animals from your cart to order supplies, which ship worldwide.`;
   }
-  if (s.localPickup.enabled) options.push({ id: "pickup", label: s.localPickup.label, description: s.localPickup.note, cents: 0 });
-  return options;
-}
-
-/** Totals for a chosen delivery method, or null if the cart can't use that method. */
-export function totalsWithDelivery(lines: Pick<PricedLine, "unitPriceCents" | "quantity" | "isLiveAnimal">[], method: string): OrderTotals | null {
-  const base = computeTotals(lines);
-  const option = deliveryOptions(base.subtotalCents, base.containsLiveAnimals).find((o) => o.id === method);
-  if (!option) return null;
-  return { ...base, shippingCents: option.cents, shippingMethod: option.id, shippingLabel: option.label, totalCents: base.subtotalCents + option.cents + base.taxCents };
+  if (country === "US" && region && l.excludedUsStates.includes(region)) {
+    return `Sorry, we can't ship live animals to ${regionName(country, region)}. Remove the animals from your cart to order supplies.`;
+  }
+  return null;
 }
 
 const isoDay = (d: Date) => d.toISOString().slice(0, 10);
