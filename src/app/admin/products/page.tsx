@@ -2,11 +2,11 @@ import Link from "next/link";
 import { toggleProductFlag } from "@/app/actions/admin";
 import { buttonVariants } from "@/components/ui/button";
 import { requireAdmin } from "@/lib/admin";
+import { listProducts } from "@/lib/db/admin";
 import { formatMoney } from "@/lib/format";
 
 export const metadata = { title: "Products" };
 
-type Row = { id: string; name: string; slug: string; category: string; sku: string; price_cents: number; stock_quantity: number; featured: boolean; active: boolean };
 
 function Flag({ id, flag, value }: { id: string; flag: "featured" | "active"; value: boolean }) {
   return (
@@ -21,14 +21,10 @@ function Flag({ id, flag, value }: { id: string; flag: "featured" | "active"; va
   );
 }
 
-export default async function AdminProducts({ searchParams }: { searchParams: Promise<{ q?: string; category?: string }> }) {
-  const { supabase } = await requireAdmin();
-  const { q = "", category = "" } = await searchParams;
-  let query = supabase.from("products").select("id, name, slug, category, sku, price_cents, stock_quantity, featured, active").order("category").order("name");
-  if (q) query = query.or(`name.ilike.%${q.replace(/[%,()]/g, "")}%,sku.ilike.%${q.replace(/[%,()]/g, "")}%`);
-  if (category) query = query.eq("category", category);
-  const { data } = await query;
-  const rows = (data ?? []) as Row[];
+export default async function AdminProducts({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
+  const { q: database } = await requireAdmin();
+  const { q = "" } = await searchParams;
+  const rows = await listProducts(database, q.trim().slice(0, 100));
 
   return (
     <div className="space-y-6">

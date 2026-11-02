@@ -1,38 +1,20 @@
 import "server-only";
-import { createClient } from "@supabase/supabase-js";
 import { unstable_cache } from "next/cache";
 import categoriesJson from "../../data/categories.json";
-import { isSupabaseConfigured, publicEnv } from "@/lib/env";
+import * as repo from "@/lib/db/catalog";
+import { db, isDatabaseConfigured } from "@/lib/db/pool";
 import { loadProductData } from "@/lib/products/load";
 import type { Product, ProductImage } from "@/lib/products/schema";
 
 export type Category = (typeof categoriesJson)[number];
 export type CatalogProduct = Omit<Product, "image_search"> & { sales_count: number };
-export type Review = { id: string; author_name: string; rating: number; title: string; body: string; created_at: string };
+export type Review = repo.ReviewRow;
 export type Rating = { average: number; count: number };
 
 export const CATALOG_TAG = "products";
 const REVALIDATE_SECONDS = 3600;
 
-/** Anonymous client without cookies so results can be cached and shared between visitors. */
-const publicClient = () =>
-  createClient(publicEnv.supabaseUrl, publicEnv.supabaseAnonKey, { auth: { persistSession: false } });
-
-type ProductRow = Omit<CatalogProduct, "images"> & {
-  product_images: (ProductImage & { position: number; thumbnail_url: string | null })[];
-};
-
-function fromRow(row: ProductRow): CatalogProduct {
-  const { product_images, search: _search, ...rest } = row as ProductRow & { search?: unknown };
-  return {
-    ...rest,
-    images: [...product_images]
-      .sort((a, b) => a.position - b.position)
-      .map(({ position: _position, thumbnail_url, ...img }) => ({ ...img, thumbnail_url: thumbnail_url ?? undefined, placeholder: img.placeholder || undefined })),
-  };
-}
-
-/** Repo JSON fallback so the site works before Supabase is connected. */
+/** Repo JSON fallback so the site works before the database is connected. */
 function fromJson(): CatalogProduct[] {
   const stamp = "2026-11-01T00:00:00.000Z";
   return loadProductData()
@@ -42,15 +24,10 @@ function fromJson(): CatalogProduct[] {
 
 const loadAll = unstable_cache(
   async (): Promise<CatalogProduct[]> => {
-    if (!isSupabaseConfigured) return fromJson();
-    const { data, error } = await publicClient()
-      .from("products")
-      .select("*, product_images(*)")
-      .eq("active", true)
-      .order("name");
-    if (error) throw new Error(`Failed to load products: ${error.message}`);
+    if (!isDatabaseConfigured()) return fromJson();
+    const rows = await repo.listActiveProducts<CatalogProduct>(db());
     // Not synced yet → fall back to repo data rather than show an empty store.
-    return data.length ? (data as ProductRow[]).map(fromRow) : fromJson();
+    return rows.length ? rows : fromJson();
   },
   ["catalog-all"],
   { tags: [CATALOG_TAG], revalidate: REVALIDATE_SECONDS },
@@ -109,12 +86,10 @@ export async function searchProducts(query: string, limit = 8): Promise<CatalogP
   const q = query.trim().slice(0, 100);
   if (q.length < 2) return [];
   const all = await loadAll();
-  if (isSupabaseConfigured) {
-    const { data, error } = await publicClient().rpc("search_products", { q, max_results: limit });
-    if (!error && data) {
-      const bySlug = new Map(all.map((p) => [p.slug, p]));
-      return (data as { slug: string }[]).map((r) => bySlug.get(r.slug)).filter((p): p is CatalogProduct => !!p);
-    }
+  if (isDatabaseConfigured()) {
+    const bySlug = new Map(all.map((p) => [p.slug, p]));
+    const slugs = await repo.searchProductSlugs(db(), q, limit);
+    return slugs.map((s) => bySlug.get(s)).filter((p): p is CatalogProduct => !!p);
   }
   const terms = q.toLowerCase().split(/\s+/);
   return all
@@ -132,15 +107,9 @@ export async function searchProducts(query: string, limit = 8): Promise<CatalogP
 
 export const getReviews = unstable_cache(
   async (productId: string): Promise<{ reviews: Review[]; rating: Rating | null }> => {
-    if (!isSupabaseConfigured) return { reviews: [], rating: null };
-    const { data } = await publicClient()
-      .from("reviews")
-      .select("id, author_name, rating, title, body, created_at")
-      .eq("product_id", productId)
-      .eq("status", "approved")
-      .order("created_at", { ascending: false })
-      .limit(50);
-    const reviews = (data ?? []) as Review[];
+    // JSON-fallback products use their slug as id; only real database ids have reviews.
+    if (!isDatabaseConfigured() || !/^[0-9a-f-]{36}$/.test(productId)) return { reviews: [], rating: null };
+    const reviews = await repo.approvedReviews(db(), productId);
     const rating = reviews.length
       ? { average: Math.round((reviews.reduce((s, r) => s + r.rating, 0) / reviews.length) * 10) / 10, count: reviews.length }
       : null;
@@ -152,12 +121,11 @@ export const getReviews = unstable_cache(
 
 /** Live stock straight from the database (not cached) — used when adding to cart and at checkout. */
 export async function getLiveStock(slugs: string[]): Promise<Map<string, number>> {
-  if (!isSupabaseConfigured || !slugs.length) {
+  if (!isDatabaseConfigured() || !slugs.length) {
     const all = await getProductsBySlugs(slugs);
     return new Map(all.map((p) => [p.slug, p.stock_quantity]));
   }
-  const { data } = await publicClient().from("products").select("slug, stock_quantity").in("slug", slugs).eq("active", true);
-  return new Map((data ?? []).map((r) => [r.slug as string, r.stock_quantity as number]));
+  return repo.liveStock(db(), slugs);
 }
 
 /** Lightweight shape sent to client components (keeps page payloads small). */

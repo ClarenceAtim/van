@@ -8,8 +8,6 @@ const PRIVATE_PATHS = [
   "/api/",
   "/cart",
   "/checkout",
-  "/checkout/success",
-  "/checkout/cancelled",
   "/login",
   "/signup",
   "/auth/",

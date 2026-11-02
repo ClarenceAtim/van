@@ -2,20 +2,20 @@
 
 A production-ready e-commerce store for captive-bred reptiles and reptile supplies.
 
-**Stack:** Next.js 15 (App Router, TypeScript strict) · Tailwind CSS + shadcn/ui · Supabase (Postgres, Auth, Storage) · Stripe Checkout · Resend · Cloudflare Turnstile · Vercel
+**Stack:** Next.js 15 (App Router, TypeScript strict) · Tailwind CSS + shadcn/ui · Supabase (Postgres, Auth, Storage) · order requests with manual payment (no card processing) · Resend · Cloudflare Turnstile · Vercel
 
 - 112 products (43 live animals + 69 supplies) stored as JSON in [`data/products/`](data/products), synced to Supabase by a GitHub Action
 - Storefront: home, shop with filters/sort/pagination, product pages with zoom gallery, care sheets and reviews, instant search, cart drawer + cart page, guest and account checkout
 - Customer accounts: email/password and magic link, order history, addresses, wishlist, verified-buyer reviews
 - Admin dashboard (`/admin`): sales overview, low stock, products (create/edit/images/flags), orders (status + tracking emails), reviews, messages, live-animal shipping regions
-- Security: RLS on every table (tested), server-side pricing, verified Stripe webhook, Zod everywhere, Turnstile, rate limiting, strict headers — see [docs/SECURITY.md](docs/SECURITY.md)
+- Security: RLS on every table (tested), server-side pricing, server-recalculated order totals, Zod everywhere, Turnstile, rate limiting, strict headers — see [docs/SECURITY.md](docs/SECURITY.md)
 - SEO: per-page metadata, canonical URLs, Product/Breadcrumb/Organization/WebSite/FAQ/Article JSON-LD, sitemap, robots, OG images, static generation + ISR
 
 ---
 
 ## 1. Set up from zero
 
-**Requirements:** Node.js 20+ (22 recommended) and npm, Git, and free accounts at Supabase, Stripe, Resend, Cloudflare and Vercel.
+**Requirements:** Node.js 20+ (22 recommended) and npm, Git, and free accounts at Neon, Resend, Cloudflare and Vercel.
 
 ```bash
 git clone https://github.com/ClarenceAtim/van.git reptile-store
@@ -28,10 +28,7 @@ npm run dev                    # http://localhost:3000
 The site runs **before** any keys are added: products are read straight from the repo JSON, and cart/checkout/accounts show a friendly "not available yet" message. Add the services in this order:
 
 1. **Supabase.** Follow [docs/SUPABASE-SETUP.md](docs/SUPABASE-SETUP.md) (create the project, run the migrations, `npm run sync:products`, make yourself admin).
-2. **Stripe** (test mode first):
-   - Copy the secret key (`sk_test_…`) into `STRIPE_SECRET_KEY`.
-   - Local webhooks: install the [Stripe CLI](https://stripe.com/docs/stripe-cli), run `stripe listen --forward-to localhost:3000/api/stripe/webhook`, and copy the printed `whsec_…` into `STRIPE_WEBHOOK_SECRET`.
-   - Test card: `4242 4242 4242 4242`, any future date, any CVC.
+2. **Orders and payments:** no payment provider is needed. Follow [docs/ORDERS-AND-PAYMENTS.md](docs/ORDERS-AND-PAYMENTS.md) to set the `ORDER_*` emails, `CRON_SECRET` and your payment templates.
 3. **Resend:** create an API key and verify your sending domain. Set `RESEND_API_KEY` and `EMAIL_FROM`.
 4. **Cloudflare Turnstile:** create a widget for your domains (and `localhost`). Set the site key and secret key. For local testing you can use Cloudflare's [test keys](https://developers.cloudflare.com/turnstile/troubleshooting/testing/).
 5. **Optional:** Upstash Redis for rate limiting at scale; Unsplash/Pexels keys for the image fetcher.
@@ -42,10 +39,11 @@ All variables are listed with comments in [`.env.example`](.env.example).
 
 | Variable | Where it's used | Required |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Canonical URLs, emails, Stripe redirects | ✅ |
+| `NEXT_PUBLIC_SITE_URL` | Canonical URLs and links in emails | ✅ |
 | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Browser + server Supabase clients | ✅ |
 | `SUPABASE_SERVICE_ROLE_KEY` | Server only: cart, orders, webhook, sync script | ✅ |
-| `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` | Checkout and webhook | ✅ for sales |
+| `ORDER_FROM_EMAIL`, `ORDER_REPLY_TO_EMAIL`, `ORDER_NOTIFICATION_EMAIL` | Order email addresses | Recommended |
+| `CRON_SECRET` | Daily payment reminders and releasing unpaid orders | ✅ for sales |
 | `RESEND_API_KEY`, `EMAIL_FROM`, `CONTACT_INBOX_EMAIL` | Order, shipping and contact emails | ✅ for emails |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY` | Bot protection | ✅ in production |
 | `SUPABASE_AUTH_CAPTCHA` | `true` once CAPTCHA is enabled in Supabase Auth | optional |
@@ -83,14 +81,14 @@ Care guides are Markdown files in `content/guides/`, and policy pages are in `co
 1. Push the repo to GitHub, then in Vercel choose **Add New → Project** and import it. The framework is detected automatically.
 2. Add every variable from section 2 under **Settings → Environment Variables** (Production and Preview). Set `NEXT_PUBLIC_SITE_URL` to your production URL.
 3. Deploy. Then:
-   - **Stripe:** Developers → Webhooks → *Add endpoint* `https://<your-domain>/api/stripe/webhook` with the events `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `checkout.session.async_payment_failed`, `checkout.session.expired` and `charge.refunded`. Put its signing secret in `STRIPE_WEBHOOK_SECRET` and redeploy.
+   - **Cron:** `vercel.json` schedules `/api/cron/orders` daily; Vercel sends `CRON_SECRET` automatically once it is set.
    - **Supabase Auth:** set the Site URL and add `https://<your-domain>/auth/callback` to the redirect URLs.
    - **GitHub Secrets** (repo → Settings → Secrets → Actions): `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `SITE_URL`, `REVALIDATE_SECRET` for the product sync.
-4. Optional: add your domain in Vercel → Settings → Domains, then update `NEXT_PUBLIC_SITE_URL`, the Stripe webhook URL and the Supabase redirect URLs.
+4. Optional: add your domain in Vercel → Settings → Domains, then update `NEXT_PUBLIC_SITE_URL`, the `ORDER_*` emails and the Supabase redirect URLs.
 
 ### Going live checklist
 
-- [ ] Replace `sk_test_…` with live Stripe keys and create a live webhook endpoint.
+- [ ] Fill in your payment details in /admin → Settings → Payment templates.
 - [ ] Verify your sending domain in Resend.
 - [ ] Update the store details in [`src/config/site.ts`](src/config/site.ts): name, contact email, phone, address and shipping rates.
 - [ ] Review the policy pages in `content/pages/` with your own terms.

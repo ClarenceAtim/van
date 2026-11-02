@@ -5,7 +5,7 @@ const BADGES = [
   { icon: ShieldCheck, title: "Live Arrival Guarantee", text: "Every animal arrives alive and healthy, or we make it right.", href: "/live-arrival-guarantee" },
   { icon: Egg, title: "100% captive bred", text: "Hatched and raised in our facility. Never wild caught.", href: "/about" },
   { icon: Truck, title: "Overnight animal shipping", text: "Insulated boxes, weather-checked routes, Mon–Wed only.", href: "/shipping" },
-  { icon: Lock, title: "Secure checkout", text: "Payments processed by Stripe. We never see your card.", href: "/faq" },
+  { icon: Lock, title: "Pay your way", text: "Order now, then pay by bank transfer, PayPal, Zelle and more. No card details online.", href: "/faq" },
 ];
 
 export function TrustBadges() {

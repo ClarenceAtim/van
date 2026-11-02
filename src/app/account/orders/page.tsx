@@ -1,17 +1,18 @@
 import { OrdersTable } from "@/components/account/orders-table";
-import type { Order } from "@/lib/orders";
-import { createClient } from "@/lib/supabase/server";
+import { requireProfile } from "@/lib/auth/server";
+import { listOrdersForUser } from "@/lib/db/orders";
+import { db } from "@/lib/db/pool";
 
 export const metadata = { title: "Order history" };
 
 export default async function OrdersPage() {
-  const supabase = await createClient();
-  // RLS limits this to the signed-in user's orders.
-  const { data } = await supabase.from("orders").select("*").neq("status", "pending").order("created_at", { ascending: false });
+  const profile = await requireProfile("/account/orders");
+  // Scoped to the signed-in user in SQL (user_id = session user).
+  const data = await listOrdersForUser(db(), profile.id);
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-semibold">Order history</h1>
-      <OrdersTable orders={(data ?? []) as Order[]} hrefBase="/account/orders" />
+      <OrdersTable orders={data} hrefBase="/account/orders" />
     </div>
   );
 }

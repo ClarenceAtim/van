@@ -5,17 +5,18 @@ import { AddToCart } from "@/components/cart/add-to-cart";
 import { Button } from "@/components/ui/button";
 import { getAllProducts } from "@/lib/catalog";
 import { formatMoney, productPath } from "@/lib/format";
-import { createClient } from "@/lib/supabase/server";
+import { requireProfile } from "@/lib/auth/server";
+import { wishlistSlugs } from "@/lib/db/account";
+import { db } from "@/lib/db/pool";
 
 export const metadata = { title: "Wishlist" };
 
 export default async function WishlistPage() {
-  const supabase = await createClient();
-  const { data } = await supabase.from("wishlists").select("product_id, products(slug)").order("created_at", { ascending: false });
-  const rows = (data ?? []) as unknown as { product_id: string; products: { slug: string } | null }[];
+  const profile = await requireProfile("/account/wishlist");
+  const rows = await wishlistSlugs(db(), profile.id);
   const bySlug = new Map((await getAllProducts()).map((p) => [p.slug, p]));
   const items = rows.flatMap((r) => {
-    const p = r.products && bySlug.get(r.products.slug);
+    const p = bySlug.get(r.slug);
     return p ? [{ productId: r.product_id, p }] : [];
   });
 

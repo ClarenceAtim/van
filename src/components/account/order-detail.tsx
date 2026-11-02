@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { formatDate, formatMoney } from "@/lib/format";
-import { StatusBadge, type Order } from "@/lib/orders";
+import { deliveryLabel, StatusBadge, type Order } from "@/lib/orders";
 
 /** Shared by the customer order page and the admin order page. */
 export function OrderDetail({ order, reviewLinks = false }: { order: Order; reviewLinks?: boolean }) {
@@ -59,7 +59,7 @@ export function OrderDetail({ order, reviewLinks = false }: { order: Order; revi
               <td className="px-4 py-2 text-right">{formatMoney(order.subtotal_cents, order.currency)}</td>
             </tr>
             <tr>
-              <td colSpan={3} className="px-4 py-2 text-right">Shipping ({order.shipping_method})</td>
+              <td colSpan={3} className="px-4 py-2 text-right">{deliveryLabel(order)}</td>
               <td className="px-4 py-2 text-right">{order.shipping_cents ? formatMoney(order.shipping_cents, order.currency) : "Free"}</td>
             </tr>
             {order.tax_cents > 0 && (

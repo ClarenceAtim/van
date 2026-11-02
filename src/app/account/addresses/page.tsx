@@ -1,16 +1,16 @@
 import { deleteAddress } from "@/app/actions/account";
 import { AddressForm } from "@/components/account/address-form";
 import { Button } from "@/components/ui/button";
-import { createClient } from "@/lib/supabase/server";
+import { requireProfile } from "@/lib/auth/server";
+import { listAddresses } from "@/lib/db/account";
+import { db } from "@/lib/db/pool";
 
 export const metadata = { title: "Addresses" };
 
-type Address = { id: string; full_name: string; line1: string; line2: string | null; city: string; region: string; postal_code: string; phone: string | null; is_default: boolean };
 
 export default async function AddressesPage() {
-  const supabase = await createClient();
-  const { data } = await supabase.from("addresses").select("*").order("is_default", { ascending: false }).order("created_at");
-  const addresses = (data ?? []) as Address[];
+  const profile = await requireProfile("/account/addresses");
+  const addresses = await listAddresses(db(), profile.id);
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-semibold">Addresses</h1>

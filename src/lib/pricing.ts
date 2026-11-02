@@ -12,7 +12,7 @@ export type PricedLine = {
   isLiveAnimal: boolean;
 };
 
-export type ShippingMethod = "standard" | "free-standard" | "live-overnight";
+export type ShippingMethod = "standard" | "free-standard" | "express" | "live-overnight" | "pickup";
 
 export type OrderTotals = {
   subtotalCents: number;
@@ -49,9 +49,57 @@ export function computeTotals(lines: Pick<PricedLine, "unitPriceCents" | "quanti
   const subtotalCents = lines.reduce((sum, l) => sum + lineTotal(l), 0);
   const containsLiveAnimals = lines.some((l) => l.isLiveAnimal);
   const shipping = lines.length ? shippingFor(subtotalCents, containsLiveAnimals) : { shippingCents: 0, shippingMethod: "standard" as const, shippingLabel: "" };
-  // Sales tax is calculated by Stripe Tax when enabled; 0 here keeps totals honest until then.
+  // No sales tax is charged yet; add it here if you start collecting it.
   const taxCents = 0;
   return { subtotalCents, ...shipping, taxCents, totalCents: subtotalCents + shipping.shippingCents + taxCents, containsLiveAnimals };
+}
+
+// ───────────── Delivery options (checkout step 2) ─────────────
+
+export type DeliveryOption = { id: ShippingMethod; label: string; description: string; cents: number };
+
+/** The delivery methods a cart can use. Live animals must go overnight (or be collected). */
+export function deliveryOptions(subtotalCents: number, containsLiveAnimals: boolean): DeliveryOption[] {
+  const s = siteConfig.shipping;
+  const options: DeliveryOption[] = [];
+  if (containsLiveAnimals) {
+    options.push({ id: "live-overnight", label: "Overnight live animal shipping", description: `Insulated box, ships ${s.liveAnimalShipDays} for next-day delivery.`, cents: s.liveAnimalOvernightCents });
+  } else {
+    const free = subtotalCents >= s.freeStandardOverCents;
+    options.push(
+      free
+        ? { id: "free-standard", label: "Free standard shipping", description: "3–5 business days.", cents: 0 }
+        : { id: "standard", label: "Standard shipping", description: "3–5 business days.", cents: s.standardCents },
+      { id: "express", label: "Express shipping", description: "1–2 business days.", cents: s.expressCents },
+    );
+  }
+  if (s.localPickup.enabled) options.push({ id: "pickup", label: s.localPickup.label, description: s.localPickup.note, cents: 0 });
+  return options;
+}
+
+/** Totals for a chosen delivery method, or null if the cart can't use that method. */
+export function totalsWithDelivery(lines: Pick<PricedLine, "unitPriceCents" | "quantity" | "isLiveAnimal">[], method: string): OrderTotals | null {
+  const base = computeTotals(lines);
+  const option = deliveryOptions(base.subtotalCents, base.containsLiveAnimals).find((o) => o.id === method);
+  if (!option) return null;
+  return { ...base, shippingCents: option.cents, shippingMethod: option.id, shippingLabel: option.label, totalCents: base.subtotalCents + option.cents + base.taxCents };
+}
+
+const isoDay = (d: Date) => d.toISOString().slice(0, 10);
+
+/**
+ * Delivery dates a customer can choose for live animals: the day after each ship day
+ * (so always a weekday), starting after the payment/packing lead time.
+ */
+export function liveDeliveryDates(now = new Date(), count = 10): string[] {
+  const s = siteConfig.shipping;
+  const dates: string[] = [];
+  const day = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + s.liveAnimalLeadDays));
+  while (dates.length < count) {
+    if (s.liveAnimalShipWeekdays.includes(day.getUTCDay())) dates.push(isoDay(new Date(day.getTime() + 86_400_000)));
+    day.setUTCDate(day.getUTCDate() + 1);
+  }
+  return dates;
 }
 
 export type CartProblem = { slug: string; message: string };

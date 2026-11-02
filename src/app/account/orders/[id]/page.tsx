@@ -1,16 +1,17 @@
 import { notFound } from "next/navigation";
 import { OrderDetail } from "@/components/account/order-detail";
-import type { Order } from "@/lib/orders";
-import { createClient } from "@/lib/supabase/server";
+import { requireProfile } from "@/lib/auth/server";
+import { getOrderForUser } from "@/lib/db/orders";
+import { db } from "@/lib/db/pool";
 
 export const metadata = { title: "Order details" };
 
 export default async function OrderPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   if (!/^[0-9a-f-]{36}$/.test(id)) notFound();
-  const supabase = await createClient();
-  // RLS: returns nothing if this order belongs to someone else.
-  const { data } = await supabase.from("orders").select("*, order_items(*)").eq("id", id).maybeSingle();
+  const profile = await requireProfile("/account/orders");
+  // Returns nothing if this order belongs to someone else.
+  const data = await getOrderForUser(db(), profile.id, id);
   if (!data) notFound();
-  return <OrderDetail order={data as Order} reviewLinks />;
+  return <OrderDetail order={data} reviewLinks />;
 }

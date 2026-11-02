@@ -27,7 +27,7 @@ const FAQ: { group: string; items: { question: string; answer: string }[] }[] = 
   {
     group: "Orders & payment",
     items: [
-      { question: "Is checkout secure?", answer: "Payments are handled by Stripe, a PCI Level 1 certified provider. Your card details go straight to Stripe and never touch our servers." },
+      { question: "How do I pay?", answer: "Choose a payment method at checkout (bank transfer, PayPal, Zelle, Cash App, mobile money or cryptocurrency) and place your order. No payment is taken on the website: we email you the payment details within 24 hours, and your items are reserved while you pay. We never ask for card details." },
       { question: "Which payment methods do you accept?", answer: "All major credit and debit cards, plus Apple Pay and Google Pay where your device supports them." },
       { question: "How much is shipping for supplies?", answer: `Standard shipping is ${formatMoney(s.standardCents)}, and free on supply orders over ${formatMoney(s.freeStandardOverCents)}.` },
       { question: "Can I return supplies?", answer: "Unopened supplies can be returned within 30 days. Opened food, substrate and live feeders can't be returned for hygiene reasons." },

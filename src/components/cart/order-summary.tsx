@@ -16,10 +16,6 @@ export function OrderSummary({ totals }: { totals: OrderTotals }) {
           <dt>{totals.shippingLabel || "Shipping"}</dt>
           <dd>{totals.shippingCents === 0 ? "Free" : formatMoney(totals.shippingCents)}</dd>
         </div>
-        <div className="flex justify-between text-muted-foreground">
-          <dt>Tax</dt>
-          <dd>Calculated at payment</dd>
-        </div>
         <div className="flex justify-between border-t pt-2 text-base font-semibold">
           <dt>Estimated total</dt>
           <dd>{formatMoney(totals.totalCents)}</dd>

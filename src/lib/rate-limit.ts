@@ -2,7 +2,8 @@ import "server-only";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 import { headers } from "next/headers";
-import { createAdminClient, isServiceRoleConfigured } from "@/lib/supabase/admin";
+import { rateLimitHit } from "@/lib/db/inbox";
+import { db, isDatabaseConfigured } from "@/lib/db/pool";
 
 export type LimitName = "auth" | "contact" | "newsletter" | "search" | "checkout" | "cart" | "review";
 
@@ -48,10 +49,12 @@ export async function rateLimit(name: LimitName, extraKey = ""): Promise<boolean
     const { success } = await upstash.get(name)!.limit(key);
     return success;
   }
-  if (isServiceRoleConfigured()) {
-    const { data, error } = await createAdminClient().rpc("rate_limit_hit", { p_key: key, p_limit: limit, p_window_seconds: windowSeconds });
-    if (!error) return data as boolean;
-    console.error("rate limiter unavailable:", error.message);
+  if (isDatabaseConfigured()) {
+    try {
+      return await rateLimitHit(db(), key, limit, windowSeconds);
+    } catch (e) {
+      console.error("rate limiter unavailable:", (e as Error).message);
+    }
   }
   const now = Date.now();
   const entry = memory.get(key);

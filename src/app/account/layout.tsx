@@ -2,7 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { signOut } from "@/app/actions/auth";
 import { Button } from "@/components/ui/button";
-import { getProfile } from "@/lib/supabase/server";
+import { getProfile } from "@/lib/auth/server";
 
 export const metadata = { robots: { index: false, follow: false } };
 

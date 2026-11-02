@@ -2,7 +2,10 @@ import Link from "next/link";
 import { ReviewForm } from "@/components/account/review-form";
 import { getProductsBySlugs } from "@/lib/catalog";
 import { productPath } from "@/lib/format";
-import { createClient } from "@/lib/supabase/server";
+import { requireProfile } from "@/lib/auth/server";
+import { hasPurchased } from "@/lib/db/account";
+import { productIdBySlug } from "@/lib/db/catalog";
+import { db } from "@/lib/db/pool";
 import { slug as slugSchema } from "@/lib/validation";
 
 export const metadata = { title: "Write a review" };
@@ -12,9 +15,9 @@ export default async function NewReviewPage({ searchParams }: { searchParams: Pr
   const [product] = slug.success ? await getProductsBySlugs([slug.data]) : [];
   if (!product) return <p>Product not found.</p>;
 
-  const supabase = await createClient();
-  const { data: row } = await supabase.from("products").select("id").eq("slug", product.slug).maybeSingle();
-  const { data: purchased } = row ? await supabase.rpc("has_purchased", { p_product_id: row.id }) : { data: false };
+  const profile = await requireProfile(`/account/reviews/new?product=${product.slug}`);
+  const productId = await productIdBySlug(db(), product.slug);
+  const purchased = productId ? await hasPurchased(db(), profile.id, productId) : false;
 
   return (
     <div className="max-w-xl space-y-6">

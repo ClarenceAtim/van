@@ -1,7 +1,7 @@
 /**
  * listOrders backs the /admin dashboard and /admin/orders. Postgres rejects a query that is
  * sent more parameters than its SQL uses ("could not determine data type of parameter $1"),
- * so both branches (all orders, and filtered by status) must run against a real database.
+ * so every filter combination must run against a real database.
  */
 import { PGlite } from "@electric-sql/pglite";
 import fs from "node:fs";
@@ -12,9 +12,12 @@ import type { Queryable } from "@/lib/db/types";
 
 let q: Queryable;
 
-const order = (email: string): orders.NewOrder => ({
+const order = (email: string, payment_method: string): orders.NewOrder => ({
   user_id: null,
   email,
+  customer_name: "Test Customer",
+  phone: "+1 512 555 0134",
+  whatsapp: null,
   subtotal_cents: 1000,
   shipping_cents: 0,
   tax_cents: 0,
@@ -22,8 +25,13 @@ const order = (email: string): orders.NewOrder => ({
   currency: "USD",
   shipping_method: "standard",
   shipping_address: {},
+  delivery_notes: null,
+  preferred_delivery_date: null,
   contains_live_animals: false,
   live_animal_ack_at: null,
+  payment_method,
+  terms_accepted_at: new Date().toISOString(),
+  cart_id: null,
 });
 
 beforeAll(async () => {
@@ -41,27 +49,33 @@ beforeAll(async () => {
   const line: orders.NewOrderItem[] = [
     { product_id: productId, product_slug: "test-scale", product_name: "Test Scale", sku: "TEST-SCALE", unit_price_cents: 1000, quantity: 1, is_live_animal: false },
   ];
-  const pending = await orders.createPendingOrder(q, order("pending@example.com"), line);
-  const paid = await orders.createPendingOrder(q, order("paid@example.com"), line);
-  const shipped = await orders.createPendingOrder(q, order("shipped@example.com"), line);
+  const fresh = await orders.createOrder(q, order("new@example.com", "zelle"), line);
+  const paid = await orders.createOrder(q, order("paid@example.com", "paypal"), line);
+  const shipped = await orders.createOrder(q, order("shipped@example.com", "zelle"), line);
   await pg.query("update orders set status = 'paid' where id = $1", [paid.id]);
   await pg.query("update orders set status = 'shipped' where id = $1", [shipped.id]);
-  expect(pending.id).toBeTruthy();
+  expect(fresh.order_number).toMatch(/^SH-\d+$/);
 });
 
 describe("listOrders", () => {
-  it("lists every non-pending order when status is null", async () => {
-    const list = await orders.listOrders(q, null);
-    expect(list.map((o) => o.email).sort()).toEqual(["paid@example.com", "shipped@example.com"]);
+  it("lists every order without filters", async () => {
+    const list = await orders.listOrders(q);
+    expect(list.map((o) => o.email).sort()).toEqual(["new@example.com", "paid@example.com", "shipped@example.com"]);
   });
 
   it("filters by status", async () => {
-    const list = await orders.listOrders(q, "paid");
-    expect(list.map((o) => o.email)).toEqual(["paid@example.com"]);
+    expect((await orders.listOrders(q, { status: "paid" })).map((o) => o.email)).toEqual(["paid@example.com"]);
+    expect((await orders.listOrders(q, { status: "awaiting_payment_details" })).map((o) => o.email)).toEqual(["new@example.com"]);
   });
 
-  it("applies the limit in both branches", async () => {
-    expect(await orders.listOrders(q, null, 1)).toHaveLength(1);
-    expect(await orders.listOrders(q, "shipped", 1)).toHaveLength(1);
+  it("filters by payment method, alone and with a status", async () => {
+    expect((await orders.listOrders(q, { paymentMethod: "zelle" })).map((o) => o.email).sort()).toEqual(["new@example.com", "shipped@example.com"]);
+    expect((await orders.listOrders(q, { status: "shipped", paymentMethod: "zelle" })).map((o) => o.email)).toEqual(["shipped@example.com"]);
+    expect(await orders.listOrders(q, { status: "paid", paymentMethod: "zelle" })).toHaveLength(0);
+  });
+
+  it("applies the limit with and without filters", async () => {
+    expect(await orders.listOrders(q, {}, 1)).toHaveLength(1);
+    expect(await orders.listOrders(q, { status: "shipped", paymentMethod: "zelle" }, 1)).toHaveLength(1);
   });
 });

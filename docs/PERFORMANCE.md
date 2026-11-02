@@ -61,7 +61,7 @@ Open each page once before testing, so Vercel has optimised and cached its image
 - Cloudflare Turnstile now loads only when a form that uses it scrolls into view or someone starts typing in it. The footer newsletter form previously pulled it into every page. Its space is reserved, so nothing shifts.
 - Product cards sent to the browser no longer carry image credit, licence and source URL. On `/shop`, which sends all products for client-side filtering, the HTML dropped from 48.5 KB to 41 KB gzipped.
 - Gzipped JavaScript per page is about 205 KB, down from about 220 KB. About 147 KB of that is React and the Next.js runtime itself.
-- Already in place and confirmed: pages are Server Components; the cart drawer, mobile menu and image zoom load on demand; admin code is never imported by public routes; Stripe runs only on the server (Checkout redirect), so no Stripe script loads in the browser.
+- Already in place and confirmed: pages are Server Components; the cart drawer, mobile menu and image zoom load on demand; admin code is never imported by public routes; no payment provider script loads in the browser (checkout is an order request).
 
 **CSS and fonts**
 - Removed the header's `backdrop-blur` (expensive to paint and recalculate on phones).
