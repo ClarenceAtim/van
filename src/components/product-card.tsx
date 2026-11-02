@@ -18,7 +18,8 @@ export function ProductCard({ product, priority = false, headingLevel = "h3" }: 
             alt={product.image.alt}
             fill
             sizes="(min-width: 1280px) 300px, (min-width: 768px) 33vw, 50vw"
-            priority={priority}
+            preload={priority}
+            fetchPriority={priority ? "high" : "auto"}
             className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
           />
         ) : (

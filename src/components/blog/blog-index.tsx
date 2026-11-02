@@ -39,7 +39,7 @@ function FeaturedPost({ post }: { post: Post }) {
   return (
     <article className="group grid overflow-hidden rounded-3xl border bg-card md:grid-cols-[1.2fr_1fr]">
       <Link href={postPath(post)} className="relative block aspect-[16/9] bg-muted md:aspect-auto md:min-h-80" tabIndex={-1} aria-hidden>
-        <Image src={post.cover.src} alt={post.cover.alt} fill priority sizes="(min-width: 768px) 640px, 100vw" className="object-cover" />
+        <Image src={post.cover.src} alt={post.cover.alt} fill preload fetchPriority="high" sizes="(min-width: 768px) 640px, 100vw" className="object-cover" />
       </Link>
       <div className="flex flex-col justify-center gap-3 p-6 sm:p-8">
         <p className="text-xs font-semibold tracking-wide text-leaf uppercase">

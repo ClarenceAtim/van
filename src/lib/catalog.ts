@@ -164,7 +164,10 @@ export async function getLiveStock(slugs: string[]): Promise<Map<string, number>
 export type ProductCardData = Pick<
   CatalogProduct,
   "id" | "slug" | "name" | "category" | "subcategory" | "price_cents" | "compare_at_price_cents" | "currency" | "stock_quantity" | "is_live_animal" | "care_level" | "featured" | "sales_count" | "created_at" | "short_description"
-> & { image: ProductImage | null };
+> & { image: CardImage | null };
+
+/** Only what a product card renders (credit and licence stay on the product page). */
+export type CardImage = Pick<ProductImage, "url" | "thumbnail_url" | "alt" | "width" | "height">;
 
 export function toCard(p: CatalogProduct): ProductCardData {
   return {
@@ -183,6 +186,6 @@ export function toCard(p: CatalogProduct): ProductCardData {
     sales_count: p.sales_count,
     created_at: p.created_at,
     short_description: p.short_description,
-    image: p.images[0] ?? null,
+    image: p.images[0] ? { url: p.images[0].url, thumbnail_url: p.images[0].thumbnail_url, alt: p.images[0].alt, width: p.images[0].width, height: p.images[0].height } : null,
   };
 }

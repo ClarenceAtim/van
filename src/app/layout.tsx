@@ -10,7 +10,7 @@ import { organizationJsonLd, siteOrigin } from "@/lib/seo";
 import "./globals.css";
 
 const sans = Geist({ variable: "--font-sans", subsets: ["latin"], display: "swap" });
-const display = Fraunces({ variable: "--font-display", subsets: ["latin"], display: "swap", weight: ["500", "600", "700"] });
+const display = Fraunces({ variable: "--font-display", subsets: ["latin"], display: "swap", weight: ["500", "600"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),

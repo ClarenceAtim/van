@@ -10,7 +10,7 @@ const NAV = [...categories].sort((a, b) => a.sort_order - b.sort_order).map((c) 
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/85">
+    <header className="sticky top-0 z-40 border-b bg-background">
       <div className="bg-forest text-primary-foreground">
         <p className="mx-auto max-w-7xl px-4 py-1.5 text-center text-xs sm:text-sm">
           Live Arrival Guarantee on every animal · Free shipping on supplies over $99

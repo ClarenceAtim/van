@@ -1,4 +1,3 @@
-import { Button as ButtonPrimitive } from "@base-ui/react/button"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 
@@ -43,10 +42,14 @@ function Button({
   className,
   variant = "default",
   size = "default",
+  type = "button",
   ...props
-}: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+}: React.ComponentProps<"button"> & VariantProps<typeof buttonVariants>) {
+  // Native <button> (defaulting to type="button", like the previous Base UI button) keeps the
+  // UI library out of the JavaScript every public page loads.
   return (
-    <ButtonPrimitive
+    <button
+      type={type}
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}

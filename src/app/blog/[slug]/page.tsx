@@ -89,7 +89,7 @@ export default async function BlogPostPage({ params }: Props) {
 
         <figure className="mx-auto mt-8 max-w-5xl">
           <div className="relative aspect-[16/9] overflow-hidden rounded-3xl bg-muted">
-            <Image src={post.cover.src} alt={post.cover.alt} fill priority sizes="(min-width: 1024px) 1024px, 100vw" className="object-cover" />
+            <Image src={post.cover.src} alt={post.cover.alt} fill preload fetchPriority="high" sizes="(min-width: 1024px) 1024px, 100vw" className="object-cover" />
           </div>
           <figcaption className="mt-2 text-right text-xs text-muted-foreground">
             Photo: {post.cover.credit}

@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { Heart } from "lucide-react";
-import { toast } from "sonner";
+import { toast } from "@/lib/toast";
 import { toggleWishlist } from "@/app/actions/account";
 import { Button } from "@/components/ui/button";
 

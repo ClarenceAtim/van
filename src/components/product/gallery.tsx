@@ -42,7 +42,8 @@ export function ProductGallery({ images, name }: { images: ProductImage[]; name:
           src={image.url}
           alt={image.alt}
           fill
-          priority
+          preload
+          fetchPriority="high"
           sizes="(min-width: 1024px) 50vw, 100vw"
           className="object-cover transition-transform duration-200"
           style={origin && !image.placeholder ? { transform: "scale(1.8)", transformOrigin: origin } : undefined}

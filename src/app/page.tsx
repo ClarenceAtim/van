@@ -61,7 +61,7 @@ export default async function HomePage() {
           </div>
           {hero && (
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/10">
-              <Image src={hero.url} alt={hero.alt} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
+              <Image src={hero.url} alt={hero.alt} fill preload fetchPriority="high" sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
             </div>
           )}
         </div>

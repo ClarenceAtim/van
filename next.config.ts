@@ -46,10 +46,18 @@ const nextConfig: NextConfig = {
   experimental: { serverActions: { bodySizeLimit: "6mb" } },
   images: {
     formats: ["image/avif", "image/webp"],
+    // Optimised images are re-used for 31 days (deploys clear the cache, so replaced photos still update).
+    minimumCacheTTL: 2678400,
     remotePatterns: supabaseHost ? [{ protocol: "https", hostname: supabaseHost, pathname: "/storage/v1/object/public/**" }] : [],
   },
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    // Product and blog photos keep their file names when replaced, so cache for a week and revalidate in the background.
+    const imageCache = [{ key: "Cache-Control", value: "public, max-age=604800, stale-while-revalidate=2592000" }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      { source: "/products/:file*", headers: imageCache },
+      { source: "/blog/:file([a-z0-9-]+\\.webp)", headers: imageCache },
+    ];
   },
 };
 
