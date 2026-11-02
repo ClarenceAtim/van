@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllProducts, getCategories } from "@/lib/catalog";
 import { productPath } from "@/lib/format";
-import { getGuides } from "@/lib/guides";
+import { getPosts, lastModified, postPath } from "@/lib/blog";
 import { getPageSlugs } from "@/lib/pages";
 import { absoluteUrl } from "@/lib/seo";
 
@@ -21,8 +21,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: p.is_live_animal ? 0.8 : 0.7,
       images: p.images.map((i) => absoluteUrl(i.url)),
     })),
-    { url: absoluteUrl("/care-guides"), lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    ...getGuides().map((g) => ({ url: absoluteUrl(`/care-guides/${g.slug}`), lastModified: new Date(g.updated ?? g.published), changeFrequency: "monthly" as const, priority: 0.6 })),
+    { url: absoluteUrl("/blog"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    ...getPosts().map((p) => ({ url: absoluteUrl(postPath(p)), lastModified: new Date(lastModified(p)), changeFrequency: "monthly" as const, priority: 0.6 })),
     ...["faq", "contact", "credits", ...getPageSlugs()].map((slug) => ({ url: absoluteUrl(`/${slug}`), lastModified: now, changeFrequency: "monthly" as const, priority: 0.4 })),
   ];
 }

@@ -15,6 +15,7 @@ export function pageMetadata({
   imageAlt,
   type = "website",
   noIndex = false,
+  article,
 }: {
   title: string;
   description: string;
@@ -23,6 +24,7 @@ export function pageMetadata({
   imageAlt?: string;
   type?: "website" | "article";
   noIndex?: boolean;
+  article?: { publishedTime: string; modifiedTime: string; section: string; tags: string[]; authors: string[] };
 }): Metadata {
   // Pages without their own image share the default social card (src/app/opengraph-image.tsx).
   const images = [{ url: absoluteUrl(image ?? "/opengraph-image"), alt: imageAlt ?? title }];
@@ -30,7 +32,10 @@ export function pageMetadata({
     title,
     description,
     alternates: { canonical: path },
-    openGraph: { title, description, url: path, type, siteName: siteConfig.name, images },
+    openGraph:
+      type === "article" && article
+        ? { title, description, url: path, type, siteName: siteConfig.name, images, ...article }
+        : { title, description, url: path, type, siteName: siteConfig.name, images },
     twitter: { card: "summary_large_image", title, description, images: images.map((i) => i.url) },
     robots: noIndex ? { index: false, follow: false } : undefined,
   };
@@ -141,17 +146,38 @@ export function faqJsonLd(items: { question: string; answer: string }[]) {
   };
 }
 
-export function articleJsonLd(a: { title: string; description: string; path: string; image?: string; published: string; updated?: string }) {
+export function blogPostingJsonLd(p: {
+  title: string;
+  description: string;
+  path: string;
+  image: string;
+  published: string;
+  updated?: string;
+  author: { name: string; type: "Person" | "Organization" };
+  category: string;
+  tags: string[];
+  wordCount: number;
+}) {
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: a.title,
-    description: a.description,
-    mainEntityOfPage: absoluteUrl(a.path),
-    image: a.image ? [absoluteUrl(a.image)] : undefined,
-    datePublished: a.published,
-    dateModified: a.updated ?? a.published,
-    author: { "@type": "Organization", name: siteConfig.name, url: absoluteUrl("/") },
-    publisher: { "@id": `${absoluteUrl("/")}#organization` },
+    "@type": "BlogPosting",
+    headline: p.title,
+    description: p.description,
+    url: absoluteUrl(p.path),
+    mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(p.path) },
+    image: [absoluteUrl(p.image)],
+    datePublished: p.published,
+    dateModified: p.updated ?? p.published,
+    author: { "@type": p.author.type, name: p.author.name, url: absoluteUrl("/about") },
+    publisher: {
+      "@type": "Organization",
+      "@id": `${absoluteUrl("/")}#organization`,
+      name: siteConfig.name,
+      logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
+    },
+    articleSection: p.category,
+    keywords: p.tags.join(", "),
+    wordCount: p.wordCount,
+    inLanguage: siteConfig.locale,
   };
 }

@@ -17,7 +17,7 @@ export function Header() {
         </p>
       </div>
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
-        <MobileMenu items={[...NAV, { href: "/care-guides", label: "Care Guides" }]} />
+        <MobileMenu items={[...NAV, { href: "/blog", label: "Blog & Care Guides" }]} />
         <Link href="/" className="shrink-0 rounded-md text-foreground" aria-label="ScaleHaven Reptiles home">
           <Logo className="h-8 w-auto sm:h-9" />
         </Link>
@@ -42,8 +42,8 @@ export function Header() {
             </li>
           ))}
           <li className="ml-auto">
-            <Link href="/care-guides" className="inline-block rounded-md px-3 py-2.5 text-sm font-medium text-primary hover:bg-muted">
-              Care Guides
+            <Link href="/blog" className="inline-block rounded-md px-3 py-2.5 text-sm font-medium text-primary hover:bg-muted">
+              Blog & Care Guides
             </Link>
           </li>
         </ul>

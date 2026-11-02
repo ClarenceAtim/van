@@ -9,6 +9,7 @@ import { ProductCard } from "@/components/product-card";
 import { ProductGallery } from "@/components/product/gallery";
 import { WishlistButton } from "@/components/product/wishlist-button";
 import { siteConfig } from "@/config/site";
+import { getCareGuideForSpecies, postPath } from "@/lib/blog";
 import { getAllProducts, getCategory, getProduct, getRelated, getReviews, toCard } from "@/lib/catalog";
 import { formatDate, formatMoney, productPath } from "@/lib/format";
 import { pageMetadata, productJsonLd } from "@/lib/seo";
@@ -51,6 +52,7 @@ export default async function ProductPage({ params }: Props) {
   const [{ reviews, rating }, related] = await Promise.all([getReviews(product.id), getRelated(product)]);
   const onSale = product.compare_at_price_cents != null && product.compare_at_price_cents > product.price_cents;
   const lowStock = product.stock_quantity > 0 && product.stock_quantity <= 3;
+  const careGuide = product.is_live_animal ? getCareGuideForSpecies(product.species_scientific_name) : null;
 
   const careRows = product.is_live_animal
     ? [
@@ -162,9 +164,15 @@ export default async function ProductPage({ params }: Props) {
                 ))}
               </tbody>
             </table>
-            <Link href="/care-guides" className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-4">
-              Read our full care guides
-            </Link>
+            {careGuide ? (
+              <Link href={postPath(careGuide)} className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-4">
+                Read our {careGuide.title.replace(/:.*$/, "")}
+              </Link>
+            ) : (
+              <Link href="/blog/category/care-guides" className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-4">
+                Browse our reptile care guides
+              </Link>
+            )}
           </section>
         )}
       </div>
