@@ -1,6 +1,7 @@
 ---
 title: Live Arrival Guarantee
 description: Every animal we ship is guaranteed to arrive alive and in good health. Here is exactly how our Live Arrival Guarantee works and what to do on delivery day.
+updated: 2026-11-01
 ---
 
 Every reptile we ship is covered by our **Live Arrival Guarantee**: your animal will arrive alive and in the same healthy condition it left us.

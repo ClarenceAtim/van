@@ -1,6 +1,7 @@
 ---
 title: Terms of Service
 description: The terms that apply when you use the ScaleHaven Reptiles website and buy reptiles or reptile supplies from us.
+updated: 2026-11-01
 ---
 
 _Last updated: November 1, 2026_

@@ -6,15 +6,14 @@ import { Footer } from "@/components/layout/footer";
 import { DeferredUi } from "@/components/layout/deferred-ui";
 import { Header } from "@/components/layout/header";
 import { siteConfig } from "@/config/site";
-import { publicEnv } from "@/lib/env";
-import { organizationJsonLd } from "@/lib/seo";
+import { organizationJsonLd, siteOrigin } from "@/lib/seo";
 import "./globals.css";
 
 const sans = Geist({ variable: "--font-sans", subsets: ["latin"], display: "swap" });
 const display = Fraunces({ variable: "--font-display", subsets: ["latin"], display: "swap", weight: ["500", "600", "700"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(publicEnv.siteUrl),
+  metadataBase: new URL(siteOrigin),
   title: { default: `${siteConfig.name} – ${siteConfig.tagline}`, template: `%s | ${siteConfig.name}` },
   description: siteConfig.description,
   applicationName: siteConfig.name,

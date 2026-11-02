@@ -1,6 +1,7 @@
 ---
 title: About ScaleHaven Reptiles
 description: We are a small captive-breeding facility raising healthy snakes, geckos, lizards and tortoises, and selling the supplies we trust in our own animal rooms.
+updated: 2026-11-01
 ---
 
 ScaleHaven started as a spare-room gecko project and grew into a dedicated breeding facility. Today we hatch and raise every animal we sell, and we only stock equipment we use on our own collection.

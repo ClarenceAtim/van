@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
 description: How ScaleHaven Reptiles collects, uses and protects your personal information when you shop with us.
+updated: 2026-11-01
 ---
 
 _Last updated: November 1, 2026_

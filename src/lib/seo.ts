@@ -4,7 +4,19 @@ import { publicEnv } from "@/lib/env";
 import { productPath } from "@/lib/format";
 import type { CatalogProduct, Rating, Review } from "@/lib/catalog";
 
-export const absoluteUrl = (path = "/") => (path.startsWith("http") ? path : `${publicEnv.siteUrl}${path.startsWith("/") ? path : `/${path}`}`);
+/**
+ * The public origin for canonical URLs, the sitemap and robots.txt. Set NEXT_PUBLIC_SITE_URL to
+ * your live domain in Vercel. If a production deploy still points at localhost, fall back to
+ * Vercel's production domain so search engines never see localhost URLs.
+ */
+export const siteOrigin = (() => {
+  const configured = publicEnv.siteUrl;
+  const vercelDomain = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (process.env.VERCEL_ENV === "production" && vercelDomain && /\/\/(localhost|127\.0\.0\.1)/.test(configured)) return `https://${vercelDomain}`;
+  return configured;
+})();
+
+export const absoluteUrl = (path = "/") => (path.startsWith("http") ? path : `${siteOrigin}${path.startsWith("/") ? path : `/${path}`}`);
 
 /** Page metadata with canonical URL, Open Graph and Twitter cards. */
 export function pageMetadata({

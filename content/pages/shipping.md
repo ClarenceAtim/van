@@ -1,6 +1,7 @@
 ---
 title: Shipping Policy
 description: Shipping rates and delivery times for reptile supplies and live animals, including overnight live animal shipping rules and weather holds.
+updated: 2026-11-01
 ---
 
 ## Reptile supplies
