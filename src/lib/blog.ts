@@ -91,8 +91,11 @@ function extractHeadings(body: string): Heading[] {
   return out;
 }
 
-/** "## Frequently asked questions" section: each "### Question" followed by its answer. */
-function extractFaqs(body: string): Faq[] {
+/**
+ * "## Frequently asked questions" section: each "### Question" followed by its answer.
+ * Used for blog posts and product descriptions (FAQPage structured data).
+ */
+export function extractFaqs(body: string): Faq[] {
   const section = /^## Frequently asked questions\s*$([\s\S]*?)(?=^## |(?![\s\S]))/im.exec(body)?.[1] ?? "";
   return section
     .split(/^### /m)

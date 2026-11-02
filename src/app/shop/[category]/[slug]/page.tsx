@@ -9,10 +9,11 @@ import { ProductCard } from "@/components/product-card";
 import { ProductGallery } from "@/components/product/gallery";
 import { WishlistButton } from "@/components/product/wishlist-button";
 import { siteConfig } from "@/config/site";
-import { getCareGuideForSpecies, postPath } from "@/lib/blog";
+import { getAlsoBought } from "@/lib/also-bought";
+import { extractFaqs, getCareGuideForSpecies, postPath } from "@/lib/blog";
 import { getAllProducts, getCategory, getProduct, getRelated, getReviews, toCard } from "@/lib/catalog";
 import { formatDate, formatMoney, productPath } from "@/lib/format";
-import { pageMetadata, productJsonLd } from "@/lib/seo";
+import { faqJsonLd, pageMetadata, productJsonLd } from "@/lib/seo";
 
 export const revalidate = 3600;
 
@@ -50,6 +51,8 @@ export default async function ProductPage({ params }: Props) {
   const [product, category] = await Promise.all([getProduct(categorySlug, slug), getCategory(categorySlug)]);
   if (!product || !category) notFound();
   const [{ reviews, rating }, related] = await Promise.all([getReviews(product.id), getRelated(product)]);
+  const alsoBought = await getAlsoBought(product, related.map((p) => p.id));
+  const faqs = extractFaqs(product.long_description);
   const onSale = product.compare_at_price_cents != null && product.compare_at_price_cents > product.price_cents;
   const lowStock = product.stock_quantity > 0 && product.stock_quantity <= 3;
   const careGuide = product.is_live_animal ? getCareGuideForSpecies(product.species_scientific_name) : null;
@@ -221,7 +224,23 @@ export default async function ProductPage({ params }: Props) {
         </section>
       )}
 
+      {alsoBought.length > 0 && (
+        <section aria-labelledby="also-bought-heading" className="mt-16">
+          <h2 id="also-bought-heading" className="mb-6 text-2xl font-semibold">
+            Customers also buy
+          </h2>
+          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {alsoBought.map((p) => (
+              <li key={p.id} className="relative">
+                <ProductCard product={toCard(p)} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <JsonLd data={productJsonLd(product, rating, reviews)} />
+      {faqs.length > 0 && <JsonLd data={faqJsonLd(faqs)} />}
     </div>
   );
 }

@@ -30,6 +30,34 @@ Live animals are **High** priority, because buyers expect to see the actual morp
 | Medium | MISMATCH | substrate-decor | `coco-fiber-brick-3-pack` | Coco Fiber Substrate Brick – 3 Pack | Compressed coco fiber bricks (dry), ideally with some expanded substrate |
 | Medium | PLACEHOLDER | care-accessories | `ball-python-care-guide-book` | The Ball Python Manual (Care Guide Book) | The actual book cover, or the book photographed on a table |
 
+## New products with no photo yet (added November 2026)
+
+These 8 new products had no suitable free photo on Unsplash or Wikimedia Commons, so they have **no image**. Their product cards and pages show a plain "Photo coming soon" panel (no icon or illustration) until you add a photo. Openverse was also requested but blocks automated access.
+
+| Priority | Category | Slug | Product | Photo needed |
+| --- | --- | --- | --- | --- |
+| Medium | heating-lighting | `wifi-reptile-thermostat` | WiFi Reptile Thermostat with App Alerts | The thermostat unit with both outlets and probes, ideally next to a phone showing the app |
+| Medium | heating-lighting | `reptile-heat-cable-15ft` | Reptile Heat Cable – 15 ft, 25 W | The coiled silicone heat cable with its plug |
+| Medium | heating-lighting | `reptile-heat-tape-11in` | Reptile Heat Tape – 11 in × 10 ft Roll | The heat tape roll, or a strip fitted under a rack shelf |
+| Medium | care-accessories | `reptile-uv-index-meter` | Reptile UV Index Meter | The handheld UV index meter, ideally taking a reading under a UVB lamp |
+| Medium | care-accessories | `egg-incubation-medium-perlite` | Egg Incubation Medium – Perlite & Vermiculite Mix | The dry perlite/vermiculite mix, or reptile eggs set in it in an egg box |
+| Medium | care-accessories | `insect-dusting-cup` | Insect Dusting Cup – Calcium Shaker | The dusting cup, ideally with calcium-coated crickets inside |
+| Medium | food-supplements | `cricket-water-gel` | Cricket Water Gel – 16 oz | The cup of gel, or gel in a dish with crickets drinking from it |
+| Medium | substrate-decor | `crested-gecko-feeding-ledge` | Crested Gecko Feeding Ledge – Magnetic | The ledge with two cups on terrarium glass, ideally with a gecko eating |
+
+## New products using a representative photo
+
+These new products have a real photo of the same species or type of item, but not the exact morph or product. The product page labels them "Representative photo". Live animals are **High** priority.
+
+| Priority | Slug | Product | Current photo shows |
+| --- | --- | --- | --- |
+| **High** | `lilly-white-crested-gecko` | Lilly White Crested Gecko | A normal yellow crested gecko (Lilly White has bright white patterning) |
+| **High** | `high-yellow-leopard-gecko` | High Yellow Leopard Gecko | A wild-type leopard gecko (high yellows are brighter golden-yellow) |
+| **High** | `tremper-albino-leopard-gecko` | Tremper Albino Leopard Gecko | An albino leopard gecko of unconfirmed strain |
+| **High** | `leatherback-bearded-dragon` | Leatherback Bearded Dragon | A close-up of a standard-scaled bearded dragon's head |
+| **High** | `pinstripe-ball-python` | Pinstripe Ball Python | A bumblebee (pastel pinstripe) ball python |
+| Low | (equipment, kits, decor and feeders) | 32 other new products | A real photo of the same type of item. Marked `representative: true` in `data/products/*.json` |
+
 ## Representative photos
 
 Products whose photo is marked `representative: true` show a real photo of the same species or the same type of item, not the exact product. The product page labels them "Representative photo". Replacing them with your own photos is optional and lower priority. See [IMAGE-AUDIT.md](IMAGE-AUDIT.md) for the full list.

@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { loadProductData } from "@/lib/products/load";
 import { productInputSchema } from "@/lib/products/schema";
@@ -24,9 +26,15 @@ describe("product catalog data", () => {
     expect(longs.size).toBe(products.length);
   });
 
-  it("gives every product an image or flagged placeholder with alt text", () => {
-    const missing = products.filter((p) => p.images.length === 0).map((p) => p.slug);
-    expect(missing).toEqual([]);
+  it("gives every product an image, or lists it in docs/IMAGES-TODO.md until a real photo exists", () => {
+    const todo = fs.readFileSync(path.join(process.cwd(), "docs", "IMAGES-TODO.md"), "utf8");
+    const untracked = products.filter((p) => p.images.length === 0 && !todo.includes(`\`${p.slug}\``)).map((p) => p.slug);
+    expect(untracked).toEqual([]);
+  });
+
+  it("never uses SVG, icon or illustration placeholders as product images", () => {
+    const placeholders = products.flatMap((p) => p.images.filter((i) => i.placeholder || /\.svg$/i.test(i.url)).map(() => p.slug));
+    expect(placeholders).toEqual([]);
   });
 });
 
