@@ -1064,7 +1064,7 @@
     "sku": "SD-DEC-FLEDG",
     "images": [],
     "featured": false,
-    "active": true,
+    "active": false,
     "is_live_animal": false,
     "species_scientific_name": null,
     "care_level": null,

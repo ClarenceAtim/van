@@ -431,7 +431,7 @@
     "category": "care-accessories",
     "subcategory": "feeding",
     "short_description": "One hundred 0.5 oz crested gecko feeding cups with lids. Fit standard feeding ledges; ideal for diet, water and supplements.",
-    "long_description": "Crested gecko feeding cups are the small, disposable cups that hold diet and water on a feeding ledge. This 100 pack of 0.5 oz feeding cups with lids is one of the most-bought reptile supplies, because every crested gecko, gargoyle gecko and day gecko keeper goes through them quickly. Fresh cups at every feeding mean no scrubbing dried diet out of a dish and less risk of bacteria.\n\n## What they're used for\n\n- **Prepared diet:** the right portion of complete crested gecko diet for one gecko.\n- **Water:** a small, clean drinking cup on a ledge.\n- **Supplements and gut load:** portion calcium or gut-load diet for feeders.\n- **Mixing and storing:** mix a batch of diet and refrigerate portions with lids on.\n- **Hatchlings:** a small cup is easier for baby geckos to find and reach.\n\n## Specifications\n\n- **Capacity:** 0.5 oz (15 ml)\n- **Pack:** 100 cups and 100 lids\n- **Material:** food-grade, BPA-free polypropylene\n- **Fit:** standard 0.5 oz ledges, including our [magnetic crested gecko feeding ledge](/shop/substrate-decor/crested-gecko-feeding-ledge)\n\n## How to use them\n\nMix your [Complete Crested Gecko Diet](/shop/food-supplements/crested-gecko-diet-8oz) to a ketchup-like consistency and fill a cup about two-thirds full. Place it on a ledge high in the enclosure and remove it after 24–48 hours, before it spoils. Juveniles get fresh diet every other day, adults about three times a week. Our [crested gecko care guide](/blog/crested-gecko-care-guide) explains feeding schedules in detail.\n\nCups can be washed and reused a few times with hot water, but most keepers replace them to keep things hygienic. Lids let you prepare portions in advance and store them in the fridge for a day or two.\n\n## Frequently asked questions\n\n### What size feeding cup is best for crested geckos?\n\n0.5 oz cups suit hatchlings and juveniles and work well for adults that eat smaller portions. Many keepers use 1 oz cups for large adults.\n\n### Can I reuse crested gecko feeding cups?\n\nYou can wash and reuse them a few times, but replacing them regularly keeps feeding hygienic and saves time scrubbing dried diet.\n\n### Do these cups fit feeding ledges?\n\nYes. They fit standard 0.5 oz feeding ledges, including our magnetic crested gecko feeding ledge.",
+    "long_description": "Crested gecko feeding cups are the small, disposable cups that hold diet and water on a feeding ledge. This 100 pack of 0.5 oz feeding cups with lids is one of the most-bought reptile supplies, because every crested gecko, gargoyle gecko and day gecko keeper goes through them quickly. Fresh cups at every feeding mean no scrubbing dried diet out of a dish and less risk of bacteria.\n\n## What they're used for\n\n- **Prepared diet:** the right portion of complete crested gecko diet for one gecko.\n- **Water:** a small, clean drinking cup on a ledge.\n- **Supplements and gut load:** portion calcium or gut-load diet for feeders.\n- **Mixing and storing:** mix a batch of diet and refrigerate portions with lids on.\n- **Hatchlings:** a small cup is easier for baby geckos to find and reach.\n\n## Specifications\n\n- **Capacity:** 0.5 oz (15 ml)\n- **Pack:** 100 cups and 100 lids\n- **Material:** food-grade, BPA-free polypropylene\n- **Fit:** standard 0.5 oz ledges, including our magnetic crested gecko feeding ledge\n\n## How to use them\n\nMix your [Complete Crested Gecko Diet](/shop/food-supplements/crested-gecko-diet-8oz) to a ketchup-like consistency and fill a cup about two-thirds full. Place it on a ledge high in the enclosure and remove it after 24–48 hours, before it spoils. Juveniles get fresh diet every other day, adults about three times a week. Our [crested gecko care guide](/blog/crested-gecko-care-guide) explains feeding schedules in detail.\n\nCups can be washed and reused a few times with hot water, but most keepers replace them to keep things hygienic. Lids let you prepare portions in advance and store them in the fridge for a day or two.\n\n## Frequently asked questions\n\n### What size feeding cup is best for crested geckos?\n\n0.5 oz cups suit hatchlings and juveniles and work well for adults that eat smaller portions. Many keepers use 1 oz cups for large adults.\n\n### Can I reuse crested gecko feeding cups?\n\nYou can wash and reuse them a few times, but replacing them regularly keeps feeding hygienic and saves time scrubbing dried diet.\n\n### Do these cups fit feeding ledges?\n\nYes. They fit standard 0.5 oz feeding ledges, including our magnetic crested gecko feeding ledge.",
     "price_cents": 1100,
     "compare_at_price_cents": null,
     "currency": "USD",
@@ -631,7 +631,19 @@
     "currency": "USD",
     "stock_quantity": 8,
     "sku": "CA-MN-UVI",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/reptile-uv-index-meter-1.webp",
+        "thumbnail_url": "/products/reptile-uv-index-meter-1-thumb.webp",
+        "alt": "Handheld light meter with a circular dial, a similar handheld instrument to the UV index meter",
+        "width": 1600,
+        "height": 2400,
+        "credit": "Nikita Turkovich on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/vintage-sverdlovsk-4-light-meter-4ntNuPmRPKE",
+        "representative": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -653,7 +665,7 @@
     "seo_description": "Handheld reptile UV index meter that measures the UVI at your reptile's basking spot. Set UVB lamp distances by Ferguson zone.",
     "image_search": {
       "query": "handheld digital meter",
-      "alt": "Handheld digital meter with an LCD display"
+      "alt": "Handheld light meter with a circular dial, a similar handheld instrument to the UV index meter"
     }
   },
   {
@@ -815,7 +827,19 @@
     "currency": "USD",
     "stock_quantity": 30,
     "sku": "CA-BR-MED4",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/egg-incubation-medium-perlite-1.webp",
+        "thumbnail_url": "/products/egg-incubation-medium-perlite-1-thumb.webp",
+        "alt": "Golden-brown vermiculite granules, one half of this perlite and vermiculite incubation mix",
+        "width": 1600,
+        "height": 1200,
+        "credit": "KENPEI via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Vermiculite1.jpg",
+        "representative": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -837,7 +861,7 @@
     "seo_description": "50:50 perlite and vermiculite egg incubation medium for reptile eggs. Holds moisture evenly without waterlogging. Sterile, 4 qt.",
     "image_search": {
       "query": "perlite vermiculite",
-      "alt": "Perlite and vermiculite egg incubation medium"
+      "alt": "Golden-brown vermiculite granules, one half of this perlite and vermiculite incubation mix"
     }
   },
   {
@@ -852,7 +876,19 @@
     "currency": "USD",
     "stock_quantity": 50,
     "sku": "CA-FD-DUST",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/insect-dusting-cup-1.webp",
+        "thumbnail_url": "/products/insect-dusting-cup-1-thumb.webp",
+        "alt": "Shaker cup beside a scoop of fine white supplement powder",
+        "width": 1600,
+        "height": 1067,
+        "credit": "Alex Saks on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-container-of-powder-and-a-spoon-jht-Na7TXXo",
+        "representative": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -874,7 +910,7 @@
     "seo_description": "Insect dusting cup with a funnel lid and shaker insert. Coats crickets and roaches evenly in calcium or vitamins with no mess.",
     "image_search": {
       "query": "calcium powder crickets dusted",
-      "alt": "Crickets lightly dusted with calcium powder"
+      "alt": "Shaker cup beside a scoop of fine white supplement powder"
     }
   }
 ]

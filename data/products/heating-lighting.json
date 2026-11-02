@@ -1123,7 +1123,19 @@
     "currency": "USD",
     "stock_quantity": 10,
     "sku": "HL-TS-WIFI",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/wifi-reptile-thermostat-1.webp",
+        "thumbnail_url": "/products/wifi-reptile-thermostat-1-thumb.webp",
+        "alt": "Hand adjusting a modern digital smart thermostat with a temperature display",
+        "width": 1600,
+        "height": 1067,
+        "credit": "HUUM on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/hand-adjusting-a-digital-thermostat-display-mi95KiB9934",
+        "representative": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -1145,7 +1157,7 @@
     "seo_description": "Smart WiFi reptile thermostat with dimming and pulse outlets, day/night schedules, temperature history and phone alerts. Control heat remotely.",
     "image_search": {
       "query": "smartphone app thermostat",
-      "alt": "Smart reptile thermostat controlled from a phone app"
+      "alt": "Hand adjusting a modern digital smart thermostat with a temperature display"
     }
   },
   {
@@ -1160,7 +1172,19 @@
     "currency": "USD",
     "stock_quantity": 25,
     "sku": "HL-HC-15",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/reptile-heat-cable-15ft-1.webp",
+        "thumbnail_url": "/products/reptile-heat-cable-15ft-1-thumb.webp",
+        "alt": "Flexible electric heating cable laid out in loops on a floor",
+        "width": 1600,
+        "height": 1937,
+        "credit": "K&K Data Service Inc. via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Underfloor_heating_cable_laid_in_bathroom,_Stone_County_Missouri,_2026-07-24.jpg",
+        "representative": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -1182,7 +1206,7 @@
     "seo_description": "Flexible 15 ft, 25 W reptile heat cable for gentle belly heat under enclosures, tubs or shelves. Waterproof silicone jacket, thermostat ready.",
     "image_search": {
       "query": "heating cable",
-      "alt": "Coiled flexible white heat cable with a plug"
+      "alt": "Flexible electric heating cable laid out in loops on a floor"
     }
   },
   {
@@ -1197,7 +1221,19 @@
     "currency": "USD",
     "stock_quantity": 15,
     "sku": "HL-HT-1110",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/reptile-heat-tape-11in-1.webp",
+        "thumbnail_url": "/products/reptile-heat-tape-11in-1-thumb.webp",
+        "alt": "Electric heating element glowing red-orange",
+        "width": 1600,
+        "height": 2189,
+        "credit": "Prince Saini on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/glowing-red-heating-element-with-intricate-coils-aV5qH0GjMBs",
+        "representative": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -1219,7 +1255,7 @@
     "seo_description": "11 in × 10 ft reptile heat tape roll for heating tub-style snake and gecko racks. Cut to length; use with connectors and a thermostat.",
     "image_search": {
       "query": "heating film strip",
-      "alt": "Roll of flat reptile heat tape"
+      "alt": "Electric heating element glowing red-orange"
     }
   },
   {

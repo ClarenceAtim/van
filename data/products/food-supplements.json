@@ -1063,7 +1063,19 @@
     "currency": "USD",
     "stock_quantity": 50,
     "sku": "FS-SP-GEL16",
-    "images": [],
+    "images": [
+      {
+        "url": "/products/cricket-water-gel-1.webp",
+        "thumbnail_url": "/products/cricket-water-gel-1-thumb.webp",
+        "alt": "Close-up of hydrated water gel beads",
+        "width": 1600,
+        "height": 1113,
+        "credit": "Tony Hisgett from Birmingham, UK via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gel_Water_Beads_(6477584337).jpg",
+        "representative": true
+      }
+    ],
     "featured": false,
     "active": true,
     "is_live_animal": false,
@@ -1085,7 +1097,7 @@
     "seo_description": "Cricket water gel gives crickets and roaches safe hydration without drowning. Keeps feeder insects alive and healthy for longer. 16 oz.",
     "image_search": {
       "query": "crickets insects",
-      "alt": "Live cricket perched on a stem"
+      "alt": "Close-up of hydrated water gel beads"
     }
   }
 ]

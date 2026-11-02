@@ -30,20 +30,27 @@ Live animals are **High** priority, because buyers expect to see the actual morp
 | Medium | MISMATCH | substrate-decor | `coco-fiber-brick-3-pack` | Coco Fiber Substrate Brick – 3 Pack | Compressed coco fiber bricks (dry), ideally with some expanded substrate |
 | Medium | PLACEHOLDER | care-accessories | `ball-python-care-guide-book` | The Ball Python Manual (Care Guide Book) | The actual book cover, or the book photographed on a table |
 
-## New products with no photo yet (added November 2026)
+## Hidden until a photo is added
 
-These 8 new products had no suitable free photo on Unsplash or Wikimedia Commons, so they have **no image**. Their product cards and pages show a plain "Photo coming soon" panel (no icon or illustration) until you add a photo. Openverse was also requested but blocks automated access.
+| Category | Slug | Product | Photo needed |
+| --- | --- | --- | --- |
+| substrate-decor | `crested-gecko-feeding-ledge` | Crested Gecko Feeding Ledge – Magnetic | The ledge with two cups on terrarium glass, ideally with a gecko eating |
 
-| Priority | Category | Slug | Product | Photo needed |
-| --- | --- | --- | --- | --- |
-| Medium | heating-lighting | `wifi-reptile-thermostat` | WiFi Reptile Thermostat with App Alerts | The thermostat unit with both outlets and probes, ideally next to a phone showing the app |
-| Medium | heating-lighting | `reptile-heat-cable-15ft` | Reptile Heat Cable – 15 ft, 25 W | The coiled silicone heat cable with its plug |
-| Medium | heating-lighting | `reptile-heat-tape-11in` | Reptile Heat Tape – 11 in × 10 ft Roll | The heat tape roll, or a strip fitted under a rack shelf |
-| Medium | care-accessories | `reptile-uv-index-meter` | Reptile UV Index Meter | The handheld UV index meter, ideally taking a reading under a UVB lamp |
-| Medium | care-accessories | `egg-incubation-medium-perlite` | Egg Incubation Medium – Perlite & Vermiculite Mix | The dry perlite/vermiculite mix, or reptile eggs set in it in an egg box |
-| Medium | care-accessories | `insect-dusting-cup` | Insect Dusting Cup – Calcium Shaker | The dusting cup, ideally with calcium-coated crickets inside |
-| Medium | food-supplements | `cricket-water-gel` | Cricket Water Gel – 16 oz | The cup of gel, or gel in a dish with crickets drinking from it |
-| Medium | substrate-decor | `crested-gecko-feeding-ledge` | Crested Gecko Feeding Ledge – Magnetic | The ledge with two cups on terrarium glass, ideally with a gecko eating |
+This product is a **draft** (`"active": false` in `data/products/substrate-decor.json`), so it doesn't appear in the shop, search, sitemap or related products. No free photo of a gecko feeding ledge exists; searches only return household wall shelves. To publish it, add a photo with `npx tsx scripts/use-own-photo.ts crested-gecko-feeding-ledge <photo> "Alt text"`, set `"active": true` and run `npm run sync:products`.
+
+## Representative photos added in the second pass
+
+These 7 products had no photo after the first pass. They now show a real photo of the same type of item, labelled "Representative photo". Replace them with your own photos when you can.
+
+| Slug | Current photo shows | Ideal photo |
+| --- | --- | --- |
+| `wifi-reptile-thermostat` | A modern digital smart thermostat on a wall | The thermostat unit with both outlets and probes, next to a phone showing the app |
+| `reptile-heat-cable-15ft` | Electric underfloor heating cable laid in loops | The coiled silicone heat cable with its plug |
+| `reptile-heat-tape-11in` | A glowing electric heating element | The heat tape roll, or a strip fitted under a rack shelf |
+| `reptile-uv-index-meter` | A vintage handheld photographic light meter | The UV index meter taking a reading under a UVB lamp |
+| `insect-dusting-cup` | A shaker cup with supplement powder | The dusting cup with calcium-coated crickets inside |
+| `egg-incubation-medium-perlite` | Loose vermiculite granules (half of the mix) | The mix, or reptile eggs set in it in an egg box |
+| `cricket-water-gel` | Coloured water gel beads | The cup of gel, or gel in a dish with crickets drinking from it |
 
 ## New products using a representative photo
 
