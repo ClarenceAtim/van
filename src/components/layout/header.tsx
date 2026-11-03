@@ -10,14 +10,14 @@ const NAV = [...categories].sort((a, b) => a.sort_order - b.sort_order).map((c) 
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/85">
+    <header className="sticky top-0 z-40 border-b bg-background">
       <div className="bg-forest text-primary-foreground">
         <p className="mx-auto max-w-7xl px-4 py-1.5 text-center text-xs sm:text-sm">
-          Live Arrival Guarantee on every animal · Free shipping on supplies over $99
+          Live Arrival Guarantee on every animal · Supplies ship worldwide
         </p>
       </div>
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
-        <MobileMenu items={[...NAV, { href: "/care-guides", label: "Care Guides" }]} />
+        <MobileMenu items={[...NAV, { href: "/blog", label: "Blog & Care Guides" }]} />
         <Link href="/" className="shrink-0 rounded-md text-foreground" aria-label="ScaleHaven Reptiles home">
           <Logo className="h-8 w-auto sm:h-9" />
         </Link>
@@ -42,8 +42,8 @@ export function Header() {
             </li>
           ))}
           <li className="ml-auto">
-            <Link href="/care-guides" className="inline-block rounded-md px-3 py-2.5 text-sm font-medium text-primary hover:bg-muted">
-              Care Guides
+            <Link href="/blog" className="inline-block rounded-md px-3 py-2.5 text-sm font-medium text-primary hover:bg-muted">
+              Blog & Care Guides
             </Link>
           </li>
         </ul>

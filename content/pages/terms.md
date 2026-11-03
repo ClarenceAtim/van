@@ -1,6 +1,7 @@
 ---
 title: Terms of Service
 description: The terms that apply when you use the ScaleHaven Reptiles website and buy reptiles or reptile supplies from us.
+updated: 2026-11-01
 ---
 
 _Last updated: November 1, 2026_
@@ -9,7 +10,7 @@ By using this website or placing an order you agree to these terms.
 
 ## Orders and pricing
 
-All prices are in US dollars. We may cancel an order (with a full refund) if an item is mispriced or out of stock, or if we can't ship it safely or legally to your location. Your order is confirmed once payment is completed.
+All prices are in US dollars. Placing an order on this website is an order request: no payment is taken on the website. We email you the shipping cost, final total and payment details for the method you chose, and your order is confirmed once we receive payment. Unpaid orders are cancelled after the payment deadline in that email. We may cancel an order (with a full refund of anything paid) if an item is mispriced or out of stock, or if we can't ship it safely or legally to your location.
 
 ## Live animals
 

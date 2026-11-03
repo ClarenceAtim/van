@@ -2,7 +2,8 @@
 
 import { sendContactNotification } from "@/lib/email";
 import { rateLimit } from "@/lib/rate-limit";
-import { createAdminClient, isServiceRoleConfigured } from "@/lib/supabase/admin";
+import { addContactMessage, subscribe } from "@/lib/db/inbox";
+import { db, isDatabaseConfigured } from "@/lib/db/pool";
 import { verifyTurnstile } from "@/lib/turnstile";
 import { contactSchema, fieldErrors, newsletterSchema, type FormState } from "@/lib/validation";
 
@@ -15,10 +16,11 @@ export async function subscribeNewsletter(_prev: FormState, form: FormData): Pro
   if (!(await rateLimit("newsletter"))) return { ok: false, message: RATE_MESSAGE };
   if (!(await verifyTurnstile(parsed.data.turnstileToken))) return { ok: false, message: BOT_MESSAGE };
 
-  if (isServiceRoleConfigured()) {
-    const { error } = await createAdminClient().from("newsletter_subscribers").upsert({ email: parsed.data.email }, { onConflict: "email", ignoreDuplicates: true });
-    if (error) {
-      console.error("newsletter:", error.message);
+  if (isDatabaseConfigured()) {
+    try {
+      await subscribe(db(), parsed.data.email);
+    } catch (e) {
+      console.error("newsletter:", (e as Error).message);
       return { ok: false, message: "Something went wrong. Please try again." };
     }
   }
@@ -35,10 +37,11 @@ export async function sendContactMessage(_prev: FormState, form: FormData): Prom
   if (!(await verifyTurnstile(parsed.data.turnstileToken))) return { ok: false, message: BOT_MESSAGE };
 
   const { turnstileToken: _t, ...message } = parsed.data;
-  if (isServiceRoleConfigured()) {
-    const { error } = await createAdminClient().from("contact_messages").insert(message);
-    if (error) {
-      console.error("contact:", error.message);
+  if (isDatabaseConfigured()) {
+    try {
+      await addContactMessage(db(), message);
+    } catch (e) {
+      console.error("contact:", (e as Error).message);
       return { ok: false, message: "We couldn't send your message. Please email us instead." };
     }
   }

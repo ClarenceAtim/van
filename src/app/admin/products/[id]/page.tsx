@@ -6,23 +6,18 @@ import { ProductForm, type ProductFormValues } from "@/components/admin/product-
 import { Button } from "@/components/ui/button";
 import { requireAdmin } from "@/lib/admin";
 import { getCategories } from "@/lib/catalog";
+import { getProductWithImages } from "@/lib/db/admin";
 import { productPath } from "@/lib/format";
 
 export const metadata = { title: "Edit product" };
 
-type Img = { id: string; url: string; alt: string; placeholder: boolean };
-
 export default async function EditProductPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ created?: string }> }) {
   const { id } = await params;
   if (!/^[0-9a-f-]{36}$/.test(id)) notFound();
-  const { supabase } = await requireAdmin();
-  const [{ data }, categories, { created }] = await Promise.all([
-    supabase.from("products").select("*, product_images(id, url, alt, placeholder, position)").eq("id", id).maybeSingle(),
-    getCategories(),
-    searchParams,
-  ]);
+  const { q } = await requireAdmin();
+  const [data, categories, { created }] = await Promise.all([getProductWithImages(q, id), getCategories(), searchParams]);
   if (!data) notFound();
-  const images = ((data.product_images ?? []) as (Img & { position: number })[]).sort((a, b) => a.position - b.position);
+  const images = data.images;
 
   return (
     <div className="max-w-4xl space-y-8">

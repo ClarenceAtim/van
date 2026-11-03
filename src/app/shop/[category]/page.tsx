@@ -33,8 +33,8 @@ export default async function CategoryPage({ params }: Props) {
       <p className="mb-6 max-w-3xl text-muted-foreground">{category.description}</p>
       {category.slug === "live-reptiles" && (
         <p className="mb-8 rounded-xl border border-sand-strong bg-sand/50 p-4 text-sm">
-          <strong>Live animal shipping:</strong> animals ship overnight {siteConfig.shipping.liveAnimalShipDays} when weather along the route is safe, and only to states where
-          the species is legal to own. Buyers must be {siteConfig.liveAnimals.minimumAge}+.{" "}
+          <strong>Live animal shipping:</strong> animals ship overnight {siteConfig.shipping.liveAnimalShipDays} within the US when weather along the route is safe, and only to states
+          where the species is legal to own. Buyers must be {siteConfig.liveAnimals.minimumAge}+.{" "}
           <Link href="/live-arrival-guarantee" className="font-medium text-primary underline underline-offset-4">
             Live Arrival Guarantee
           </Link>

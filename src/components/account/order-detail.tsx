@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { countryName, regionName } from "@/config/countries";
+import { siteConfig } from "@/config/site";
 import { formatDate, formatMoney } from "@/lib/format";
-import { StatusBadge, type Order } from "@/lib/orders";
+import { deliveryLabel, StatusBadge, type Order } from "@/lib/orders";
 
 /** Shared by the customer order page and the admin order page. */
 export function OrderDetail({ order, reviewLinks = false }: { order: Order; reviewLinks?: boolean }) {
@@ -59,17 +61,19 @@ export function OrderDetail({ order, reviewLinks = false }: { order: Order; revi
               <td className="px-4 py-2 text-right">{formatMoney(order.subtotal_cents, order.currency)}</td>
             </tr>
             <tr>
-              <td colSpan={3} className="px-4 py-2 text-right">Shipping ({order.shipping_method})</td>
-              <td className="px-4 py-2 text-right">{order.shipping_cents ? formatMoney(order.shipping_cents, order.currency) : "Free"}</td>
+              <td colSpan={3} className="px-4 py-2 text-right">{deliveryLabel(order)}</td>
+              <td className="px-4 py-2 text-right">
+                {!order.shipping_confirmed ? "To be confirmed" : order.shipping_cents ? formatMoney(order.shipping_cents, order.currency) : "Free"}
+              </td>
             </tr>
             {order.tax_cents > 0 && (
               <tr>
-                <td colSpan={3} className="px-4 py-2 text-right">Tax</td>
+                <td colSpan={3} className="px-4 py-2 text-right">{siteConfig.tax.label}</td>
                 <td className="px-4 py-2 text-right">{formatMoney(order.tax_cents, order.currency)}</td>
               </tr>
             )}
             <tr className="font-semibold">
-              <td colSpan={3} className="px-4 py-2 text-right">Total</td>
+              <td colSpan={3} className="px-4 py-2 text-right">{order.shipping_confirmed ? "Total" : "Total (before shipping)"}</td>
               <td className="px-4 py-2 text-right">{formatMoney(order.total_cents, order.currency)}</td>
             </tr>
           </tfoot>
@@ -83,6 +87,12 @@ export function OrderDetail({ order, reviewLinks = false }: { order: Order; revi
           </h2>
           <address className="text-sm not-italic">
             {a.name}
+            {a.company && (
+              <>
+                <br />
+                {a.company}
+              </>
+            )}
             <br />
             {a.line1}
             {a.line2 && (
@@ -92,7 +102,9 @@ export function OrderDetail({ order, reviewLinks = false }: { order: Order; revi
               </>
             )}
             <br />
-            {a.city}, {a.state} {a.postal_code}
+            {[a.city, a.state ? regionName(a.country ?? "", a.state) : "", a.postal_code].filter(Boolean).join(", ")}
+            <br />
+            {countryName(a.country)}
           </address>
         </section>
       )}

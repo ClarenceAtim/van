@@ -1,16 +1,15 @@
 import { markMessageRead } from "@/app/actions/admin";
 import { Button } from "@/components/ui/button";
 import { requireAdmin } from "@/lib/admin";
+import { listMessages } from "@/lib/db/admin";
 import { formatDate } from "@/lib/format";
 
 export const metadata = { title: "Messages" };
 
-type Msg = { id: string; name: string; email: string; subject: string; message: string; read: boolean; created_at: string };
 
 export default async function AdminMessages() {
-  const { supabase } = await requireAdmin();
-  const { data } = await supabase.from("contact_messages").select("*").order("read").order("created_at", { ascending: false }).limit(200);
-  const rows = (data ?? []) as Msg[];
+  const { q } = await requireAdmin();
+  const rows = await listMessages(q);
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-semibold">Messages</h1>

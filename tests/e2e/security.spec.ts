@@ -29,8 +29,9 @@ test.describe("security", () => {
     expect(cart.lines[0].unitPriceCents).toBe(7900);
   });
 
-  test("webhook and revalidate endpoints reject unsigned requests", async ({ request }) => {
-    expect((await request.post("/api/stripe/webhook", { data: {} })).status()).toBe(400);
+  test("cron and revalidate endpoints reject unauthenticated requests", async ({ request }) => {
+    expect((await request.get("/api/cron/orders")).status()).toBe(401);
+    expect((await request.get("/api/cron/orders", { headers: { authorization: "Bearer wrong" } })).status()).toBe(401);
     expect((await request.post("/api/revalidate")).status()).toBe(401);
   });
 });

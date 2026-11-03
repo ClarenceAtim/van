@@ -17,7 +17,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   const { profile } = await requireAdmin();
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-3 border-b pb-4">
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-3 border-b pb-4 print:hidden">
         <nav aria-label="Admin">
           <ul className="flex flex-wrap gap-1">
             {NAV.map((n) => (

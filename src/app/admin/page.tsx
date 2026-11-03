@@ -2,31 +2,26 @@ import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
 import { OrdersTable } from "@/components/account/orders-table";
 import { configWarnings, requireAdmin } from "@/lib/admin";
+import { overview } from "@/lib/db/admin";
+import { listOrders } from "@/lib/db/orders";
 import { formatMoney } from "@/lib/format";
-import type { Order } from "@/lib/orders";
 
 export const metadata = { title: "Overview" };
 
 const LOW_STOCK = 3;
 
 export default async function AdminOverview() {
-  const { supabase } = await requireAdmin();
-  const since = new Date(Date.now() - 30 * 86_400_000).toISOString();
-  const [paid, recent, lowStock, pendingReviews, unread] = await Promise.all([
-    supabase.from("orders").select("total_cents, created_at").in("status", ["paid", "processing", "shipped", "delivered"]).gte("created_at", since),
-    supabase.from("orders").select("*").neq("status", "pending").order("created_at", { ascending: false }).limit(8),
-    supabase.from("products").select("id, name, stock_quantity").eq("active", true).lte("stock_quantity", LOW_STOCK).order("stock_quantity"),
-    supabase.from("reviews").select("id", { count: "exact", head: true }).eq("status", "pending"),
-    supabase.from("contact_messages").select("id", { count: "exact", head: true }).eq("read", false),
-  ]);
-  const revenue = (paid.data ?? []).reduce((s, o) => s + o.total_cents, 0);
-  const toShip = (recent.data ?? []).filter((o) => o.status === "paid" || o.status === "processing").length;
+  const { q } = await requireAdmin();
+  const [stats30, recent] = await Promise.all([overview(q, LOW_STOCK), listOrders(q, {}, 8)]);
+  const lowStock = stats30.lowStock;
   const stats = [
-    { label: "Sales (30 days)", value: formatMoney(revenue) },
-    { label: "Orders (30 days)", value: String(paid.data?.length ?? 0) },
-    { label: "Awaiting shipment", value: String(toShip), href: "/admin/orders?status=paid" },
-    { label: "Reviews to moderate", value: String(pendingReviews.count ?? 0), href: "/admin/reviews" },
-    { label: "Unread messages", value: String(unread.count ?? 0), href: "/admin/messages" },
+    { label: "Sales (30 days)", value: formatMoney(stats30.revenue) },
+    { label: "Orders (30 days)", value: String(stats30.orders) },
+    { label: "New orders (send confirmation)", value: String(stats30.new_orders), href: "/admin/orders?status=awaiting_confirmation" },
+    { label: "Waiting for payment", value: String(stats30.awaiting_payment), href: "/admin/orders?status=confirmation_sent" },
+    { label: "Paid, to ship", value: String(stats30.to_ship), href: "/admin/orders?status=paid" },
+    { label: "Reviews to moderate", value: String(stats30.pending_reviews), href: "/admin/reviews" },
+    { label: "Unread messages", value: String(stats30.unread), href: "/admin/messages" },
   ];
   const warnings = configWarnings();
 
@@ -56,13 +51,13 @@ export default async function AdminOverview() {
       <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
         <section aria-labelledby="recent-orders" className="space-y-3">
           <h2 id="recent-orders" className="text-xl font-semibold">Recent orders</h2>
-          <OrdersTable orders={(recent.data ?? []) as Order[]} hrefBase="/admin/orders" />
+          <OrdersTable orders={recent} hrefBase="/admin/orders" admin />
         </section>
         <section aria-labelledby="low-stock" className="space-y-3">
           <h2 id="low-stock" className="text-xl font-semibold">Low stock (≤ {LOW_STOCK})</h2>
-          {lowStock.data?.length ? (
+          {lowStock.length ? (
             <ul className="divide-y rounded-xl border text-sm">
-              {lowStock.data.map((p) => (
+              {lowStock.map((p) => (
                 <li key={p.id} className="flex justify-between gap-3 px-4 py-2">
                   <Link href={`/admin/products/${p.id}`} className="hover:underline">{p.name}</Link>
                   <span className={p.stock_quantity === 0 ? "font-semibold text-destructive" : "text-amber-700"}>{p.stock_quantity}</span>

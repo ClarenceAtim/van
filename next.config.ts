@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
 
-const supabaseHost = process.env.NEXT_PUBLIC_SUPABASE_URL ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).host : null;
+// Neon Object Storage endpoint (admin-uploaded product images are served from the public_read bucket).
+const storageUrl = process.env.AWS_ENDPOINT_URL_S3 ? new URL(process.env.AWS_ENDPOINT_URL_S3) : null;
 const isDev = process.env.NODE_ENV !== "production";
 const isHttps = (process.env.NEXT_PUBLIC_SITE_URL ?? "").startsWith("https://");
 
-const supabaseSources = supabaseHost ? `https://${supabaseHost} wss://${supabaseHost}` : "";
 
 /**
  * Content-Security-Policy. Next.js inlines small bootstrap scripts, so 'unsafe-inline'
@@ -15,12 +15,12 @@ const csp = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
-  `img-src 'self' data: blob: ${supabaseHost ? `https://${supabaseHost}` : ""}`,
+  `img-src 'self' data: blob: ${storageUrl ? storageUrl.origin : ""}`,
   "font-src 'self'",
-  `connect-src 'self' https://challenges.cloudflare.com ${supabaseSources}`,
+  "connect-src 'self' https://challenges.cloudflare.com",
   "frame-src https://challenges.cloudflare.com",
   "frame-ancestors 'none'",
-  "form-action 'self' https://checkout.stripe.com",
+  "form-action 'self'",
   "base-uri 'self'",
   "object-src 'none'",
   // Only upgrade when the site is served over HTTPS (keeps local `next start` on http working).
@@ -35,7 +35,7 @@ const securityHeaders = [
   { key: "X-Frame-Options", value: "DENY" },
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=(self \"https://checkout.stripe.com\"), usb=()" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=(), usb=()" },
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
   { key: "X-DNS-Prefetch-Control", value: "on" },
 ];
@@ -46,10 +46,18 @@ const nextConfig: NextConfig = {
   experimental: { serverActions: { bodySizeLimit: "6mb" } },
   images: {
     formats: ["image/avif", "image/webp"],
-    remotePatterns: supabaseHost ? [{ protocol: "https", hostname: supabaseHost, pathname: "/storage/v1/object/public/**" }] : [],
+    // Optimised images are re-used for 31 days (deploys clear the cache, so replaced photos still update).
+    minimumCacheTTL: 2678400,
+    remotePatterns: storageUrl ? [{ protocol: "https", hostname: storageUrl.hostname, pathname: "/product-uploads/**" }] : [],
   },
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    // Product and blog photos keep their file names when replaced, so cache for a week and revalidate in the background.
+    const imageCache = [{ key: "Cache-Control", value: "public, max-age=604800, stale-while-revalidate=2592000" }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      { source: "/products/:file*", headers: imageCache },
+      { source: "/blog/:file([a-z0-9-]+\\.webp)", headers: imageCache },
+    ];
   },
 };
 

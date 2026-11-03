@@ -4,7 +4,19 @@ import { publicEnv } from "@/lib/env";
 import { productPath } from "@/lib/format";
 import type { CatalogProduct, Rating, Review } from "@/lib/catalog";
 
-export const absoluteUrl = (path = "/") => (path.startsWith("http") ? path : `${publicEnv.siteUrl}${path.startsWith("/") ? path : `/${path}`}`);
+/**
+ * The public origin for canonical URLs, the sitemap and robots.txt. Set NEXT_PUBLIC_SITE_URL to
+ * your live domain in Vercel. If a production deploy still points at localhost, fall back to
+ * Vercel's production domain so search engines never see localhost URLs.
+ */
+export const siteOrigin = (() => {
+  const configured = publicEnv.siteUrl;
+  const vercelDomain = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (process.env.VERCEL_ENV === "production" && vercelDomain && /\/\/(localhost|127\.0\.0\.1)/.test(configured)) return `https://${vercelDomain}`;
+  return configured;
+})();
+
+export const absoluteUrl = (path = "/") => (path.startsWith("http") ? path : `${siteOrigin}${path.startsWith("/") ? path : `/${path}`}`);
 
 /** Page metadata with canonical URL, Open Graph and Twitter cards. */
 export function pageMetadata({
@@ -15,6 +27,7 @@ export function pageMetadata({
   imageAlt,
   type = "website",
   noIndex = false,
+  article,
 }: {
   title: string;
   description: string;
@@ -23,6 +36,7 @@ export function pageMetadata({
   imageAlt?: string;
   type?: "website" | "article";
   noIndex?: boolean;
+  article?: { publishedTime: string; modifiedTime: string; section: string; tags: string[]; authors: string[] };
 }): Metadata {
   // Pages without their own image share the default social card (src/app/opengraph-image.tsx).
   const images = [{ url: absoluteUrl(image ?? "/opengraph-image"), alt: imageAlt ?? title }];
@@ -30,7 +44,10 @@ export function pageMetadata({
     title,
     description,
     alternates: { canonical: path },
-    openGraph: { title, description, url: path, type, siteName: siteConfig.name, images },
+    openGraph:
+      type === "article" && article
+        ? { title, description, url: path, type, siteName: siteConfig.name, images, ...article }
+        : { title, description, url: path, type, siteName: siteConfig.name, images },
     twitter: { card: "summary_large_image", title, description, images: images.map((i) => i.url) },
     robots: noIndex ? { index: false, follow: false } : undefined,
   };
@@ -80,7 +97,6 @@ export function breadcrumbJsonLd(items: { name: string; href: string }[]) {
 }
 
 export function productJsonLd(p: CatalogProduct, rating: Rating | null, reviews: Review[]) {
-  const s = siteConfig.shipping;
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -100,16 +116,7 @@ export function productJsonLd(p: CatalogProduct, rating: Rating | null, reviews:
       availability: p.stock_quantity > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       itemCondition: "https://schema.org/NewCondition",
       seller: { "@id": `${absoluteUrl("/")}#organization` },
-      shippingDetails: {
-        "@type": "OfferShippingDetails",
-        shippingRate: { "@type": "MonetaryAmount", value: money(p.is_live_animal ? s.liveAnimalOvernightCents : s.standardCents), currency: p.currency },
-        shippingDestination: { "@type": "DefinedRegion", addressCountry: "US" },
-        deliveryTime: {
-          "@type": "ShippingDeliveryTime",
-          handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 2, unitCode: "DAY" },
-          transitTime: { "@type": "QuantitativeValue", minValue: 1, maxValue: p.is_live_animal ? 1 : 5, unitCode: "DAY" },
-        },
-      },
+      // No shippingDetails: shipping is quoted per order by email, so there is no fixed rate to publish.
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
         applicableCountry: "US",
@@ -141,17 +148,38 @@ export function faqJsonLd(items: { question: string; answer: string }[]) {
   };
 }
 
-export function articleJsonLd(a: { title: string; description: string; path: string; image?: string; published: string; updated?: string }) {
+export function blogPostingJsonLd(p: {
+  title: string;
+  description: string;
+  path: string;
+  image: string;
+  published: string;
+  updated?: string;
+  author: { name: string; type: "Person" | "Organization" };
+  category: string;
+  tags: string[];
+  wordCount: number;
+}) {
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: a.title,
-    description: a.description,
-    mainEntityOfPage: absoluteUrl(a.path),
-    image: a.image ? [absoluteUrl(a.image)] : undefined,
-    datePublished: a.published,
-    dateModified: a.updated ?? a.published,
-    author: { "@type": "Organization", name: siteConfig.name, url: absoluteUrl("/") },
-    publisher: { "@id": `${absoluteUrl("/")}#organization` },
+    "@type": "BlogPosting",
+    headline: p.title,
+    description: p.description,
+    url: absoluteUrl(p.path),
+    mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(p.path) },
+    image: [absoluteUrl(p.image)],
+    datePublished: p.published,
+    dateModified: p.updated ?? p.published,
+    author: { "@type": p.author.type, name: p.author.name, url: absoluteUrl("/about") },
+    publisher: {
+      "@type": "Organization",
+      "@id": `${absoluteUrl("/")}#organization`,
+      name: siteConfig.name,
+      logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
+    },
+    articleSection: p.category,
+    keywords: p.tags.join(", "),
+    wordCount: p.wordCount,
+    inLanguage: siteConfig.locale,
   };
 }

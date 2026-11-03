@@ -109,13 +109,12 @@
       {
         "url": "/products/banana-ball-python-1.webp",
         "thumbnail_url": "/products/banana-ball-python-1-thumb.webp",
+        "alt": "Banana ball python with pale yellow and lavender pattern and scattered dark freckles on a white background",
         "width": 1600,
-        "height": 962,
-        "alt": "Light yellow ball python morph (representative of the banana morph)",
-        "credit": "WingedWolfPsion via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Python_regius_-_hypomelanistic.png",
-        "representative": true
+        "height": 1067,
+        "credit": "Timothy Dykes on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/brown-and-beige-snake-on-white-background-JHNS4Flf9u0"
       }
     ],
     "featured": true,
@@ -138,7 +137,7 @@
     "seo_description": "Lavender and buttery-yellow banana ball python that develops charming dark freckles with age.",
     "image_search": {
       "query": "Python regius morph",
-      "alt": "Light yellow ball python morph (representative of the banana morph)"
+      "alt": "Banana ball python with pale yellow and lavender pattern and scattered dark freckles on a white background"
     }
   },
   {
@@ -393,12 +392,12 @@
       {
         "url": "/products/amelanistic-corn-snake-1.webp",
         "thumbnail_url": "/products/amelanistic-corn-snake-1-thumb.webp",
+        "alt": "Amelanistic corn snake with orange-red saddles outlined in white, resting on sand",
         "width": 1600,
-        "height": 998,
-        "alt": "Amelanistic corn snake with orange and red saddles and white borders",
-        "credit": "me via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Corn_snake_swallowing_cropped.jpg"
+        "height": 1067,
+        "credit": "Igor Rodrigues on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-pizza-with-a-slice-missing-iIeYKwUqr_U"
       }
     ],
     "featured": false,
@@ -421,7 +420,7 @@
     "seo_description": "Glowing orange and red amelanistic corn snake with white borders and ruby-red eyes.",
     "image_search": {
       "query": "amelanistic corn snake",
-      "alt": "Amelanistic corn snake with orange and red saddles and white borders"
+      "alt": "Amelanistic corn snake with orange-red saddles outlined in white, resting on sand"
     }
   },
   {
@@ -440,12 +439,12 @@
       {
         "url": "/products/snow-corn-snake-1.webp",
         "thumbnail_url": "/products/snow-corn-snake-1-thumb.webp",
+        "alt": "Pink and white snow corn snake with red eyes coiled on the ground",
         "width": 1600,
-        "height": 1041,
-        "alt": "Corn snake (species photo; snow morph is pink and white)",
-        "credit": "Peter Paplanus via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Kornnatter_(Pantherophis_guttatus),_Seitenansicht.jpg",
+        "height": 1183,
+        "credit": "Sanket Rajurkar on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-small-white-snake-laying-on-the-ground-8JLrcdcCd5Y",
         "representative": true
       }
     ],
@@ -469,7 +468,7 @@
     "seo_description": "Pale pink-and-white snow corn snake that develops soft yellow and lime highlights as an adult.",
     "image_search": {
       "query": "Kornnatter",
-      "alt": "Corn snake (species photo; snow morph is pink and white)"
+      "alt": "Pink and white snow corn snake with red eyes coiled on the ground"
     }
   },
   {
@@ -582,9 +581,9 @@
       {
         "url": "/products/mexican-black-kingsnake-1.webp",
         "thumbnail_url": "/products/mexican-black-kingsnake-1-thumb.webp",
+        "alt": "Glossy jet-black Mexican black kingsnake coiled on aspen bedding",
         "width": 1600,
-        "height": 1200,
-        "alt": "Jet-black Mexican black kingsnake on aspen bedding",
+        "height": 975,
         "credit": "Yercaud-elango via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
         "source_url": "https://commons.wikimedia.org/wiki/File:Mexican_black_kingsnake-3-karnataka_aquarium-J_P_Nagar-bangalore-India.jpg"
@@ -610,7 +609,7 @@
     "seo_description": "Glossy, jet-black Mexican black kingsnake that shines with a blue-purple iridescence under light.",
     "image_search": {
       "query": "Mexican black kingsnake",
-      "alt": "Jet-black Mexican black kingsnake on aspen bedding"
+      "alt": "Glossy jet-black Mexican black kingsnake coiled on aspen bedding"
     }
   },
   {
@@ -675,12 +674,12 @@
       {
         "url": "/products/honduran-milk-snake-1.webp",
         "thumbnail_url": "/products/honduran-milk-snake-1-thumb.webp",
-        "width": 1600,
-        "height": 1067,
-        "alt": "Tricolor Honduran milk snake with red, black and yellow bands",
-        "credit": "Tylwyth Eldar via Wikimedia Commons",
+        "alt": "Tricolor Honduran milk snake with bold red, black and orange bands coiled on wood chips",
+        "width": 1000,
+        "height": 1175,
+        "credit": "Rod Galloway Jr via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ferme_des_Reptiles_-_Lampropeltis_triangulum_hondurensis.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Honduran_milk_snake.jpg"
       }
     ],
     "featured": false,
@@ -703,7 +702,7 @@
     "seo_description": "Vivid red, black and yellow tricolor Honduran milk snake that matures into an impressive, sturdy adult.",
     "image_search": {
       "query": "Honduran milk snake",
-      "alt": "Tricolor Honduran milk snake with red, black and yellow bands"
+      "alt": "Tricolor Honduran milk snake with bold red, black and orange bands coiled on wood chips"
     }
   },
   {
@@ -722,12 +721,12 @@
       {
         "url": "/products/pueblan-milk-snake-1.webp",
         "thumbnail_url": "/products/pueblan-milk-snake-1-thumb.webp",
+        "alt": "Pueblan milk snake with red, black and cream bands coiled on moss beside a clutch of eggs",
         "width": 1600,
-        "height": 986,
-        "alt": "Pueblan milk snake with white, black and red bands",
+        "height": 1064,
         "credit": "Bernard DUPONT from FRANCE via Wikimedia Commons",
         "license": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Pueblan_Milksnake_(Lampropeltis_triangulum_campbelli)_female_juvenile_(36013472342).jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pueblan_Milk_Snake_(Lampropeltis_polyzona)_female_with_eggs_..._(Captive_specimen)_(43875165374).jpg"
       }
     ],
     "featured": false,
@@ -750,7 +749,7 @@
     "seo_description": "Compact Pueblan milk snake with wide white bands framed in black and red — great for smaller spaces.",
     "image_search": {
       "query": "Pueblan milk snake Lampropeltis campbelli",
-      "alt": "Pueblan milk snake with white, black and red bands"
+      "alt": "Pueblan milk snake with red, black and cream bands coiled on moss beside a clutch of eggs"
     }
   },
   {
@@ -816,8 +815,8 @@
       {
         "url": "/products/albino-western-hognose-1.webp",
         "thumbnail_url": "/products/albino-western-hognose-1-thumb.webp",
-        "width": 1192,
-        "height": 949,
+        "width": 1000,
+        "height": 796,
         "alt": "Western hognose snake (species photo; albino morph is peach and orange)",
         "credit": "NPS Photo via Wikimedia Commons",
         "license": "Public domain",
@@ -864,8 +863,8 @@
       {
         "url": "/products/rosy-boa-1.webp",
         "thumbnail_url": "/products/rosy-boa-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
+        "width": 900,
+        "height": 675,
         "alt": "Striped rosy boa resting on sandy rocks",
         "credit": "Robb Hannawacker, while working for Joshua Tree National Park via Wikimedia Commons",
         "license": "Public domain",
@@ -958,8 +957,8 @@
       {
         "url": "/products/leopard-gecko-normal-1.webp",
         "thumbnail_url": "/products/leopard-gecko-normal-1-thumb.webp",
-        "width": 1600,
-        "height": 900,
+        "width": 1200,
+        "height": 675,
         "alt": "Wild-type leopard gecko with spotted pattern walking on sand",
         "credit": "George Chernilevsky via Wikimedia Commons",
         "license": "Public domain",
@@ -1052,12 +1051,13 @@
       {
         "url": "/products/leopard-gecko-mack-snow-1.webp",
         "thumbnail_url": "/products/leopard-gecko-mack-snow-1-thumb.webp",
-        "width": 900,
-        "height": 524,
-        "alt": "Pale snow leopard gecko with dark spots peeking over a leaf",
-        "credit": "Irhanz via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gecko_leopard.jpg"
+        "alt": "Pale leopard gecko with fine black spots resting on cork bark",
+        "width": 1600,
+        "height": 1072,
+        "credit": "Kaira Picard on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/leopard-gecko-on-textured-bark-QiewOsZz0iI",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1080,7 +1080,7 @@
     "seo_description": "Black-and-white banded mack snow leopard gecko that softens to cream and lavender as an adult.",
     "image_search": {
       "query": "Eublepharis macularius snow",
-      "alt": "Snow leopard gecko with pale spotted pattern"
+      "alt": "Pale leopard gecko with fine black spots resting on cork bark"
     }
   },
   {
@@ -1146,12 +1146,12 @@
       {
         "url": "/products/crested-gecko-dalmatian-1.webp",
         "thumbnail_url": "/products/crested-gecko-dalmatian-1-thumb.webp",
+        "alt": "Yellow crested gecko with black dalmatian-style spots on its head and side",
         "width": 1600,
         "height": 1067,
-        "alt": "Crested gecko on a leaf (species photo; dalmatian morph has black spots)",
-        "credit": "Lennart Hudel via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Correlophus_ciliatus_34354132.jpg",
+        "credit": "Pierre Bamin on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/brown-and-gray-reptile-closeup-photo-5AkpMoG8Srw",
         "representative": true
       }
     ],
@@ -1175,7 +1175,7 @@
     "seo_description": "Spotted dalmatian crested gecko with dozens of ink-black dots scattered over a warm base.",
     "image_search": {
       "query": "Correlophus ciliatus",
-      "alt": "Crested gecko on a leaf (species photo; dalmatian morph has black spots)"
+      "alt": "Yellow crested gecko with black dalmatian-style spots on its head and side"
     }
   },
   {
@@ -1332,8 +1332,8 @@
       {
         "url": "/products/african-fat-tailed-gecko-1.webp",
         "thumbnail_url": "/products/african-fat-tailed-gecko-1-thumb.webp",
-        "width": 1600,
-        "height": 1409,
+        "width": 1200,
+        "height": 1057,
         "alt": "African fat-tailed geckos on sand in a terrarium",
         "credit": "Stolbovsky via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
@@ -1378,8 +1378,8 @@
       {
         "url": "/products/african-fat-tailed-gecko-whiteout-1.webp",
         "thumbnail_url": "/products/african-fat-tailed-gecko-whiteout-1-thumb.webp",
-        "width": 1600,
-        "height": 1409,
+        "width": 1200,
+        "height": 1057,
         "alt": "African fat-tailed gecko (species photo)",
         "credit": "Stolbovsky via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
@@ -1519,8 +1519,8 @@
       {
         "url": "/products/northern-blue-tongued-skink-1.webp",
         "thumbnail_url": "/products/northern-blue-tongued-skink-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
+        "width": 1000,
+        "height": 750,
         "alt": "Northern blue-tongued skink with banded body beside its food dish",
         "credit": "Rabbott656 via Wikimedia Commons",
         "license": "CC0",
@@ -1566,8 +1566,8 @@
       {
         "url": "/products/ackie-monitor-1.webp",
         "thumbnail_url": "/products/ackie-monitor-1-thumb.webp",
-        "width": 1600,
-        "height": 1199,
+        "width": 1400,
+        "height": 1049,
         "alt": "Two red ackie monitors climbing on driftwood",
         "credit": "NasserHalaweh via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -1613,8 +1613,8 @@
       {
         "url": "/products/argentine-tegu-1.webp",
         "thumbnail_url": "/products/argentine-tegu-1-thumb.webp",
-        "width": 1600,
-        "height": 1067,
+        "width": 1200,
+        "height": 800,
         "alt": "Argentine black and white tegu lizard",
         "credit": "Charles J. Sharp via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -1660,8 +1660,8 @@
       {
         "url": "/products/mali-uromastyx-1.webp",
         "thumbnail_url": "/products/mali-uromastyx-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
+        "width": 1400,
+        "height": 1050,
         "alt": "Mali uromastyx with yellow and black coloring basking",
         "credit": "Squamata55 via Wikimedia Commons",
         "license": "CC BY 2.0",
@@ -1754,8 +1754,8 @@
       {
         "url": "/products/veiled-chameleon-male-1.webp",
         "thumbnail_url": "/products/veiled-chameleon-male-1-thumb.webp",
-        "width": 1334,
-        "height": 1000,
+        "width": 1200,
+        "height": 900,
         "alt": "Male veiled chameleon with tall casque on a branch",
         "credit": "Kristof Magnusson via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -1893,8 +1893,8 @@
       {
         "url": "/products/red-footed-tortoise-1.webp",
         "thumbnail_url": "/products/red-footed-tortoise-1-thumb.webp",
-        "width": 1600,
-        "height": 1540,
+        "width": 1400,
+        "height": 1348,
         "alt": "Red-footed tortoise with red scales on its legs",
         "credit": "Bernard DUPONT from FRANCE via Wikimedia Commons",
         "license": "CC BY-SA 2.0",
@@ -1940,8 +1940,8 @@
       {
         "url": "/products/russian-tortoise-1.webp",
         "thumbnail_url": "/products/russian-tortoise-1-thumb.webp",
-        "width": 1448,
-        "height": 956,
+        "width": 1400,
+        "height": 924,
         "alt": "Russian tortoise resting on bark substrate beside a hide",
         "credit": "Futureman1199 via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
@@ -1987,8 +1987,8 @@
       {
         "url": "/products/hermanns-tortoise-1.webp",
         "thumbnail_url": "/products/hermanns-tortoise-1-thumb.webp",
-        "width": 1600,
-        "height": 1218,
+        "width": 1400,
+        "height": 1066,
         "alt": "Hermann's tortoise with gold and black shell",
         "credit": "Palauenc05 via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -2016,6 +2016,492 @@
     "image_search": {
       "query": "Hermann's tortoise Testudo hermanni",
       "alt": "Hermann's tortoise with gold and black shell"
+    }
+  },
+  {
+    "slug": "high-yellow-leopard-gecko",
+    "name": "High Yellow Leopard Gecko",
+    "category": "live-reptiles",
+    "subcategory": "geckos",
+    "short_description": "A captive-bred high yellow leopard gecko with a bright golden body and bold black spots, eating dubia roaches and ready for its first home.",
+    "long_description": "The high yellow leopard gecko is the morph most people picture when they think of a pet gecko: a bright golden-yellow body, crisp black spotting and a banded tail that fades to soft spots with age. It is one of the oldest selectively bred leopard gecko morphs and still one of the most popular, because it combines striking color with the hardy, easy-going nature that makes leopard geckos such good first reptiles.\n\n## Why keepers choose a high yellow\n\n- **Beginner friendly:** calm, slow-moving and rarely bites once settled.\n- **Manageable size:** adults reach 7–10 in (18–25 cm), so a 36×18×18 in enclosure is plenty.\n- **Long-lived:** with good care, high yellow leopard geckos often live 15–20 years.\n- **Great value:** the classic yellow look at a fraction of the price of designer morphs.\n\nEvery gecko we sell is captive bred, has eaten at least six meals with us and is weighed before shipping. Juveniles are typically 3–5 months old.\n\n## Setting up for a high yellow leopard gecko\n\nGive your gecko a warm side with a basking surface of 88–92°F (31–33°C), a cool side around 72–78°F (22–26°C) and three hides: warm, cool and humid. A low-level UVB tube and a halogen basking bulb on a dimming thermostat recreate the gentle sunlight and warm rocks of its native grasslands. Our [Leopard Gecko Complete Starter Kit](/shop/enclosures/leopard-gecko-starter-kit) bundles everything, and our [leopard gecko care guide](/blog/leopard-gecko-care-guide) walks through each step.\n\n## Feeding\n\nHigh yellows are insectivores. Offer gut-loaded dubia roaches, crickets or black soldier fly larvae daily for juveniles and every two to three days for adults, lightly dusted with calcium with D3. Hornworms and mealworms make good occasional treats.\n\n## Color and genetics\n\nHigh yellow is a line-bred trait rather than a single gene, so color intensity varies between animals and often deepens as the gecko matures. Hatchlings are banded; adult spotting develops over the first year.\n\n## Frequently asked questions\n\n### How big do high yellow leopard geckos get?\n\nAdults usually reach 7–10 in (18–25 cm) from nose to tail tip and weigh 45–80 g. Size depends on genetics, diet and sex, with males usually a little larger.\n\n### Is a high yellow leopard gecko good for beginners?\n\nYes. High yellows have the same calm temperament and simple care as normal leopard geckos, so they are an excellent first reptile for responsible teens and adults.\n\n### Do high yellow leopard geckos need UVB?\n\nThey can survive without it if they get dietary vitamin D3, but most keepers and vets now recommend low-level UVB (5–6%) with plenty of shade, because it supports natural behavior and bone health.\n\n### What do high yellow leopard geckos eat?\n\nLive insects only: dubia roaches, crickets and black soldier fly larvae as staples, with hornworms and mealworms as treats. Dust insects with calcium and give a multivitamin weekly.",
+    "price_cents": 5900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 18,
+    "sku": "LR-LG-HYEL",
+    "images": [
+      {
+        "url": "/products/high-yellow-leopard-gecko-1.webp",
+        "thumbnail_url": "/products/high-yellow-leopard-gecko-1-thumb.webp",
+        "alt": "Wild-type leopard gecko with dark spots walking on sand (species photo; high yellows have brighter golden-yellow color)",
+        "width": 1200,
+        "height": 675,
+        "credit": "George Chernilevsky via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eublepharis_macularius_2009_G6.jpg",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Eublepharis macularius",
+    "care_level": "beginner",
+    "adult_size": "7–10 in (18–25 cm)",
+    "lifespan": "15–20 years",
+    "diet": "Gut-loaded live insects dusted with calcium; juveniles daily, adults every 2–3 days",
+    "temperature_range": "Basking surface 88–92°F (31–33°C), cool side 72–78°F (22–26°C)",
+    "humidity_range": "30–40% with a humid hide",
+    "tags": [
+      "leopard gecko",
+      "high yellow",
+      "gecko morphs",
+      "beginner reptile",
+      "captive bred"
+    ],
+    "seo_title": "High Yellow Leopard Gecko for Sale – Captive Bred",
+    "seo_description": "Captive-bred high yellow leopard gecko with bright golden color and bold spots. Eating well, health checked and shipped overnight with live arrival.",
+    "image_search": {
+      "query": "high yellow leopard gecko",
+      "alt": "Wild-type leopard gecko with dark spots walking on sand (species photo; high yellows have brighter golden-yellow color)"
+    }
+  },
+  {
+    "slug": "tremper-albino-leopard-gecko",
+    "name": "Tremper Albino Leopard Gecko",
+    "category": "live-reptiles",
+    "subcategory": "geckos",
+    "short_description": "A captive-bred Tremper albino leopard gecko in warm yellow, peach and lavender tones with light eyes. Calm, feeding well and beginner friendly.",
+    "long_description": "The Tremper albino leopard gecko is the most widely kept albino leopard gecko strain, prized for its soft yellow, peach and lavender coloring with light caramel to brown markings instead of black. It is a simple recessive gene, first established in the 1990s, and it appears in many of the most popular combination morphs today. A Tremper albino on its own is an affordable, eye-catching gecko with the same easy care as any leopard gecko.\n\n## What makes an albino leopard gecko different\n\n- **Coloring:** albinos lack black pigment, so their spots and bands show as brown or lavender on a yellow or cream base.\n- **Eyes:** light-colored eyes that are more sensitive to bright light than a normal gecko's.\n- **Temperament:** the same calm, handleable nature as other leopard geckos.\n- **Genetics:** Tremper, Bell and Rainwater albinos are separate genes and not compatible with each other. This is a Tremper albino.\n\n## Light sensitivity\n\nBecause albino leopard geckos are more light sensitive, give them extra shade. Use a modest basking bulb, place hides on both sides and make sure any UVB covers only part of the enclosure so the gecko can choose its exposure. Many keepers use a 5% tube rather than anything stronger for albinos.\n\n## Housing and care\n\nProvide a 36×18×18 in enclosure with a warm basking surface of 88–92°F (31–33°C), a cool side of 72–78°F (22–26°C) and warm, cool and humid hides. Our [leopard gecko care guide](/blog/leopard-gecko-care-guide) covers temperatures, substrate and handling step by step, and the [Leopard Gecko Complete Starter Kit](/shop/enclosures/leopard-gecko-starter-kit) puts the whole setup in one box.\n\n## Diet\n\nFeed gut-loaded live insects such as dubia roaches and crickets, dusted with calcium. Juveniles eat daily, adults every two to three days. Our albinos are established on insects before they ship.\n\n## Frequently asked questions\n\n### Do albino leopard geckos have vision problems?\n\nTheir eyes are more sensitive to bright light, but they see well enough to hunt and live normal lives. Providing shade and avoiding very bright lighting keeps them comfortable.\n\n### What is the difference between Tremper, Bell and Rainwater albino?\n\nThey are three separate recessive albino genes discovered by different breeders. They look slightly different and are not compatible, so breeding a Tremper to a Bell albino produces normal-looking offspring.\n\n### How long do albino leopard geckos live?\n\nThe same as other leopard geckos: commonly 15–20 years with good care, correct temperatures and a varied, supplemented insect diet.",
+    "price_cents": 7900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 12,
+    "sku": "LR-LG-TALB",
+    "images": [
+      {
+        "url": "/products/tremper-albino-leopard-gecko-1.webp",
+        "thumbnail_url": "/products/tremper-albino-leopard-gecko-1-thumb.webp",
+        "alt": "Pale albino leopard gecko with soft lavender-brown markings",
+        "width": 1148,
+        "height": 1726,
+        "credit": "JL Johnson via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ernie_trying_to_be_sexy.jpg",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Eublepharis macularius",
+    "care_level": "beginner",
+    "adult_size": "7–10 in (18–25 cm)",
+    "lifespan": "15–20 years",
+    "diet": "Gut-loaded live insects dusted with calcium; juveniles daily, adults every 2–3 days",
+    "temperature_range": "Basking surface 88–92°F (31–33°C), cool side 72–78°F (22–26°C)",
+    "humidity_range": "30–40% with a humid hide",
+    "tags": [
+      "leopard gecko",
+      "albino",
+      "gecko morphs",
+      "beginner reptile",
+      "captive bred"
+    ],
+    "seo_title": "Tremper Albino Leopard Gecko for Sale – Captive Bred",
+    "seo_description": "Captive-bred Tremper albino leopard gecko in yellow, peach and lavender tones. Calm, eating insects and shipped overnight with live arrival.",
+    "image_search": {
+      "query": "albino leopard gecko",
+      "alt": "Pale albino leopard gecko with soft lavender-brown markings"
+    }
+  },
+  {
+    "slug": "leatherback-bearded-dragon",
+    "name": "Leatherback Bearded Dragon",
+    "category": "live-reptiles",
+    "subcategory": "lizards",
+    "short_description": "A captive-bred leatherback bearded dragon with reduced, smooth back scales and vivid color. Hand-raised, eating greens and insects.",
+    "long_description": "The leatherback bearded dragon is one of the most popular bearded dragon morphs, known for its noticeably smoother back. The leatherback gene reduces the size of the spiky scales along the dragon's back, giving it a sleek, leathery feel while keeping the classic bearded dragon spikes on the sides and beard. Smoother scales also make colors look brighter, so leatherbacks often show more vivid orange, red or yellow than standard-scaled dragons.\n\n## Leatherback genetics\n\nLeatherback is an incomplete dominant trait. One copy produces the leatherback look; two copies produce a \"silkback\", which has no scales at all and needs much more specialized care. We sell leatherbacks only, which keep enough skin protection for normal husbandry.\n\n## Why choose a leatherback bearded dragon\n\n- **Personable:** bearded dragons are curious, active by day and among the most interactive pet reptiles.\n- **Striking look:** smoother scales and stronger color than a normal dragon.\n- **Same proven care:** a leatherback needs exactly the same setup as any central bearded dragon.\n- **Long companion:** expect 10–15 years with good care.\n\n## Enclosure, UVB and heat\n\nAdults need at least a 4×2×2 ft (120×60×60 cm) enclosure. Provide a T5 HO 12% desert UVB tube over the basking area, a basking surface of 100–110°F (38–43°C) and a cool side of 75–85°F (24–29°C). Our [Bearded Dragon Complete Starter Kit](/shop/enclosures/bearded-dragon-starter-kit) matches enclosure, lighting and thermostat, and our [bearded dragon care sheet](/blog/bearded-dragon-care-sheet) explains placement and distances.\n\nLeatherbacks can be slightly more prone to dry skin and minor scrapes, so avoid very abrasive decor and offer an occasional lukewarm soak during sheds.\n\n## Diet\n\nJuveniles eat mostly insects (about 70%) with fresh greens daily; adults shift to around 70–80% leafy greens and vegetables with insects two to three times a week. Dust insects with calcium and use a multivitamin weekly.\n\n## Frequently asked questions\n\n### What is the difference between a leatherback and a silkback bearded dragon?\n\nA leatherback has one copy of the gene and reduced, smoother scales. A silkback has two copies and almost no scales, which makes it much more sensitive to UVB, dehydration and injury.\n\n### Do leatherback bearded dragons need special care?\n\nNot really. They need the same enclosure, UVB, heat and diet as other bearded dragons. Just avoid sharp decor and keep them well hydrated, especially during sheds.\n\n### How big do leatherback bearded dragons get?\n\nLike other central bearded dragons, adults reach 16–24 in (40–60 cm) including the tail and weigh 380–550 g.\n\n### Are leatherback bearded dragons good for beginners?\n\nYes, for keepers who can provide a large enclosure, strong UVB and fresh greens daily. Their temperament is the same calm, handleable nature bearded dragons are known for.",
+    "price_cents": 17900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 6,
+    "sku": "LR-BD-LTHR",
+    "images": [
+      {
+        "url": "/products/leatherback-bearded-dragon-1.webp",
+        "thumbnail_url": "/products/leatherback-bearded-dragon-1-thumb.webp",
+        "alt": "Close-up of a golden bearded dragon head with smooth scales",
+        "width": 1600,
+        "height": 1067,
+        "credit": "David Trinks on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/close-up-of-a-bearded-dragons-head-VJeww5uGcqI",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Pogona vitticeps",
+    "care_level": "beginner",
+    "adult_size": "16–24 in (40–60 cm)",
+    "lifespan": "10–15 years",
+    "diet": "Insects and leafy greens; juveniles mostly insects, adults 70–80% vegetables",
+    "temperature_range": "Basking surface 100–110°F (38–43°C), cool side 75–85°F (24–29°C)",
+    "humidity_range": "30–40%",
+    "tags": [
+      "bearded dragon",
+      "leatherback",
+      "dragon morphs",
+      "beginner reptile",
+      "captive bred"
+    ],
+    "seo_title": "Leatherback Bearded Dragon for Sale – Captive Bred",
+    "seo_description": "Captive-bred leatherback bearded dragon with smooth back scales and vivid color. Eating insects and greens, shipped overnight with live arrival.",
+    "image_search": {
+      "query": "leatherback bearded dragon",
+      "alt": "Close-up of a golden bearded dragon head with smooth scales"
+    }
+  },
+  {
+    "slug": "pinstripe-ball-python",
+    "name": "Pinstripe Ball Python",
+    "category": "live-reptiles",
+    "subcategory": "snakes",
+    "short_description": "A captive-bred pinstripe ball python with a clean tan body and fine dorsal pinstripe. Eating frozen/thawed mice and easy to handle.",
+    "long_description": "The pinstripe ball python is a classic dominant morph that replaces the normal ball python's chunky blotches with a clean, lighter body and a fine dark stripe running along the spine. It is one of the most recognizable ball python morphs, popular on its own and as a building block for combinations like the \"bumblebee\" (pastel pinstripe). If you want a ball python with a cleaner, more modern look but the same calm temperament, the pinstripe is a great choice.\n\n## Pinstripe ball python at a glance\n\n- **Look:** reduced pattern, a light brown to tan body and a thin dorsal stripe.\n- **Genetics:** dominant, so one copy produces the pinstripe look.\n- **Temperament:** calm and slow, like all ball pythons; they rarely bite.\n- **Lifespan:** 25–30 years or more, so plan for a long friendship.\n\nOur pinstripes are captive bred, have eaten at least four frozen/thawed meals and are handled regularly before shipping.\n\n## Enclosure and heat\n\nAdults do best in a 4×2×2 ft (120×60×60 cm) enclosure, ideally PVC, which holds heat and humidity well. Provide two snug hides, plenty of clutter, a warm side of 88–92°F (31–33°C) and a cool side of 76–80°F (24–27°C), with every heat source on a thermostat. Our [Ball Python Complete Starter Kit](/shop/enclosures/ball-python-starter-kit) has everything matched, and our [ball python care guide](/blog/ball-python-care-guide) covers humidity, feeding and handling in detail.\n\n## Humidity and shedding\n\nKeep humidity at 60–80% with a moisture-holding substrate such as cypress mulch. A humid hide helps with clean sheds.\n\n## Feeding\n\nFeed frozen/thawed rodents about as wide as the snake's thickest point: hopper mice for young snakes, moving to small rats as adults. Juveniles eat every 7–10 days and adults every 2–3 weeks. Healthy adults sometimes fast for weeks, which is normal as long as weight holds.\n\n## Frequently asked questions\n\n### Is the pinstripe ball python gene healthy?\n\nYes. Unlike a few ball python genes associated with neurological issues, pinstripe is not linked to a \"wobble\" or other known health problem.\n\n### What is a bumblebee ball python?\n\nA bumblebee is a pastel pinstripe: a ball python carrying both the pastel and pinstripe genes, giving a bright yellow and black, heavily reduced pattern.\n\n### How big do pinstripe ball pythons get?\n\nThe same as any ball python: usually 3–5 ft (90–150 cm), with females growing larger and heavier than males.",
+    "price_cents": 14900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 6,
+    "sku": "LR-BP-PIN",
+    "images": [
+      {
+        "url": "/products/pinstripe-ball-python-1.webp",
+        "thumbnail_url": "/products/pinstripe-ball-python-1-thumb.webp",
+        "alt": "Bumblebee (pastel pinstripe) ball python showing the fine pinstripe down its back",
+        "width": 1600,
+        "height": 900,
+        "credit": "Kaorte via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Citrus_Bumblebee_Ball_Python.jpg",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Python regius",
+    "care_level": "beginner",
+    "adult_size": "3–5 ft (90–150 cm)",
+    "lifespan": "25–30+ years",
+    "diet": "Frozen/thawed mice, then rats, every 7–21 days depending on age",
+    "temperature_range": "Warm side 88–92°F (31–33°C), cool side 76–80°F (24–27°C)",
+    "humidity_range": "60–80%",
+    "tags": [
+      "ball python",
+      "pinstripe",
+      "snake morphs",
+      "beginner snake",
+      "captive bred"
+    ],
+    "seo_title": "Pinstripe Ball Python for Sale – Captive Bred",
+    "seo_description": "Captive-bred pinstripe ball python with a clean tan body and fine dorsal stripe. Eating frozen/thawed, handled regularly and shipped overnight.",
+    "image_search": {
+      "query": "pinstripe ball python",
+      "alt": "Bumblebee (pastel pinstripe) ball python showing the fine pinstripe down its back"
+    }
+  },
+  {
+    "slug": "lilly-white-crested-gecko",
+    "name": "Lilly White Crested Gecko",
+    "category": "live-reptiles",
+    "subcategory": "geckos",
+    "short_description": "A captive-bred Lilly White crested gecko with bright white patterning and strong crests. Eating complete diet and ready to ship.",
+    "long_description": "The Lilly White crested gecko is the most talked-about crested gecko morph of the last decade, with bright, clean white patterning that can cover the sides, back and legs. It is one of the few proven genetic crested gecko morphs, discovered by Lilly Exotics, and it has become a favorite for keepers who want a showpiece gecko with the same easy care that makes crested geckos ideal for beginners.\n\n## About the Lilly White gene\n\nLilly White is an incomplete dominant gene. One copy produces the Lilly White look. Two copies (the \"super\" form) are not viable, so responsible breeders never pair two Lilly Whites together. If you plan to breed, pair a Lilly White with a non-Lilly White to produce roughly half Lilly White offspring. Each of our geckos is described with its visible traits; the amount of white varies between individuals and often brightens as they mature.\n\n## Why crested geckos are so popular\n\n- **No basking lamp in most homes:** crested geckos thrive at 72–78°F (22–26°C).\n- **Simple diet:** a complete powdered crested gecko diet with insects once or twice a week.\n- **Gentle:** calm once settled, with charming jumping and climbing behavior.\n- **Long-lived:** 15–20 years with good care.\n\n## Housing\n\nCrested geckos are arboreal, so height matters. Adults need at least an 18×18×24 in enclosure, and our [Crested Gecko Complete Starter Kit](/shop/enclosures/crested-gecko-starter-kit) is a great start. Fill the enclosure with branches, cork and dense foliage, and mist each evening so humidity peaks around 70–80% before drying back to 50–60% by day. Keep temperatures below 82°F (28°C); overheating is the biggest risk with this species. Our [crested gecko care guide](/blog/crested-gecko-care-guide) explains the humidity cycle and feeding schedule.\n\n## Feeding\n\nOffer a [complete crested gecko diet](/shop/food-supplements/crested-gecko-diet-8oz) every other day for juveniles and three times a week for adults, plus calcium-dusted insects once or twice a week.\n\n## Frequently asked questions\n\n### Why can't you breed two Lilly White crested geckos together?\n\nPairing two Lilly Whites can produce \"super Lilly White\" embryos, which do not survive. Breeders pair Lilly Whites with non-Lilly White mates instead.\n\n### Do Lilly White crested geckos need different care?\n\nNo. They have the same temperature, humidity, enclosure and diet needs as any crested gecko.\n\n### Will my Lilly White crested gecko get whiter?\n\nOften, yes. Crested gecko coloring develops as they grow, and many Lilly Whites show brighter, more extensive white as adults. Every gecko is different, though.",
+    "price_cents": 24900,
+    "compare_at_price_cents": 29900,
+    "currency": "USD",
+    "stock_quantity": 4,
+    "sku": "LR-CG-LILW",
+    "images": [
+      {
+        "url": "/products/lilly-white-crested-gecko-1.webp",
+        "thumbnail_url": "/products/lilly-white-crested-gecko-1-thumb.webp",
+        "alt": "Crested gecko with eyelash crests (species photo; the Lilly White morph has bright white patterning)",
+        "width": 1600,
+        "height": 1067,
+        "credit": "Vitya Lapatey on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/brown-and-white-lizard-on-black-surface-KEXebHeylYI",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Correlophus ciliatus",
+    "care_level": "beginner",
+    "adult_size": "7–9 in (18–23 cm)",
+    "lifespan": "15–20 years",
+    "diet": "Complete powdered crested gecko diet plus calcium-dusted insects 1–2 times a week",
+    "temperature_range": "72–78°F (22–26°C) by day, 65–72°F (18–22°C) at night; avoid over 82°F",
+    "humidity_range": "50–60% by day, 70–80% after evening misting",
+    "tags": [
+      "crested gecko",
+      "lilly white",
+      "gecko morphs",
+      "beginner reptile",
+      "captive bred",
+      "arboreal"
+    ],
+    "seo_title": "Lilly White Crested Gecko for Sale – Captive Bred",
+    "seo_description": "Captive-bred Lilly White crested gecko with bright white patterning. Eating complete diet, health checked and shipped overnight with live arrival.",
+    "image_search": {
+      "query": "lilly white crested gecko",
+      "alt": "Crested gecko with eyelash crests (species photo; the Lilly White morph has bright white patterning)"
+    }
+  },
+  {
+    "slug": "eastern-blue-tongued-skink",
+    "name": "Eastern Blue-Tongued Skink",
+    "category": "live-reptiles",
+    "subcategory": "lizards",
+    "short_description": "A captive-bred Eastern blue-tongued skink: a large, gentle, banded skink with a cobalt-blue tongue and a big personality.",
+    "long_description": "The Eastern blue-tongued skink is the largest of the Australian blue-tongued skinks and one of the most rewarding lizards you can keep. With a thick, silver-and-brown banded body, a cobalt-blue tongue and a calm, curious personality, it has become one of the fastest-growing species in the hobby. Australia does not export wildlife, so every Eastern blue-tongued skink outside Australia comes from captive breeding, and ours are hatched from established captive lines.\n\n## Why keepers love blue-tongued skinks\n\n- **Gentle giants:** adults reach 18–24 in (45–60 cm) but are slow, sturdy and easy to handle.\n- **Omnivores:** a varied diet of vegetables, protein and some fruit, with no need for live insects every day.\n- **Hardy:** forgiving of beginner mistakes compared with many lizards.\n- **Long-lived:** 15–20 years or more.\n\n## Enclosure\n\nAdults need at least a 4×2×2 ft (120×60×60 cm) enclosure; bigger is better because skinks are active explorers. A PVC enclosure such as our [4×2×2 PVC reptile enclosure](/shop/enclosures/pvc-enclosure-4x2x2) holds heat and moderate humidity well. Provide 4–6 in of a burrowable soil, cypress or coco substrate, several hides and sturdy, low decor.\n\n## Heat, UVB and humidity\n\n- **Basking surface:** 95–105°F (35–41°C)\n- **Cool side:** 75–80°F (24–27°C)\n- **Night:** down to about 70°F (21°C)\n- **Humidity:** 40–60%, with a damp hide for shedding\n\nUse a T5 HO UVB tube (around 10–12%) over the basking area. Our [UVB lighting guide](/blog/uvb-lighting-explained) explains how far to mount it.\n\n## Diet\n\nBlue-tongued skinks are omnivores. A balanced plate is roughly 50% vegetables and leafy greens, 40% protein (such as high-quality skink diet, cooked lean meat, snails and insects) and up to 10% fruit. Feed juveniles every one to two days and adults two to three times a week. Dust protein foods with calcium.\n\n## Frequently asked questions\n\n### Do blue-tongued skinks make good pets?\n\nYes. They are calm, intelligent and tolerant of handling, and their omnivorous diet is simple to provide. They do need a large enclosure and proper UVB and heat.\n\n### How big do Eastern blue-tongued skinks get?\n\nAdults typically reach 18–24 in (45–60 cm), making them the largest blue-tongued skink species.\n\n### Are blue-tongued skinks good for beginners?\n\nThey are a good choice for committed beginners who can provide a 4×2×2 ft enclosure. Their care is less demanding than many lizards, and they are very forgiving.",
+    "price_cents": 59900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 2,
+    "sku": "LR-BT-EAST",
+    "images": [
+      {
+        "url": "/products/eastern-blue-tongued-skink-1.webp",
+        "thumbnail_url": "/products/eastern-blue-tongued-skink-1-thumb.webp",
+        "alt": "Eastern blue-tongued skink with silver and brown bands sticking out its cobalt-blue tongue",
+        "width": 1600,
+        "height": 1067,
+        "credit": "David Clode on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-lizard-with-a-long-beak-droNi2hNjd0"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Tiliqua scincoides scincoides",
+    "care_level": "intermediate",
+    "adult_size": "18–24 in (45–60 cm)",
+    "lifespan": "15–20+ years",
+    "diet": "Omnivore: about 50% vegetables, 40% protein, 10% fruit",
+    "temperature_range": "Basking surface 95–105°F (35–41°C), cool side 75–80°F (24–27°C)",
+    "humidity_range": "40–60%",
+    "tags": [
+      "blue tongue skink",
+      "skinks",
+      "omnivore",
+      "captive bred",
+      "intermediate reptile"
+    ],
+    "seo_title": "Eastern Blue-Tongued Skink for Sale – Captive Bred",
+    "seo_description": "Captive-bred Eastern blue-tongued skink: a large, gentle omnivore with a cobalt tongue. Health checked and shipped overnight with a live arrival guarantee.",
+    "image_search": {
+      "query": "eastern blue tongued skink Tiliqua scincoides",
+      "alt": "Eastern blue-tongued skink with silver and brown bands sticking out its cobalt-blue tongue"
+    }
+  },
+  {
+    "slug": "red-tegu",
+    "name": "Red Tegu",
+    "category": "live-reptiles",
+    "subcategory": "lizards",
+    "short_description": "A captive-bred red tegu (Salvator rufescens): an intelligent, dog-like lizard that colors up to rich red as it matures. For experienced keepers.",
+    "long_description": "The red tegu (*Salvator rufescens*) is a large, intelligent lizard from the dry forests and scrubland of western Argentina, Bolivia and Paraguay. Young red tegus are brown with pale bands, and males in particular develop a rich brick-red color and massive jowls as they mature. Tegus are famous for their dog-like curiosity and for becoming remarkably tame with consistent handling, which is why they are one of the fastest-rising \"big lizards\" in the hobby.\n\n**Check your local laws before buying.** Tegus are restricted or require permits in some US states and countries, including Florida. We only ship to regions where keeping them is legal.\n\n## Is a red tegu right for you?\n\n- **Size:** adults commonly reach 3–4.5 ft (90–135 cm), with males larger than females.\n- **Space:** an adult needs at least an 8×4×4 ft enclosure, so plan ahead.\n- **Lifespan:** 15–20 years.\n- **Temperament:** very intelligent and food-motivated; most become calm and handleable with patience.\n\n## Enclosure and heat\n\nStart hatchlings in a 4×2×2 ft enclosure and upgrade as they grow. Provide a basking surface of 120–130°F (49–54°C) for adults, a cool side around 75–80°F (24–27°C) and deep, moist substrate, at least 8–12 in, so they can dig a burrow. Humidity should stay around 60–80% in the substrate and burrow. Strong T5 HO UVB (around 12%) over the basking zone is essential.\n\nOur [reptile heating guide](/blog/reptile-heating-guide) explains how to create and control a very hot basking spot safely.\n\n## Diet\n\nRed tegus are omnivores. Feed whole prey such as rodents and chicks, plus eggs, lean meats, insects and around 10–20% fruit and vegetables. Hatchlings eat daily; adults three to four times a week. Dust non-whole-prey foods with calcium.\n\n## Brumation\n\nAdult tegus usually brumate (slow down and sleep) for several months in autumn and winter. This is normal; have a vet confirm your tegu is healthy before brumation begins.\n\n## Frequently asked questions\n\n### How big do red tegus get?\n\nAdults usually reach 3–4.5 ft (90–135 cm). Males are larger, heavier and develop broader heads than females.\n\n### Are red tegus friendly?\n\nWith daily, patient handling, most red tegus become very tame and even seek out interaction. Individual personalities vary, and young tegus can be flighty at first.\n\n### Are red tegus legal to own?\n\nIt depends on where you live. Some states, including Florida, restrict or prohibit tegus. Always check your state and local regulations before buying.\n\n### Is a red tegu a good first reptile?\n\nNot usually. Their adult size and enclosure needs make them better suited to keepers who already have reptile experience.",
+    "price_cents": 44900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 2,
+    "sku": "LR-TG-RED",
+    "images": [
+      {
+        "url": "/products/red-tegu-1.webp",
+        "thumbnail_url": "/products/red-tegu-1-thumb.webp",
+        "alt": "Red tegu with a brick-red body resting on wood chips",
+        "width": 1600,
+        "height": 969,
+        "credit": "Edan Menn on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-lizard-laying-on-a-bed-of-wood-chips-Gr4OqH4-9yY"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Salvator rufescens",
+    "care_level": "advanced",
+    "adult_size": "3–4.5 ft (90–135 cm)",
+    "lifespan": "15–20 years",
+    "diet": "Omnivore: whole prey, eggs, lean meat, insects and 10–20% fruit and vegetables",
+    "temperature_range": "Basking surface 120–130°F (49–54°C), cool side 75–80°F (24–27°C)",
+    "humidity_range": "60–80% in substrate and burrow",
+    "tags": [
+      "tegu",
+      "monitors and tegus",
+      "large lizards",
+      "captive bred",
+      "advanced reptile"
+    ],
+    "seo_title": "Red Tegu for Sale – Captive Bred Salvator rufescens",
+    "seo_description": "Captive-bred red tegu (Salvator rufescens), an intelligent, tame-able large lizard for experienced keepers. Check local laws. Shipped overnight.",
+    "image_search": {
+      "query": "red tegu Salvator rufescens",
+      "alt": "Red tegu with a brick-red body resting on wood chips"
+    }
+  },
+  {
+    "slug": "kimberley-rock-monitor",
+    "name": "Kimberley Rock Monitor",
+    "category": "live-reptiles",
+    "subcategory": "lizards",
+    "short_description": "A captive-bred Kimberley rock monitor (Varanus glauerti): a slender, banded dwarf monitor that is active, intelligent and stunning to watch.",
+    "long_description": "The Kimberley rock monitor (*Varanus glauerti*) is a slender, semi-arboreal dwarf monitor from the rocky gorges of northwestern Australia. With a dark body crossed by pale bands, a striking ringed tail that can make up two-thirds of its length and a sharp, curious personality, it has become one of the most sought-after small monitors. Every Kimberley rock monitor sold outside Australia comes from captive breeding, and ours are hatched from established captive lines.\n\n## Kimberley rock monitor at a glance\n\n- **Size:** around 28–32 in (70–80 cm), mostly tail.\n- **Activity:** fast, alert and very active by day. More of a \"display\" animal than a lap pet.\n- **Lifespan:** 10–15 years or more.\n- **Experience level:** intermediate to advanced; they need precise heat and humidity.\n\n## Enclosure\n\nKimberley rock monitors are climbers, so height and vertical rock work matter. A single adult needs at least a 4×2×4 ft enclosure with stacked rock or cork stacks, tight crevices to hide in, sturdy climbing branches and a deep substrate of soil and sand that holds moisture lower down. PVC enclosures retain heat and humidity well.\n\n## Heat, UVB and humidity\n\n- **Basking surface:** 130–150°F (54–66°C) on a rock under strong halogen heat\n- **Ambient warm side:** 85–90°F (29–32°C)\n- **Cool side:** 75–80°F (24–27°C)\n- **UVB:** T5 HO 12% over the basking area\n- **Humidity:** 50–70%, with a damp burrow layer and daily light misting\n\nAlthough they come from a dry region, these monitors dehydrate easily. Keep the lower substrate moist and provide a water dish large enough to soak in. Our [reptile heating guide](/blog/reptile-heating-guide) and [humidity guide](/blog/reptile-humidity-guide) cover the setup.\n\n## Diet\n\nKimberley rock monitors are insectivores. Feed a variety of gut-loaded roaches, crickets, superworms and black soldier fly larvae daily for juveniles and four to five times a week for adults, dusted with calcium. Occasional pinkie mice or egg can be added for adults.\n\n## Frequently asked questions\n\n### Are Kimberley rock monitors good pets?\n\nThey are fascinating, intelligent display animals and can become tolerant of handling, but they are active and fast. They suit keepers who enjoy watching natural behavior more than frequent handling.\n\n### How big do Kimberley rock monitors get?\n\nAdults usually reach 28–32 in (70–80 cm), with about two-thirds of that length being tail, making them one of the smaller monitor species.\n\n### What do Kimberley rock monitors eat?\n\nMainly insects: roaches, crickets, superworms and black soldier fly larvae, dusted with calcium, with occasional small rodents or egg for adults.",
+    "price_cents": 69900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 2,
+    "sku": "LR-MN-KRM",
+    "images": [
+      {
+        "url": "/products/kimberley-rock-monitor-1.webp",
+        "thumbnail_url": "/products/kimberley-rock-monitor-1-thumb.webp",
+        "alt": "Kimberley rock monitor with dark body and pale banding resting on a rock ledge",
+        "width": 1200,
+        "height": 904,
+        "credit": "Laura.tagu via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Varanus_glauerti_02.jpg"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Varanus glauerti",
+    "care_level": "advanced",
+    "adult_size": "28–32 in (70–80 cm), mostly tail",
+    "lifespan": "10–15+ years",
+    "diet": "Insectivore: varied gut-loaded insects, occasional pinkies or egg",
+    "temperature_range": "Basking surface 130–150°F (54–66°C), cool side 75–80°F (24–27°C)",
+    "humidity_range": "50–70% with a damp burrow layer",
+    "tags": [
+      "monitors and tegus",
+      "monitor lizard",
+      "dwarf monitor",
+      "captive bred",
+      "advanced reptile"
+    ],
+    "seo_title": "Kimberley Rock Monitor for Sale – Captive Bred",
+    "seo_description": "Captive-bred Kimberley rock monitor (Varanus glauerti), a stunning banded dwarf monitor for experienced keepers. Health checked and shipped overnight.",
+    "image_search": {
+      "query": "Varanus glauerti Kimberley rock monitor",
+      "alt": "Kimberley rock monitor with dark body and pale banding resting on a rock ledge"
+    }
+  },
+  {
+    "slug": "rankins-dragon",
+    "name": "Rankin's Dragon (Dwarf Bearded Dragon)",
+    "category": "live-reptiles",
+    "subcategory": "lizards",
+    "short_description": "A captive-bred Rankin's dragon, the dwarf bearded dragon: all the personality of a bearded dragon in a smaller, easier-to-house size.",
+    "long_description": "The Rankin's dragon (*Pogona henrylawsoni*), often called the dwarf bearded dragon or Lawson's dragon, is a smaller cousin of the central bearded dragon from the black-soil plains of Queensland, Australia. It reaches only 10–12 in (25–30 cm) including the tail, has a shorter, rounder head and a less spiky beard, and shares the same calm, curious temperament. For keepers who love bearded dragons but have less space, a Rankin's dragon is a superb choice.\n\n## Rankin's dragon vs bearded dragon\n\n| | Rankin's dragon | Central bearded dragon |\n| --- | --- | --- |\n| Adult size | 10–12 in (25–30 cm) | 16–24 in (40–60 cm) |\n| Minimum enclosure | 36×18×18 in | 4×2×2 ft |\n| Temperament | Calm, social with people | Calm, social with people |\n| Lifespan | 8–12 years | 10–15 years |\n\n## Housing\n\nA single adult Rankin's dragon does well in a 36×18×18 in enclosure, though bigger is always welcome. Some keepers house small groups of females in larger enclosures, but males should never be kept together. A natural sand, soil and clay mix allows digging, and flat rocks under the basking light give a solid basking surface.\n\n## Heat and UVB\n\n- **Basking surface:** 100–105°F (38–41°C)\n- **Cool side:** 75–80°F (24–27°C)\n- **Night:** down to about 65–70°F (18–21°C)\n- **UVB:** a T5 HO 10–12% tube over the basking area\n- **Humidity:** 30–40%\n\nThe care is essentially a scaled-down version of bearded dragon care, so our [bearded dragon care sheet](/blog/bearded-dragon-care-sheet) is a useful companion guide. Use a dimming thermostat on the basking bulb and check surface temperatures with an infrared thermometer.\n\n## Diet\n\nRankin's dragons are omnivores. Juveniles eat mostly small insects such as crickets, dubia roaches and black soldier fly larvae, with finely chopped greens daily. Adults eat a more balanced mix, around half greens and half insects. Dust insects with calcium and use a multivitamin weekly.\n\n## Frequently asked questions\n\n### Is a Rankin's dragon the same as a bearded dragon?\n\nNo. It is a separate, smaller species (*Pogona henrylawsoni*) in the same genus as the central bearded dragon (*Pogona vitticeps*), with very similar care.\n\n### How big do Rankin's dragons get?\n\nAdults reach about 10–12 in (25–30 cm) including the tail, roughly half the size of a central bearded dragon.\n\n### Can Rankin's dragons live together?\n\nMales must be housed separately. Small groups of females can sometimes share a large enclosure, but watch closely for competition over food and basking spots.",
+    "price_cents": 14900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 5,
+    "sku": "LR-PG-RANK",
+    "images": [
+      {
+        "url": "/products/rankins-dragon-1.webp",
+        "thumbnail_url": "/products/rankins-dragon-1-thumb.webp",
+        "alt": "Rankin's dragon, a small tan dwarf bearded dragon, basking on a rock",
+        "width": 1600,
+        "height": 1284,
+        "credit": "No machine-readable author provided. Magalhães assumed (based on copyright claims). via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pogona_henrylawsoni.jpg"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Pogona henrylawsoni",
+    "care_level": "beginner",
+    "adult_size": "10–12 in (25–30 cm)",
+    "lifespan": "8–12 years",
+    "diet": "Omnivore: small insects and finely chopped greens; adults about 50/50",
+    "temperature_range": "Basking surface 100–105°F (38–41°C), cool side 75–80°F (24–27°C)",
+    "humidity_range": "30–40%",
+    "tags": [
+      "bearded dragon",
+      "rankins dragon",
+      "dwarf dragon",
+      "beginner reptile",
+      "captive bred"
+    ],
+    "seo_title": "Rankin's Dragon for Sale – Dwarf Bearded Dragon",
+    "seo_description": "Captive-bred Rankin's dragon (Pogona henrylawsoni), the dwarf bearded dragon. Calm, small and easy to house. Shipped overnight with live arrival.",
+    "image_search": {
+      "query": "Pogona henrylawsoni Rankin's dragon",
+      "alt": "Rankin's dragon, a small tan dwarf bearded dragon, basking on a rock"
+    }
+  },
+  {
+    "slug": "sunglow-corn-snake",
+    "name": "Sunglow Corn Snake",
+    "category": "live-reptiles",
+    "subcategory": "snakes",
+    "short_description": "A captive-bred sunglow corn snake: a vivid orange amelanistic corn snake with reduced white, for a glowing sunset look.",
+    "long_description": "The sunglow corn snake is one of the brightest corn snake morphs, with deep orange saddles on an orange background and very little white between them. A sunglow is an amelanistic (no black pigment) corn snake selectively bred to minimize the white borders around the saddles, so the whole snake seems to glow. Like all corn snakes, it is calm, hardy and one of the best snakes you can choose as a first pet.\n\n## Sunglow corn snake at a glance\n\n- **Look:** vibrant orange and red-orange with reduced white and red eyes.\n- **Genetics:** amelanistic (recessive) plus line-bred reduced white.\n- **Size:** 3–5 ft (90–150 cm), slender.\n- **Lifespan:** 15–20 years or more.\n- **Temperament:** docile and curious; rarely bites once settled.\n\nOur sunglows are captive bred and have eaten at least four frozen/thawed pinky mice before shipping.\n\n## Enclosure\n\nAn adult corn snake does best in a 4×2×2 ft (120×60×60 cm) enclosure with secure, locking doors, because corn snakes are famous escape artists. Provide at least two hides, branches for climbing, a few inches of burrowable substrate such as aspen or a soil mix, and a water dish large enough to soak in. Hatchlings feel safer in a smaller enclosure or a larger one packed with cover.\n\n## Heat and humidity\n\n- **Basking surface:** 85–90°F (29–32°C)\n- **Cool side:** 70–75°F (21–24°C)\n- **Night:** 65–72°F (18–22°C)\n- **Humidity:** 40–60%, a little higher before a shed\n\nUse a basking bulb on a dimming thermostat, and check temperatures with a digital thermometer. Our [corn snake care guide](/blog/corn-snake-care-guide) covers the full setup.\n\n## Feeding\n\nFeed frozen/thawed mice about as wide as the snake's thickest point: pinkies every 5–7 days for hatchlings, moving up to adult mice every 10–14 days for adults. Thaw prey in the fridge and warm it in hot water before offering with tongs.\n\n## Frequently asked questions\n\n### What is the difference between a sunglow and an amelanistic corn snake?\n\nBoth lack black pigment. A sunglow is an amelanistic line selectively bred for reduced white, so it looks more uniformly orange than a typical amel with white saddle borders.\n\n### Do sunglow corn snakes keep their color?\n\nYes. Most sunglows stay bright orange as adults, and many become more intense as they grow.\n\n### Are sunglow corn snakes good for beginners?\n\nAbsolutely. They have the same easy care and docile temperament as any corn snake, which makes them one of the best first snakes.",
+    "price_cents": 11900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 7,
+    "sku": "LR-CS-SUNG",
+    "images": [
+      {
+        "url": "/products/sunglow-corn-snake-1.webp",
+        "thumbnail_url": "/products/sunglow-corn-snake-1-thumb.webp",
+        "alt": "Bright orange sunglow corn snake with reduced white resting on a mossy branch",
+        "width": 1600,
+        "height": 1305,
+        "credit": "martin fenton on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/orange-corn-snake-on-tree-branch-6WSdTrhlpx0"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": true,
+    "species_scientific_name": "Pantherophis guttatus",
+    "care_level": "beginner",
+    "adult_size": "3–5 ft (90–150 cm)",
+    "lifespan": "15–20+ years",
+    "diet": "Frozen/thawed mice every 5–14 days depending on age",
+    "temperature_range": "Basking surface 85–90°F (29–32°C), cool side 70–75°F (21–24°C)",
+    "humidity_range": "40–60%",
+    "tags": [
+      "corn snake",
+      "sunglow",
+      "snake morphs",
+      "beginner snake",
+      "captive bred"
+    ],
+    "seo_title": "Sunglow Corn Snake for Sale – Captive Bred",
+    "seo_description": "Captive-bred sunglow corn snake in vivid orange with reduced white. Eating frozen/thawed pinkies, docile and shipped overnight with live arrival.",
+    "image_search": {
+      "query": "sunglow corn snake",
+      "alt": "Bright orange sunglow corn snake with reduced white resting on a mossy branch"
     }
   }
 ]

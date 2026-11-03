@@ -1,6 +1,7 @@
 ---
 title: Returns & Refunds
 description: Our return policy for reptile supplies and how refunds work for live animals under the Live Arrival Guarantee.
+updated: 2026-11-01
 ---
 
 ## Supplies

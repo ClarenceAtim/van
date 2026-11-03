@@ -1,55 +1,66 @@
 import { expect, test } from "@playwright/test";
 
 /**
- * Full purchase in Stripe TEST mode: browse → add to cart → pay on Stripe Checkout
- * with the 4242 test card → order appears in /admin.
+ * Full order request: add to cart → single-page checkout as a guest → confirmation page →
+ * the admin sends the order confirmation (shipping + payment details) and marks it paid.
  *
- * Needs a deployed (or locally running) site with Supabase + Stripe test keys, the
- * Stripe webhook forwarding to it (`stripe listen --forward-to localhost:3000/api/stripe/webhook`),
- * Turnstile disabled or using Cloudflare's test keys, and an admin account:
+ * Needs a running site with the database, Turnstile test keys (or none), and an admin account:
  *   E2E_ADMIN_EMAIL=... E2E_ADMIN_PASSWORD=... npm run test:e2e -- purchase
  */
 const adminEmail = process.env.E2E_ADMIN_EMAIL;
 const adminPassword = process.env.E2E_ADMIN_PASSWORD;
 
-test.skip(!adminEmail || !adminPassword, "Set E2E_ADMIN_EMAIL and E2E_ADMIN_PASSWORD (and Stripe/Supabase test keys) to run the purchase test");
+test.skip(!adminEmail || !adminPassword, "Set E2E_ADMIN_EMAIL and E2E_ADMIN_PASSWORD to run the order test");
 
-test("guest buys a product with a Stripe test card and the order shows in admin", async ({ page }) => {
+test("guest places an order request and the admin confirms it and marks it paid", async ({ page }) => {
   test.setTimeout(180_000);
   const email = `e2e+${Date.now()}@example.com`;
 
   await page.goto("/shop/care-accessories/digital-thermometer-hygrometer");
-  await page.getByRole("button", { name: "Add to cart" }).click();
+  await page.waitForLoadState("networkidle");
+  await Promise.all([page.waitForResponse((r) => r.url().endsWith("/api/cart") && r.request().method() === "POST"), page.getByRole("button", { name: "Add to cart" }).click()]);
   await page.goto("/checkout");
-  await page.getByLabel("Email for your order confirmation").fill(email);
-  await page.getByLabel("Shipping state").selectOption("TX");
-  await page.getByRole("button", { name: /Continue to secure payment/ }).click();
 
-  // Stripe hosted checkout
-  await page.waitForURL(/checkout\.stripe\.com/, { timeout: 60_000 });
-  await page.getByLabel("Card number").fill("4242 4242 4242 4242");
-  await page.getByLabel("Expiration").fill("12 / 34");
-  await page.getByLabel("CVC").fill("123");
-  await page.getByLabel(/Cardholder name|Full name/).first().fill("E2E Tester");
-  await page.getByLabel("Address line 1").fill("1200 Riverbend Rd");
-  await page.getByLabel("City").fill("Austin");
-  await page.getByLabel("ZIP").fill("78701");
-  await page.getByRole("button", { name: /Pay/ }).click();
+  // Empty submit: inline errors, focus moves to the first one
+  await page.getByRole("button", { name: "Place Order" }).click();
+  await expect(page.getByText("Enter your full name")).toBeVisible();
+  await expect(page.locator("#co-fullName")).toBeFocused();
 
-  await page.waitForURL(/\/checkout\/success/, { timeout: 90_000 });
-  await expect(page.getByRole("heading", { name: "Thank you!" })).toBeVisible();
-  const orderNumber = (await page.getByText(/SH-\d+/).first().textContent())!.match(/SH-\d+/)![0];
+  await page.locator("#co-fullName").fill("E2E Tester");
+  await page.locator("#co-email").fill(email);
+  await page.locator("#co-phone").fill("+1 512 555 0134");
+  await page.locator("#co-country").selectOption("US");
+  await page.locator("#co-region").selectOption("TX");
+  await page.locator("#co-city").fill("Austin");
+  await page.locator("#co-address").fill("1200 Riverbend Rd");
+  await page.locator("#co-postalCode").fill("78701");
+  await page.getByLabel(/Zelle/).check();
 
-  // Admin sees the paid order
+  // Form survives a refresh
+  await page.reload();
+  await expect(page.locator("#co-city")).toHaveValue("Austin");
+  await expect(page.getByLabel(/Zelle/)).toBeChecked();
+
+  await page.getByRole("button", { name: "Place Order" }).click();
+  await page.waitForURL(/\/checkout\/confirmation\/SH-\d+/, { timeout: 60_000 });
+  await expect(page.getByText(/We'll email you within 24 hours with your shipping cost and payment details/)).toBeVisible();
+  const orderNumber = page.url().match(/SH-\d+/)![0];
+
+  // Admin: confirm with shipping, then mark paid
   await page.goto("/login?next=/admin/orders");
   await page.getByLabel("Email").fill(adminEmail!);
   await page.getByLabel("Password").fill(adminPassword!);
   await page.getByRole("button", { name: "Sign in" }).click();
   await page.waitForURL(/\/admin\/orders/);
-  await expect(async () => {
-    await page.reload();
-    await expect(page.getByRole("link", { name: orderNumber })).toBeVisible();
-  }).toPass({ timeout: 60_000 });
   await page.getByRole("link", { name: orderNumber }).click();
-  await expect(page.getByText("paid", { exact: true }).first()).toBeVisible();
+  await page.getByLabel("Shipping cost").fill("9.95");
+  await page.getByRole("button", { name: "Fill in confirmation email" }).click();
+  page.once("dialog", (d) => void d.accept());
+  await page.getByRole("button", { name: "Send confirmation to customer" }).click();
+  await expect(page.getByText(/Order confirmation sent|Status updated/)).toBeVisible();
+  await page.reload();
+  page.once("dialog", (d) => void d.accept());
+  await page.getByLabel(/Payment reference/).fill("E2E-REF");
+  await page.getByRole("button", { name: "Mark as paid" }).click();
+  await expect(page.getByText("Order marked as paid.")).toBeVisible();
 });

@@ -15,7 +15,15 @@ export function ProductGallery({ images, name }: { images: ProductImage[]; name:
   const [origin, setOrigin] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
   const image = images[index];
-  if (!image) return <div className="aspect-[4/3] rounded-2xl bg-muted" />;
+  if (!image)
+    return (
+      <div className="flex aspect-[4/3] items-center justify-center rounded-2xl bg-muted p-6 text-center text-muted-foreground">
+        <p>
+          <span className="block font-medium text-foreground">Photo coming soon</span>
+          <span className="mt-1 block text-sm">We&apos;re photographing {name}. Contact us if you&apos;d like to see one first.</span>
+        </p>
+      </div>
+    );
 
   return (
     <div className="space-y-3">
@@ -34,7 +42,8 @@ export function ProductGallery({ images, name }: { images: ProductImage[]; name:
           src={image.url}
           alt={image.alt}
           fill
-          priority
+          preload
+          fetchPriority="high"
           sizes="(min-width: 1024px) 50vw, 100vw"
           className="object-cover transition-transform duration-200"
           style={origin && !image.placeholder ? { transform: "scale(1.8)", transformOrigin: origin } : undefined}

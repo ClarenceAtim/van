@@ -13,7 +13,6 @@ import { cn } from "@/lib/utils";
 export function CartDrawer() {
   const { cart, open, setOpen } = useCart();
   const lines = cart?.lines ?? [];
-  const remaining = siteConfig.shipping.freeStandardOverCents - (cart?.totals.subtotalCents ?? 0);
   const close = () => setOpen(false);
 
   return (
@@ -33,11 +32,6 @@ export function CartDrawer() {
         ) : (
           <>
             <div className="flex-1 overflow-y-auto px-4">
-              {!cart!.totals.containsLiveAnimals && remaining > 0 && (
-                <p className="mt-4 rounded-lg bg-sand/60 px-3 py-2 text-sm">
-                  Add {formatMoney(remaining)} more for <strong>free standard shipping</strong>.
-                </p>
-              )}
               <CartLines lines={lines} compact onNavigate={close} />
             </div>
             <SheetFooter className="border-t">
@@ -47,8 +41,8 @@ export function CartDrawer() {
                   <dd className="font-semibold">{formatMoney(cart!.totals.subtotalCents)}</dd>
                 </div>
                 <div className="flex justify-between text-muted-foreground">
-                  <dt>{cart!.totals.shippingLabel}</dt>
-                  <dd>{cart!.totals.shippingCents === 0 ? "Free" : formatMoney(cart!.totals.shippingCents)}</dd>
+                  <dt>Shipping</dt>
+                  <dd>Confirmed before you pay</dd>
                 </div>
               </dl>
               <Link href="/checkout" onClick={close} className={cn(buttonVariants({ size: "lg" }), "w-full")}>

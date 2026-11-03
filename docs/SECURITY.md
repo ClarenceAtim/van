@@ -12,7 +12,7 @@ RLS is **enabled on every table** (`supabase/migrations/…02_rls.sql`).
 | Reviews | Everyone sees **approved** reviews; authors see their own | Verified buyers insert (`pending`, only if they have a paid order with that product); admins approve/reject |
 | Profiles | The user, admins | The user may change only `full_name` and `phone` (column privileges). **Nobody can promote themselves to admin** |
 | Carts, addresses, wishlists | The owner | The owner |
-| Orders, order items | The owner, admins | Created only by the server; status changed only by admins or the Stripe webhook |
+| Orders, order items | The owner, admins | Created only by the server; status changed only by admins (and the daily unpaid-order job) |
 | Contact messages, newsletter | Admins | Server only (after validation, rate limiting and Turnstile) |
 | Rate-limit counters | Nobody | Server only |
 
@@ -22,15 +22,17 @@ RLS is **enabled on every table** (`supabase/migrations/…02_rls.sql`).
 
 ## Secrets
 
-- The **service role key** is used only in server code (`src/lib/supabase/admin.ts`, `server-only` import), the Stripe webhook and the CLI scripts. It is never exposed to the browser; only `NEXT_PUBLIC_*` variables reach client bundles.
+- The **service role key** is used only in server code (`src/lib/supabase/admin.ts`, `server-only` import) and the CLI scripts. It is never exposed to the browser; only `NEXT_PUBLIC_*` variables reach client bundles.
 - `.env*` files are git-ignored (except `.env.example`, which has no values). GitHub Actions read secrets from **GitHub Secrets**.
 
 ## Payments
 
 - **Prices are computed on the server** from the catalog (`src/lib/pricing.ts`, `src/lib/cart.ts`). The browser only sends a product slug and quantity; any price it sends is ignored.
-- A pending order with a **price snapshot** is created before redirecting to Stripe, and the Stripe session is built from those server prices.
-- **Orders are marked paid only by the Stripe webhook** (`/api/stripe/webhook`), after **signature verification** with `STRIPE_WEBHOOK_SECRET` and a check that the amount charged covers the order total. Fulfillment is idempotent (Stripe retries are safe).
-- Card data never touches our servers (Stripe Checkout).
+- **No payments are taken on the website** (see [ORDERS-AND-PAYMENTS.md](ORDERS-AND-PAYMENTS.md)). Customers place an order request; payment details are emailed by the owner and are never shown on the site.
+- "Place order" re-validates every step with Zod, recalculates prices, delivery and totals on the server, and rejects the order if the total the customer reviewed differs (`src/lib/order-service.ts`). Stock is reserved atomically (`stock_quantity >= qty` in the same `update`), so two customers can't buy the last item.
+- **Orders are marked paid only by an admin** in /admin. Every status change is a guarded transition (only from the allowed previous statuses) and is logged in `order_events`.
+- The confirmation page needs a signed link (HMAC with `CART_COOKIE_SECRET`) or the signed-in owner, so order numbers can't be guessed to view other orders.
+- `/api/cron/orders` (reminders and releasing unpaid orders) requires `Authorization: Bearer $CRON_SECRET`.
 
 ## Authentication and sessions
 
@@ -60,7 +62,7 @@ RLS is **enabled on every table** (`supabase/migrations/…02_rls.sql`).
 
 ## HTTP security headers (`next.config.ts`)
 
-`Content-Security-Policy` (self + Cloudflare Turnstile + Supabase + Stripe form-action, `frame-ancestors 'none'`, `object-src 'none'`), `Strict-Transport-Security` (2 years, preload), `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy`, `Cross-Origin-Opener-Policy: same-origin`. The `X-Powered-By` header is removed. Vercel serves HTTPS only.
+`Content-Security-Policy` (self + Cloudflare Turnstile + Neon, `frame-ancestors 'none'`, `object-src 'none'`), `Strict-Transport-Security` (2 years, preload), `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy`, `Cross-Origin-Opener-Policy: same-origin`. The `X-Powered-By` header is removed. Vercel serves HTTPS only.
 
 > `script-src` includes `'unsafe-inline'` because Next.js inlines small bootstrap scripts; per-request nonces would disable static rendering. All other directives are strict.
 
@@ -74,6 +76,6 @@ RLS is **enabled on every table** (`supabase/migrations/…02_rls.sql`).
 
 - [ ] Set `CART_COOKIE_SECRET`, `REVALIDATE_SECRET` and Turnstile keys in Vercel.
 - [ ] Enable CAPTCHA (Turnstile) in Supabase Auth and set `SUPABASE_AUTH_CAPTCHA=true`.
-- [ ] Switch Stripe to live keys and create a live webhook endpoint.
+- [ ] Set `CRON_SECRET` and the `ORDER_*` email variables in Vercel, and fill in the payment templates in /admin.
 - [ ] Check [securityheaders.com](https://securityheaders.com) for the production URL.
 - [ ] Turn on GitHub secret scanning and Dependabot alerts in the repository settings.

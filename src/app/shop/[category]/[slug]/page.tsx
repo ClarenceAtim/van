@@ -9,9 +9,11 @@ import { ProductCard } from "@/components/product-card";
 import { ProductGallery } from "@/components/product/gallery";
 import { WishlistButton } from "@/components/product/wishlist-button";
 import { siteConfig } from "@/config/site";
+import { getAlsoBought } from "@/lib/also-bought";
+import { extractFaqs, getCareGuideForSpecies, postPath } from "@/lib/blog";
 import { getAllProducts, getCategory, getProduct, getRelated, getReviews, toCard } from "@/lib/catalog";
 import { formatDate, formatMoney, productPath } from "@/lib/format";
-import { pageMetadata, productJsonLd } from "@/lib/seo";
+import { faqJsonLd, pageMetadata, productJsonLd } from "@/lib/seo";
 
 export const revalidate = 3600;
 
@@ -49,8 +51,11 @@ export default async function ProductPage({ params }: Props) {
   const [product, category] = await Promise.all([getProduct(categorySlug, slug), getCategory(categorySlug)]);
   if (!product || !category) notFound();
   const [{ reviews, rating }, related] = await Promise.all([getReviews(product.id), getRelated(product)]);
+  const alsoBought = await getAlsoBought(product, related.map((p) => p.id));
+  const faqs = extractFaqs(product.long_description);
   const onSale = product.compare_at_price_cents != null && product.compare_at_price_cents > product.price_cents;
   const lowStock = product.stock_quantity > 0 && product.stock_quantity <= 3;
+  const careGuide = product.is_live_animal ? getCareGuideForSpecies(product.species_scientific_name) : null;
 
   const careRows = product.is_live_animal
     ? [
@@ -115,8 +120,8 @@ export default async function ProductPage({ params }: Props) {
                 <AlertTriangle className="size-4" aria-hidden /> Live animal notice
               </p>
               <p>
-                Ships overnight ({formatMoney(siteConfig.shipping.liveAnimalOvernightCents)}) {siteConfig.shipping.liveAnimalShipDays}, only when weather along the route is safe.
-                Shipping depends on your local laws; at checkout you&apos;ll confirm your state and that you are {siteConfig.liveAnimals.minimumAge}+ and agree to our{" "}
+                Ships overnight {siteConfig.shipping.liveAnimalShipDays} within the US, only when weather along the route is safe. Shipping depends on your local laws; at
+                checkout you&apos;ll confirm that you are {siteConfig.liveAnimals.minimumAge}+ and agree to our{" "}
                 <Link href="/terms#live-animals" className="font-medium underline underline-offset-2">
                   Live Animal Policy
                 </Link>
@@ -132,7 +137,7 @@ export default async function ProductPage({ params }: Props) {
             </li>
             <li className="flex items-center gap-2">
               <Truck className="size-5 text-primary" aria-hidden />
-              {product.is_live_animal ? "Insulated overnight packaging" : `Free shipping over ${formatMoney(siteConfig.shipping.freeStandardOverCents)}`}
+              {product.is_live_animal ? "Insulated overnight packaging" : "Ships worldwide"}
             </li>
           </ul>
           <p className="text-xs text-muted-foreground">SKU: {product.sku}</p>
@@ -162,9 +167,15 @@ export default async function ProductPage({ params }: Props) {
                 ))}
               </tbody>
             </table>
-            <Link href="/care-guides" className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-4">
-              Read our full care guides
-            </Link>
+            {careGuide ? (
+              <Link href={postPath(careGuide)} className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-4">
+                Read our {careGuide.title.replace(/:.*$/, "")}
+              </Link>
+            ) : (
+              <Link href="/blog/category/care-guides" className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-4">
+                Browse our reptile care guides
+              </Link>
+            )}
           </section>
         )}
       </div>
@@ -213,7 +224,23 @@ export default async function ProductPage({ params }: Props) {
         </section>
       )}
 
+      {alsoBought.length > 0 && (
+        <section aria-labelledby="also-bought-heading" className="mt-16">
+          <h2 id="also-bought-heading" className="mb-6 text-2xl font-semibold">
+            Customers also buy
+          </h2>
+          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {alsoBought.map((p) => (
+              <li key={p.id} className="relative">
+                <ProductCard product={toCard(p)} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <JsonLd data={productJsonLd(product, rating, reviews)} />
+      {faqs.length > 0 && <JsonLd data={faqJsonLd(faqs)} />}
     </div>
   );
 }

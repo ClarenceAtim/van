@@ -12,15 +12,18 @@ export function ProductCard({ product, priority = false, headingLevel = "h3" }: 
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border bg-card transition-shadow hover:shadow-md">
       <Link href={href} className="relative block aspect-[4/3] overflow-hidden bg-muted" tabIndex={-1} aria-hidden>
-        {product.image && (
+        {product.image ? (
           <Image
             src={product.image.url}
             alt={product.image.alt}
             fill
             sizes="(min-width: 1280px) 300px, (min-width: 768px) 33vw, 50vw"
-            priority={priority}
+            preload={priority}
+            fetchPriority={priority ? "high" : "auto"}
             className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
           />
+        ) : (
+          <span className="absolute inset-0 flex items-center justify-center text-sm font-medium text-muted-foreground">Photo coming soon</span>
         )}
         <div className="absolute top-2 left-2 flex flex-wrap gap-1">
           {onSale && <Badge className="bg-destructive text-white">Sale</Badge>}

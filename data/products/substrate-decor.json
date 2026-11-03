@@ -15,8 +15,8 @@
       {
         "url": "/products/coco-fiber-brick-3-pack-1.webp",
         "thumbnail_url": "/products/coco-fiber-brick-3-pack-1-thumb.webp",
-        "width": 1600,
-        "height": 900,
+        "width": 1400,
+        "height": 788,
         "alt": "Bundles of natural coconut coir fiber",
         "credit": "TheOilLamp via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -110,8 +110,8 @@
       {
         "url": "/products/arid-bioactive-substrate-10qt-1.webp",
         "thumbnail_url": "/products/arid-bioactive-substrate-10qt-1-thumb.webp",
-        "width": 1600,
-        "height": 2133,
+        "width": 700,
+        "height": 933,
         "alt": "Sandy soil substrate",
         "credit": "Ready Street via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -158,8 +158,8 @@
       {
         "url": "/products/cypress-mulch-24qt-1.webp",
         "thumbnail_url": "/products/cypress-mulch-24qt-1-thumb.webp",
-        "width": 1600,
-        "height": 1071,
+        "width": 900,
+        "height": 602,
         "alt": "Cypress mulch reptile substrate",
         "credit": "Shadowmeld Photography via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -204,12 +204,12 @@
       {
         "url": "/products/sphagnum-moss-long-fiber-1.webp",
         "thumbnail_url": "/products/sphagnum-moss-long-fiber-1-thumb.webp",
+        "alt": "Dried long-fiber moss in a bowl",
         "width": 1600,
-        "height": 792,
-        "alt": "Living sphagnum moss growing in a bog",
-        "credit": "Agnes Monkelbaan via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Nationaal_Park_Drents-Friese_Wold._Locatie_Fochtelo%C3%ABrveen_01-09-2020._(actm.)_15.jpg",
+        "height": 2400,
+        "credit": "Ahmed Boujaafar on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/green-kush-on-white-ceramic-bowl-VAAcVueo7v0",
         "representative": true
       }
     ],
@@ -232,7 +232,7 @@
     "seo_description": "Premium long-fiber sphagnum moss for humid hides, egg-laying boxes and plant mounting.",
     "image_search": {
       "query": "Sphagnum",
-      "alt": "Living sphagnum moss growing in a bog"
+      "alt": "Dried long-fiber moss in a bowl"
     }
   },
   {
@@ -251,8 +251,8 @@
       {
         "url": "/products/leaf-litter-mix-1.webp",
         "thumbnail_url": "/products/leaf-litter-mix-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
+        "width": 800,
+        "height": 600,
         "alt": "Dry leaf litter covering a forest floor",
         "credit": "Alexeyevitch via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -298,8 +298,8 @@
       {
         "url": "/products/cork-bark-flat-medium-1.webp",
         "thumbnail_url": "/products/cork-bark-flat-medium-1-thumb.webp",
-        "width": 1600,
-        "height": 1085,
+        "width": 900,
+        "height": 610,
         "alt": "Stacked natural cork oak bark slabs",
         "credit": "Jules Verne Times Two via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
@@ -345,8 +345,8 @@
       {
         "url": "/products/cork-round-tube-1.webp",
         "thumbnail_url": "/products/cork-round-tube-1-thumb.webp",
-        "width": 1600,
-        "height": 1033,
+        "width": 1200,
+        "height": 775,
         "alt": "Curved natural cork oak bark pieces",
         "credit": "pedrik via Wikimedia Commons",
         "license": "CC BY 2.0",
@@ -392,12 +392,12 @@
       {
         "url": "/products/half-log-hide-large-1.webp",
         "thumbnail_url": "/products/half-log-hide-large-1-thumb.webp",
+        "alt": "Snake curled up inside a hollow cork log hide among plants",
         "width": 1600,
-        "height": 1090,
-        "alt": "Natural hollow log",
-        "credit": "W.carter via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hollow_pine_log_at_Holma.jpg",
+        "height": 1200,
+        "credit": "Sascha Baltes on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-snake-curled-inside-a-hollow-log-with-green-plants-uyUSVXaCDYw",
         "representative": true
       }
     ],
@@ -420,7 +420,7 @@
     "seo_description": "Natural-wood half log hide that gives ground-dwelling reptiles a dark, secure retreat.",
     "image_search": {
       "query": "hollow log",
-      "alt": "Natural hollow log"
+      "alt": "Snake curled up inside a hollow cork log hide among plants"
     }
   },
   {
@@ -439,12 +439,12 @@
       {
         "url": "/products/humid-hide-cave-1.webp",
         "thumbnail_url": "/products/humid-hide-cave-1-thumb.webp",
+        "alt": "Leopard gecko peeking out of a rock-look reptile hide cave",
         "width": 1600,
-        "height": 1090,
-        "alt": "Natural hollow log hide",
-        "credit": "W.carter via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hollow_pine_log_at_Holma.jpg",
+        "height": 1067,
+        "credit": "Christian von Faber-Castell via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:EUBLEPHARIS-MACULARIUS_Leopard-Gecko_Leopardgecko_201705276012.jpg",
         "representative": true
       }
     ],
@@ -468,7 +468,7 @@
     "seo_description": "Resin humid-hide cave with a removable lid — fill with damp moss for perfect sheds.",
     "image_search": {
       "query": "Terrarium Versteck",
-      "alt": "Natural hollow log hide"
+      "alt": "Leopard gecko peeking out of a rock-look reptile hide cave"
     }
   },
   {
@@ -535,8 +535,8 @@
       {
         "url": "/products/artificial-pothos-vine-1.webp",
         "thumbnail_url": "/products/artificial-pothos-vine-1-thumb.webp",
-        "width": 1600,
-        "height": 1063,
+        "width": 1400,
+        "height": 930,
         "alt": "Pothos vine leaves",
         "credit": "Joydeep via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
@@ -630,12 +630,12 @@
       {
         "url": "/products/basking-rock-ledge-1.webp",
         "thumbnail_url": "/products/basking-rock-ledge-1-thumb.webp",
+        "alt": "Bearded dragon resting on a flat basking rock inside a warm-lit enclosure",
         "width": 1600,
-        "height": 1035,
-        "alt": "Lizard basking on a rock ledge",
-        "credit": "Manidip1995 via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Peninsular_rock_agama_basking_2.jpg",
+        "height": 1067,
+        "credit": "Garrett Hayes on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-lizard-on-a-rock-qarymf8BfAg",
         "representative": true
       }
     ],
@@ -658,7 +658,482 @@
     "seo_description": "Natural-look resin rock ledge that creates an elevated basking platform close to the heat.",
     "image_search": {
       "query": "Agama basking rock",
-      "alt": "Lizard basking on a rock ledge"
+      "alt": "Bearded dragon resting on a flat basking rock inside a warm-lit enclosure"
+    }
+  },
+  {
+    "slug": "reptile-carpet-liner-36x18",
+    "name": "Reptile Carpet Liner – 36 × 18 in, 2 Pack",
+    "category": "substrate-decor",
+    "subcategory": "substrate",
+    "short_description": "A washable reptile carpet liner, 2 pack, cut to fit 36×18 in enclosures. A simple, reusable substrate for quarantine and easy cleaning.",
+    "long_description": "A reptile carpet liner is a soft, washable substrate that you can cut to fit your enclosure floor, lift out to clean and reuse. This 2 pack fits 36 × 18 in terrariums, so one liner can be in use while the other is being washed and dried. Reptile carpet is one of the best-selling substrates because it's simple, tidy and cheap to run, especially for quarantine, hospital setups and young animals.\n\n## When reptile carpet works well\n\n- **Quarantine and vet recovery:** easy to see droppings and keep spotless.\n- **Hatchlings and juveniles:** no loose particles that could be swallowed with food.\n- **Temporary setups:** while you prepare a bioactive or loose-substrate build.\n- **Beginners:** lift out, wash and replace in minutes.\n\n## Things to know\n\nReptile carpet is a practical choice, but it doesn't allow digging and burrowing, which many species enjoy. Loose, natural substrates such as a soil and sand mix or a bioactive layer provide much more enrichment for long-term setups. Carpet can also snag claws and teeth if fibers become loose, so check it regularly and replace it when worn.\n\n## Specifications\n\n- **Size:** 36 × 18 in (90 × 45 cm), trimmable\n- **Pack:** 2 liners\n- **Material:** soft, non-abrasive, absorbent polyester with a non-slip back\n- **Care:** machine wash cold with no detergent or a reptile-safe cleaner, then air dry\n\n## How to use it\n\nCut the liner to fit snugly, with no gaps for insects or animals to crawl under. Spot-clean droppings daily, and swap in the clean liner every one to two weeks. Rinse thoroughly and dry completely before reuse. Use a [reptile-safe enclosure cleaner](/shop/care-accessories/reptile-safe-cleaner) instead of household detergents, which can leave residues.\n\nReptile carpet fits our [36×18×18 glass terrarium](/shop/enclosures/glass-terrarium-36x18x18) and the [Leopard Gecko Complete Starter Kit](/shop/enclosures/leopard-gecko-starter-kit). Our [leopard gecko care guide](/blog/leopard-gecko-care-guide) compares substrate options in more detail.\n\n## Frequently asked questions\n\n### Is reptile carpet safe for bearded dragons and leopard geckos?\n\nYes, as long as it's kept clean and replaced when fibers start to fray. It's a safe, impaction-free option, though loose natural substrates offer more enrichment for long-term setups.\n\n### How often should I wash reptile carpet?\n\nSpot-clean daily and swap to a fresh liner every one to two weeks, or sooner if it gets soiled.\n\n### Can I put reptile carpet over a heat mat?\n\nYes. It conducts belly heat well. Always run the heat mat on a thermostat with the probe on the carpet surface.",
+    "price_cents": 1600,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 40,
+    "sku": "SD-SUB-CARP36",
+    "images": [
+      {
+        "url": "/products/reptile-carpet-liner-36x18-1.webp",
+        "thumbnail_url": "/products/reptile-carpet-liner-36x18-1-thumb.webp",
+        "alt": "Close-up of soft green felt reptile carpet liner",
+        "width": 1400,
+        "height": 1050,
+        "credit": "engin akyurt on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-green-felt-background-41nfd5Jh6wk",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "substrate",
+      "leopard gecko",
+      "bearded dragon",
+      "quarantine",
+      "easy clean"
+    ],
+    "seo_title": "Reptile Carpet Liner 36x18 in – Washable 2 Pack",
+    "seo_description": "Washable reptile carpet liner, 2 pack, for 36x18 in enclosures. A simple, reusable substrate for quarantine, hatchlings and easy cleaning.",
+    "image_search": {
+      "query": "green felt fabric texture",
+      "alt": "Close-up of soft green felt reptile carpet liner"
+    }
+  },
+  {
+    "slug": "aspen-snake-bedding-24qt",
+    "name": "Aspen Snake Bedding – 24 qt",
+    "category": "substrate-decor",
+    "subcategory": "substrate",
+    "short_description": "Soft, kiln-dried aspen snake bedding for burrowing snakes. Absorbent, low-dust and easy to spot clean. 24 qt bag.",
+    "long_description": "Aspen snake bedding is the go-to substrate for corn snakes, kingsnakes, milk snakes and hognoses that love to burrow. It's made from shredded, kiln-dried aspen wood, which is soft, absorbent and holds tunnels well, so snakes can dig and hide just under the surface. This 24 qt bag fills a 36 × 18 in enclosure about 3 in deep.\n\n## Why aspen is so popular\n\n- **Burrowing:** holds tunnels, letting snakes behave naturally.\n- **Absorbent:** soaks up waste so it can be spot cleaned easily.\n- **Low dust:** kiln dried and screened.\n- **Safe wood:** aspen doesn't contain the aromatic oils found in cedar and pine, which irritate reptiles' airways.\n\n## Which reptiles is aspen best for?\n\nAspen is ideal for species that need low to moderate humidity, typically 30–60%:\n\n- Corn snakes, kingsnakes and milk snakes\n- Western hognose snakes\n- Kenyan sand boas and rosy boas\n- Many rodents and small mammals\n\nIt is **not** a good choice for high-humidity species such as ball pythons in tropical setups, because wet aspen molds quickly. For those, use cypress mulch or coco fiber instead.\n\n## How to use it\n\nSpread 2–4 in of aspen across the enclosure floor; more depth means more burrowing. Keep the water dish on a flat stone or tile so splashes don't soak the bedding. Spot-clean droppings as you see them, and replace the whole bed every one to two months. Our [Corn Snake Starter Kit](/shop/enclosures/corn-snake-starter-kit) and [Hognose Snake Starter Kit](/shop/enclosures/hognose-snake-starter-kit) both use aspen-based bedding.\n\nOur [corn snake care guide](/blog/corn-snake-care-guide) explains substrate choice, humidity and shedding for corn snakes.\n\n## Specifications\n\n- **Volume:** 24 qt (22.7 L) expanded\n- **Material:** 100% shredded aspen, kiln dried, no additives\n- **Coverage:** about 3 in deep in a 36 × 18 in enclosure\n\n## Frequently asked questions\n\n### Is aspen good for ball pythons?\n\nNot usually. Ball pythons need 60–80% humidity, and aspen molds when it stays wet. Cypress mulch or coco fiber is a better choice for them.\n\n### How deep should aspen bedding be for a corn snake?\n\nAbout 2–4 in. Corn snakes enjoy burrowing, so a deeper layer gives them more enrichment.\n\n### Can snakes eat aspen by accident?\n\nSmall amounts swallowed with prey usually pass without problems. Feeding with tongs on a flat surface or dish reduces the risk further.",
+    "price_cents": 1800,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 45,
+    "sku": "SD-SUB-ASP24",
+    "images": [
+      {
+        "url": "/products/aspen-snake-bedding-24qt-1.webp",
+        "thumbnail_url": "/products/aspen-snake-bedding-24qt-1-thumb.webp",
+        "alt": "Pile of soft shredded light aspen wood bedding",
+        "width": 1600,
+        "height": 1067,
+        "credit": "yashwant kashyap on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/pile-of-light-brown-wood-shavings-or-shredded-straw-EvTaSdImoP8",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "substrate",
+      "corn snake",
+      "hognose",
+      "snake substrate",
+      "burrowing"
+    ],
+    "seo_title": "Aspen Snake Bedding – 24 qt Burrowing Substrate",
+    "seo_description": "Kiln-dried aspen snake bedding, 24 qt. Soft, absorbent and low dust, ideal for burrowing corn snakes, kingsnakes and hognoses.",
+    "image_search": {
+      "query": "wood shavings bedding",
+      "alt": "Pile of soft shredded light aspen wood bedding"
+    }
+  },
+  {
+    "slug": "burrowing-clay-substrate-10lb",
+    "name": "Burrowing Clay Substrate – 10 lb",
+    "category": "substrate-decor",
+    "subcategory": "substrate",
+    "short_description": "A burrowing clay substrate that you sculpt and let dry into stable tunnels and caves. Ideal for leopard geckos, uromastyx and desert lizards.",
+    "long_description": "A burrowing clay substrate lets you build natural tunnels, caves and ledges that hold their shape, just like the hard-packed desert soils many reptiles dig into in the wild. Mix it with water, sculpt it into burrows and terraces, and let it dry. The result is a stable, natural landscape your reptile can explore and dig into. This 10 lb bag covers a 36 × 18 in enclosure about 2 in deep, or builds a large burrow system along one side.\n\n## Why reptiles benefit from burrows\n\nMany desert reptiles spend much of their time underground, where temperatures and humidity are more stable. A burrow gives them a secure retreat, a humid microclimate for shedding and a natural outlet for digging behavior. Leopard geckos, uromastyx, African fat-tailed geckos and many sand boas all use burrows when given the chance.\n\n## How to use it\n\n1. Mix the clay with water until it reaches a thick, mud-like consistency.\n2. Build tunnels by molding the clay around rolled-up paper or cardboard tubes, or stack it into terraces against the back wall.\n3. Let it dry for two to five days, depending on thickness and room humidity, then remove the tubes.\n4. Add a loose top layer of sand and soil, such as our [arid bioactive substrate](/shop/substrate-decor/arid-bioactive-substrate-10qt), for a natural look.\n\nBurrows can be reshaped by re-wetting areas of clay. Mist the back of a burrow occasionally to keep a slightly humid retreat.\n\n## Specifications\n\n- **Weight:** 10 lb (4.5 kg)\n- **Material:** natural clay and sand blend with no dyes or chemical binders\n- **Coverage:** about 2 in deep in a 36 × 18 in enclosure\n\n## Which reptiles is it for?\n\nLeopard geckos, African fat-tailed geckos, uromastyx, bearded dragons and other arid species. Pair it with the [Arid Bioactive Kit](/shop/enclosures/bioactive-kit-arid) for a complete desert build, and see our [bioactive terrarium guide](/blog/how-to-set-up-a-bioactive-terrarium) for layering tips.\n\n## Frequently asked questions\n\n### Is burrowing clay safe for leopard geckos?\n\nYes. Once dry, it forms a hard surface that's difficult to swallow in loose pieces, and it lets leopard geckos dig and hide naturally.\n\n### How long does burrowing clay take to dry?\n\nUsually two to five days, depending on how thick the structures are and how humid your room is.\n\n### Can I make burrows that won't collapse?\n\nYes. Build walls at least 1 in thick and let them dry completely before your reptile uses them. Reinforce long tunnels with a cork tube inside.",
+    "price_cents": 2600,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 30,
+    "sku": "SD-SUB-CLAY10",
+    "images": [
+      {
+        "url": "/products/burrowing-clay-substrate-10lb-1.webp",
+        "thumbnail_url": "/products/burrowing-clay-substrate-10lb-1-thumb.webp",
+        "alt": "Dry, cracked natural clay substrate surface",
+        "width": 1200,
+        "height": 800,
+        "credit": "Saifee Art on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/cracked-dry-earth-texture-with-brown-tones-sqb9Q5Am8Gg",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "substrate",
+      "leopard gecko",
+      "uromastyx",
+      "burrowing",
+      "arid",
+      "bioactive"
+    ],
+    "seo_title": "Burrowing Clay Substrate – 10 lb Sculptable Burrows",
+    "seo_description": "Burrowing clay substrate you sculpt into tunnels and caves that dry hard. Ideal for leopard geckos, uromastyx and desert reptiles. 10 lb bag.",
+    "image_search": {
+      "query": "dry clay soil texture",
+      "alt": "Dry, cracked natural clay substrate surface"
+    }
+  },
+  {
+    "slug": "reptile-hammock-lounger",
+    "name": "Reptile Hammock Lounger",
+    "category": "substrate-decor",
+    "subcategory": "decor",
+    "short_description": "A breathable mesh reptile hammock that fixes to the enclosure wall with suction cups. A favorite resting and basking spot for bearded dragons.",
+    "long_description": "A reptile hammock gives lizards a raised, comfortable lounging and basking spot that uses vertical space in the enclosure. This reptile hammock lounger is a triangular mesh sling that fixes into a corner with strong suction cups or screw hooks. It's a long-time best seller, especially with bearded dragon owners, whose dragons often adopt it as a favorite place to rest and bask.\n\n## Why reptiles like hammocks\n\n- **Elevation:** many lizards like to perch above the floor to survey their surroundings.\n- **Comfort:** the soft mesh supports the body evenly, a popular spot to sleep.\n- **Basking:** placed below (not touching) a heat lamp, it becomes a secondary basking spot.\n- **Enrichment:** adds climbing and new routes to explore.\n\n## Specifications\n\n- **Size:** about 16 × 16 × 22 in triangle (40 × 40 × 55 cm), sized for an adult bearded dragon\n- **Material:** breathable, quick-drying polyester mesh\n- **Mounting:** four suction cups for glass, plus screw hooks for PVC or wood\n- **Load:** supports lizards up to about 1 lb (450 g)\n\n## Installation and safety\n\nFit the hammock in an upper corner at least 8–10 in below your basking lamp and UVB fixture, so your reptile can't get too close to the bulbs. Check the surface temperature with an infrared thermometer; it shouldn't exceed your species' basking range. Make sure the corners are secure and test it with your hand before adding your reptile. Wash the hammock regularly with warm water and a [reptile-safe cleaner](/shop/care-accessories/reptile-safe-cleaner).\n\nHammocks suit bearded dragons, Rankin's dragons, blue-tongued skinks (low down) and many other lizards. Our [bearded dragon care sheet](/blog/bearded-dragon-care-sheet) explains basking distances, and our [Bearded Dragon Complete Starter Kit](/shop/enclosures/bearded-dragon-starter-kit) is a great place to add one.\n\n## Frequently asked questions\n\n### Do bearded dragons like hammocks?\n\nMany do. Bearded dragons often choose a hammock as a favorite resting or sleeping spot, especially when it's placed in a warm upper corner.\n\n### Can I put a hammock under the heat lamp?\n\nYes, as long as it's far enough below the lamp that the surface stays within your dragon's safe basking range. Always check with an infrared thermometer.\n\n### Will the suction cups hold?\n\nOn clean, smooth glass they hold firmly. Clean the glass with water first, and use the included screw hooks in PVC or wooden enclosures.",
+    "price_cents": 1300,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 50,
+    "sku": "SD-DEC-HAMK",
+    "images": [
+      {
+        "url": "/products/reptile-hammock-lounger-1.webp",
+        "thumbnail_url": "/products/reptile-hammock-lounger-1-thumb.webp",
+        "alt": "Bearded dragon lounging on a fabric reptile hammock",
+        "width": 1600,
+        "height": 2133,
+        "credit": "Colleen Vaughan-Goss on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-lizard-sitting-on-a-towel-in-the-water-xK1kj4Kdx4M"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "bearded dragon",
+      "decor",
+      "enrichment",
+      "hammock",
+      "lizards"
+    ],
+    "seo_title": "Reptile Hammock Lounger – Bearded Dragon Hammock",
+    "seo_description": "Breathable mesh reptile hammock with suction cups and screw hooks. A favorite resting and basking spot for bearded dragons and lizards.",
+    "image_search": {
+      "query": "bearded dragon hammock",
+      "alt": "Bearded dragon lounging on a fabric reptile hammock"
+    }
+  },
+  {
+    "slug": "springtail-culture-live",
+    "name": "Springtail Culture – Live Bioactive Cleanup Crew",
+    "category": "substrate-decor",
+    "subcategory": "cleanup-crew",
+    "short_description": "A thriving live springtail culture to seed bioactive terrariums. Springtails eat mold and fungi and keep tropical setups clean.",
+    "long_description": "A springtail culture is the first cleanup crew member every bioactive terrarium needs. Springtails are tiny, harmless invertebrates that eat mold, fungi and decaying organic matter, preventing the white mold blooms that appear in new tropical enclosures. This live springtail culture contains thousands of temperate white springtails (*Folsomia candida*) in a charcoal and soil culture, ready to pour into your terrarium.\n\n## Why springtails matter\n\nSpringtails are the microscopic half of a bioactive cleanup crew. They multiply quickly, reach every corner of the substrate and keep mold under control. Isopods then handle larger waste such as droppings and shed skin. Bioactive keepers recommend adding springtails first, two to four weeks before your reptile, so they can establish. Read more in our [bioactive terrarium guide](/blog/how-to-set-up-a-bioactive-terrarium).\n\n## What's included\n\n- **Live culture** of temperate white springtails in a 16 oz container\n- **Culture medium:** horticultural charcoal and soil, so the colony keeps breeding\n- **Starter food:** a small packet of springtail food\n- **Care card** with seeding and culturing instructions\n\n## How to seed your terrarium\n\n1. Pour some water into the culture container and swirl gently. Springtails float to the surface.\n2. Pour the water and springtails over the leaf litter and moss in your terrarium.\n3. Keep the substrate moist, especially the lower layers. Springtails need damp conditions.\n4. Feed a tiny pinch of springtail food or dry yeast once a week until the population establishes.\n\nKeep part of the culture going in the container as a backup. Feed it lightly and keep the medium damp, and you'll always have springtails to seed new enclosures.\n\n## Which enclosures are they for?\n\nSpringtails do best in tropical and temperate bioactive setups, such as those for crested geckos, dart frogs and ball pythons. In arid builds they survive in the damp lower substrate layer. Pair them with [powder orange isopods](/shop/substrate-decor/powder-orange-isopods) for a complete cleanup crew, or choose our [Bioactive Crested Gecko Vivarium Kit](/shop/enclosures/bioactive-crested-gecko-vivarium-kit), which includes both.\n\n## Frequently asked questions\n\n### Will springtails harm my reptile?\n\nNo. Springtails are tiny, harmless detritivores. Some insect-eating reptiles and frogs may snack on them, which is fine.\n\n### Do springtails escape from the terrarium?\n\nThey stay where it's damp. A few may wander, but they quickly dry out and die outside humid conditions.\n\n### How long does a springtail culture last?\n\nIndefinitely if you keep the medium damp and feed it lightly once a week.",
+    "price_cents": 1400,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 30,
+    "sku": "SD-CC-SPRING",
+    "images": [
+      {
+        "url": "/products/springtail-culture-live-1.webp",
+        "thumbnail_url": "/products/springtail-culture-live-1-thumb.webp",
+        "alt": "Group of white springtails (Folsomia candida), the species in this live culture",
+        "width": 1400,
+        "height": 1050,
+        "credit": "AJC1 from UK via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Folsomia_candida_(32860932626).jpg"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "bioactive",
+      "cleanup crew",
+      "springtails",
+      "crested gecko",
+      "live culture"
+    ],
+    "seo_title": "Springtail Culture – Live Bioactive Cleanup Crew",
+    "seo_description": "Live springtail culture with thousands of springtails to seed bioactive terrariums. Eats mold and fungi to keep tropical setups clean.",
+    "image_search": {
+      "query": "springtail Folsomia candida",
+      "alt": "Group of white springtails (Folsomia candida), the species in this live culture"
+    }
+  },
+  {
+    "slug": "powder-orange-isopods",
+    "name": "Powder Orange Isopods – 12 Count",
+    "category": "substrate-decor",
+    "subcategory": "cleanup-crew",
+    "short_description": "Twelve live powder orange isopods (Porcellionides pruinosus): fast-breeding, hardy cleanup crew for tropical and arid bioactive setups.",
+    "long_description": "Powder orange isopods (*Porcellionides pruinosus*) are one of the most popular bioactive cleanup crew species thanks to their bright orange color, fast breeding and tolerance of a wide range of conditions. They break down droppings, shed skin, uneaten food and decaying leaves, recycling waste into nutrients for your plants. This listing is for 12 live isopods of mixed ages, enough to start a colony in a terrarium or breeding bin.\n\n## Why powder orange isopods are a top choice\n\n- **Fast breeders:** populations grow quickly, so they establish fast in new enclosures.\n- **Adaptable:** they tolerate both tropical and drier setups, as long as some substrate stays moist.\n- **Active:** they're out and about, helping clean the surface where waste collects.\n- **Colorful:** a cheerful bright orange that's easy to spot.\n\n## How to add them to a bioactive enclosure\n\n1. Make sure the enclosure has deep, moist lower substrate and a generous layer of leaf litter.\n2. Place the isopods under leaf litter or cork bark on the damp side.\n3. Add a piece of cuttlebone for calcium, which supports healthy molting.\n4. Feed occasional vegetables or fish flakes for the first few weeks while they establish.\n\nAdd isopods alongside a [springtail culture](/shop/substrate-decor/springtail-culture-live) at least two to four weeks before your reptile moves in. Our [bioactive terrarium guide](/blog/how-to-set-up-a-bioactive-terrarium) explains how the cleanup crew works.\n\n## Isopods and insect-eating reptiles\n\nActive, insect-eating species such as leopard geckos may hunt powder oranges, which keeps colonies in check but can wipe out a new population. To keep a steady supply, culture extras in our [Isopod Breeding Bin Kit](/shop/enclosures/isopod-breeding-bin-kit) and top up enclosures as needed.\n\n## Care summary\n\n- **Temperature:** 70–85°F (21–29°C)\n- **Humidity:** a moist lower substrate layer with drier areas on top\n- **Food:** leaf litter and decaying wood, plus vegetables and protein occasionally\n- **Calcium:** cuttlebone or crushed eggshell\n\n## Frequently asked questions\n\n### Are powder orange isopods good for arid setups?\n\nYes, more than most isopods. They cope with drier enclosures as long as part of the lower substrate stays moist.\n\n### How many isopods do I need for a terrarium?\n\nTwelve is enough to start a colony in a small to medium enclosure. Larger enclosures benefit from 24 or more, or from regular top-ups.\n\n### Will my reptile eat the isopods?\n\nSome will, especially insectivores. Provide plenty of leaf litter and cork as cover, and culture extras to replace any that are eaten.",
+    "price_cents": 1500,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 30,
+    "sku": "SD-CC-ISOPO",
+    "images": [
+      {
+        "url": "/products/powder-orange-isopods-1.webp",
+        "thumbnail_url": "/products/powder-orange-isopods-1-thumb.webp",
+        "alt": "Powder orange isopod (Porcellionides pruinosus) on a sandy rock",
+        "width": 1600,
+        "height": 1200,
+        "credit": "Alex Abair via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Porcellionides_pruinosus_378726090.jpg"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "bioactive",
+      "cleanup crew",
+      "isopods",
+      "live culture",
+      "leopard gecko"
+    ],
+    "seo_title": "Powder Orange Isopods – 12 Live Bioactive Isopods",
+    "seo_description": "12 live powder orange isopods (Porcellionides pruinosus). Fast-breeding, hardy cleanup crew for tropical and arid bioactive terrariums.",
+    "image_search": {
+      "query": "Porcellionides pruinosus",
+      "alt": "Powder orange isopod (Porcellionides pruinosus) on a sandy rock"
+    }
+  },
+  {
+    "slug": "3d-rock-background-for-terrarium",
+    "name": "3D Rock Background for Terrarium – 36 × 18 in",
+    "category": "substrate-decor",
+    "subcategory": "decor",
+    "short_description": "A 3D rock background for terrariums with built-in ledges and climbing texture. Cut to fit; ideal for bearded dragons and desert setups.",
+    "long_description": "A 3D rock background for terrariums turns a plain back wall into a natural-looking rock face with ledges, crevices and climbing texture. This 36 × 18 in background is molded from lightweight, water-resistant foam with a resin coating, and adds usable surface area that many reptiles love to climb and bask on. It's one of the most popular upgrades for desert and bioactive enclosures.\n\n## Why add a 3D background\n\n- **More usable space:** ledges and texture give lizards extra places to climb and rest.\n- **Natural look:** hides cords, probes and the back glass.\n- **Enrichment:** climbing and exploring keep reptiles active.\n- **Insulation:** a foam back wall helps hold heat in glass enclosures.\n\n## Specifications\n\n- **Size:** 36 × 18 in (90 × 45 cm), trimmable for smaller enclosures\n- **Material:** lightweight polyurethane foam with a non-toxic resin coat\n- **Features:** three molded ledges, a cave pocket and cable channels on the back\n- **Finish:** sandstone colors that suit desert and rainforest builds\n\n## How to install\n\n1. Measure your enclosure and trim the background with a serrated knife if needed.\n2. Test the fit, then fix it to the back glass with aquarium-safe silicone.\n3. Let the silicone cure fully for at least 48 hours before adding your reptile.\n4. Run cords and probes behind the background through the cable channels.\n\nPosition basking ledges well below lamps and check surface temperatures with an infrared thermometer, because ledges close to a heat lamp can get very hot. For a bearded dragon, a ledge under the basking lamp should read 100–110°F (38–43°C) at most.\n\nThe background fits our [36×18×18 glass terrarium](/shop/enclosures/glass-terrarium-36x18x18) and pairs well with the [Arid Bioactive Kit](/shop/enclosures/bioactive-kit-arid). Our [bearded dragon care sheet](/blog/bearded-dragon-care-sheet) explains basking temperatures and enrichment.\n\n## Frequently asked questions\n\n### Is a 3D background safe for reptiles?\n\nYes. It's made from non-toxic, sealed foam and resin. Install it with aquarium-safe silicone and let it cure fully before adding your reptile.\n\n### Can I use a 3D background in a humid bioactive terrarium?\n\nYes. The resin coating is water resistant, so it holds up to misting in tropical setups.\n\n### Can I cut the background to fit a smaller tank?\n\nYes. Trim it with a serrated knife or fine saw, then seal any exposed foam edges with silicone.",
+    "price_cents": 5900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 12,
+    "sku": "SD-DEC-BG3618",
+    "images": [
+      {
+        "url": "/products/3d-rock-background-for-terrarium-1.webp",
+        "thumbnail_url": "/products/3d-rock-background-for-terrarium-1-thumb.webp",
+        "alt": "Layered sandstone rock texture like a 3D terrarium background",
+        "width": 1600,
+        "height": 1067,
+        "credit": "Seven Roadtrips on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/brown-and-white-rock-formation-RIG1irm8si4",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "decor",
+      "background",
+      "bearded dragon",
+      "climbing",
+      "bioactive"
+    ],
+    "seo_title": "3D Rock Background for Terrarium – 36 x 18 in",
+    "seo_description": "3D rock background for terrariums with built-in ledges and climbing texture. Lightweight, water resistant and cut to fit. 36 x 18 in.",
+    "image_search": {
+      "query": "sandstone rock wall texture",
+      "alt": "Layered sandstone rock texture like a 3D terrarium background"
+    }
+  },
+  {
+    "slug": "live-pothos-plant-terrarium",
+    "name": "Live Pothos Plant for Terrarium – 4 in Pot",
+    "category": "substrate-decor",
+    "subcategory": "live-plants",
+    "short_description": "A hardy live pothos plant for terrariums in a 4 in pot. Grows fast, tolerates misting and low light, and is a bioactive favorite.",
+    "long_description": "A live pothos plant for terrarium setups is the most forgiving way to start growing real plants with your reptile. Pothos (*Epipremnum aureum*) tolerates high humidity, low light, regular misting and trampling better than almost any other houseplant, and it grows fast enough to fill a vivarium with trailing green vines within months. This plant comes in a 4 in pot, with roots ready to transplant into bioactive substrate.\n\n## Why pothos is a bioactive favorite\n\n- **Hardy:** survives the misting, footfalls and occasional neglect of a busy enclosure.\n- **Fast growing:** trailing vines cover backgrounds and branches quickly.\n- **Absorbs waste:** uses nutrients from reptile waste, helping keep the substrate healthy.\n- **Natural cover:** gives arboreal and ground-dwelling reptiles shade and hiding spots.\n\n## Which reptiles is it suitable for?\n\nPothos suits tropical and humid enclosures: crested geckos, gargoyle geckos, ball pythons, tree frogs and many others. It's widely used with insectivores and snakes. Pothos contains calcium oxalate crystals and shouldn't be offered to herbivorous reptiles such as tortoises and uromastyx that might eat it.\n\n## How to plant it\n\n1. Remove the plant from its pot and gently rinse the roots to remove potting soil and fertilizer.\n2. Plant it directly in bioactive substrate such as our [Tropical Bioactive Soil Mix](/shop/substrate-decor/bioactive-soil-tropical-8qt).\n3. Train vines along branches, cork or the background.\n4. Provide bright, indirect light for 10–12 hours a day. A [terrarium plant LED light](/shop/heating-lighting/terrarium-plant-led-light) helps in dim enclosures.\n\nTrim long vines and replant the cuttings to fill gaps. They root easily in moist substrate.\n\n## Specifications\n\n- **Plant:** *Epipremnum aureum* (golden pothos)\n- **Pot size:** 4 in (10 cm)\n- **Light:** low to bright indirect\n- **Humidity:** 50–90%\n\nOur [bioactive terrarium guide](/blog/how-to-set-up-a-bioactive-terrarium) lists more plants that pair well with pothos.\n\n## Frequently asked questions\n\n### Is pothos safe for reptiles?\n\nIt's widely used with insect-eating reptiles, snakes and frogs, which don't eat plants. Avoid it in enclosures with herbivores such as tortoises, which might eat the leaves.\n\n### Does pothos need special lighting in a terrarium?\n\nIt tolerates low light but grows best under bright, indirect light. A full-spectrum plant LED keeps it lush.\n\n### Will pothos grow in a crested gecko vivarium?\n\nYes. Pothos is one of the best plants for crested gecko vivariums because it handles humidity and climbing geckos well.",
+    "price_cents": 1200,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 35,
+    "sku": "SD-PL-POTH",
+    "images": [
+      {
+        "url": "/products/live-pothos-plant-terrarium-1.webp",
+        "thumbnail_url": "/products/live-pothos-plant-terrarium-1-thumb.webp",
+        "alt": "Live golden pothos plant with heart-shaped leaves in a small pot",
+        "width": 1600,
+        "height": 2111,
+        "credit": "Jesús Vidal on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-potted-plant-sitting-on-top-of-a-table-TfeA6f2RpEc"
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "bioactive",
+      "live plants",
+      "crested gecko",
+      "ball python",
+      "tropical"
+    ],
+    "seo_title": "Live Pothos Plant for Terrarium – 4 in Pot",
+    "seo_description": "Hardy live pothos plant for terrariums in a 4 in pot. Grows fast, tolerates misting and low light. A bioactive favorite for crested geckos.",
+    "image_search": {
+      "query": "pothos plant pot",
+      "alt": "Live golden pothos plant with heart-shaped leaves in a small pot"
+    }
+  },
+  {
+    "slug": "crested-gecko-feeding-ledge",
+    "name": "Crested Gecko Feeding Ledge – Magnetic",
+    "category": "substrate-decor",
+    "subcategory": "decor",
+    "short_description": "A magnetic crested gecko feeding ledge that holds diet cups high on the glass, where arboreal geckos prefer to eat. No suction cups.",
+    "long_description": "A crested gecko feeding ledge holds food and water cups high up on the enclosure wall, where arboreal geckos feel safest eating. This magnetic feeding ledge attaches through the glass with a strong magnet on the outside, so there are no suction cups to fail and you can reposition it in seconds. It holds two standard 1 oz (or 0.5 oz) diet cups and doubles as a resting perch.\n\n## Why crested geckos need a feeding ledge\n\nCrested geckos are arboreal and spend most of their time off the ground. Many will ignore a food dish on the floor but readily eat from a ledge at their usual height. A feeding ledge also keeps the diet clean, away from substrate and leaf litter, and makes it easy to check how much your gecko has eaten.\n\n## Specifications\n\n- **Holds:** two 1 oz or 0.5 oz feeding cups (two cups included)\n- **Mounting:** neodymium magnet pair, for glass up to 6 mm thick\n- **Size:** about 4.5 × 2.5 in (11 × 6 cm)\n- **Material:** food-safe, BPA-free plastic with a textured perch surface\n- **Easy cleaning:** lift off, wash and replace\n\n## How to use it\n\nPlace the ledge in the upper third of the enclosure, near a branch or vine your gecko uses regularly, and away from any heat source. Fill one cup with freshly mixed [Complete Crested Gecko Diet](/shop/food-supplements/crested-gecko-diet-8oz) and the other with water, or use both for food if your gecko drinks from misted leaves. Replace the diet every 24–48 hours before it spoils.\n\nThe ledge also suits gargoyle geckos, day geckos and other arboreal species. Our [crested gecko care guide](/blog/crested-gecko-care-guide) explains feeding schedules, and our [Bioactive Crested Gecko Vivarium Kit](/shop/enclosures/bioactive-crested-gecko-vivarium-kit) includes one.\n\n## Frequently asked questions\n\n### Where should I put a feeding ledge for a crested gecko?\n\nHigh up in the enclosure, near a branch your gecko uses, and away from lights or heat sources that could dry out the food.\n\n### Will the magnets work on my terrarium?\n\nThey hold firmly through glass up to 6 mm thick, which covers most reptile terrariums. They won't work through thick acrylic or PVC panels.\n\n### What size cups fit the ledge?\n\nStandard 1 oz or 0.5 oz feeding cups. Two cups are included, and refills are widely available.",
+    "price_cents": 1400,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 40,
+    "sku": "SD-DEC-FLEDG",
+    "images": [],
+    "featured": false,
+    "active": false,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "crested gecko",
+      "feeding",
+      "arboreal",
+      "decor",
+      "gargoyle gecko"
+    ],
+    "seo_title": "Crested Gecko Feeding Ledge – Magnetic Cup Holder",
+    "seo_description": "Magnetic crested gecko feeding ledge that holds two diet cups high on the glass, where arboreal geckos prefer to eat. No suction cups.",
+    "image_search": {
+      "query": "crested gecko eating",
+      "alt": "Crested gecko perched at the top of a feeding spot"
+    }
+  },
+  {
+    "slug": "mopani-wood-for-reptiles",
+    "name": "Mopani Wood for Reptiles – Medium Branch",
+    "category": "substrate-decor",
+    "subcategory": "decor",
+    "short_description": "A dense, sandblasted mopani wood branch for reptiles. Rot resistant, heavy and stable, for climbing, basking and natural decor.",
+    "long_description": "Mopani wood for reptiles is a dense African hardwood with striking two-tone grain, sandblasted smooth and safe for climbing. Because it's so heavy and resistant to rot, a mopani branch stays stable under active lizards and holds up in humid bioactive enclosures far longer than softer woods. Each medium branch is unique, roughly 10–14 in (25–35 cm) long, with natural forks and flat areas for climbing and basking.\n\n## Why keepers choose mopani\n\n- **Dense and heavy:** sits firmly without tipping, even with a large lizard climbing on it.\n- **Rot resistant:** suitable for humid, misted and bioactive enclosures.\n- **Naturally beautiful:** a contrasting light and dark grain that looks great in any setup.\n- **Safe surface:** sandblasted smooth, with no bark to peel or splinter.\n\n## Preparing mopani wood\n\nMopani contains natural tannins, which can tint water a tea color. That's harmless to reptiles, but you can reduce it before use:\n\n1. Rinse the branch with hot water and scrub it with a stiff brush (no soap).\n2. Soak it in hot water for 24–48 hours, changing the water a few times.\n3. Let it dry completely before placing it in your enclosure.\n\n## Placement tips\n\nSeat the branch firmly in the substrate or on the enclosure floor, so it can't roll or fall onto your reptile. For basking, angle part of the branch toward the warm end, keeping the top surface at a safe distance below heat lamps, and check temperatures with an infrared thermometer. Mopani pairs well with [grapevine branches](/shop/substrate-decor/grapevine-branches-3-pack) and [cork bark flats](/shop/substrate-decor/cork-bark-flat-medium) for varied textures.\n\nIt suits bearded dragons, leopard geckos, blue-tongued skinks, crested geckos and snakes. Our [bioactive terrarium guide](/blog/how-to-set-up-a-bioactive-terrarium) explains how hardscape fits into a natural build.\n\n## Specifications\n\n- **Size:** medium, about 10–14 in (25–35 cm) long; each piece is unique\n- **Material:** sandblasted mopani hardwood\n- **Suitable for:** arid, temperate and tropical enclosures\n\n## Frequently asked questions\n\n### Is mopani wood safe for reptiles?\n\nYes. Mopani is a non-toxic hardwood widely used in reptile and aquarium setups. Rinse and soak it before use to remove dust and reduce tannins.\n\n### Will mopani wood rot in a humid terrarium?\n\nIt's very rot resistant thanks to its density, so it lasts well in humid and bioactive enclosures.\n\n### Why does mopani wood turn water brown?\n\nNatural tannins leach out, which is harmless. Soaking the branch before use reduces the effect.",
+    "price_cents": 2900,
+    "compare_at_price_cents": null,
+    "currency": "USD",
+    "stock_quantity": 18,
+    "sku": "SD-DEC-MOPM",
+    "images": [
+      {
+        "url": "/products/mopani-wood-for-reptiles-1.webp",
+        "thumbnail_url": "/products/mopani-wood-for-reptiles-1-thumb.webp",
+        "alt": "Gnarled, weathered hardwood branch",
+        "width": 1400,
+        "height": 1866,
+        "credit": "Haberdoedas on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/close-up-of-gnarled-weathered-wood-with-a-rough-texture-i3g9VxExiT0",
+        "representative": true
+      }
+    ],
+    "featured": false,
+    "active": true,
+    "is_live_animal": false,
+    "species_scientific_name": null,
+    "care_level": null,
+    "adult_size": null,
+    "lifespan": null,
+    "diet": null,
+    "temperature_range": null,
+    "humidity_range": null,
+    "tags": [
+      "decor",
+      "branches",
+      "climbing",
+      "bioactive",
+      "bearded dragon"
+    ],
+    "seo_title": "Mopani Wood for Reptiles – Medium Hardwood Branch",
+    "seo_description": "Dense, sandblasted mopani wood for reptiles. Rot resistant, heavy and stable for climbing, basking and natural terrarium decor.",
+    "image_search": {
+      "query": "mopani driftwood",
+      "alt": "Gnarled, weathered hardwood branch"
     }
   }
 ]

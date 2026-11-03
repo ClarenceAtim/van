@@ -10,7 +10,7 @@ export async function POST(request: Request) {
   const given = request.headers.get("authorization")?.replace(/^Bearer /, "") ?? "";
   const ok = !!secret && given.length === secret.length && crypto.timingSafeEqual(Buffer.from(given), Buffer.from(secret));
   if (!ok) return jsonError("Unauthorized", 401);
-  revalidateTag(CATALOG_TAG);
+  revalidateTag(CATALOG_TAG, "max");
   revalidatePath("/", "layout");
   return NextResponse.json({ revalidated: true, at: new Date().toISOString() });
 }

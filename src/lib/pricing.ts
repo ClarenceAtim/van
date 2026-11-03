@@ -1,3 +1,4 @@
+import { countryName, regionName } from "@/config/countries";
 import { siteConfig } from "@/config/site";
 
 /** Everything price-related is computed here, on the server, from catalog prices — never from the browser. */
@@ -12,15 +13,16 @@ export type PricedLine = {
   isLiveAnimal: boolean;
 };
 
-export type ShippingMethod = "standard" | "free-standard" | "live-overnight";
-
+/**
+ * Totals before shipping. Shipping depends on the destination and is confirmed by email per
+ * order, so it isn't part of the checkout total. Tax/VAT comes from siteConfig.tax.
+ */
 export type OrderTotals = {
   subtotalCents: number;
-  shippingCents: number;
   taxCents: number;
+  /** Subtotal + tax (shipping is added when the order is confirmed). */
   totalCents: number;
-  shippingMethod: ShippingMethod;
-  shippingLabel: string;
+  itemCount: number;
   containsLiveAnimals: boolean;
 };
 
@@ -33,25 +35,55 @@ export function lineTotal(line: Pick<PricedLine, "unitPriceCents" | "quantity">)
   return line.unitPriceCents * line.quantity;
 }
 
-export function shippingFor(subtotalCents: number, containsLiveAnimals: boolean): Pick<OrderTotals, "shippingCents" | "shippingMethod" | "shippingLabel"> {
-  const s = siteConfig.shipping;
-  if (containsLiveAnimals) {
-    // One overnight insulated box covers the animals and any supplies in the order.
-    return { shippingCents: s.liveAnimalOvernightCents, shippingMethod: "live-overnight", shippingLabel: "Overnight live animal shipping" };
-  }
-  if (subtotalCents >= s.freeStandardOverCents) {
-    return { shippingCents: 0, shippingMethod: "free-standard", shippingLabel: "Free standard shipping" };
-  }
-  return { shippingCents: s.standardCents, shippingMethod: "standard", shippingLabel: "Standard shipping (3–5 business days)" };
+/** Tax on the subtotal, rounded to the cent. 0 unless siteConfig.tax is enabled. */
+export function taxFor(subtotalCents: number) {
+  const t = siteConfig.tax;
+  return t.enabled ? Math.round(subtotalCents * t.rate) : 0;
 }
 
 export function computeTotals(lines: Pick<PricedLine, "unitPriceCents" | "quantity" | "isLiveAnimal">[]): OrderTotals {
   const subtotalCents = lines.reduce((sum, l) => sum + lineTotal(l), 0);
-  const containsLiveAnimals = lines.some((l) => l.isLiveAnimal);
-  const shipping = lines.length ? shippingFor(subtotalCents, containsLiveAnimals) : { shippingCents: 0, shippingMethod: "standard" as const, shippingLabel: "" };
-  // Sales tax is calculated by Stripe Tax when enabled; 0 here keeps totals honest until then.
-  const taxCents = 0;
-  return { subtotalCents, ...shipping, taxCents, totalCents: subtotalCents + shipping.shippingCents + taxCents, containsLiveAnimals };
+  const taxCents = taxFor(subtotalCents);
+  return {
+    subtotalCents,
+    taxCents,
+    totalCents: subtotalCents + taxCents,
+    itemCount: lines.reduce((n, l) => n + l.quantity, 0),
+    containsLiveAnimals: lines.some((l) => l.isLiveAnimal),
+  };
+}
+
+/**
+ * Why live animals can't ship to this address, or null if they can. Uses the list in
+ * siteConfig.liveAnimals; supplies ship everywhere.
+ */
+export function liveAnimalShippingProblem(country: string, region: string): string | null {
+  const l = siteConfig.liveAnimals;
+  if (!country) return null;
+  if (!l.shipToCountries.includes(country)) {
+    return `Sorry, we can't ship live animals to ${countryName(country)}. Remove the animals from your cart to order supplies, which ship worldwide.`;
+  }
+  if (country === "US" && region && l.excludedUsStates.includes(region)) {
+    return `Sorry, we can't ship live animals to ${regionName(country, region)}. Remove the animals from your cart to order supplies.`;
+  }
+  return null;
+}
+
+const isoDay = (d: Date) => d.toISOString().slice(0, 10);
+
+/**
+ * Delivery dates a customer can choose for live animals: the day after each ship day
+ * (so always a weekday), starting after the payment/packing lead time.
+ */
+export function liveDeliveryDates(now = new Date(), count = 10): string[] {
+  const s = siteConfig.shipping;
+  const dates: string[] = [];
+  const day = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + s.liveAnimalLeadDays));
+  while (dates.length < count) {
+    if (s.liveAnimalShipWeekdays.includes(day.getUTCDay())) dates.push(isoDay(new Date(day.getTime() + 86_400_000)));
+    day.setUTCDate(day.getUTCDate() + 1);
+  }
+  return dates;
 }
 
 export type CartProblem = { slug: string; message: string };

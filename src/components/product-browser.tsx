@@ -187,7 +187,7 @@ export function ProductBrowser({ products, categories }: Props) {
           <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {visible.map((p, i) => (
               <li key={p.id} className="relative">
-                <ProductCard product={p} priority={i < 3 && current === 1} headingLevel="h2" />
+                <ProductCard product={p} priority={i < 2 && current === 1} headingLevel="h2" />
               </li>
             ))}
           </ul>

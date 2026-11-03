@@ -1,16 +1,16 @@
 import "server-only";
 import crypto from "node:crypto";
 import { cookies } from "next/headers";
+import { getUser } from "@/lib/auth/server";
 import { getLiveStock, getProductsBySlugs, toCard, type ProductCardData } from "@/lib/catalog";
-import { isSupabaseConfigured } from "@/lib/env";
+import * as carts from "@/lib/db/carts";
+import { db, isDatabaseConfigured } from "@/lib/db/pool";
 import { MAX_QUANTITY_PER_LINE, computeTotals, validateLines, type CartProblem, type OrderTotals, type PricedLine } from "@/lib/pricing";
-import { createAdminClient, isServiceRoleConfigured } from "@/lib/supabase/admin";
-import { getUser } from "@/lib/supabase/server";
 
-type Entry = { slug: string; quantity: number };
+type Entry = carts.CartEntry;
 
 const CART_ID_COOKIE = "sh_cart_id";
-const CART_DATA_COOKIE = "sh_cart"; // fallback when Supabase isn't configured
+const CART_DATA_COOKIE = "sh_cart"; // fallback when no database is configured
 const COOKIE_OPTIONS = {
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
@@ -19,10 +19,8 @@ const COOKIE_OPTIONS = {
   maxAge: 60 * 60 * 24 * 30,
 };
 
-const dbEnabled = () => isSupabaseConfigured && isServiceRoleConfigured();
-
 function secret() {
-  const s = process.env.CART_COOKIE_SECRET || process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const s = process.env.CART_COOKIE_SECRET;
   if (!s && process.env.NODE_ENV === "production") throw new Error("CART_COOKIE_SECRET is not set");
   return s || "development-only-cart-secret";
 }
@@ -43,39 +41,19 @@ function unsign(signed: string | undefined): string | null {
   return a.length === b.length && crypto.timingSafeEqual(a, b) ? value : null;
 }
 
-// ───────────── Storage: Supabase (service role) ─────────────
+// ───────────── Storage: Neon Postgres ─────────────
 
+/** Signed-in users have one cart; guests are identified by the signed cart cookie. */
 async function findCartId(create: boolean): Promise<string | null> {
-  const db = createAdminClient();
   const user = await getUser();
-  if (user) {
-    const { data } = await db.from("carts").select("id").eq("user_id", user.id).maybeSingle();
-    if (data) return data.id;
-    if (!create) return null;
-    const { data: created, error } = await db.from("carts").insert({ user_id: user.id }).select("id").single();
-    if (error) throw new Error(error.message);
-    return created.id;
-  }
+  if (user) return carts.userCartId(db(), user.id, create);
   const jar = await cookies();
   const cookieId = unsign(jar.get(CART_ID_COOKIE)?.value);
-  if (cookieId) {
-    const { data } = await db.from("carts").select("id").eq("id", cookieId).is("user_id", null).maybeSingle();
-    if (data) return data.id;
-  }
+  if (cookieId && (await carts.guestCartExists(db(), cookieId))) return cookieId;
   if (!create) return null;
-  const { data: created, error } = await db.from("carts").insert({}).select("id").single();
-  if (error) throw new Error(error.message);
-  jar.set(CART_ID_COOKIE, sign(created.id), COOKIE_OPTIONS);
-  return created.id;
-}
-
-async function dbEntries(cartId: string): Promise<Entry[]> {
-  const { data } = await createAdminClient()
-    .from("cart_items")
-    .select("quantity, products!inner(slug)")
-    .eq("cart_id", cartId)
-    .order("created_at");
-  return ((data ?? []) as unknown as { quantity: number; products: { slug: string } }[]).map((r) => ({ slug: r.products.slug, quantity: r.quantity }));
+  const id = await carts.createGuestCart(db());
+  jar.set(CART_ID_COOKIE, sign(id), COOKIE_OPTIONS);
+  return id;
 }
 
 // ───────────── Storage: signed cookie fallback ─────────────
@@ -93,9 +71,9 @@ async function cookieEntries(): Promise<Entry[]> {
 // ───────────── Public API ─────────────
 
 export async function readEntries(): Promise<Entry[]> {
-  if (!dbEnabled()) return cookieEntries();
+  if (!isDatabaseConfigured()) return cookieEntries();
   const id = await findCartId(false);
-  return id ? dbEntries(id) : [];
+  return id ? carts.cartEntries(db(), id) : [];
 }
 
 /** Sets the quantity for a product (0 removes it). `mode: "add"` adds to the existing quantity. */
@@ -112,15 +90,9 @@ export async function setQuantity(slug: string, quantity: number, mode: "set" | 
     notice = `Only ${stock} available — we've added the maximum.`;
   }
 
-  if (dbEnabled()) {
-    const db = createAdminClient();
+  if (isDatabaseConfigured()) {
     const cartId = await findCartId(next > 0);
-    if (!cartId) return { notice };
-    const { data: row } = await db.from("products").select("id").eq("slug", slug).single();
-    if (!row) throw new CartError("That product is no longer available.");
-    if (next <= 0) await db.from("cart_items").delete().eq("cart_id", cartId).eq("product_id", row.id);
-    else await db.from("cart_items").upsert({ cart_id: cartId, product_id: row.id, quantity: next }, { onConflict: "cart_id,product_id" });
-    await db.from("carts").update({ updated_at: new Date().toISOString() }).eq("id", cartId);
+    if (cartId) await carts.setCartItem(db(), cartId, slug, next);
   } else {
     const entries = (await cookieEntries()).filter((e) => e.slug !== slug);
     if (next > 0) entries.push({ slug, quantity: next });
@@ -129,38 +101,23 @@ export async function setQuantity(slug: string, quantity: number, mode: "set" | 
   return { notice };
 }
 
-/** The current visitor's cart id (stored on the Stripe session so the webhook can empty it after payment). */
+/** The current visitor's cart id (stored on the order). */
 export async function currentCartId() {
-  return dbEnabled() ? findCartId(false) : null;
+  return isDatabaseConfigured() ? findCartId(false) : null;
 }
 
-/** Empties a cart by id. Used by the Stripe webhook, which has no access to the shopper's cookies. */
+/** Empties a cart by id. Used after an order is placed. */
 export async function clearCartById(cartId: string) {
-  await createAdminClient().from("cart_items").delete().eq("cart_id", cartId);
+  await carts.clearCart(db(), cartId);
 }
 
 /** After sign-in, move items from the guest cart into the user's cart. */
 export async function mergeGuestCart(userId: string) {
-  if (!dbEnabled()) return;
+  if (!isDatabaseConfigured()) return;
   const jar = await cookies();
   const guestId = unsign(jar.get(CART_ID_COOKIE)?.value);
   if (!guestId) return;
-  const db = createAdminClient();
-  const { data: guest } = await db.from("carts").select("id").eq("id", guestId).is("user_id", null).maybeSingle();
-  if (guest) {
-    let { data: userCart } = await db.from("carts").select("id").eq("user_id", userId).maybeSingle();
-    if (!userCart) userCart = (await db.from("carts").insert({ user_id: userId }).select("id").single()).data;
-    if (userCart) {
-      const { data: items } = await db.from("cart_items").select("product_id, quantity").eq("cart_id", guest.id);
-      const { data: existing } = await db.from("cart_items").select("product_id, quantity").eq("cart_id", userCart.id);
-      const qty = new Map((existing ?? []).map((i) => [i.product_id as string, i.quantity as number]));
-      for (const item of items ?? []) {
-        const merged = Math.min((qty.get(item.product_id) ?? 0) + item.quantity, MAX_QUANTITY_PER_LINE);
-        await db.from("cart_items").upsert({ cart_id: userCart.id, product_id: item.product_id, quantity: merged }, { onConflict: "cart_id,product_id" });
-      }
-      await db.from("carts").delete().eq("id", guest.id);
-    }
-  }
+  await carts.mergeGuestCart(db(), guestId, userId);
   jar.delete(CART_ID_COOKIE);
 }
 

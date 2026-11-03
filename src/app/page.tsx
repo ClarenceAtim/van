@@ -8,7 +8,8 @@ import { TrustBadges } from "@/components/trust-badges";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { getBestSellers, getCategories, getFeatured, getProductsByCategory, toCard } from "@/lib/catalog";
-import { getGuides } from "@/lib/guides";
+import { PostCard } from "@/components/blog/post-card";
+import { getPosts } from "@/lib/blog";
 import { pageMetadata, websiteJsonLd } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
@@ -36,7 +37,7 @@ export default async function HomePage() {
   const [featured, bestSellers, categories, animals] = await Promise.all([getFeatured(12), getBestSellers(8), getCategories(), getProductsByCategory("live-reptiles")]);
   const featuredAnimals = featured.filter((p) => p.is_live_animal).slice(0, 4);
   const featuredSupplies = bestSellers.filter((p) => !p.is_live_animal).slice(0, 4);
-  const guides = getGuides().slice(0, 3);
+  const latestPosts = getPosts().slice(0, 3);
   const hero = animals.find((p) => p.slug === "panther-chameleon-ambilobe")?.images[0] ?? animals[0]?.images[0];
 
   return (
@@ -60,7 +61,7 @@ export default async function HomePage() {
           </div>
           {hero && (
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/10">
-              <Image src={hero.url} alt={hero.alt} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
+              <Image src={hero.url} alt={hero.alt} fill preload fetchPriority="high" sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
             </div>
           )}
         </div>
@@ -133,20 +134,21 @@ export default async function HomePage() {
           </ul>
         </section>
 
-        {guides.length > 0 && (
-          <section aria-labelledby="guides-heading" className="rounded-3xl bg-muted p-6 sm:p-10">
-            <div className="mb-6 flex items-center gap-3">
-              <BookOpen className="size-7 text-primary" aria-hidden />
-              <h2 id="guides-heading" className="text-3xl font-semibold">Free care guides</h2>
+        {latestPosts.length > 0 && (
+          <section aria-labelledby="blog-heading" className="rounded-3xl bg-muted p-6 sm:p-10">
+            <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <BookOpen className="size-7 text-primary" aria-hidden />
+                <h2 id="blog-heading" className="text-3xl font-semibold">From the blog</h2>
+              </div>
+              <Link href="/blog" className="inline-flex items-center gap-1 font-medium text-primary hover:underline">
+                All articles <ArrowRight className="size-4" aria-hidden />
+              </Link>
             </div>
             <ul className="grid gap-5 md:grid-cols-3">
-              {guides.map((g) => (
-                <li key={g.slug}>
-                  <Link href={`/care-guides/${g.slug}`} className="block h-full rounded-2xl bg-card p-5 transition-shadow hover:shadow-md">
-                    <p className="text-xs font-semibold tracking-wide text-leaf uppercase">{g.readingMinutes} min read</p>
-                    <h3 className="mt-2 text-xl font-semibold">{g.title}</h3>
-                    <p className="mt-2 text-sm text-muted-foreground">{g.description}</p>
-                  </Link>
+              {latestPosts.map((p) => (
+                <li key={p.slug}>
+                  <PostCard post={p} headingLevel="h3" />
                 </li>
               ))}
             </ul>
