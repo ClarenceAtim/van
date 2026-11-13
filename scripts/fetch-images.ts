@@ -49,7 +49,7 @@ type Candidate = {
   onUse?: () => Promise<void>;
 };
 
-const BAD_TITLE = /(skeleton|skull|museum|specimen|map|drawing|illustration|diagram|stamp|logo|dead|roadkill|preserved|x-ray|distribution|range|bone|fossil|painting|engraving|svg|plate|book scan|frieze|relief|sculpture|carving|limestone|vase|statue|coin)/i;
+const BAD_TITLE = /(skeleton|skull|museum|museo|specimen|map|drawing|illustration|diagram|stamp|logo|dead|roadkill|preserved|x-ray|distribution|range|bone|fossil|painting|engraving|svg|plate|book scan|frieze|relief|sculpture|carving|limestone|vase|statue|coin)/i;
 const OK_LICENSE = /^(cc0|cc-zero|public domain|pd\b|pd-|cc by(-sa)? \d|cc-by(-sa)?-\d)/i;
 const BAD_LICENSE = /(nc|nd|non-?commercial|no-?deriv)/i;
 
