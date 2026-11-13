@@ -60,7 +60,7 @@
     "@types/react-dom": "^19",
     "dotenv": "^18.0.9",
     "eslint": "^9",
-    "eslint-config-next": "^16.4.3",
+    "eslint-config-next": "^16.4.6",
     "lighthouse": "^13.6.0",
     "shadcn": "^4.23.0",
     "tailwindcss": "^4",
