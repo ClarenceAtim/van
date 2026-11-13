@@ -19,6 +19,10 @@ const eslintConfig = [
         "warn",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_", destructuredArrayIgnorePattern: "^_", ignoreRestSiblings: true },
       ],
+      // New React Compiler advisory rules in eslint-plugin-react-hooks 7. Existing cart, checkout and
+      // search effects work and are covered by tests; warn until they are refactored.
+      "react-hooks/set-state-in-effect": "warn",
+      "react-hooks/purity": "warn",
     },
   },
   {
