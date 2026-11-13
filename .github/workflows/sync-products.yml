@@ -1,4 +1,4 @@
-name: Sync products to Supabase
+name: Sync products to Neon
 
 on:
   push:
@@ -35,11 +35,10 @@ jobs:
       # Pull requests only validate, so a bad edit is caught before it reaches main.
       - name: Validate product data
         run: npm run validate:products
-      - name: Sync to Supabase
+      - name: Sync to Neon
         if: github.event_name != 'pull_request'
         run: npm run sync:products
         env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
           NEXT_PUBLIC_SITE_URL: ${{ secrets.SITE_URL }}
           REVALIDATE_SECRET: ${{ secrets.REVALIDATE_SECRET }}
