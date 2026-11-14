@@ -50,8 +50,8 @@ export default async function ProductPage({ params }: Props) {
   const { category: categorySlug, slug } = await params;
   const [product, category] = await Promise.all([getProduct(categorySlug, slug), getCategory(categorySlug)]);
   if (!product || !category) notFound();
-  const [{ reviews, rating }, related] = await Promise.all([getReviews(product.id), getRelated(product)]);
-  const alsoBought = await getAlsoBought(product, related.map((p) => p.id));
+  const related = await getRelated(product);
+  const [{ reviews, rating }, alsoBought] = await Promise.all([getReviews(product.id), getAlsoBought(product, related.map((p) => p.id))]);
   const faqs = extractFaqs(product.long_description);
   const onSale = product.compare_at_price_cents != null && product.compare_at_price_cents > product.price_cents;
   const lowStock = product.stock_quantity > 0 && product.stock_quantity <= 3;
