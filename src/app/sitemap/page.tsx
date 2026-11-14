@@ -23,7 +23,6 @@ export default async function SitemapPage() {
     ...getPages().map((p) => ({ href: `/${p.slug}`, label: p.title })),
     { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact Us" },
-    { href: "/credits", label: "Image Credits" },
   ].sort((a, b) => a.label.localeCompare(b.label));
 
   return (

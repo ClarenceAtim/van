@@ -14,7 +14,7 @@ export function ProductCard({ product, priority = false, headingLevel = "h3" }: 
       <Link href={href} className="relative block aspect-[4/3] overflow-hidden bg-muted" tabIndex={-1} aria-hidden>
         {product.image ? (
           <Image
-            src={product.image.url}
+            src={product.image.thumbnail_url ?? product.image.url}
             alt={product.image.alt}
             fill
             sizes="(min-width: 1280px) 300px, (min-width: 768px) 33vw, 50vw"
