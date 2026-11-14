@@ -1,12 +1,15 @@
 import { siteConfig } from "@/config/site";
 
-/** SVG wordmark: a scale-pattern leaf mark plus the store name. */
+/** SVG wordmark: a snake forming an S plus the store name. */
 export function Logo({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 250 40" role="img" aria-label={siteConfig.name} className={className}>
       <g>
-        <path d="M20 2C9 8 4 17 4 26c0 7 6 12 16 12s16-5 16-12C36 17 31 8 20 2Z" fill="var(--primary)" />
-        <path d="M12 22c2.5-2 5.5-2 8 0 2.5-2 5.5-2 8 0M10 29c3-2.2 6.8-2.2 10 0 3.2-2.2 7-2.2 10 0M15 15.5c1.7-1.4 3.4-1.4 5 0 1.6-1.4 3.3-1.4 5 0" fill="none" stroke="var(--sand)" strokeWidth="2" strokeLinecap="round" />
+        <path d="M29 8 C17 8 13 13 19 18 C25 23 25 29 15 32" fill="none" stroke="var(--primary)" strokeWidth="6.5" strokeLinecap="round" />
+        <path d="M29 8 C17 8 13 13 19 18 C25 23 25 29 15 32" fill="none" stroke="var(--sand)" strokeWidth="1.8" strokeLinecap="round" strokeDasharray="0.1 4.5" />
+        <circle cx="29" cy="8" r="5" fill="var(--primary)" />
+        <circle cx="30.6" cy="6.4" r="1.3" fill="var(--sand)" />
+        <path d="M33.5 9.5 L37 8.5 M33.5 9.5 L36.5 12" fill="none" stroke="#c9a24b" strokeWidth="1.2" strokeLinecap="round" />
       </g>
       <text x="46" y="27" fontFamily="var(--font-display), Georgia, serif" fontSize="22" fontWeight="600" fill="currentColor" letterSpacing="-0.3">
         ScaleHaven
