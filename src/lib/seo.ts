@@ -96,6 +96,20 @@ export function breadcrumbJsonLd(items: { name: string; href: string }[]) {
   };
 }
 
+/** Structured data for a listing page: the products visible on the current page. */
+export function itemListJsonLd(products: { name: string; slug: string; category: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: products.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: p.name,
+      url: absoluteUrl(productPath(p)),
+    })),
+  };
+}
+
 export function productJsonLd(p: CatalogProduct, rating: Rating | null, reviews: Review[]) {
   return {
     "@context": "https://schema.org",

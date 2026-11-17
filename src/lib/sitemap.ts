@@ -44,7 +44,6 @@ export async function getSitemapGroups(): Promise<Record<SitemapGroup, SitemapEn
     ...getPages().map((p) => ({ loc: absoluteUrl(`/${p.slug}`), lastmod: p.updated, changefreq: "monthly" as const, priority: 0.4 })),
     { loc: absoluteUrl("/faq"), changefreq: "monthly", priority: 0.4 },
     { loc: absoluteUrl("/contact"), changefreq: "monthly", priority: 0.4 },
-    { loc: absoluteUrl("/credits"), lastmod: newest, changefreq: "monthly", priority: 0.3 },
     { loc: absoluteUrl("/sitemap"), lastmod: newest, changefreq: "weekly", priority: 0.3 },
   ];
 

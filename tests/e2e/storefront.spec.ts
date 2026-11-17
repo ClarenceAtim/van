@@ -24,12 +24,12 @@ test.describe("storefront", () => {
     expect(values).toEqual([...values].sort((a, b) => a - b));
   });
 
-  test("product page shows price, stock, care sheet, photo credit and Product JSON-LD", async ({ page }) => {
+  test("product page shows price, stock, care sheet and Product JSON-LD", async ({ page }) => {
     await page.goto("/shop/live-reptiles/piebald-ball-python");
     await expect(page.getByRole("heading", { level: 1, name: "Ball Python – Piebald" })).toBeVisible();
     await expect(page.getByText("$399.00").first()).toBeVisible();
     await expect(page.getByRole("heading", { name: "Care sheet" })).toBeVisible();
-    await expect(page.getByText(/Photo: .* via Wikimedia Commons/)).toBeVisible();
+    await expect(page.getByText(/Photo:/)).toHaveCount(0);
     const ld = await page.locator('script[type="application/ld+json"]').allTextContents();
     const product = ld.map((s) => JSON.parse(s)).find((d) => d["@type"] === "Product");
     expect(product.offers.price).toBe("399.00");
@@ -58,12 +58,13 @@ test.describe("storefront", () => {
     await expect(page).toHaveURL("/cart");
     await page.getByRole("main").getByRole("button", { name: "Increase quantity of T5 HO UVB 12% Tube – 34 in" }).click();
     await expect(page.getByText("$138.00").first()).toBeVisible();
-    // Over $99 → free standard shipping
-    await expect(page.locator('aside[aria-label="Order summary"]').getByText("Free standard shipping", { exact: true })).toBeVisible();
+    // Shipping is confirmed by email — the summary says so, there is no free-shipping line.
+    await expect(page.locator('aside[aria-label="Order summary"]').getByText("Confirmed before you pay", { exact: true })).toBeVisible();
+    await expect(page.locator('aside[aria-label="Order summary"]').getByText("Shipping depends on your country and is confirmed by email before you pay.")).toBeVisible();
 
     await page.getByRole("link", { name: "Continue to checkout" }).click();
     await expect(page.getByRole("heading", { level: 1, name: "Checkout" })).toBeVisible();
-    await expect(page.getByLabel("Shipping state")).toBeVisible();
+    await expect(page.getByLabel("Shipping address")).toBeVisible();
     // No live animals → no age/policy checkbox
     await expect(page.getByText("Live animal policy")).toHaveCount(0);
   });
@@ -73,16 +74,18 @@ test.describe("storefront", () => {
     await page.getByRole("button", { name: "Add to cart" }).click();
     await expect(page.getByRole("dialog", { name: "Your cart" })).toBeVisible();
     await page.goto("/checkout");
-    await expect(page.getByText("Overnight live animal shipping")).toBeVisible();
-    await expect(page.getByRole("checkbox", { name: /I am 18\+ and agree/ })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Live animal delivery" })).toBeVisible();
+    await expect(page.getByText("Live animals ship overnight.")).toBeVisible();
+    await expect(page.getByRole("checkbox", { name: /I am 18 or older/ })).toBeVisible();
+    await expect(page.getByRole("checkbox", { name: /I agree to the Live Animal Policy/ })).toBeVisible();
   });
 
   test("static pages and care guides render", async ({ page }) => {
     for (const [path, heading] of [
       ["/live-arrival-guarantee", "Live Arrival Guarantee"],
       ["/faq", "Frequently asked questions"],
-      ["/care-guides", "Reptile care guides"],
-      ["/credits", "Image credits"],
+      // /care-guides 308-redirects to the blog category page, whose h1 is "Care Guides".
+      ["/care-guides", "Care Guides"],
     ]) {
       await page.goto(path);
       await expect(page.getByRole("heading", { level: 1, name: heading })).toBeVisible();

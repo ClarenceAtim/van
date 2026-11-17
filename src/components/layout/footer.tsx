@@ -22,8 +22,6 @@ const COLUMNS = [
       { href: "/about", label: "About Us" },
       { href: "/blog", label: "Blog" },
       { href: "/blog/category/care-guides", label: "Care Guides" },
-      { href: "/blog/rss.xml", label: "RSS Feed" },
-      { href: "/credits", label: "Image Credits" },
       { href: "/sitemap", label: "Sitemap" },
       { href: "/privacy", label: "Privacy Policy" },
       { href: "/terms", label: "Terms of Service" },

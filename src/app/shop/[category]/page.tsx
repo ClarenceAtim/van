@@ -1,30 +1,38 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { JsonLd } from "@/components/json-ld";
 import { ProductBrowser } from "@/components/product-browser";
 import { siteConfig } from "@/config/site";
 import { getCategories, getCategory, getProductsByCategory, toCard } from "@/lib/catalog";
-import { pageMetadata } from "@/lib/seo";
+import { applyListing, hasActiveFilters, parseListingParams, type ListingSearchParams } from "@/lib/listing";
+import { itemListJsonLd, pageMetadata } from "@/lib/seo";
 
 export const revalidate = 3600;
 export const dynamicParams = false;
 
-type Props = { params: Promise<{ category: string }> };
+type Props = { params: Promise<{ category: string }>; searchParams: Promise<ListingSearchParams> };
 
 export async function generateStaticParams() {
   return (await getCategories()).map((c) => ({ category: c.slug }));
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params, searchParams }: Props) {
   const category = await getCategory((await params).category);
   if (!category) return {};
-  return pageMetadata({ title: category.seo_title, description: category.seo_description, path: `/shop/${category.slug}` });
+  const listing = parseListingParams(await searchParams);
+  // Paginated pages self-canonicalise; filtered views keep the clean canonical.
+  const path = listing.page > 1 && !hasActiveFilters(listing) ? `/shop/${category.slug}?page=${listing.page}` : `/shop/${category.slug}`;
+  return pageMetadata({ title: category.seo_title, description: category.seo_description, path });
 }
 
-export default async function CategoryPage({ params }: Props) {
+export default async function CategoryPage({ params, searchParams }: Props) {
   const category = await getCategory((await params).category);
   if (!category) notFound();
-  const products = await getProductsByCategory(category.slug);
+  const listing = parseListingParams(await searchParams);
+  const all = await getProductsByCategory(category.slug);
+  const { visible, total, pages, current } = applyListing(all, listing);
+  const cards = visible.map(toCard);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
@@ -40,7 +48,8 @@ export default async function CategoryPage({ params }: Props) {
           </Link>
         </p>
       )}
-      <ProductBrowser products={products.map(toCard)} />
+      <ProductBrowser products={cards} total={total} pages={pages} current={current} params={listing} showCare={all.some((p) => p.care_level)} />
+      <JsonLd data={itemListJsonLd(cards)} />
     </div>
   );
 }

@@ -42,6 +42,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  compiler: { removeConsole: process.env.NODE_ENV === "production" ? { exclude: ["error", "warn"] } : false },
   // Admin product image uploads (validated to 5 MB in the action).
   experimental: { serverActions: { bodySizeLimit: "6mb" } },
   images: {
@@ -57,6 +58,9 @@ const nextConfig: NextConfig = {
       { source: "/:path*", headers: securityHeaders },
       { source: "/products/:file*", headers: imageCache },
       { source: "/blog/:file([a-z0-9-]+\\.webp)", headers: imageCache },
+      { source: "/logo.png", headers: imageCache },
+      { source: "/icon.svg", headers: imageCache },
+      { source: "/apple-icon.png", headers: imageCache },
     ];
   },
 };

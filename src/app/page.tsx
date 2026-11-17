@@ -7,7 +7,7 @@ import { ProductCard } from "@/components/product-card";
 import { TrustBadges } from "@/components/trust-badges";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
-import { getBestSellers, getCategories, getFeatured, getProductsByCategory, toCard } from "@/lib/catalog";
+import { getBestSellers, getCategories, getFeatured, getProduct, toCard } from "@/lib/catalog";
 import { PostCard } from "@/components/blog/post-card";
 import { getPosts } from "@/lib/blog";
 import { pageMetadata, websiteJsonLd } from "@/lib/seo";
@@ -34,11 +34,13 @@ const CATEGORY_ICONS: Record<string, typeof Turtle> = {
 };
 
 export default async function HomePage() {
-  const [featured, bestSellers, categories, animals] = await Promise.all([getFeatured(12), getBestSellers(8), getCategories(), getProductsByCategory("live-reptiles")]);
+  const [featured, bestSellers, categories] = await Promise.all([getFeatured(12), getBestSellers(8), getCategories()]);
   const featuredAnimals = featured.filter((p) => p.is_live_animal).slice(0, 4);
   const featuredSupplies = bestSellers.filter((p) => !p.is_live_animal).slice(0, 4);
   const latestPosts = getPosts().slice(0, 3);
-  const hero = animals.find((p) => p.slug === "panther-chameleon-ambilobe")?.images[0] ?? animals[0]?.images[0];
+  // Look the hero animal up directly instead of loading the whole live-reptiles catalogue.
+  const heroProduct = await getProduct("live-reptiles", "panther-chameleon-ambilobe");
+  const hero = heroProduct?.images[0] ?? featured[0]?.images[0];
 
   return (
     <>

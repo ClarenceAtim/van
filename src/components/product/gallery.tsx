@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { ZoomIn } from "lucide-react";
 import dynamic from "next/dynamic";
@@ -71,23 +70,7 @@ export function ProductGallery({ images, name }: { images: ProductImage[]; name:
         </ul>
       )}
 
-      {image.credit && !image.placeholder && (
-        <p className="text-xs text-muted-foreground">
-          {image.representative && <strong className="font-medium text-foreground">Representative photo. </strong>}
-          Photo: {image.credit} ({image.license}).{" "}
-          <Link href="/credits" className="underline underline-offset-2">
-            Image credits
-          </Link>
-          {image.source_url && (
-            <>
-              {" · "}
-              <a href={image.source_url} target="_blank" rel="noopener noreferrer nofollow" className="underline underline-offset-2">
-                Source
-              </a>
-            </>
-          )}
-        </p>
-      )}
+      {image.representative && !image.placeholder && <p className="text-xs text-muted-foreground">Representative photo — the pictured animal is the same species and morph, not the exact animal for sale.</p>}
       {image.placeholder && <p className="text-xs text-muted-foreground">Illustration — product photo coming soon.</p>}
 
       {open && <ZoomDialog image={image} name={name} onClose={() => setOpen(false)} />}
