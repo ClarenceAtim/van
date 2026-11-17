@@ -43,9 +43,18 @@ function fromJson(): CatalogProduct[] {
 const loadAll = unstable_cache(
   async (): Promise<CatalogProduct[]> => {
     if (!isDatabaseConfigured()) return fromJson();
-    const rows = await repo.listActiveProducts<CatalogProduct>(db());
-    // Not synced yet → fall back to repo data rather than show an empty store.
-    return rows.length ? rows : fromJson();
+    try {
+      const rows = await repo.listActiveProducts<CatalogProduct>(db());
+      // Not synced yet → fall back to repo data rather than show an empty store.
+      return rows.length ? rows : fromJson();
+    } catch (error) {
+      // Database unavailable (quota exceeded, outage, suspended compute) → serve
+      // the repo catalogue instead of failing the whole page. The next
+      // revalidation retries the database, so live data resumes automatically
+      // when the database recovers.
+      console.error("Catalogue database query failed, falling back to repo data:", error);
+      return fromJson();
+    }
   },
   ["catalog-all"],
   { tags: [CATALOG_TAG], revalidate: REVALIDATE_SECONDS },
@@ -105,9 +114,14 @@ export async function searchProducts(query: string, limit = 8): Promise<CatalogP
   if (q.length < 2) return [];
   const all = await loadAll();
   if (isDatabaseConfigured()) {
-    const bySlug = new Map(all.map((p) => [p.slug, p]));
-    const slugs = await repo.searchProductSlugs(db(), q, limit);
-    return slugs.map((s) => bySlug.get(s)).filter((p): p is CatalogProduct => !!p);
+    try {
+      const bySlug = new Map(all.map((p) => [p.slug, p]));
+      const slugs = await repo.searchProductSlugs(db(), q, limit);
+      return slugs.map((s) => bySlug.get(s)).filter((p): p is CatalogProduct => !!p);
+    } catch (error) {
+      // Database unavailable → fall through to local matching below.
+      console.error("Product search database query failed, falling back to local matching:", error);
+    }
   }
   const terms = q.toLowerCase().split(/\s+/);
   return all
