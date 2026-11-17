@@ -53,7 +53,7 @@
 }
 
 :root {
-  /* ScaleHaven palette: deep forest green, warm sand, charcoal */
+  /* Heaven palette: deep forest green, warm sand, charcoal */
   --background: oklch(0.995 0.003 95);
   --foreground: oklch(0.24 0.012 155);
   --card: oklch(1 0 0);

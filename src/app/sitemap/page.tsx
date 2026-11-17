@@ -10,7 +10,7 @@ export const revalidate = 3600;
 
 export const metadata = pageMetadata({
   title: "Sitemap",
-  description: "Every shop category, product, blog category and article on ScaleHaven Reptiles, plus our help and policy pages, on one page.",
+  description: "Every shop category, product, blog category and article on Heaven Reptiles, plus our help and policy pages, on one page.",
   path: "/sitemap",
 });
 

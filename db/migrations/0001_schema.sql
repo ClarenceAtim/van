@@ -1,4 +1,4 @@
--- ScaleHaven Reptiles: core schema (Neon Lakebase Postgres).
+-- Heaven Reptiles: core schema (Neon Lakebase Postgres).
 -- Users live in Neon Auth (neon_auth schema); app tables reference them by text id.
 -- Authorization is enforced in the server data layer (src/lib/db), never in the browser.
 

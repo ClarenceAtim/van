@@ -9,7 +9,7 @@ import sharp from "sharp";
 import { productFiles } from "../src/lib/products/load";
 import type { ProductInput } from "../src/lib/products/schema";
 
-const [slug, photo, alt, credit = "ScaleHaven Reptiles"] = process.argv.slice(2);
+const [slug, photo, alt, credit = "Heaven Reptiles"] = process.argv.slice(2);
 if (!slug || !photo || !alt) {
   console.error('Usage: npx tsx scripts/use-own-photo.ts <slug> <photo> "Alt text" ["Credit"]');
   process.exit(1);

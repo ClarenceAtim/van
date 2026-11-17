@@ -12,7 +12,7 @@ export const BLOG_CATEGORIES = [
   { slug: "feeding-nutrition", name: "Feeding & Nutrition", description: "What reptiles eat, how often to feed, feeder insects and rodents, and how to use calcium and vitamin supplements." },
   { slug: "health-wellness", name: "Health & Wellness", description: "Recognize a healthy reptile, spot early signs of illness and know when it's time to see a reptile vet." },
   { slug: "beginner-tips", name: "Beginner Tips", description: "Practical advice for first-time keepers: choosing a reptile, preparing your home and the first weeks together." },
-  { slug: "shop-news", name: "Shop News", description: "New arrivals, restocks and updates from ScaleHaven Reptiles." },
+  { slug: "shop-news", name: "Shop News", description: "New arrivals, restocks and updates from Heaven Reptiles." },
 ] as const;
 
 export type BlogCategory = (typeof BLOG_CATEGORIES)[number];

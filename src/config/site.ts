@@ -3,8 +3,8 @@
  * rules here and the whole site (titles, emails, structured data) follows.
  */
 export const siteConfig = {
-  name: "ScaleHaven Reptiles",
-  shortName: "ScaleHaven",
+  name: "Heaven Reptiles",
+  shortName: "Heaven",
   tagline: "Captive-bred reptiles & expert-chosen supplies",
   description:
     "Healthy captive-bred snakes, geckos, lizards and tortoises with a live arrival guarantee, plus the enclosures, lighting, heating and food to care for them properly.",
@@ -18,14 +18,14 @@ export const siteConfig = {
   /** Tax/VAT added to the order total. Off by default. Example for VAT: { enabled: true, rate: 0.21, label: "VAT (21%)", note: "Prices exclude VAT." } */
   tax: { enabled: false as boolean, rate: 0 as number, label: "Sales tax" as string, note: "" as string },
   contact: {
-    email: "hello@scalehaven.example",
+    email: "hello@heavenreptiles.example",
     phone: "+1 (555) 013-2040",
     hours: "Mon–Fri, 9am–5pm Central",
     address: { street: "1200 Riverbend Rd", city: "Austin", region: "TX", postalCode: "78701", country: "US" },
   },
   social: {
-    instagram: "https://instagram.com/scalehaven",
-    youtube: "https://youtube.com/@scalehaven",
+    instagram: "https://instagram.com/heavenreptiles",
+    youtube: "https://youtube.com/@heavenreptiles",
   },
   /** Countries offered at checkout are in src/config/countries.ts. Shipping cost is confirmed by email per order. */
   shipping: {

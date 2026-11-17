@@ -76,7 +76,7 @@ Answer.
 | `author` | Yes | An ID from [`content/blog/_authors.json`](../content/blog/_authors.json). Add new authors there. |
 | `date` | Yes | Publish date, `YYYY-MM-DD`. Posts are listed newest first. |
 | `updated` | No | Last meaningful update, `YYYY-MM-DD`. Shown on the post and used in the sitemap. |
-| `cover` | Yes | Image path, alt text (describe what's in the photo), credit, license and source URL. Appears on [/credits](/credits). |
+| `cover` | Yes | Image path, alt text (describe what's in the photo), credit, license and source URL. The credit data is kept as an internal record and is not shown on the site. |
 | `featured` | No | `true` puts the post in the large "Featured" slot on `/blog`. Only one post should be featured. |
 | `related_products` | No | Product slugs from `data/products/*.json`, shown as "Shop the products in this guide". |
 | `species` | No | Scientific names. Live-animal product pages for these species link to this post. |

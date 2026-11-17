@@ -221,7 +221,7 @@ describe("admin", () => {
     await orders.savePaymentTemplate(db.q, "zelle", {
       subject: "Order {{order_number}}: total {{total}}",
       body: "Hi {{customer_name}},\n\n{{items}}\n\n{{totals}}\n\nPay by {{payment_method}}:\n{{payment_details}}\n\nBy {{due_date}}.",
-      details: { recipient: "pay@example.com", name: "ScaleHaven LLC" },
+      details: { recipient: "pay@example.com", name: "Heaven Reptiles LLC" },
     });
     const order = (await orders.getOrder(db.q, id))!;
     const draft = await service.confirmationDraft(db.q, order, "zelle", 1495, NOW);
@@ -230,7 +230,7 @@ describe("admin", () => {
     expect(draft.body).toContain("- Digital Thermometer × 2: $30.00");
     expect(draft.body).toContain("Shipping to United States: $14.95");
     expect(draft.body).toContain("Total to pay: $44.95");
-    expect(draft.body).toContain("Zelle email or phone: pay@example.com\nName on the account: ScaleHaven LLC");
+    expect(draft.body).toContain("Zelle email or phone: pay@example.com\nName on the account: Heaven Reptiles LLC");
 
     // A method without saved details shows a placeholder for the admin to fill in
     expect((await service.confirmationDraft(db.q, order, "sepa", 1495, NOW)).detailsMissing).toBe(true);

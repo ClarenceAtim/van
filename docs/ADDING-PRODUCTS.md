@@ -23,7 +23,7 @@ When you save a change to one of these files on the `main` branch, a GitHub Acti
 4. Press **Ctrl+F** (or **Cmd+F** on a Mac) and search for the product's `slug`, e.g. `"normal-ball-python"`.
 5. Change the value you want, for example `"price_cents": 7900` → `"price_cents": 8900`.
 6. Click **Commit changes…**, write a short message like "Raise normal ball python price", and choose **Commit directly to the main branch**.
-7. Click the **Actions** tab to watch **Sync products to Supabase**. A green tick means the site is updated; a red cross means something in the file needs fixing (see [When the check fails](#when-the-check-fails)).
+7. Click the **Actions** tab to watch **Sync products to Neon**. A green tick means the site is updated; a red cross means something in the file needs fixing (see [When the check fails](#when-the-check-fails)).
 
 > **Prices are in cents.** `7900` = $79.00, `1250` = $12.50. Never use a decimal point.
 
@@ -127,7 +127,7 @@ Many equipment products and some animal morphs use a generated illustration. The
    This converts it to an optimized WebP and thumbnail, records the credit as your own work, and removes the placeholder flag.
 3. Commit and push. The Action uploads the new image and updates the site.
 
-**Without a computer** (GitHub only): convert your photo to WebP at about 1600 px wide (for example with [squoosh.app](https://squoosh.app)), then use **Add file → Upload files** in `public/products/` to upload it as `<slug>-1.webp`, replacing the old one. Then edit the product's `images` entry: set the `alt` text, set `"credit": "ScaleHaven Reptiles"`, set `"license": "Own work"`, and delete the `"placeholder": true` line.
+**Without a computer** (GitHub only): convert your photo to WebP at about 1600 px wide (for example with [squoosh.app](https://squoosh.app)), then use **Add file → Upload files** in `public/products/` to upload it as `<slug>-1.webp`, replacing the old one. Then edit the product's `images` entry: set the `alt` text, set `"credit": "Heaven Reptiles"`, set `"license": "Own work"`, and delete the `"placeholder": true` line.
 
 Only use photos you took yourself, photos your supplier gave you permission to use, or photos with a free commercial license. **Never** copy images from Google, other shops or breeders.
 

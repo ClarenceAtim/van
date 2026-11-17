@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props) {
   const page = Number((await params).page);
   return pageMetadata({
     title: `Reptile Care Blog – Page ${page}`,
-    description: `Older reptile care articles from ScaleHaven, page ${page}: care guides, habitat setup, feeding and health advice for pet reptiles.`,
+    description: `Older reptile care articles from Heaven, page ${page}: care guides, habitat setup, feeding and health advice for pet reptiles.`,
     path: `/blog/page/${page}`,
   });
 }

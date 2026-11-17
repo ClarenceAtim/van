@@ -9,7 +9,7 @@ import { absoluteUrl } from "@/lib/seo";
 
 /**
  * Addresses come from env variables so they can change when you get a domain:
- *   ORDER_FROM_EMAIL          who emails are from, e.g. "ScaleHaven Reptiles <orders@yourdomain.com>"
+ *   ORDER_FROM_EMAIL          who emails are from, e.g. "Heaven Reptiles <orders@yourdomain.com>"
  *   ORDER_REPLY_TO_EMAIL      where customer replies go (your inbox)
  *   ORDER_NOTIFICATION_EMAIL  where "New order" alerts go
  * Resend only sends from domains you've verified; until then use its test sender (onboarding@resend.dev).

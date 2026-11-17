@@ -1,6 +1,6 @@
 ---
 title: Terms of Service
-description: The terms that apply when you use the ScaleHaven Reptiles website and buy reptiles or reptile supplies from us.
+description: The terms that apply when you use the Heaven Reptiles website and buy reptiles or reptile supplies from us.
 updated: 2026-11-01
 ---
 

@@ -1,7 +1,7 @@
 import { SignupForm } from "@/components/auth/signup-form";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata({ title: "Create an account", description: "Create a ScaleHaven Reptiles account.", path: "/signup", noIndex: true });
+export const metadata = pageMetadata({ title: "Create an account", description: "Create a Heaven Reptiles account.", path: "/signup", noIndex: true });
 
 export default function SignupPage() {
   return (

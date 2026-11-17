@@ -119,7 +119,7 @@ async function uploadImage(q: Queryable, productId: string, slug: string, file: 
       alt: alt.slice(0, 200),
       width: full.info.width,
       height: full.info.height,
-      credit: "ScaleHaven Reptiles",
+      credit: "Heaven Reptiles",
       license: "Own work",
       source_url: "",
       placeholder: false,

@@ -8,7 +8,7 @@ export function Logo({ className }: { className?: string }) {
       <Image src="/logo.webp" alt="" width={80} height={80} className="h-full w-auto rounded-md" priority />
       <span className="flex items-baseline gap-1.5">
         <span style={{ fontFamily: "var(--font-display), Georgia, serif" }} className="text-[20px] font-semibold tracking-[-0.3px] text-current">
-          ScaleHaven
+          Heaven
         </span>
         <span style={{ fontFamily: "var(--font-sans), system-ui, sans-serif" }} className="text-[10px] font-semibold tracking-[2.2px] text-[var(--leaf)]">
           REPTILES

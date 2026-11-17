@@ -29,7 +29,7 @@ const argValue = (flag: string) => {
 const representative = new Set(argValue("--representative")?.split(",").filter(Boolean));
 
 const OUT_DIR = path.join(process.cwd(), "public", "products");
-const UA = "ScaleHavenReptiles-ImageFetcher/1.0 (https://github.com/ClarenceAtim/van)";
+const UA = "HeavenReptiles-ImageFetcher/1.0 (https://github.com/ClarenceAtim/van)";
 const MIN_WIDTH = Number(argValue("--min-width") ?? 900);
 const MAX_WIDTH = 1600;
 const THUMB_WIDTH = 600;
@@ -187,7 +187,7 @@ async function savePlaceholder(p: ProductInput): Promise<ProductImage> {
   fs.writeFileSync(path.join(OUT_DIR, `${p.slug}-1.svg`), svg);
   return writeVariants(p.slug, Buffer.from(svg), {
     alt: `Illustration of ${p.name}`,
-    credit: "ScaleHaven Reptiles (placeholder illustration)",
+    credit: "Heaven Reptiles (placeholder illustration)",
     license: "Own work",
     source_url: "",
     placeholder: true,

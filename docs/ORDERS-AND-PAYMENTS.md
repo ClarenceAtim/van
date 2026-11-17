@@ -136,7 +136,7 @@ Until you verify a domain, Resend only delivers to **your own Resend account ema
 ### After you buy a domain and business email
 
 1. In Resend, go to **Domains → Add domain**. Add the DNS records it shows at your domain registrar and wait for "Verified".
-2. Set `ORDER_FROM_EMAIL` to, for example, `ScaleHaven Reptiles <orders@yourdomain.com>`.
+2. Set `ORDER_FROM_EMAIL` to, for example, `Heaven Reptiles <orders@yourdomain.com>`.
 3. Set `ORDER_REPLY_TO_EMAIL` and `ORDER_NOTIFICATION_EMAIL` to your business inbox.
 4. Also update `contact.email` in `src/config/site.ts`. It is shown on the website and in emails.
 5. Redeploy. Then place a test order to yourself.

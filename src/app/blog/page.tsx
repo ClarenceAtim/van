@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Reptile Care Blog: Guides, Setup & Feeding Tips",
-  description: "Expert reptile care articles from ScaleHaven: species care guides, enclosure and UVB setup, feeding, supplements, health checks and beginner tips.",
+  description: "Expert reptile care articles from Heaven: species care guides, enclosure and UVB setup, feeding, supplements, health checks and beginner tips.",
   path: "/blog",
 });
 

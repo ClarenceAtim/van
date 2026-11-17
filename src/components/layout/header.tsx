@@ -18,7 +18,7 @@ export function Header() {
       </div>
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
         <MobileMenu items={[...NAV, { href: "/blog", label: "Blog & Care Guides" }]} />
-        <Link href="/" className="shrink-0 rounded-md text-foreground" aria-label="ScaleHaven Reptiles home">
+        <Link href="/" className="shrink-0 rounded-md text-foreground" aria-label="Heaven Reptiles home">
           <Logo className="h-8 w-auto sm:h-9" />
         </Link>
         <SearchBox className="mx-auto hidden w-full max-w-md md:block" />

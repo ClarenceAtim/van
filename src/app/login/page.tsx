@@ -2,7 +2,7 @@ import { LoginForms } from "@/components/auth/login-forms";
 import { pageMetadata } from "@/lib/seo";
 import { safeRedirect } from "@/lib/validation";
 
-export const metadata = pageMetadata({ title: "Sign in", description: "Sign in to your ScaleHaven Reptiles account.", path: "/login", noIndex: true });
+export const metadata = pageMetadata({ title: "Sign in", description: "Sign in to your Heaven Reptiles account.", path: "/login", noIndex: true });
 
 type Props = { searchParams: Promise<{ next?: string; error?: string }> };
 

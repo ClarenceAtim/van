@@ -13,7 +13,7 @@ Products still not OK are listed with the photo they need in [IMAGES-TODO.md](IM
 
 **Statuses:** OK = real photo that loads and matches the product. PLACEHOLDER = generic or unrelated stand-in. MISMATCH = real photo of the wrong animal or item. LOW QUALITY = blurry, cluttered, too small in frame or under 1000 px. _Representative_ = a real photo of the same species, morph type or kind of item, labelled "Representative photo" on the product page.
 
-**Sources** (credit, license and source URL are stored in each product's `images[]` and shown on /credits):
+**Sources** (credit, license and source URL are stored in each product's `images[]` as an internal record and are not shown on the site):
 - Unsplash, under the Unsplash License. The API download endpoint was notified for each photo used.
 - Wikimedia Commons, under CC0, Public Domain, CC BY or CC BY-SA only.
 - Openverse was also requested, but its API returned a Cloudflare bot challenge (HTTP 403), so it was not used.

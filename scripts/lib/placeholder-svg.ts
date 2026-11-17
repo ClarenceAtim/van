@@ -99,6 +99,6 @@ export function placeholderSvg(p: ProductInput) {
   <circle cx="800" cy="470" r="300" fill="#fff" fill-opacity=".45"/>
   <g transform="translate(600 270)">${iconFor(p)}</g>
   ${text}
-  <text x="800" y="1140" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="6" fill="${GREEN}" text-anchor="middle">SCALEHAVEN REPTILES</text>
+  <text x="800" y="1140" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="6" fill="${GREEN}" text-anchor="middle">HEAVEN REPTILES</text>
 </svg>`;
 }
