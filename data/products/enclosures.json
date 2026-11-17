@@ -348,15 +348,15 @@
     "sku": "EN-PVC-622",
     "images": [
       {
-        "url": "/products/pvc-enclosure-6x2x2-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-6x2x2-1-thumb.webp",
-        "width": 800,
-        "height": 1066,
-        "alt": "Large planted reptile enclosure",
-        "credit": "Jitka Erbenová ( cheva ) via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:ZOO_D%C4%9B%C4%8D%C3%ADn_-_Rajsk%C3%A9_ostrovy.jpg",
-        "representative": true
+        "alt": "Planted reptile enclosure with driftwood and ferns",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 1067,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_22.jpg",
+        "thumbnail_url": "/products/pvc-enclosure-6x2x2-2-thumb.webp",
+        "url": "/products/pvc-enclosure-6x2x2-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -1356,14 +1356,15 @@
     "sku": "EN-GT-241212",
     "images": [
       {
-        "url": "/products/glass-terrarium-24x12x12-top-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-24x12x12-top-opening-1-thumb.webp",
+        "url": "/products/glass-terrarium-24x12x12-top-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-24x12x12-top-opening-2-thumb.webp",
         "width": 1280,
-        "height": 923,
-        "alt": "Top-opening glass terrarium 24×12×12 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "height": 960,
+        "alt": "Clear glass terrarium tank with baby tortoises and wooden shavings",
+        "credit": "Richard Mayer via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_of_turtles_and_wooden_shavings.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1403,14 +1404,15 @@
     "sku": "EN-GT-241812",
     "images": [
       {
-        "url": "/products/glass-terrarium-24x18x12-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-24x18x12-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 24×18×12 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-24x18x12-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-24x18x12-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 1066,
+        "alt": "Planted glass terrarium with tropical foliage and a cork background",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BCro-Terrarium_05.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1450,14 +1452,15 @@
     "sku": "EN-GT-301212",
     "images": [
       {
-        "url": "/products/glass-terrarium-30x12x12-top-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-30x12x12-top-opening-1-thumb.webp",
-        "width": 1365,
-        "height": 1024,
-        "alt": "Top-opening glass terrarium 30×12×12 inches with mesh top",
-        "credit": "Pit1233 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_28_01-2015.jpg"
+        "alt": "Empty glass terrarium tank",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 1200,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_07.jpg",
+        "thumbnail_url": "/products/glass-terrarium-30x12x12-top-opening-2-thumb.webp",
+        "url": "/products/glass-terrarium-30x12x12-top-opening-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -1497,14 +1500,15 @@
     "sku": "EN-GT-301218",
     "images": [
       {
-        "url": "/products/glass-terrarium-30x12x18-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-30x12x18-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 30×12×18 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-30x12x18-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-30x12x18-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Lush planted terrarium interior with moss, ferns and branches",
+        "credit": "Turtolt via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_for_Iguana_iguana_and_many_fishes.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1544,14 +1548,15 @@
     "sku": "EN-GT-361218",
     "images": [
       {
-        "url": "/products/glass-terrarium-36x12x18-top-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-36x12x18-top-opening-1-thumb.webp",
+        "url": "/products/glass-terrarium-36x12x18-top-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-36x12x18-top-opening-2-thumb.webp",
         "width": 1280,
-        "height": 923,
-        "alt": "Top-opening glass terrarium 36×12×18 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "height": 960,
+        "alt": "Open-top glass terrarium tank with baby tortoises",
+        "credit": "The original uploader was Richard Mayer at German Wikipedia . via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium0001.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1591,14 +1596,15 @@
     "sku": "EN-GT-361812",
     "images": [
       {
-        "url": "/products/glass-terrarium-36x18x12-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-36x18x12-front-opening-1-thumb.webp",
-        "width": 1600,
-        "height": 1200,
-        "alt": "Front-opening glass terrarium 36×18×12 inches with mesh top",
-        "credit": "3steph14 via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Empty_terrarium.jpg"
+        "url": "/products/glass-terrarium-36x18x12-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-36x18x12-front-opening-2-thumb.webp",
+        "width": 1280,
+        "height": 960,
+        "alt": "Mossy planted terrarium with dart frogs",
+        "credit": "Wikibob via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dendrobates_tinctorius_group_at_Z%C3%BCrich_Zoo.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1638,14 +1644,15 @@
     "sku": "EN-GT-361824",
     "images": [
       {
-        "url": "/products/glass-terrarium-36x18x24-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-36x18x24-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 36×18×24 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "alt": "Planted front-opening glass terrarium with driftwood and ferns",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 1067,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_27.jpg",
+        "thumbnail_url": "/products/glass-terrarium-36x18x24-front-opening-2-thumb.webp",
+        "url": "/products/glass-terrarium-36x18x24-front-opening-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -1685,14 +1692,15 @@
     "sku": "EN-GT-361836",
     "images": [
       {
-        "url": "/products/glass-terrarium-36x18x36-arboreal-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-36x18x36-arboreal-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening tall glass terrarium 36×18×36 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-36x18x36-arboreal-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-36x18x36-arboreal-2-thumb.webp",
+        "width": 1027,
+        "height": 1280,
+        "alt": "Tall planted glass paludarium in a living room",
+        "credit": "Tabiat modern via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Project-tabiatmodern-paludarium.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1732,14 +1740,15 @@
     "sku": "EN-GT-481818",
     "images": [
       {
-        "url": "/products/glass-terrarium-48x18x18-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-48x18x18-front-opening-1-thumb.webp",
-        "width": 1365,
-        "height": 1024,
-        "alt": "Front-opening glass terrarium 48×18×18 inches with mesh top",
-        "credit": "Pit1233 via Wikimedia Commons",
+        "url": "/products/glass-terrarium-48x18x18-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-48x18x18-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Monitor lizard in a glass enclosure with bark substrate",
+        "credit": "MatthewHoobin via Wikimedia Commons",
         "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_28_01-2015.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Monitor_lizard_in_enclosure_at_Tampa_Repticon_on_22_February_2020.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1779,14 +1788,15 @@
     "sku": "EN-GT-481824",
     "images": [
       {
-        "url": "/products/glass-terrarium-48x18x24-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-48x18x24-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 48×18×24 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-48x18x24-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-48x18x24-front-opening-2-thumb.webp",
+        "width": 1365,
+        "height": 1024,
+        "alt": "Row of large planted glass terrariums with heat lamps",
+        "credit": "Pit1233 via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_8_01-2015.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1826,14 +1836,15 @@
     "sku": "EN-GT-482424",
     "images": [
       {
-        "url": "/products/glass-terrarium-48x24x24-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-48x24x24-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 48×24×24 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-48x24x24-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-48x24x24-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 1066,
+        "alt": "Large planted paludarium with a water area and tropical plants",
+        "credit": "Kev22 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Saint-Malo_-_Grand_Aquarium_-_Paludarium_01.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1873,14 +1884,15 @@
     "sku": "EN-GT-481221",
     "images": [
       {
-        "url": "/products/glass-terrarium-48x12x21-top-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-48x12x21-top-opening-1-thumb.webp",
+        "url": "/products/glass-terrarium-48x12x21-top-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-48x12x21-top-opening-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Top-opening glass terrarium 48×12×21 inches with mesh top",
-        "credit": "3steph14 via Wikimedia Commons",
+        "alt": "Glass terrarium with baby bearded dragons, plants and a water dish",
+        "credit": "Hellacious2 via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Empty_terrarium.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Petco_reptiles_in_a_terrarium.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1920,14 +1932,15 @@
     "sku": "EN-GT-481821",
     "images": [
       {
-        "url": "/products/glass-terrarium-48x18x21-top-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-48x18x21-top-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Top-opening glass terrarium 48×18×21 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-48x18x21-top-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-48x18x21-top-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 914,
+        "alt": "Long open-top planted aquascape tank with a waterfall feature",
+        "credit": "Dileepkumardr via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nature_Aquarium_Aquascape.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1967,14 +1980,15 @@
     "sku": "EN-GT-181812",
     "images": [
       {
-        "url": "/products/glass-terrarium-18x18x12-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-18x18x12-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 18×18×12 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-18x18x12-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-18x18x12-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 897,
+        "alt": "Planted glass terrarium with driftwood, ferns and moss",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_30.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2014,14 +2028,15 @@
     "sku": "EN-GT-242412",
     "images": [
       {
-        "url": "/products/glass-terrarium-24x24x12-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-24x24x12-front-opening-1-thumb.webp",
-        "width": 1365,
-        "height": 1024,
-        "alt": "Front-opening glass terrarium 24×24×12 inches with mesh top",
-        "credit": "Pit1233 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_28_01-2015.jpg"
+        "url": "/products/glass-terrarium-24x24x12-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-24x24x12-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 1065,
+        "alt": "Desert terrarium setup with a hide, plants and a heat lamp",
+        "credit": "MonsterDoc via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarien-Gestaltung.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2061,14 +2076,15 @@
     "sku": "EN-GT-242418",
     "images": [
       {
-        "url": "/products/glass-terrarium-24x24x18-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-24x24x18-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 24×24×18 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "alt": "Planted front-opening glass terrarium with driftwood and ferns",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 1067,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_25.jpg",
+        "thumbnail_url": "/products/glass-terrarium-24x24x18-front-opening-2-thumb.webp",
+        "url": "/products/glass-terrarium-24x24x18-front-opening-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -2108,14 +2124,15 @@
     "sku": "EN-GT-242424",
     "images": [
       {
-        "url": "/products/glass-terrarium-24x24x24-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-24x24x24-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 24×24×24 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-24x24x24-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-24x24x24-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Planted paludarium with ferns, moss and driftwood",
+        "credit": "Dr. Alexey Yakovlev via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Paludarium_at_oceanarium_%22Aquatica%22_(52082209398).jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2155,14 +2172,15 @@
     "sku": "EN-GT-181224",
     "images": [
       {
-        "url": "/products/glass-terrarium-18x12x24-arboreal-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-18x12x24-arboreal-1-thumb.webp",
+        "url": "/products/glass-terrarium-18x12x24-arboreal-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-18x12x24-arboreal-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Front-opening tall glass terrarium 18×12×24 inches with mesh top",
-        "credit": "3steph14 via Wikimedia Commons",
+        "height": 1066,
+        "alt": "Tall planted glass terrarium being misted",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Empty_terrarium.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_20.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2202,14 +2220,15 @@
     "sku": "EN-GT-121224",
     "images": [
       {
-        "url": "/products/glass-terrarium-12x12x24-arboreal-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-12x12x24-arboreal-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening tall glass terrarium 12×12×24 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-12x12x24-arboreal-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-12x12x24-arboreal-2-thumb.webp",
+        "width": 1600,
+        "height": 1600,
+        "alt": "Tall planted glass vivarium with tropical plants and cork hides",
+        "credit": "Connor Long via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Phyllobates_terribilis_vivarium.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2249,14 +2268,15 @@
     "sku": "EN-GT-241836",
     "images": [
       {
-        "url": "/products/glass-terrarium-24x18x36-arboreal-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-24x18x36-arboreal-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening tall glass terrarium 24×18×36 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "alt": "Tall empty glass terrarium on a cabinet",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 1200,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_01.jpg",
+        "thumbnail_url": "/products/glass-terrarium-24x18x36-arboreal-2-thumb.webp",
+        "url": "/products/glass-terrarium-24x18x36-arboreal-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -2296,14 +2316,15 @@
     "sku": "EN-GT-362424",
     "images": [
       {
-        "url": "/products/glass-terrarium-36x24x24-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-36x24x24-front-opening-1-thumb.webp",
-        "width": 1365,
-        "height": 1024,
-        "alt": "Front-opening glass terrarium 36×24×24 inches with mesh top",
-        "credit": "Pit1233 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_28_01-2015.jpg"
+        "url": "/products/glass-terrarium-36x24x24-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-36x24x24-front-opening-2-thumb.webp",
+        "width": 1000,
+        "height": 702,
+        "alt": "Bearded dragon on a branch in a terrarium with a thermometer gauge",
+        "credit": "André Karwath aka Aka via Wikimedia Commons",
+        "license": "CC BY-SA 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bearded_Dragon_in_terrarium.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2343,14 +2364,15 @@
     "sku": "EN-GT-362418",
     "images": [
       {
-        "url": "/products/glass-terrarium-36x24x18-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-36x24x18-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 36×24×18 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-36x24x18-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-36x24x18-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Two planted glass terrariums side by side with lamps and foliage",
+        "credit": "Unknown author via Wikimedia Commons",
+        "license": "CC BY-SA 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium2.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2390,14 +2412,15 @@
     "sku": "EN-GT-601824",
     "images": [
       {
-        "url": "/products/glass-terrarium-60x18x24-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-60x18x24-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 60×18×24 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-60x18x24-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-60x18x24-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Large glass zoo terrarium with rocks, branches and a water backdrop",
+        "credit": "Mint0ri via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Black_spiny-tailed_iguana_at_Salisbury_Zoo.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2437,14 +2460,15 @@
     "sku": "EN-GT-201018",
     "images": [
       {
-        "url": "/products/glass-terrarium-20x10x18-arboreal-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-20x10x18-arboreal-1-thumb.webp",
+        "url": "/products/glass-terrarium-20x10x18-arboreal-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-20x10x18-arboreal-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Front-opening tall glass terrarium 20×10×18 inches with mesh top",
-        "credit": "3steph14 via Wikimedia Commons",
+        "height": 1066,
+        "alt": "Tall planted glass terrarium with bromeliads in an office",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Empty_terrarium.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BCro-Terrarium_02.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2484,14 +2508,15 @@
     "sku": "EN-GT-301818",
     "images": [
       {
-        "url": "/products/glass-terrarium-30x18x18-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-30x18x18-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 30×18×18 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-30x18x18-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-30x18x18-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 2133,
+        "alt": "Front-opening glass terrarium with a desert setup and sliding doors",
+        "credit": "Misiokk via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium19.09.2016.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2531,14 +2556,15 @@
     "sku": "EN-GT-241218",
     "images": [
       {
-        "url": "/products/glass-terrarium-24x12x18-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-24x12x18-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 24×12×18 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-24x12x18-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-24x12x18-front-opening-2-thumb.webp",
+        "width": 1600,
+        "height": 1066,
+        "alt": "Planted glass terrarium with bromeliads, ferns and driftwood",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BCro-Terrarium_04.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2625,14 +2651,15 @@
     "sku": "EN-GT-602424",
     "images": [
       {
-        "url": "/products/glass-terrarium-60x24x24-front-opening-1.webp",
-        "thumbnail_url": "/products/glass-terrarium-60x24x24-front-opening-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Front-opening glass terrarium 60×24×24 inches with mesh top",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/glass-terrarium-60x24x24-front-opening-2.webp",
+        "thumbnail_url": "/products/glass-terrarium-60x24x24-front-opening-2-thumb.webp",
+        "width": 1365,
+        "height": 1024,
+        "alt": "Iguana inside a large glass terrarium enclosure",
+        "credit": "Pit1233 via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_9_01-2015.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2672,14 +2699,14 @@
     "sku": "EN-GT-DS40",
     "images": [
       {
-        "url": "/products/double-stacked-glass-terrarium-2x20-gal-1.webp",
-        "thumbnail_url": "/products/double-stacked-glass-terrarium-2x20-gal-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Double stacked glass terrarium with two front-opening tanks",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/double-stacked-glass-terrarium-2x20-gal-2.webp",
+        "thumbnail_url": "/products/double-stacked-glass-terrarium-2x20-gal-2-thumb.webp",
+        "width": 1600,
+        "height": 1600,
+        "alt": "Two stacked glass terrariums with planted water setups",
+        "credit": "VictoriaLego via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Axolotl_paludarium.jpg",
         "representative": true
       }
     ],
@@ -2720,14 +2747,15 @@
     "sku": "EN-PVC-222",
     "images": [
       {
-        "url": "/products/pvc-enclosure-2x2x2-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-2x2x2-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 2×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-2x2x2-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-2x2x2-2-thumb.webp",
+        "width": 1600,
+        "height": 1280,
+        "alt": "Ball python coiled on substrate inside a reptile enclosure",
+        "credit": "Peter Cooper Jr. via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Queen_Alphabet_the_ball_python,_Capen_Hill_Nature_Sanctuary_2026-07-10.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2767,14 +2795,15 @@
     "sku": "EN-PVC-222L",
     "images": [
       {
-        "url": "/products/pvc-enclosure-2x2x2-lighting-cutouts-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-2x2x2-lighting-cutouts-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 2×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-2x2x2-lighting-cutouts-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-2x2x2-lighting-cutouts-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Bearded dragon in an enclosure with food and water dishes",
+        "credit": "Fernando Losada Rodríguez via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pogona_vitticeps.004_-_IES_Perdouro.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2814,14 +2843,15 @@
     "sku": "EN-PVC-224",
     "images": [
       {
-        "url": "/products/pvc-enclosure-2x2x4-arboreal-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-2x2x4-arboreal-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 2×2×4 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-2x2x4-arboreal-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-2x2x4-arboreal-2-thumb.webp",
+        "width": 1600,
+        "height": 1066,
+        "alt": "Green tree frog on wood inside a planted arboreal enclosure",
+        "credit": "Derrick Coetzee via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hyla_cinerea_at_East_Bay_Vivarium.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2861,14 +2891,15 @@
     "sku": "EN-PVC-322L",
     "images": [
       {
-        "url": "/products/pvc-enclosure-3x2x2-lighting-cutouts-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-3x2x2-lighting-cutouts-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 3×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-3x2x2-lighting-cutouts-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-3x2x2-lighting-cutouts-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Gila monster in a desert terrarium with sandy substrate",
+        "credit": "EximiousArmamentarium via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gila_monster_in_Saguaro_lobby_terrarium.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2908,14 +2939,15 @@
     "sku": "EN-PVC-324",
     "images": [
       {
-        "url": "/products/pvc-enclosure-3x2x4-arboreal-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-3x2x4-arboreal-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 3×2×4 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-3x2x4-arboreal-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-3x2x4-arboreal-2-thumb.webp",
+        "width": 1600,
+        "height": 1196,
+        "alt": "Spiny-tailed iguana on a branch inside a planted vivarium",
+        "credit": "Vassil via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ctenosaura_palearis_Vivarium_Tournai_27122015_1.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2955,14 +2987,15 @@
     "sku": "EN-PVC-422L",
     "images": [
       {
-        "url": "/products/pvc-enclosure-4x2x2-lighting-cutouts-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-4x2x2-lighting-cutouts-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 4×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "alt": "Planted reptile enclosure with driftwood and ferns",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 898,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_31.jpg",
+        "thumbnail_url": "/products/pvc-enclosure-4x2x2-lighting-cutouts-2-thumb.webp",
+        "url": "/products/pvc-enclosure-4x2x2-lighting-cutouts-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3002,14 +3035,15 @@
     "sku": "EN-PVC-424",
     "images": [
       {
-        "url": "/products/pvc-enclosure-4x2x4-arboreal-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-4x2x4-arboreal-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 4×2×4 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-4x2x4-arboreal-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-4x2x4-arboreal-2-thumb.webp",
+        "width": 1600,
+        "height": 2133,
+        "alt": "Neon day geckos on bamboo inside a planted terrarium",
+        "credit": "Vsnary via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Female_Neon_Day_Gecko.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3049,14 +3083,15 @@
     "sku": "EN-PVC-522",
     "images": [
       {
-        "url": "/products/pvc-enclosure-5x2x2-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-5x2x2-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 5×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-5x2x2-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-5x2x2-2-thumb.webp",
+        "width": 1600,
+        "height": 1201,
+        "alt": "Spiny-tailed lizards basking in a sandy desert enclosure",
+        "credit": "Chris.urs-o via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lizard.1502.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3096,14 +3131,15 @@
     "sku": "EN-PVC-522L",
     "images": [
       {
-        "url": "/products/pvc-enclosure-5x2x2-lighting-cutouts-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-5x2x2-lighting-cutouts-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 5×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-5x2x2-lighting-cutouts-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-5x2x2-lighting-cutouts-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Iguana resting on a branch inside a terrarium",
+        "credit": "Amigovip via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Iguana_iguana_in_terrarium.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3143,14 +3179,15 @@
     "sku": "EN-PVC-524",
     "images": [
       {
-        "url": "/products/pvc-enclosure-5x2x4-arboreal-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-5x2x4-arboreal-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 5×2×4 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-5x2x4-arboreal-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-5x2x4-arboreal-2-thumb.webp",
+        "width": 1536,
+        "height": 2048,
+        "alt": "Tree frog clinging to the glass of its terrarium",
+        "credit": "Joshuuascmoss via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Captive_Bred_Juvenile_Zhangixalus_arboreus_on_terrarium_glass.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3190,14 +3227,15 @@
     "sku": "EN-PVC-622L",
     "images": [
       {
-        "url": "/products/pvc-enclosure-6x2x2-lighting-cutouts-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-6x2x2-lighting-cutouts-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 6×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-6x2x2-lighting-cutouts-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-6x2x2-lighting-cutouts-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Turtle inside a terrarium enclosure",
+        "credit": "Nathaniel Mitchell via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Turtle_in_the_terrarium.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3237,14 +3275,15 @@
     "sku": "EN-PVC-633",
     "images": [
       {
-        "url": "/products/pvc-enclosure-6x3x3-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-6x3x3-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 6×3×3 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-6x3x3-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-6x3x3-2-thumb.webp",
+        "width": 1365,
+        "height": 1024,
+        "alt": "Hallway of large glass terrarium enclosures",
+        "credit": "Pit1233 via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_10_01-2015.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3284,14 +3323,15 @@
     "sku": "EN-PVC-822",
     "images": [
       {
-        "url": "/products/pvc-enclosure-8x2x2-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-8x2x2-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 8×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
+        "url": "/products/pvc-enclosure-8x2x2-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-8x2x2-2-thumb.webp",
+        "width": 1600,
+        "height": 1066,
+        "alt": "Wall of lit terrarium enclosures on display",
+        "credit": "Tim Sheerman-Chase via Wikimedia Commons",
         "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Turtle_Enclosure,_Blue_Reef_Aquarium_1.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3331,14 +3371,15 @@
     "sku": "EN-PVC-822L",
     "images": [
       {
-        "url": "/products/pvc-enclosure-8x2x2-lighting-cutouts-1.webp",
-        "thumbnail_url": "/products/pvc-enclosure-8x2x2-lighting-cutouts-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "PVC reptile enclosure 8×2×2 feet with sliding glass doors",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/pvc-enclosure-8x2x2-lighting-cutouts-2.webp",
+        "thumbnail_url": "/products/pvc-enclosure-8x2x2-lighting-cutouts-2-thumb.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Snake resting on rocks inside a terrarium enclosure",
+        "credit": "Veer Mickey Shah on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/striped-snake-with-green-tag-resting-on-rocks-in-darkness-apwFypshRg4",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3378,14 +3419,15 @@
     "sku": "EN-SC-161620",
     "images": [
       {
-        "url": "/products/screen-chameleon-cage-16x16x20-1.webp",
-        "thumbnail_url": "/products/screen-chameleon-cage-16x16x20-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Screen Chameleon Cage 16×16×20 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/screen-chameleon-cage-16x16x20-2.webp",
+        "thumbnail_url": "/products/screen-chameleon-cage-16x16x20-2-thumb.webp",
+        "width": 1333,
+        "height": 1024,
+        "alt": "Veiled chameleon on a branch under a basking lamp",
+        "credit": "Pit1233 via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_15_01-2015.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3425,14 +3467,15 @@
     "sku": "EN-SC-161630",
     "images": [
       {
-        "url": "/products/screen-chameleon-cage-16x16x30-1.webp",
-        "thumbnail_url": "/products/screen-chameleon-cage-16x16x30-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Screen Chameleon Cage 16×16×30 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/screen-chameleon-cage-16x16x30-2.webp",
+        "thumbnail_url": "/products/screen-chameleon-cage-16x16x30-2-thumb.webp",
+        "width": 1405,
+        "height": 1024,
+        "alt": "Veiled chameleon climbing a branch under a heat lamp",
+        "credit": "Pit1233 via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_14_01-2015.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3472,14 +3515,15 @@
     "sku": "EN-SC-181836",
     "images": [
       {
-        "url": "/products/screen-chameleon-cage-18x18x36-1.webp",
-        "thumbnail_url": "/products/screen-chameleon-cage-18x18x36-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Screen Chameleon Cage 18×18×36 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/screen-chameleon-cage-18x18x36-2.webp",
+        "thumbnail_url": "/products/screen-chameleon-cage-18x18x36-2-thumb.webp",
+        "width": 1600,
+        "height": 992,
+        "alt": "Green chameleon on a branch inside its enclosure",
+        "credit": "Oleksandr Kuzmin on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-green-chamelon-sitting-on-top-of-a-tree-branch-PiFWGc7SFVE",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3519,14 +3563,15 @@
     "sku": "EN-SC-241836",
     "images": [
       {
-        "url": "/products/screen-chameleon-cage-24x18x36-1.webp",
-        "thumbnail_url": "/products/screen-chameleon-cage-24x18x36-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Screen Chameleon Cage 24×18×36 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/screen-chameleon-cage-24x18x36-2.webp",
+        "thumbnail_url": "/products/screen-chameleon-cage-24x18x36-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Large mesh-screen reptile enclosure with branches and hides",
+        "credit": "PrabhJot Singh via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Snake_in_a_cage.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3566,14 +3611,15 @@
     "sku": "EN-SC-361836",
     "images": [
       {
-        "url": "/products/screen-chameleon-cage-36x18x36-1.webp",
-        "thumbnail_url": "/products/screen-chameleon-cage-36x18x36-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Screen Chameleon Cage 36×18×36 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/screen-chameleon-cage-36x18x36-2.webp",
+        "thumbnail_url": "/products/screen-chameleon-cage-36x18x36-2-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Green chameleon on a branch among plants",
+        "credit": "Claudel Rheault on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/shallow-focus-photography-of-chameleon-in-branch-nMJKAXHBLLI",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3613,14 +3659,15 @@
     "sku": "EN-SC-242448D",
     "images": [
       {
-        "url": "/products/screen-chameleon-cage-24x24x48-deluxe-1.webp",
-        "thumbnail_url": "/products/screen-chameleon-cage-24x24x48-deluxe-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Screen Chameleon Cage 24×24×48 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "alt": "Jackson's chameleon on a mossy branch",
+        "credit": "Gašper Černetič on Unsplash",
+        "height": 1200,
+        "license": "Unsplash License",
+        "representative": true,
+        "source_url": "https://unsplash.com/photos/jacksons-chameleon-on-mossy-branch-9wTicAow7R8",
+        "thumbnail_url": "/products/screen-chameleon-cage-24x24x48-deluxe-2-thumb.webp",
+        "url": "/products/screen-chameleon-cage-24x24x48-deluxe-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3660,14 +3707,15 @@
     "sku": "EN-SC-242436",
     "images": [
       {
-        "url": "/products/screen-chameleon-cage-24x24x36-1.webp",
-        "thumbnail_url": "/products/screen-chameleon-cage-24x24x36-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Screen Chameleon Cage 24×24×36 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "alt": "Chameleon perched on a branch inside a terrarium",
+        "credit": "Slavan on Unsplash",
+        "height": 1067,
+        "license": "Unsplash License",
+        "representative": true,
+        "source_url": "https://unsplash.com/photos/a-chameleon-perched-on-a-branch-in-a-terrarium-WeOissAqlZI",
+        "thumbnail_url": "/products/screen-chameleon-cage-24x24x36-2-thumb.webp",
+        "url": "/products/screen-chameleon-cage-24x24x36-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3707,14 +3755,15 @@
     "sku": "EN-HC-181836",
     "images": [
       {
-        "url": "/products/hybrid-chameleon-cage-18x18x36-1.webp",
-        "thumbnail_url": "/products/hybrid-chameleon-cage-18x18x36-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Hybrid Chameleon Cage 18×18×36 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "url": "/products/hybrid-chameleon-cage-18x18x36-2.webp",
+        "thumbnail_url": "/products/hybrid-chameleon-cage-18x18x36-2-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Planted miniature garden terrarium with colorful foliage",
+        "credit": "Mr. Pugo on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-beautiful-miniature-garden-terrarium-with-colorful-plants-xKH06cRBPN8",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3754,14 +3803,15 @@
     "sku": "EN-HC-362448",
     "images": [
       {
-        "url": "/products/hybrid-chameleon-cage-36x24x48-1.webp",
-        "thumbnail_url": "/products/hybrid-chameleon-cage-36x24x48-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Hybrid Chameleon Cage 36×24×48 inches with mesh panels",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg"
+        "alt": "Tall empty glass terrarium enclosure",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 901,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_08.jpg",
+        "thumbnail_url": "/products/hybrid-chameleon-cage-36x24x48-2-thumb.webp",
+        "url": "/products/hybrid-chameleon-cage-36x24x48-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3801,14 +3851,14 @@
     "sku": "EN-SK-TORT",
     "images": [
       {
-        "url": "/products/tortoise-starter-kit-1.webp",
-        "thumbnail_url": "/products/tortoise-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Tortoise starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/tortoise-starter-kit-2.webp",
+        "thumbnail_url": "/products/tortoise-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 1165,
+        "alt": "Tortoises in a terrarium with soil substrate and plants",
+        "credit": "4028mdk09 via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_mit_Griechischen_Landschildkr%C3%B6ten_Leintalzoo_Schwaigern.JPG",
         "representative": true
       }
     ],
@@ -3849,15 +3899,15 @@
     "sku": "EN-SK-CHAM",
     "images": [
       {
-        "url": "/products/chameleon-starter-kit-1.webp",
-        "thumbnail_url": "/products/chameleon-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Chameleon starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
-        "representative": true
+        "alt": "Planted glass terrarium with driftwood and ferns",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 1067,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_21.jpg",
+        "thumbnail_url": "/products/chameleon-starter-kit-2-thumb.webp",
+        "url": "/products/chameleon-starter-kit-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3897,14 +3947,14 @@
     "sku": "EN-SK-FROG",
     "images": [
       {
-        "url": "/products/tree-frog-starter-kit-1.webp",
-        "thumbnail_url": "/products/tree-frog-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Tree Frog starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/tree-frog-starter-kit-2.webp",
+        "thumbnail_url": "/products/tree-frog-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 2133,
+        "alt": "Green tree frog clinging to a plant stem inside a terrarium",
+        "credit": "HerpDad via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Captive_Hyla_cinerea_in_terrarium.jpg",
         "representative": true
       }
     ],
@@ -3945,14 +3995,14 @@
     "sku": "EN-SK-PAC",
     "images": [
       {
-        "url": "/products/pacman-frog-starter-kit-1.webp",
-        "thumbnail_url": "/products/pacman-frog-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Pacman Frog starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/pacman-frog-starter-kit-2.webp",
+        "thumbnail_url": "/products/pacman-frog-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Frog perched on mossy branches inside a planted terrarium",
+        "credit": "Jan Bambach via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Crazy_Frog_(156380171).jpeg",
         "representative": true
       }
     ],
@@ -3993,14 +4043,14 @@
     "sku": "EN-SK-GARG",
     "images": [
       {
-        "url": "/products/gargoyle-gecko-starter-kit-1.webp",
-        "thumbnail_url": "/products/gargoyle-gecko-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Gargoyle Gecko starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/gargoyle-gecko-starter-kit-2.webp",
+        "thumbnail_url": "/products/gargoyle-gecko-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 2133,
+        "alt": "Tall planted glass terrarium with branches and tropical plants",
+        "credit": "İpek Olsun Acar via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:A_Mini_forest_terrarium.jpg",
         "representative": true
       }
     ],
@@ -4041,14 +4091,14 @@
     "sku": "EN-SK-URO",
     "images": [
       {
-        "url": "/products/uromastyx-starter-kit-1.webp",
-        "thumbnail_url": "/products/uromastyx-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Uromastyx starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/uromastyx-starter-kit-2.webp",
+        "thumbnail_url": "/products/uromastyx-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 1066,
+        "alt": "Uromastyx lizard in a sandy desert terrarium with a food bowl",
+        "credit": "RaSaX via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Uromastyx_Ocellata_male_2011.JPG",
         "representative": true
       }
     ],
@@ -4089,14 +4139,14 @@
     "sku": "EN-SK-KING",
     "images": [
       {
-        "url": "/products/kingsnake-starter-kit-1.webp",
-        "thumbnail_url": "/products/kingsnake-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Kingsnake starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/kingsnake-starter-kit-2.webp",
+        "thumbnail_url": "/products/kingsnake-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 1753,
+        "alt": "Planted kingsnake terrarium with branches, lamp and foliage",
+        "credit": "Danny S. via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lampropeltis_californiae_Terrarium_ohne_Besatz.jpg",
         "representative": true
       }
     ],
@@ -4137,14 +4187,14 @@
     "sku": "EN-SK-MILK",
     "images": [
       {
-        "url": "/products/milk-snake-starter-kit-1.webp",
-        "thumbnail_url": "/products/milk-snake-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Milk Snake starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/milk-snake-starter-kit-2.webp",
+        "thumbnail_url": "/products/milk-snake-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 1066,
+        "alt": "Milk snake in a terrarium with bark substrate and a water dish",
+        "credit": "Thesupermat via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Le_Bugue_-_Aquarium_du_P%C3%A9rigord_noir_-_Faux_serpent_corail_-_001.jpg",
         "representative": true
       }
     ],
@@ -4185,14 +4235,14 @@
     "sku": "EN-SK-KSB",
     "images": [
       {
-        "url": "/products/kenyan-sand-boa-starter-kit-1.webp",
-        "thumbnail_url": "/products/kenyan-sand-boa-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Kenyan Sand Boa starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/kenyan-sand-boa-starter-kit-2.webp",
+        "thumbnail_url": "/products/kenyan-sand-boa-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Sandfish lizard on fine sand in a desert terrarium setup",
+        "credit": "MatthewHoobin via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sandfish_lizard_(Scincus_scincus)_in_enclosure_at_Pinellas_County_Reptiles,_Largo,_Florida,_US,_on_27_August_2020.jpg",
         "representative": true
       }
     ],
@@ -4233,15 +4283,15 @@
     "sku": "EN-SK-AFT",
     "images": [
       {
-        "url": "/products/african-fat-tailed-gecko-starter-kit-1.webp",
-        "thumbnail_url": "/products/african-fat-tailed-gecko-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "African Fat-Tailed Gecko starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
-        "representative": true
+        "alt": "Planted glass terrarium under grow lights",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
+        "height": 901,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrariumbau_03.jpg",
+        "thumbnail_url": "/products/african-fat-tailed-gecko-starter-kit-2-thumb.webp",
+        "url": "/products/african-fat-tailed-gecko-starter-kit-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -4281,14 +4331,14 @@
     "sku": "EN-SK-DAY",
     "images": [
       {
-        "url": "/products/day-gecko-starter-kit-1.webp",
-        "thumbnail_url": "/products/day-gecko-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Day Gecko starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/day-gecko-starter-kit-2.webp",
+        "thumbnail_url": "/products/day-gecko-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 837,
+        "alt": "Madagascar day gecko on a branch in a planted vivarium",
+        "credit": "Gzzz via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Phelsuma_madagascariensis_vivarium_Lausanne.jpg",
         "representative": true
       }
     ],
@@ -4329,14 +4379,14 @@
     "sku": "EN-SK-FIRE",
     "images": [
       {
-        "url": "/products/fire-skink-starter-kit-1.webp",
-        "thumbnail_url": "/products/fire-skink-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Fire Skink starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/fire-skink-starter-kit-2.webp",
+        "thumbnail_url": "/products/fire-skink-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 1201,
+        "alt": "Skink in a terrarium with bark substrate, rocks and a water dish",
+        "credit": "Chris.urs-o via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lizard.1507.jpg",
         "representative": true
       }
     ],
@@ -4377,14 +4427,14 @@
     "sku": "EN-SK-ANOLE",
     "images": [
       {
-        "url": "/products/anole-starter-kit-1.webp",
-        "thumbnail_url": "/products/anole-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Anole starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/anole-starter-kit-2.webp",
+        "thumbnail_url": "/products/anole-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Green anole lizard on driftwood inside a planted terrarium",
+        "credit": "Piotr Milczarek via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lizard_(209167205).jpeg",
         "representative": true
       }
     ],
@@ -4425,14 +4475,14 @@
     "sku": "EN-SK-TURT",
     "images": [
       {
-        "url": "/products/turtle-starter-kit-1.webp",
-        "thumbnail_url": "/products/turtle-starter-kit-1-thumb.webp",
-        "width": 1280,
-        "height": 923,
-        "alt": "Turtle starter kit with terrarium and equipment",
-        "credit": "christopher * via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_small.jpg",
+        "url": "/products/turtle-starter-kit-2.webp",
+        "thumbnail_url": "/products/turtle-starter-kit-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Tropical lake terrarium with water area, plants and basking spots",
+        "credit": "Turtolt via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Tropical_lake_terrarium_with_caimans,_turtles_and_fishes.jpg",
         "representative": true
       }
     ],
@@ -4473,14 +4523,14 @@
     "sku": "EN-BK-TEMP",
     "images": [
       {
-        "url": "/products/bioactive-kit-temperate-1.webp",
-        "thumbnail_url": "/products/bioactive-kit-temperate-1-thumb.webp",
+        "url": "/products/bioactive-kit-temperate-2.webp",
+        "thumbnail_url": "/products/bioactive-kit-temperate-2-thumb.webp",
         "width": 1600,
-        "height": 758,
-        "alt": "Temperate bioactive terrarium kit with plants and soil",
-        "credit": "HCA via Wikimedia Commons",
+        "height": 1039,
+        "alt": "Planted glass terrarium with pothos and leaf litter",
+        "credit": "Beeblebrox via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bioactive_Terrarium_Cleanup_Crew.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sealed_terrarium.jpg",
         "representative": true
       }
     ],
@@ -4521,14 +4571,14 @@
     "sku": "EN-BK-DES",
     "images": [
       {
-        "url": "/products/bioactive-kit-desert-1.webp",
-        "thumbnail_url": "/products/bioactive-kit-desert-1-thumb.webp",
+        "url": "/products/bioactive-kit-desert-2.webp",
+        "thumbnail_url": "/products/bioactive-kit-desert-2-thumb.webp",
         "width": 1600,
-        "height": 758,
-        "alt": "Desert bioactive terrarium kit with plants and soil",
-        "credit": "HCA via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bioactive_Terrarium_Cleanup_Crew.jpg",
+        "height": 1274,
+        "alt": "Glass bowl terrarium with succulents, cactus and rocks",
+        "credit": "Jamie Miller via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrarium_(154022529).jpeg",
         "representative": true
       }
     ],
@@ -4569,14 +4619,14 @@
     "sku": "EN-BK-FROG",
     "images": [
       {
-        "url": "/products/bioactive-kit-frog-1.webp",
-        "thumbnail_url": "/products/bioactive-kit-frog-1-thumb.webp",
+        "url": "/products/bioactive-kit-frog-2.webp",
+        "thumbnail_url": "/products/bioactive-kit-frog-2-thumb.webp",
         "width": 1600,
-        "height": 758,
-        "alt": "Frog bioactive terrarium kit with plants and soil",
-        "credit": "HCA via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bioactive_Terrarium_Cleanup_Crew.jpg",
+        "height": 1200,
+        "alt": "Green tree frog resting on a leaf inside a terrarium",
+        "credit": "Gldnjsyektlhliekr via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Tree_frog_in_a_terrarium_at_Universeum,_Gothenburg,_Sweden.jpg",
         "representative": true
       }
     ],
@@ -4617,14 +4667,14 @@
     "sku": "EN-BK-BP42",
     "images": [
       {
-        "url": "/products/bioactive-kit-ball-python-1.webp",
-        "thumbnail_url": "/products/bioactive-kit-ball-python-1-thumb.webp",
+        "url": "/products/bioactive-kit-ball-python-2.webp",
+        "thumbnail_url": "/products/bioactive-kit-ball-python-2-thumb.webp",
         "width": 1600,
-        "height": 758,
-        "alt": "Ball Python bioactive terrarium kit with plants and soil",
-        "credit": "HCA via Wikimedia Commons",
+        "height": 1067,
+        "alt": "Snakes coiled on branches inside a planted terrarium",
+        "credit": "Paul Harrison via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bioactive_Terrarium_Cleanup_Crew.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Australian_tree_snake,_Dendrelaphis_punctulatus.jpg",
         "representative": true
       }
     ],
@@ -4665,14 +4715,14 @@
     "sku": "EN-BK-TORT",
     "images": [
       {
-        "url": "/products/bioactive-kit-tortoise-1.webp",
-        "thumbnail_url": "/products/bioactive-kit-tortoise-1-thumb.webp",
+        "url": "/products/bioactive-kit-tortoise-2.webp",
+        "thumbnail_url": "/products/bioactive-kit-tortoise-2-thumb.webp",
         "width": 1600,
-        "height": 758,
-        "alt": "Tortoise bioactive terrarium kit with plants and soil",
-        "credit": "HCA via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bioactive_Terrarium_Cleanup_Crew.jpg",
+        "height": 1185,
+        "alt": "Tortoise beside a rock hide in a dry gravel enclosure",
+        "credit": "BLM Nevada via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Red_Rock_Canyon_National_Conservation_Area_(32016614120).jpg",
         "representative": true
       }
     ],
@@ -4713,14 +4763,14 @@
     "sku": "EN-BK-ARB",
     "images": [
       {
-        "url": "/products/bioactive-kit-arboreal-1.webp",
-        "thumbnail_url": "/products/bioactive-kit-arboreal-1-thumb.webp",
+        "url": "/products/bioactive-kit-arboreal-2.webp",
+        "thumbnail_url": "/products/bioactive-kit-arboreal-2-thumb.webp",
         "width": 1600,
-        "height": 758,
-        "alt": "Arboreal bioactive terrarium kit with plants and soil",
-        "credit": "HCA via Wikimedia Commons",
+        "height": 1067,
+        "alt": "Tall planted glass vivarium with ferns and orchids",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bioactive_Terrarium_Cleanup_Crew.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BCro-Terrarium_02.jpg",
         "representative": true
       }
     ],
@@ -4808,14 +4858,14 @@
     "sku": "EN-TT-6030",
     "images": [
       {
-        "url": "/products/tortoise-table-60x30-1.webp",
-        "thumbnail_url": "/products/tortoise-table-60x30-1-thumb.webp",
+        "url": "/products/tortoise-table-60x30-2.webp",
+        "thumbnail_url": "/products/tortoise-table-60x30-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Wooden tortoise table enclosure",
-        "credit": "Moise Nicu via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tortoise_portrait.JPG",
+        "height": 1063,
+        "alt": "Young tortoises in an indoor enclosure with a wooden hide",
+        "credit": "Derrick Coetzee via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Immature_Centrochelys_sulcata_in_East_Bay_Vivarium.jpg",
         "representative": true
       }
     ],
@@ -4855,14 +4905,14 @@
     "sku": "EN-TT-7236",
     "images": [
       {
-        "url": "/products/tortoise-table-72x36-1.webp",
-        "thumbnail_url": "/products/tortoise-table-72x36-1-thumb.webp",
+        "url": "/products/tortoise-table-72x36-2.webp",
+        "thumbnail_url": "/products/tortoise-table-72x36-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Wooden tortoise table enclosure",
-        "credit": "Moise Nicu via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tortoise_portrait.JPG",
+        "alt": "Tortoises in a large outdoor enclosure with a pond",
+        "credit": "Adog via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Tortoises_Busch_Gardens_Tampa.jpg",
         "representative": true
       }
     ],
@@ -4949,14 +4999,14 @@
     "sku": "EN-TT-OUTH",
     "images": [
       {
-        "url": "/products/outdoor-tortoise-house-with-run-1.webp",
-        "thumbnail_url": "/products/outdoor-tortoise-house-with-run-1-thumb.webp",
-        "width": 1024,
-        "height": 683,
-        "alt": "Wooden tortoise table enclosure",
-        "credit": "DS Pugh via Wikimedia Commons",
-        "license": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Giant_tortoise_enclosure_-_geograph.org.uk_-_7713407.jpg",
+        "url": "/products/outdoor-tortoise-house-with-run-2.webp",
+        "thumbnail_url": "/products/outdoor-tortoise-house-with-run-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Wooden outdoor animal hutch with a rabbit inside",
+        "credit": "Unknown author via Wikimedia Commons",
+        "license": "CC BY-SA 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rabbit_in_hutch.jpg",
         "representative": true
       }
     ],
@@ -4996,14 +5046,14 @@
     "sku": "EN-TT-3618L",
     "images": [
       {
-        "url": "/products/tortoise-table-36x18-with-lamp-holder-1.webp",
-        "thumbnail_url": "/products/tortoise-table-36x18-with-lamp-holder-1-thumb.webp",
+        "url": "/products/tortoise-table-36x18-with-lamp-holder-2.webp",
+        "thumbnail_url": "/products/tortoise-table-36x18-with-lamp-holder-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Wooden tortoise table enclosure",
-        "credit": "Moise Nicu via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tortoise_portrait.JPG",
+        "alt": "Desert tortoise on a rocky slope in its habitat",
+        "credit": "Thomas Farley via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Desert_tortoise_with_habitat_background_at_Red_Rock_National_Conservation_Area.jpg",
         "representative": true
       }
     ],
@@ -5043,14 +5093,14 @@
     "sku": "EN-TT-STACK",
     "images": [
       {
-        "url": "/products/stackable-tortoise-table-double-1.webp",
-        "thumbnail_url": "/products/stackable-tortoise-table-double-1-thumb.webp",
+        "url": "/products/stackable-tortoise-table-double-2.webp",
+        "thumbnail_url": "/products/stackable-tortoise-table-double-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Wooden tortoise table enclosure",
-        "credit": "Moise Nicu via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tortoise_portrait.JPG",
+        "height": 1067,
+        "alt": "Tortoise walking on gravel in an enclosure",
+        "credit": "BLM Nevada via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Red_Rock_Canyon_National_Conservation_Area_(32016612690).jpg",
         "representative": true
       }
     ],
@@ -5090,14 +5140,14 @@
     "sku": "EN-TT-4824H",
     "images": [
       {
-        "url": "/products/tortoise-table-48x24-with-hide-1.webp",
-        "thumbnail_url": "/products/tortoise-table-48x24-with-hide-1-thumb.webp",
+        "url": "/products/tortoise-table-48x24-with-hide-2.webp",
+        "thumbnail_url": "/products/tortoise-table-48x24-with-hide-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Wooden tortoise table enclosure",
-        "credit": "Moise Nicu via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tortoise_portrait.JPG",
+        "height": 988,
+        "alt": "Tortoise facing the camera on sandy ground",
+        "credit": "BLM Nevada via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Red_Rock_Canyon_National_Conservation_Area_(32016613300).jpg",
         "representative": true
       }
     ],
@@ -5137,14 +5187,14 @@
     "sku": "EN-FA-SML",
     "images": [
       {
-        "url": "/products/reptile-faunarium-small-1.webp",
-        "thumbnail_url": "/products/reptile-faunarium-small-1-thumb.webp",
+        "url": "/products/reptile-faunarium-small-2.webp",
+        "thumbnail_url": "/products/reptile-faunarium-small-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Small ventilated plastic reptile faunarium",
-        "credit": "Gpkp via Wikimedia Commons",
+        "height": 1067,
+        "alt": "Small glass terrarium with a branch, ferns and a water dish",
+        "credit": "Photograph by Mike Peel ( www.mikepeel.net ). via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Instituto_Butantan_2018_20.jpg",
         "representative": true
       }
     ],
@@ -5185,14 +5235,14 @@
     "sku": "EN-FA-LRG",
     "images": [
       {
-        "url": "/products/reptile-faunarium-large-1.webp",
-        "thumbnail_url": "/products/reptile-faunarium-large-1-thumb.webp",
+        "url": "/products/reptile-faunarium-large-2.webp",
+        "thumbnail_url": "/products/reptile-faunarium-large-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Large ventilated plastic reptile faunarium",
-        "credit": "Gpkp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "height": 2133,
+        "alt": "Round glass terrarium with ferns under a small lamp",
+        "credit": "Netha Hussain via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:A_terrarium_containing_a_fern_and_a_light_source.jpg",
         "representative": true
       }
     ],
@@ -5233,14 +5283,14 @@
     "sku": "EN-QT-16",
     "images": [
       {
-        "url": "/products/reptile-quarantine-tub-16qt-1.webp",
-        "thumbnail_url": "/products/reptile-quarantine-tub-16qt-1-thumb.webp",
+        "url": "/products/reptile-quarantine-tub-16qt-2.webp",
+        "thumbnail_url": "/products/reptile-quarantine-tub-16qt-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Reptile quarantine tub with locking vented lid",
-        "credit": "Gpkp via Wikimedia Commons",
+        "height": 1067,
+        "alt": "Purple plastic storage tub",
+        "credit": "Gratnells via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gratnells_School_Storage_Jumbo_Tray_in_Purple.jpg",
         "representative": true
       }
     ],
@@ -5281,14 +5331,14 @@
     "sku": "EN-QT-54",
     "images": [
       {
-        "url": "/products/reptile-quarantine-tub-54qt-1.webp",
-        "thumbnail_url": "/products/reptile-quarantine-tub-54qt-1-thumb.webp",
+        "url": "/products/reptile-quarantine-tub-54qt-2.webp",
+        "thumbnail_url": "/products/reptile-quarantine-tub-54qt-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Large reptile quarantine tub with locking vented lid",
-        "credit": "Gpkp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "height": 1155,
+        "alt": "Grey stackable plastic storage bin",
+        "credit": "R. Henrik Nilsson via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:1990s_Dynoplast_Norway_stackable_plastic_storage_bin_model_6734.jpg",
         "representative": true
       }
     ],
@@ -5329,14 +5379,14 @@
     "sku": "EN-CR-S",
     "images": [
       {
-        "url": "/products/reptile-transport-carrier-small-1.webp",
-        "thumbnail_url": "/products/reptile-transport-carrier-small-1-thumb.webp",
+        "url": "/products/reptile-transport-carrier-small-2.webp",
+        "thumbnail_url": "/products/reptile-transport-carrier-small-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Small ventilated reptile transport carrier",
-        "credit": "Gpkp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "height": 1121,
+        "alt": "Plastic pet transport carrier with live-animal stickers",
+        "credit": "Chachacha369 via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dogtainers_Pet_Transport_Clipper_Cat_Cage_Plastic_Travel_Crate_Labelled.jpg",
         "representative": true
       }
     ],
@@ -5425,14 +5475,14 @@
     "sku": "EN-HT-6Q5",
     "images": [
       {
-        "url": "/products/hatchling-tub-6qt-5-pack-1.webp",
-        "thumbnail_url": "/products/hatchling-tub-6qt-5-pack-1-thumb.webp",
+        "url": "/products/hatchling-tub-6qt-5-pack-2.webp",
+        "thumbnail_url": "/products/hatchling-tub-6qt-5-pack-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Hatchling tubs with vented lids, pack of five",
-        "credit": "Gpkp via Wikimedia Commons",
+        "height": 1067,
+        "alt": "Orange plastic storage tub",
+        "credit": "Gratnells via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gratnells_Extra_Deep_Storage_Tray.jpg",
         "representative": true
       }
     ],
@@ -5473,14 +5523,14 @@
     "sku": "EN-RK-6U",
     "images": [
       {
-        "url": "/products/hatchling-rack-6-tub-unheated-1.webp",
-        "thumbnail_url": "/products/hatchling-rack-6-tub-unheated-1-thumb.webp",
+        "url": "/products/hatchling-rack-6-tub-unheated-2.webp",
+        "thumbnail_url": "/products/hatchling-rack-6-tub-unheated-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Six tub hatchling rack system for reptiles",
-        "credit": "Gpkp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "height": 1053,
+        "alt": "Black metal rack with rows of numbered white storage tubs",
+        "credit": "Declan Sun on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/black-metal-shelving-unit-with-many-compartments-MP99Ifwe9Xg",
         "representative": true
       }
     ],
@@ -5521,14 +5571,14 @@
     "sku": "EN-RK-6H",
     "images": [
       {
-        "url": "/products/hatchling-rack-6-tub-heated-1.webp",
-        "thumbnail_url": "/products/hatchling-rack-6-tub-heated-1-thumb.webp",
+        "url": "/products/hatchling-rack-6-tub-heated-2.webp",
+        "thumbnail_url": "/products/hatchling-rack-6-tub-heated-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Heated six tub hatchling rack system",
-        "credit": "Gpkp via Wikimedia Commons",
+        "height": 1067,
+        "alt": "Metal shelving rack holding clear plastic storage tubs",
+        "credit": "JoeDerrySetch via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:City_Art_Centre_Auld_Reekie_Retold_Exhibition_7_2023.jpg",
         "representative": true
       }
     ],
@@ -5569,14 +5619,14 @@
     "sku": "EN-RK-12H",
     "images": [
       {
-        "url": "/products/hatchling-rack-12-tub-heated-1.webp",
-        "thumbnail_url": "/products/hatchling-rack-12-tub-heated-1-thumb.webp",
+        "url": "/products/hatchling-rack-12-tub-heated-2.webp",
+        "thumbnail_url": "/products/hatchling-rack-12-tub-heated-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Heated twelve tub hatchling rack system",
-        "credit": "Gpkp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "height": 2133,
+        "alt": "Empty multi-tier metal shelving rack for storage tubs",
+        "credit": "Mojmir Churavy via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Knihovna_Petriny_Akvizice_C.jpg",
         "representative": true
       }
     ],
@@ -5617,14 +5667,14 @@
     "sku": "EN-RK-8H",
     "images": [
       {
-        "url": "/products/grow-out-rack-8-tub-heated-1.webp",
-        "thumbnail_url": "/products/grow-out-rack-8-tub-heated-1-thumb.webp",
+        "url": "/products/grow-out-rack-8-tub-heated-2.webp",
+        "thumbnail_url": "/products/grow-out-rack-8-tub-heated-2-thumb.webp",
         "width": 1600,
-        "height": 954,
-        "alt": "Heated eight tub grow-out rack system",
-        "credit": "R. Henrik Nilsson via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Stackable_storage_bin_model_3_160_by_Danish_company_Raaco.jpg",
+        "height": 1067,
+        "alt": "Metal shelving rack with clear plastic tubs and boxes",
+        "credit": "JoeDerrySetch via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:City_Art_Centre_Auld_Reekie_Retold_Exhibition_6_2023.jpg",
         "representative": true
       }
     ],
@@ -5761,14 +5811,14 @@
     "sku": "EN-ST-36",
     "images": [
       {
-        "url": "/products/terrarium-stand-36in-1.webp",
-        "thumbnail_url": "/products/terrarium-stand-36in-1-thumb.webp",
+        "url": "/products/terrarium-stand-36in-2.webp",
+        "thumbnail_url": "/products/terrarium-stand-36in-2-thumb.webp",
         "width": 1600,
-        "height": 1080,
-        "alt": "Terrarium stand for reptile enclosure",
-        "credit": "Hal Blakeley via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hal_Blakeley,_Wooden_Table,_c._1953,_NGA_20059.jpg",
+        "height": 1065,
+        "alt": "Small wooden stand with glass legs on a black background",
+        "credit": "Unknown author via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wooden_insulating_stand_with_glass_legs,_Europe,_1850-1900_Wellcome_L0059015.jpg",
         "representative": true
       }
     ],
@@ -5809,14 +5859,14 @@
     "sku": "EN-ST-48C",
     "images": [
       {
-        "url": "/products/terrarium-cabinet-stand-48in-1.webp",
-        "thumbnail_url": "/products/terrarium-cabinet-stand-48in-1-thumb.webp",
+        "url": "/products/terrarium-cabinet-stand-48in-2.webp",
+        "thumbnail_url": "/products/terrarium-cabinet-stand-48in-2-thumb.webp",
         "width": 1600,
-        "height": 1080,
-        "alt": "Terrarium stand for reptile enclosure",
-        "credit": "Hal Blakeley via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hal_Blakeley,_Wooden_Table,_c._1953,_NGA_20059.jpg",
+        "height": 1068,
+        "alt": "Old green wooden cabinet with drawers",
+        "credit": "Shixart1985 via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dirty_old_wooden_green_cabinet_handles.jpg",
         "representative": true
       }
     ],
@@ -5857,14 +5907,14 @@
     "sku": "EN-ST-2T",
     "images": [
       {
-        "url": "/products/stackable-enclosure-stand-2-tier-1.webp",
-        "thumbnail_url": "/products/stackable-enclosure-stand-2-tier-1-thumb.webp",
+        "url": "/products/stackable-enclosure-stand-2-tier-2.webp",
+        "thumbnail_url": "/products/stackable-enclosure-stand-2-tier-2-thumb.webp",
         "width": 1600,
-        "height": 1080,
-        "alt": "Terrarium stand for reptile enclosure",
-        "credit": "Hal Blakeley via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hal_Blakeley,_Wooden_Table,_c._1953,_NGA_20059.jpg",
+        "height": 1062,
+        "alt": "Rows of multi-tier metal shelving racks holding storage boxes",
+        "credit": "NPS via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Moving_the_boxes_to_prepare_for_the_installation_of_the_compact_shelving_unit._(bc6b6f67-155d-451f-67a1-261512444332).jpg",
         "representative": true
       }
     ],
@@ -5905,14 +5955,14 @@
     "sku": "EN-ST-36C",
     "images": [
       {
-        "url": "/products/terrarium-cabinet-36in-storage-1.webp",
-        "thumbnail_url": "/products/terrarium-cabinet-36in-storage-1-thumb.webp",
+        "url": "/products/terrarium-cabinet-36in-storage-2.webp",
+        "thumbnail_url": "/products/terrarium-cabinet-36in-storage-2-thumb.webp",
         "width": 1600,
-        "height": 1080,
-        "alt": "Terrarium stand for reptile enclosure",
-        "credit": "Hal Blakeley via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hal_Blakeley,_Wooden_Table,_c._1953,_NGA_20059.jpg",
+        "height": 1068,
+        "alt": "White wooden cabinet with drawers and storage",
+        "credit": "Shixart1985 via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:White_wooden_cabinet_with_classic_retro_design.jpg",
         "representative": true
       }
     ],
@@ -5953,14 +6003,14 @@
     "sku": "EN-ST-48HD",
     "images": [
       {
-        "url": "/products/heavy-duty-terrarium-stand-48x24-1.webp",
-        "thumbnail_url": "/products/heavy-duty-terrarium-stand-48x24-1-thumb.webp",
+        "url": "/products/heavy-duty-terrarium-stand-48x24-2.webp",
+        "thumbnail_url": "/products/heavy-duty-terrarium-stand-48x24-2-thumb.webp",
         "width": 1600,
-        "height": 1080,
-        "alt": "Terrarium stand for reptile enclosure",
-        "credit": "Hal Blakeley via Wikimedia Commons",
+        "height": 1200,
+        "alt": "Row of heavy-duty metal shelving units holding books and boxes",
+        "credit": "Mojmir Churavy via Wikimedia Commons",
         "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hal_Blakeley,_Wooden_Table,_c._1953,_NGA_20059.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Knihovna_Petriny_Akvizice_A.jpg",
         "representative": true
       }
     ],

@@ -13,14 +13,14 @@
     "sku": "HL-UVB-T5-0622",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-6-22in-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-6-22in-1-thumb.webp",
-        "width": 1600,
-        "height": 1355,
-        "alt": "T5, T8 and T12 fluorescent tubes compared",
-        "credit": "Temdor via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Linear_fluorescent_lamps_T5_T8_T12.jpg",
+        "url": "/products/t5-ho-uvb-6-22in-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-6-22in-2-thumb.webp",
+        "width": 1351,
+        "height": 1689,
+        "alt": "A long straight fluorescent tube glowing against the sky",
+        "credit": "BaronAlaric via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_tube_under_electric_line.jpg",
         "representative": true
       }
     ],
@@ -400,15 +400,15 @@
     "sku": "HL-CHE-100",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-100w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-100w-1-thumb.webp",
-        "width": 1400,
-        "height": 1088,
-        "alt": "Infrared radiant heater glowing red",
-        "credit": "Siarhei Besarab via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Portable_infrared_electric_heater_used_on_a_film_set.jpg",
-        "representative": true
+        "alt": "Lizard basking under a glowing heat lamp",
+        "credit": "Arjun Raj on Unsplash",
+        "height": 900,
+        "license": "Unsplash License",
+        "representative": true,
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-lizard-under-a-heat-lamp-BRGt9pBIpg4",
+        "thumbnail_url": "/products/ceramic-heat-emitter-100w-2-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-100w-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -448,15 +448,15 @@
     "sku": "HL-CHE-150",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-150w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-150w-1-thumb.webp",
-        "width": 1400,
-        "height": 1088,
-        "alt": "Infrared radiant heater glowing red",
-        "credit": "Siarhei Besarab via Wikimedia Commons",
+        "alt": "Infrared heat lamps in reflector shades",
+        "credit": "SAgbley via Wikimedia Commons",
+        "height": 2133,
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Portable_infrared_electric_heater_used_on_a_film_set.jpg",
-        "representative": true
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_Heat_Lamp.jpg",
+        "thumbnail_url": "/products/ceramic-heat-emitter-150w-2-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-150w-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -928,15 +928,15 @@
     "sku": "HL-MVB-100",
     "images": [
       {
-        "url": "/products/mercury-vapor-bulb-100w-1.webp",
-        "thumbnail_url": "/products/mercury-vapor-bulb-100w-1-thumb.webp",
-        "alt": "Reflector heat lamp bulb with a red-tinted dome",
-        "width": 1600,
-        "height": 2400,
-        "credit": "dxiane on Unsplash",
-        "license": "Unsplash License",
-        "source_url": "https://unsplash.com/photos/red-and-white-light-bulb-PATnZ07jw-4",
-        "representative": true
+        "alt": "Mercury vapor lamp glowing green in its fixture",
+        "credit": "Skatebiker at English Wikipedia via Wikimedia Commons",
+        "height": 1200,
+        "license": "Public domain",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Mercuryvaporlamp.jpg",
+        "thumbnail_url": "/products/mercury-vapor-bulb-100w-2-thumb.webp",
+        "url": "/products/mercury-vapor-bulb-100w-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -1174,14 +1174,14 @@
     "sku": "HL-HC-15",
     "images": [
       {
-        "url": "/products/reptile-heat-cable-15ft-1.webp",
-        "thumbnail_url": "/products/reptile-heat-cable-15ft-1-thumb.webp",
-        "alt": "Flexible electric heating cable laid out in loops on a floor",
-        "width": 1200,
-        "height": 1453,
-        "credit": "K&K Data Service Inc. via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Underfloor_heating_cable_laid_in_bathroom,_Stone_County_Missouri,_2026-07-24.jpg",
+        "url": "/products/reptile-heat-cable-15ft-2.webp",
+        "thumbnail_url": "/products/reptile-heat-cable-15ft-2-thumb.webp",
+        "width": 1600,
+        "height": 1014,
+        "alt": "Red heating cable fitted along pipes with foil tape",
+        "credit": "Lacrus via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Thermocable.jpg",
         "representative": true
       }
     ],
@@ -1321,14 +1321,15 @@
     "sku": "HL-UVB-K246",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-kit-24w-6-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-kit-24w-6-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-kit-24w-6-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-kit-24w-6-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB lighting kit 24W 6 percent",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 1067,
+        "alt": "Modern linear tube lights glowing white and blue in a dark ceiling",
+        "credit": "Jerry Wei on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/modern-ceiling-lights-with-blue-and-white-accents-kWdDVy6UTyI",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1368,14 +1369,15 @@
     "sku": "HL-UVB-K2410",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-kit-24w-10-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-kit-24w-10-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-kit-24w-10-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-kit-24w-10-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB lighting kit 24W 10 percent",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 1067,
+        "alt": "Single fluorescent tube light glowing in a dark room",
+        "credit": "Marija Zaric on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-single-fluorescent-light-illuminates-a-dark-ceiling-PvIT-F9cTqc",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1415,14 +1417,15 @@
     "sku": "HL-UVB-K2414",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-kit-24w-14-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-kit-24w-14-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-kit-24w-14-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-kit-24w-14-2-thumb.webp",
         "width": 1600,
         "height": 902,
-        "alt": "T5 HO UVB lighting kit 24W 14 percent",
+        "alt": "Fluorescent tube fixture with two lit tubes mounted on a ceiling",
         "credit": "Dmitry G via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_with_run_mercury.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1462,14 +1465,15 @@
     "sku": "HL-UVB-K396",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-kit-39w-6-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-kit-39w-6-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-kit-39w-6-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-kit-39w-6-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB lighting kit 39W 6 percent",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 1067,
+        "alt": "Two vertical fluorescent tube lights glowing on a dark wall",
+        "credit": "Declan Sun on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-couple-of-lights-that-are-on-a-wall-FBVMmhxtOUI",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1509,14 +1513,15 @@
     "sku": "HL-UVB-K3910",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-kit-39w-10-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-kit-39w-10-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-kit-39w-10-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-kit-39w-10-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB lighting kit 39W 10 percent",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 1067,
+        "alt": "Two fluorescent tube lights glowing on a wood-paneled wall",
+        "credit": "Marija Zaric on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/two-fluorescent-lights-illuminate-a-wood-paneled-wall-u-iDOMC-mUk",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1556,14 +1561,15 @@
     "sku": "HL-UVB-K3912",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-kit-39w-12-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-kit-39w-12-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-kit-39w-12-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-kit-39w-12-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB lighting kit 39W 12 percent",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 1067,
+        "alt": "Two fluorescent tube fixtures glowing on a dark ceiling",
+        "credit": "Dhiya Hilmi on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/two-bright-fluorescent-lights-illuminate-a-dark-ceiling-structure-ahhv15QrkG4",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1650,14 +1656,15 @@
     "sku": "HL-UVB-K546",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-kit-54w-6-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-kit-54w-6-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-kit-54w-6-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-kit-54w-6-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB lighting kit 54W 6 percent",
-        "credit": "Dmitry G via Wikimedia Commons",
+        "height": 1200,
+        "alt": "Four-tube fluorescent light fixture with reflector grille",
+        "credit": "Symppis via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:4x18W_with_Minisensor2.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1697,14 +1704,15 @@
     "sku": "HL-UVB-K5410",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-kit-54w-10-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-kit-54w-10-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-kit-54w-10-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-kit-54w-10-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB lighting kit 54W 10 percent",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 1200,
+        "alt": "Fluorescent tube fixture with glowing tubes seen from below",
+        "credit": "HTO via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Z%C3%A1%C5%99ivky_-_Fluorescent_lamps.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1838,14 +1846,15 @@
     "sku": "HL-UVB-T5-1022",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-10-22in-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-10-22in-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-10-22in-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-10-22in-2-thumb.webp",
         "width": 1600,
         "height": 902,
-        "alt": "T5 HO UVB tube 10 percent 22 inches",
+        "alt": "Two long straight fluorescent tubes with a batten fixture lying on a tiled floor",
         "credit": "Dmitry G via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lack_of_electronic_ballast.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1885,14 +1894,15 @@
     "sku": "HL-UVB-T5-1422",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-14-22in-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-14-22in-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-14-22in-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-14-22in-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB tube 14 percent 22 inches",
-        "credit": "Dmitry G via Wikimedia Commons",
+        "height": 1087,
+        "alt": "Two ultraviolet fluorescent tubes, one black and one clear, on a white background",
+        "credit": "Fabexplosive via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Two_ultraviolet_fluorescent_tubes_UV-C_and_UV-A.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1932,14 +1942,15 @@
     "sku": "HL-UVB-T5-0634",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-6-34in-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-6-34in-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-6-34in-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-6-34in-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB tube 6 percent 34 inches",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 881,
+        "alt": "Two ultraviolet tube fixtures glowing purple",
+        "credit": "Chetvorno via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Two_black_light_lamps.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1979,14 +1990,15 @@
     "sku": "HL-UVB-T5-1034",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-10-34in-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-10-34in-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-10-34in-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-10-34in-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T5 HO UVB tube 10 percent 34 inches",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 1200,
+        "alt": "Ultraviolet fluorescent tubes glowing purple in a ceiling fixture",
+        "credit": "F ASTILY (T ALK ) via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:BlackLightBulb4300ppx2.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2120,14 +2132,15 @@
     "sku": "HL-UVB-T5-1046",
     "images": [
       {
-        "url": "/products/t5-ho-uvb-10-46in-1.webp",
-        "thumbnail_url": "/products/t5-ho-uvb-10-46in-1-thumb.webp",
+        "url": "/products/t5-ho-uvb-10-46in-2.webp",
+        "thumbnail_url": "/products/t5-ho-uvb-10-46in-2-thumb.webp",
         "width": 1600,
         "height": 902,
-        "alt": "T5 HO UVB tube 10 percent 46 inches",
+        "alt": "Two long fluorescent tubes glowing in a twin-tube fixture on a dark floor",
         "credit": "Dmitry G via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Two_fluorescent_tubes.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2214,14 +2227,15 @@
     "sku": "HL-CU-0513",
     "images": [
       {
-        "url": "/products/compact-uvb-bulb-5-13w-1.webp",
-        "thumbnail_url": "/products/compact-uvb-bulb-5-13w-1-thumb.webp",
+        "url": "/products/compact-uvb-bulb-5-13w-2.webp",
+        "thumbnail_url": "/products/compact-uvb-bulb-5-13w-2-thumb.webp",
         "width": 1600,
-        "height": 2115,
-        "alt": "Compact UVB bulb 5.0 13 watts",
-        "credit": "Giligone via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Compact_Fluorescent-bw.jpg"
+        "height": 1067,
+        "alt": "Spiral compact fluorescent bulb with screw base on a white background",
+        "credit": "Mk2010 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Compact_fluorescent_lamp_E27_23W.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2308,14 +2322,15 @@
     "sku": "HL-CU-0526",
     "images": [
       {
-        "url": "/products/compact-uvb-bulb-5-26w-1.webp",
-        "thumbnail_url": "/products/compact-uvb-bulb-5-26w-1-thumb.webp",
+        "url": "/products/compact-uvb-bulb-5-26w-2.webp",
+        "thumbnail_url": "/products/compact-uvb-bulb-5-26w-2-thumb.webp",
         "width": 1600,
-        "height": 2115,
-        "alt": "Compact UVB bulb 5.0 26 watts",
-        "credit": "Giligone via Wikimedia Commons",
+        "height": 2133,
+        "alt": "Spiral and U-shaped compact fluorescent bulbs side by side",
+        "credit": "Bijay chaurasia via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Compact_Fluorescent-bw.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Spiral_tube_%26_U_tube_CFL.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2355,14 +2370,15 @@
     "sku": "HL-CU-1026",
     "images": [
       {
-        "url": "/products/compact-uvb-bulb-10-26w-1.webp",
-        "thumbnail_url": "/products/compact-uvb-bulb-10-26w-1-thumb.webp",
+        "url": "/products/compact-uvb-bulb-10-26w-2.webp",
+        "thumbnail_url": "/products/compact-uvb-bulb-10-26w-2-thumb.webp",
         "width": 1600,
-        "height": 2115,
-        "alt": "Compact UVB bulb 10.0 26 watts",
-        "credit": "Giligone via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Compact_Fluorescent-bw.jpg"
+        "height": 1200,
+        "alt": "Glowing spiral compact fluorescent bulb against a dark background",
+        "credit": "Alphax via Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Spiral_fluorescent_lamp.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2402,14 +2418,15 @@
     "sku": "HL-CU-1526",
     "images": [
       {
-        "url": "/products/compact-uvb-bulb-15-26w-1.webp",
-        "thumbnail_url": "/products/compact-uvb-bulb-15-26w-1-thumb.webp",
+        "url": "/products/compact-uvb-bulb-15-26w-2.webp",
+        "thumbnail_url": "/products/compact-uvb-bulb-15-26w-2-thumb.webp",
         "width": 1600,
-        "height": 2115,
-        "alt": "Compact UVB bulb 15.0 26 watts",
-        "credit": "Giligone via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Compact_Fluorescent-bw.jpg"
+        "height": 832,
+        "alt": "Triple U-tube compact fluorescent bulb with screw base",
+        "credit": "Dmitry Makeev via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_E_27.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2449,14 +2466,15 @@
     "sku": "HL-MVB-80",
     "images": [
       {
-        "url": "/products/mercury-vapor-bulb-80w-1.webp",
-        "thumbnail_url": "/products/mercury-vapor-bulb-80w-1-thumb.webp",
+        "url": "/products/mercury-vapor-bulb-80w-2.webp",
+        "thumbnail_url": "/products/mercury-vapor-bulb-80w-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Mercury vapor bulb 80 watts UVB and heat",
-        "credit": "Niklas Henriksson via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:50W_mercury_-_operating.JPG"
+        "alt": "White oval mercury vapor bulb with screw base",
+        "credit": "Koefbac via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lampa_rt%C4%99ciowa_produkcji_POLAMP_-1.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2543,14 +2561,15 @@
     "sku": "HL-MVB-160",
     "images": [
       {
-        "url": "/products/mercury-vapor-bulb-160w-1.webp",
-        "thumbnail_url": "/products/mercury-vapor-bulb-160w-1-thumb.webp",
+        "url": "/products/mercury-vapor-bulb-160w-2.webp",
+        "thumbnail_url": "/products/mercury-vapor-bulb-160w-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Mercury vapor bulb 160 watts UVB and heat",
-        "credit": "Niklas Henriksson via Wikimedia Commons",
+        "height": 971,
+        "alt": "White oval mercury vapor bulb with screw base next to a ruler",
+        "credit": "Kukdide via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:50W_mercury_-_operating.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Mercury_vapor_lamp_125_watts.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2590,14 +2609,15 @@
     "sku": "HL-MVB-275",
     "images": [
       {
-        "url": "/products/mercury-vapor-bulb-275w-1.webp",
-        "thumbnail_url": "/products/mercury-vapor-bulb-275w-1-thumb.webp",
+        "url": "/products/mercury-vapor-bulb-275w-2.webp",
+        "thumbnail_url": "/products/mercury-vapor-bulb-275w-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Mercury vapor bulb 275 watts UVB and heat",
-        "credit": "Niklas Henriksson via Wikimedia Commons",
+        "alt": "Self-ballasted mercury vapor bulb with screw base",
+        "credit": "Dmitry G via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:50W_mercury_-_operating.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Self-ballasted_mercury-vapor_light_bulb.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2684,14 +2704,15 @@
     "sku": "HL-UVB-T8-1036",
     "images": [
       {
-        "url": "/products/t8-uvb-10-36in-1.webp",
-        "thumbnail_url": "/products/t8-uvb-10-36in-1-thumb.webp",
+        "url": "/products/t8-uvb-10-36in-2.webp",
+        "thumbnail_url": "/products/t8-uvb-10-36in-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T8 UVB tube 10 percent 36 inches",
-        "credit": "Dmitry G via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "height": 1200,
+        "alt": "Fluorescent tube glowing in a wall-mounted fixture in the dark",
+        "credit": "Elduendesuarez via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Luz_fluorescente.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2731,14 +2752,15 @@
     "sku": "HL-HB-25",
     "images": [
       {
-        "url": "/products/halogen-basking-bulb-25w-1.webp",
-        "thumbnail_url": "/products/halogen-basking-bulb-25w-1-thumb.webp",
+        "url": "/products/halogen-basking-bulb-25w-2.webp",
+        "thumbnail_url": "/products/halogen-basking-bulb-25w-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Halogen basking flood bulb 25 watts",
-        "credit": "Raimond Spekking via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ikea_halogen_candle-flame_light_bulb_with_E14_Edison_screw_-_bulb_removed-9889.jpg"
+        "height": 1200,
+        "alt": "Linear halogen tube glowing warm orange inside a reflector dish",
+        "credit": "No machine-readable author provided. Keeleysam assumed (based on copyright claims). via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Halogen_Light_Macro_Shot.jpeg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2778,14 +2800,15 @@
     "sku": "HL-HB-35",
     "images": [
       {
-        "url": "/products/halogen-basking-bulb-35w-1.webp",
-        "thumbnail_url": "/products/halogen-basking-bulb-35w-1-thumb.webp",
+        "url": "/products/halogen-basking-bulb-35w-2.webp",
+        "thumbnail_url": "/products/halogen-basking-bulb-35w-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Halogen basking flood bulb 35 watts",
-        "credit": "Raimond Spekking via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ikea_halogen_candle-flame_light_bulb_with_E14_Edison_screw_-_bulb_removed-9889.jpg"
+        "height": 1200,
+        "alt": "Round halogen reflector spot bulb with mirrored dish and pin base",
+        "credit": "Dmitry G via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:OSRAM_41835FL.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2825,14 +2848,15 @@
     "sku": "HL-HB-75",
     "images": [
       {
-        "url": "/products/halogen-basking-bulb-75w-1.webp",
-        "thumbnail_url": "/products/halogen-basking-bulb-75w-1-thumb.webp",
+        "url": "/products/halogen-basking-bulb-75w-2.webp",
+        "thumbnail_url": "/products/halogen-basking-bulb-75w-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Halogen basking flood bulb 75 watts",
-        "credit": "Raimond Spekking via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ikea_halogen_candle-flame_light_bulb_with_E14_Edison_screw_-_bulb_removed-9889.jpg"
+        "height": 1067,
+        "alt": "Halogen reflector spot bulb with mirrored reflector",
+        "credit": "Altoscroll via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Halogen_GU10.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2919,14 +2943,15 @@
     "sku": "HL-BS-25",
     "images": [
       {
-        "url": "/products/basking-spot-bulb-25w-1.webp",
-        "thumbnail_url": "/products/basking-spot-bulb-25w-1-thumb.webp",
+        "url": "/products/basking-spot-bulb-25w-2.webp",
+        "thumbnail_url": "/products/basking-spot-bulb-25w-2-thumb.webp",
         "width": 1600,
-        "height": 1600,
-        "alt": "Basking spot bulb 25 watts",
-        "credit": "Jules Verne Times Two via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Low-key_photograph_of_light_bulb,_Straume,_Norway_julesvernex2.jpg"
+        "height": 1200,
+        "alt": "Reflector spot bulb with screw base and clustered LED face",
+        "credit": "No machine-readable author provided. Ocrho assumed (based on copyright claims). via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:E27_with_38_LCD.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3154,14 +3179,15 @@
     "sku": "HL-BS-125",
     "images": [
       {
-        "url": "/products/basking-spot-bulb-125w-1.webp",
-        "thumbnail_url": "/products/basking-spot-bulb-125w-1-thumb.webp",
+        "url": "/products/basking-spot-bulb-125w-2.webp",
+        "thumbnail_url": "/products/basking-spot-bulb-125w-2-thumb.webp",
         "width": 1600,
         "height": 1600,
-        "alt": "Basking spot bulb 125 watts",
-        "credit": "Jules Verne Times Two via Wikimedia Commons",
+        "alt": "Round PAR floodlight bulb face showing the reflector lens",
+        "credit": "Raimond Spekking via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Low-key_photograph_of_light_bulb,_Straume,_Norway_julesvernex2.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Incandescent_floodlight_bulb_100_W,_shape_PAR-9597.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3201,14 +3227,15 @@
     "sku": "HL-BS-150",
     "images": [
       {
-        "url": "/products/basking-spot-bulb-150w-1.webp",
-        "thumbnail_url": "/products/basking-spot-bulb-150w-1-thumb.webp",
+        "url": "/products/basking-spot-bulb-150w-2.webp",
+        "thumbnail_url": "/products/basking-spot-bulb-150w-2-thumb.webp",
         "width": 1600,
-        "height": 1600,
-        "alt": "Basking spot bulb 150 watts",
-        "credit": "Jules Verne Times Two via Wikimedia Commons",
+        "height": 1200,
+        "alt": "PAR floodlight spot bulb lying on its side showing the reflector face",
+        "credit": "Raimond Spekking via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Low-key_photograph_of_light_bulb,_Straume,_Norway_julesvernex2.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Incandescent_floodlight_bulb_100_W,_shape_PAR-9599.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3248,14 +3275,15 @@
     "sku": "HL-BS-250",
     "images": [
       {
-        "url": "/products/basking-spot-bulb-250w-1.webp",
-        "thumbnail_url": "/products/basking-spot-bulb-250w-1-thumb.webp",
+        "url": "/products/basking-spot-bulb-250w-2.webp",
+        "thumbnail_url": "/products/basking-spot-bulb-250w-2-thumb.webp",
         "width": 1600,
         "height": 1600,
-        "alt": "Basking spot bulb 250 watts",
-        "credit": "Jules Verne Times Two via Wikimedia Commons",
+        "alt": "PAR floodlight spot bulb with screw base seen from the front",
+        "credit": "Raimond Spekking via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Low-key_photograph_of_light_bulb,_Straume,_Norway_julesvernex2.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Incandescent_floodlight_bulb_100_W,_shape_PAR-9600.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3389,14 +3417,15 @@
     "sku": "HL-ML-25",
     "images": [
       {
-        "url": "/products/moonlight-bulb-25w-1.webp",
-        "thumbnail_url": "/products/moonlight-bulb-25w-1-thumb.webp",
+        "url": "/products/moonlight-bulb-25w-2.webp",
+        "thumbnail_url": "/products/moonlight-bulb-25w-2-thumb.webp",
         "width": 1600,
-        "height": 1600,
-        "alt": "Moonlight bulb 25 watts",
-        "credit": "Jules Verne Times Two via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Low-key_photograph_of_light_bulb,_Straume,_Norway_julesvernex2.jpg"
+        "height": 716,
+        "alt": "Blue-tinted light bulbs beside a white bulb on a pink background",
+        "credit": "Sasun Bughdaryan on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-white-lightbulb-stands-out-from-two-blue-ones-qCDmRM9fU3g",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3436,14 +3465,15 @@
     "sku": "HL-ML-50",
     "images": [
       {
-        "url": "/products/moonlight-bulb-50w-1.webp",
-        "thumbnail_url": "/products/moonlight-bulb-50w-1-thumb.webp",
+        "url": "/products/moonlight-bulb-50w-2.webp",
+        "thumbnail_url": "/products/moonlight-bulb-50w-2-thumb.webp",
         "width": 1600,
-        "height": 1600,
-        "alt": "Moonlight bulb 50 watts",
-        "credit": "Jules Verne Times Two via Wikimedia Commons",
+        "height": 802,
+        "alt": "Three colored light bulbs in pink, white and turquoise blue",
+        "credit": "Gpkp via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Low-key_photograph_of_light_bulb,_Straume,_Norway_julesvernex2.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Electric_bulbs_(Red,_White,_Turquoise)_2026.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3530,14 +3560,15 @@
     "sku": "HL-IR-100",
     "images": [
       {
-        "url": "/products/infrared-night-bulb-100w-1.webp",
-        "thumbnail_url": "/products/infrared-night-bulb-100w-1-thumb.webp",
+        "url": "/products/infrared-night-bulb-100w-2.webp",
+        "thumbnail_url": "/products/infrared-night-bulb-100w-2-thumb.webp",
         "width": 1600,
-        "height": 1600,
-        "alt": "Infrared night bulb 100 watts",
-        "credit": "Jules Verne Times Two via Wikimedia Commons",
+        "height": 2105,
+        "alt": "Infrared heat lamp bulb with dark red reflector glass beside its box",
+        "credit": "Berthold Werner via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Low-key_photograph_of_light_bulb,_Straume,_Norway_julesvernex2.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Osram_Infrarot_Lampe_BW_2025-07-04_17-28-48_s.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3577,14 +3608,15 @@
     "sku": "HL-CHE-25",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-25w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-25w-1-thumb.webp",
-        "width": 1600,
-        "height": 669,
-        "alt": "Ceramic heat emitter 25 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "alt": "Infrared heat lamps in reflector shades",
+        "credit": "SAgbley via Wikimedia Commons",
+        "height": 2133,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_Heat_Lamp.jpg",
+        "thumbnail_url": "/products/ceramic-heat-emitter-25w-2-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-25w-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3624,14 +3656,15 @@
     "sku": "HL-CHE-40",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-40w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-40w-1-thumb.webp",
-        "width": 1600,
-        "height": 669,
-        "alt": "Ceramic heat emitter 40 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "alt": "Infrared heat lamps in reflector shades",
+        "credit": "SAgbley via Wikimedia Commons",
+        "height": 2133,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Infrared_Heat_Lamp.jpg",
+        "thumbnail_url": "/products/ceramic-heat-emitter-40w-2-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-40w-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3671,14 +3704,15 @@
     "sku": "HL-CHE-50",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-50w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-50w-1-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-50w-2.webp",
+        "thumbnail_url": "/products/ceramic-heat-emitter-50w-2-thumb.webp",
         "width": 1600,
-        "height": 669,
-        "alt": "Ceramic heat emitter 50 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "height": 1930,
+        "alt": "White ceramic heat emitter fitted in a reptile lamp holder with wire guard",
+        "credit": "Sciencia58 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Heating_lamp_-_W%C3%A4rmelampe_1.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3718,14 +3752,15 @@
     "sku": "HL-CHE-60",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-60w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-60w-1-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-60w-2.webp",
+        "thumbnail_url": "/products/ceramic-heat-emitter-60w-2-thumb.webp",
         "width": 1600,
-        "height": 669,
-        "alt": "Ceramic heat emitter 60 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "height": 1930,
+        "alt": "White ceramic heat emitter fitted in a reptile lamp holder with wire guard",
+        "credit": "Sciencia58 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Heating_lamp_-_W%C3%A4rmelampe_1.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3765,14 +3800,15 @@
     "sku": "HL-CHE-75",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-75w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-75w-1-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-75w-2.webp",
+        "thumbnail_url": "/products/ceramic-heat-emitter-75w-2-thumb.webp",
         "width": 1600,
-        "height": 669,
-        "alt": "Ceramic heat emitter 75 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "height": 1930,
+        "alt": "White ceramic heat emitter fitted in a reptile lamp holder with wire guard",
+        "credit": "Sciencia58 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Heating_lamp_-_W%C3%A4rmelampe_1.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3812,14 +3848,15 @@
     "sku": "HL-CHE-200",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-200w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-200w-1-thumb.webp",
-        "width": 1600,
-        "height": 669,
-        "alt": "Ceramic heat emitter 200 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "alt": "Lizard basking under a glowing heat lamp",
+        "credit": "Arjun Raj on Unsplash",
+        "height": 900,
+        "license": "Unsplash License",
+        "representative": true,
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-lizard-under-a-heat-lamp-BRGt9pBIpg4",
+        "thumbnail_url": "/products/ceramic-heat-emitter-200w-2-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-200w-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3859,14 +3896,15 @@
     "sku": "HL-CHE-250",
     "images": [
       {
-        "url": "/products/ceramic-heat-emitter-250w-1.webp",
-        "thumbnail_url": "/products/ceramic-heat-emitter-250w-1-thumb.webp",
-        "width": 1600,
-        "height": 669,
-        "alt": "Ceramic heat emitter 250 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "alt": "Lizard basking under a glowing heat lamp",
+        "credit": "Arjun Raj on Unsplash",
+        "height": 900,
+        "license": "Unsplash License",
+        "representative": true,
+        "source_url": "https://unsplash.com/photos/a-close-up-of-a-lizard-under-a-heat-lamp-BRGt9pBIpg4",
+        "thumbnail_url": "/products/ceramic-heat-emitter-250w-2-thumb.webp",
+        "url": "/products/ceramic-heat-emitter-250w-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3906,14 +3944,15 @@
     "sku": "HL-DHP-50",
     "images": [
       {
-        "url": "/products/deep-heat-projector-50w-1.webp",
-        "thumbnail_url": "/products/deep-heat-projector-50w-1-thumb.webp",
-        "width": 1600,
-        "height": 669,
-        "alt": "Deep heat projector 50 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "alt": "Goat kids under a glowing infrared heat lamp",
+        "credit": "Cjp24 via Wikimedia Commons",
+        "height": 1064,
+        "license": "CC BY-SA 4.0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Goat_kids_under_infrared_lamp.jpg",
+        "thumbnail_url": "/products/deep-heat-projector-50w-2-thumb.webp",
+        "url": "/products/deep-heat-projector-50w-2.webp",
+        "width": 1600
       }
     ],
     "featured": false,
@@ -3953,14 +3992,15 @@
     "sku": "HL-DHP-60",
     "images": [
       {
-        "url": "/products/deep-heat-projector-60w-1.webp",
-        "thumbnail_url": "/products/deep-heat-projector-60w-1-thumb.webp",
+        "url": "/products/deep-heat-projector-60w-2.webp",
+        "thumbnail_url": "/products/deep-heat-projector-60w-2-thumb.webp",
         "width": 1600,
-        "height": 669,
-        "alt": "Deep heat projector 60 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "height": 1600,
+        "alt": "Infrared heat lamp with dark red bulb in a white housing",
+        "credit": "FaceMePLS via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Philips_Infraphil_-_1950s.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4000,14 +4040,15 @@
     "sku": "HL-DHP-100",
     "images": [
       {
-        "url": "/products/deep-heat-projector-100w-1.webp",
-        "thumbnail_url": "/products/deep-heat-projector-100w-1-thumb.webp",
-        "width": 1600,
-        "height": 669,
-        "alt": "Deep heat projector 100 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "url": "/products/deep-heat-projector-100w-2.webp",
+        "thumbnail_url": "/products/deep-heat-projector-100w-2-thumb.webp",
+        "width": 1254,
+        "height": 939,
+        "alt": "Glowing red infrared heat bulb in a reflector",
+        "credit": "Ulfbastel via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kohlefadenrotlichtlampe.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4047,14 +4088,15 @@
     "sku": "HL-RHP-28",
     "images": [
       {
-        "url": "/products/radiant-heat-panel-28w-1.webp",
-        "thumbnail_url": "/products/radiant-heat-panel-28w-1-thumb.webp",
+        "url": "/products/radiant-heat-panel-28w-2.webp",
+        "thumbnail_url": "/products/radiant-heat-panel-28w-2-thumb.webp",
         "width": 1600,
-        "height": 669,
-        "alt": "Radiant heat panel 28 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "height": 1260,
+        "alt": "Flat rectangular radiant heater with heating elements behind a mesh grille",
+        "credit": "R. Henrik Nilsson via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Elektro_Standard_Katrineholm_Sweden_radiant_heater_from_second_half_of_20th_century.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4094,14 +4136,15 @@
     "sku": "HL-RHP-40",
     "images": [
       {
-        "url": "/products/radiant-heat-panel-40w-1.webp",
-        "thumbnail_url": "/products/radiant-heat-panel-40w-1-thumb.webp",
+        "url": "/products/radiant-heat-panel-40w-2.webp",
+        "thumbnail_url": "/products/radiant-heat-panel-40w-2-thumb.webp",
         "width": 1600,
-        "height": 669,
-        "alt": "Radiant heat panel 40 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "height": 1200,
+        "alt": "Flat rectangular infrared heat panels mounted overhead",
+        "credit": "CGP Grey via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:2006-01-08_-_London_-_British_Library_-_Cafe_-_Heat_Lamps_(4888570798).jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4141,14 +4184,15 @@
     "sku": "HL-RHP-60",
     "images": [
       {
-        "url": "/products/radiant-heat-panel-60w-1.webp",
-        "thumbnail_url": "/products/radiant-heat-panel-60w-1-thumb.webp",
-        "width": 1600,
-        "height": 669,
-        "alt": "Radiant heat panel 60 watts",
-        "credit": "Amada44 via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Heat_lamp_-_6183.png"
+        "url": "/products/radiant-heat-panel-60w-2.webp",
+        "thumbnail_url": "/products/radiant-heat-panel-60w-2-thumb.webp",
+        "width": 1536,
+        "height": 2048,
+        "alt": "Flat far-infrared radiant heat panels mounted on a ceiling",
+        "credit": "PalytsiaIvan via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Far_infrared_heater_by_Bilux.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4235,14 +4279,15 @@
     "sku": "HL-HM-MINI",
     "images": [
       {
-        "url": "/products/heat-mat-mini-4w-1.webp",
-        "thumbnail_url": "/products/heat-mat-mini-4w-1-thumb.webp",
-        "width": 1600,
-        "height": 2133,
-        "alt": "Under tank heat mat 4 watts 4×5 in",
-        "credit": "Александр Сигачёв via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rubber_heating_pad.jpg"
+        "url": "/products/heat-mat-mini-4w-2.webp",
+        "thumbnail_url": "/products/heat-mat-mini-4w-2-thumb.webp",
+        "width": 1280,
+        "height": 700,
+        "alt": "Flat light-blue electric heating pad with power cord",
+        "credit": "Almaseraga via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Heating_mattress_topper.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4282,14 +4327,15 @@
     "sku": "HL-HM-M",
     "images": [
       {
-        "url": "/products/heat-mat-medium-16w-1.webp",
-        "thumbnail_url": "/products/heat-mat-medium-16w-1-thumb.webp",
+        "url": "/products/heat-mat-medium-16w-2.webp",
+        "thumbnail_url": "/products/heat-mat-medium-16w-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Under tank heat mat 16 watts 8×12 in",
-        "credit": "Александр Сигачёв via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rubber_heating_pad.jpg"
+        "height": 1202,
+        "alt": "Electric heating mat with red heating cable on a mesh grid",
+        "credit": "Lacrus via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Thermomat.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4329,14 +4375,15 @@
     "sku": "HL-HM-XL",
     "images": [
       {
-        "url": "/products/heat-mat-x-large-32w-1.webp",
-        "thumbnail_url": "/products/heat-mat-x-large-32w-1-thumb.webp",
+        "url": "/products/heat-mat-x-large-32w-2.webp",
+        "thumbnail_url": "/products/heat-mat-x-large-32w-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Under tank heat mat 32 watts 11×17 in",
-        "credit": "Александр Сигачёв via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rubber_heating_pad.jpg"
+        "height": 1200,
+        "alt": "Folded flat electric heating blanket with controller and cord",
+        "credit": "Limetolime at English Wikipedia via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Electricblanket.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4376,14 +4423,15 @@
     "sku": "HL-HM-XXL",
     "images": [
       {
-        "url": "/products/heat-mat-xx-large-48w-1.webp",
-        "thumbnail_url": "/products/heat-mat-xx-large-48w-1-thumb.webp",
+        "url": "/products/heat-mat-xx-large-48w-2.webp",
+        "thumbnail_url": "/products/heat-mat-xx-large-48w-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Under tank heat mat 48 watts 12×24 in",
-        "credit": "Александр Сигачёв via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rubber_heating_pad.jpg"
+        "height": 1066,
+        "alt": "Large flat foil heating mat laid under flooring",
+        "credit": "Lacrus via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Thermomat_for_parquet.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4423,14 +4471,15 @@
     "sku": "HL-HC-06",
     "images": [
       {
-        "url": "/products/reptile-heat-cable-6ft-1.webp",
-        "thumbnail_url": "/products/reptile-heat-cable-6ft-1-thumb.webp",
+        "url": "/products/reptile-heat-cable-6ft-2.webp",
+        "thumbnail_url": "/products/reptile-heat-cable-6ft-2-thumb.webp",
         "width": 1600,
-        "height": 1937,
-        "alt": "Reptile heat cable 6 feet 15 watts",
-        "credit": "K&K Data Service Inc. via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Underfloor_heating_cable_laid_in_bathroom,_Stone_County_Missouri,_2026-07-24.jpg"
+        "height": 1014,
+        "alt": "Red heating cable fitted along pipes with foil tape",
+        "credit": "Lacrus via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Thermocable.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4470,14 +4519,15 @@
     "sku": "HL-HC-25",
     "images": [
       {
-        "url": "/products/reptile-heat-cable-25ft-1.webp",
-        "thumbnail_url": "/products/reptile-heat-cable-25ft-1-thumb.webp",
+        "url": "/products/reptile-heat-cable-25ft-2.webp",
+        "thumbnail_url": "/products/reptile-heat-cable-25ft-2-thumb.webp",
         "width": 1600,
-        "height": 1937,
-        "alt": "Reptile heat cable 25 feet 50 watts",
-        "credit": "K&K Data Service Inc. via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Underfloor_heating_cable_laid_in_bathroom,_Stone_County_Missouri,_2026-07-24.jpg"
+        "height": 1066,
+        "alt": "Red heating cables laid in a roof gutter",
+        "credit": "Lacrus via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Roof_heating_cable.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4517,14 +4567,15 @@
     "sku": "HL-HC-50",
     "images": [
       {
-        "url": "/products/reptile-heat-cable-50ft-1.webp",
-        "thumbnail_url": "/products/reptile-heat-cable-50ft-1-thumb.webp",
+        "url": "/products/reptile-heat-cable-50ft-2.webp",
+        "thumbnail_url": "/products/reptile-heat-cable-50ft-2-thumb.webp",
         "width": 1600,
-        "height": 1937,
-        "alt": "Reptile heat cable 50 feet 100 watts",
-        "credit": "K&K Data Service Inc. via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Underfloor_heating_cable_laid_in_bathroom,_Stone_County_Missouri,_2026-07-24.jpg"
+        "height": 1066,
+        "alt": "Red heating cable looped on a mesh under a gutter",
+        "credit": "Lacrus via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Vodostok.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4564,14 +4615,15 @@
     "sku": "HL-HT-0310",
     "images": [
       {
-        "url": "/products/reptile-heat-tape-3in-1.webp",
-        "thumbnail_url": "/products/reptile-heat-tape-3in-1-thumb.webp",
+        "url": "/products/reptile-heat-tape-3in-2.webp",
+        "thumbnail_url": "/products/reptile-heat-tape-3in-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Reptile heat tape 3 inch 10 foot roll",
-        "credit": "Александр Сигачёв via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rubber_heating_pad.jpg"
+        "height": 1200,
+        "alt": "Self-regulating heat tracing tape fitted on a pipe",
+        "credit": "z22 via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Self-regulating_heat_tracing_tape.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4611,14 +4663,15 @@
     "sku": "HL-HT-0410",
     "images": [
       {
-        "url": "/products/reptile-heat-tape-4in-1.webp",
-        "thumbnail_url": "/products/reptile-heat-tape-4in-1-thumb.webp",
+        "url": "/products/reptile-heat-tape-4in-2.webp",
+        "thumbnail_url": "/products/reptile-heat-tape-4in-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Reptile heat tape 4 inch 10 foot roll",
-        "credit": "Александр Сигачёв via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rubber_heating_pad.jpg"
+        "height": 1200,
+        "alt": "Pipes fitted with electric trace heating, marked with warning labels",
+        "credit": "Alan Myers from London Town, United Kingdom via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Trace_heating_(3162683147).jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4658,14 +4711,15 @@
     "sku": "HL-HT-1125",
     "images": [
       {
-        "url": "/products/reptile-heat-tape-11in-25ft-1.webp",
-        "thumbnail_url": "/products/reptile-heat-tape-11in-25ft-1-thumb.webp",
+        "url": "/products/reptile-heat-tape-11in-25ft-2.webp",
+        "thumbnail_url": "/products/reptile-heat-tape-11in-25ft-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Reptile heat tape 11 inch 25 foot roll",
-        "credit": "Александр Сигачёв via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rubber_heating_pad.jpg"
+        "height": 1066,
+        "alt": "Roll of flat electric heating mat with red heating cable",
+        "credit": "Lacrus via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Thermomat_TVK-130.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4705,14 +4759,15 @@
     "sku": "HL-DM-055C",
     "images": [
       {
-        "url": "/products/dome-lamp-fixture-5-5in-clamp-1.webp",
-        "thumbnail_url": "/products/dome-lamp-fixture-5-5in-clamp-1-thumb.webp",
+        "url": "/products/dome-lamp-fixture-5-5in-clamp-2.webp",
+        "thumbnail_url": "/products/dome-lamp-fixture-5-5in-clamp-2-thumb.webp",
         "width": 1600,
-        "height": 1598,
-        "alt": "Dome lamp fixture 5.5 inch with clamp",
-        "credit": "Slaunger via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lamps_EM_Belysning_Viborg_Denmark_2016-12-30-.jpg"
+        "height": 1066,
+        "alt": "Metal dome reflector lamp shade with a glowing bulb",
+        "credit": "Kilian Murphy via Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/glowing-light-bulb-in-metal-shade-rXaTkwg90zk",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4752,14 +4807,15 @@
     "sku": "HL-DM-085C",
     "images": [
       {
-        "url": "/products/dome-lamp-fixture-8-5in-clamp-1.webp",
-        "thumbnail_url": "/products/dome-lamp-fixture-8-5in-clamp-1-thumb.webp",
+        "url": "/products/dome-lamp-fixture-8-5in-clamp-2.webp",
+        "thumbnail_url": "/products/dome-lamp-fixture-8-5in-clamp-2-thumb.webp",
         "width": 1600,
-        "height": 1598,
-        "alt": "Dome lamp fixture 8.5 inch with clamp",
-        "credit": "Slaunger via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lamps_EM_Belysning_Viborg_Denmark_2016-12-30-.jpg"
+        "height": 1066,
+        "alt": "Black and orange dome reflector lamp with gold interior",
+        "credit": "Jon Tyson via Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/orange-and-black-pendant-lamp-ZNSBexrA_h4",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4799,14 +4855,15 @@
     "sku": "HL-DM-100C",
     "images": [
       {
-        "url": "/products/dome-lamp-fixture-10in-clamp-1.webp",
-        "thumbnail_url": "/products/dome-lamp-fixture-10in-clamp-1-thumb.webp",
+        "url": "/products/dome-lamp-fixture-10in-clamp-2.webp",
+        "thumbnail_url": "/products/dome-lamp-fixture-10in-clamp-2-thumb.webp",
         "width": 1600,
-        "height": 1598,
-        "alt": "Dome lamp fixture 10 inch with clamp",
-        "credit": "Slaunger via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lamps_EM_Belysning_Viborg_Denmark_2016-12-30-.jpg"
+        "height": 1066,
+        "alt": "Black dome reflector lamp with gold interior on a stand",
+        "credit": "Jon Tyson via Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/black-and-brown-round-lamp-I1lQsjlIbMs",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4846,14 +4903,15 @@
     "sku": "HL-DM-055D",
     "images": [
       {
-        "url": "/products/deep-dome-lamp-fixture-5-5in-1.webp",
-        "thumbnail_url": "/products/deep-dome-lamp-fixture-5-5in-1-thumb.webp",
+        "url": "/products/deep-dome-lamp-fixture-5-5in-2.webp",
+        "thumbnail_url": "/products/deep-dome-lamp-fixture-5-5in-2-thumb.webp",
         "width": 1600,
-        "height": 1598,
-        "alt": "Deep dome lamp fixture 5.5 inch",
-        "credit": "Slaunger via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lamps_EM_Belysning_Viborg_Denmark_2016-12-30-.jpg"
+        "height": 1066,
+        "alt": "Red dome lamp shade with a lit bulb inside",
+        "credit": "Jerry Wei via Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/a-red-lamp-with-a-lit-bulb-lSi4JxRjSnc",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4893,14 +4951,15 @@
     "sku": "HL-DM-100D",
     "images": [
       {
-        "url": "/products/deep-dome-lamp-fixture-10in-1.webp",
-        "thumbnail_url": "/products/deep-dome-lamp-fixture-10in-1-thumb.webp",
+        "url": "/products/deep-dome-lamp-fixture-10in-2.webp",
+        "thumbnail_url": "/products/deep-dome-lamp-fixture-10in-2-thumb.webp",
         "width": 1600,
-        "height": 1598,
-        "alt": "Deep dome lamp fixture 10 inch",
-        "credit": "Slaunger via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lamps_EM_Belysning_Viborg_Denmark_2016-12-30-.jpg"
+        "height": 1066,
+        "alt": "Deep red dome heat lamp with glowing bulb, viewed from below",
+        "credit": "Mateo  Avila Chinchilla via Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/red-bulb-eNWLvaPmruI",
+        "representative": true
       }
     ],
     "featured": false,
@@ -4940,14 +4999,15 @@
     "sku": "HL-DM-TRIP",
     "images": [
       {
-        "url": "/products/triple-dome-lamp-fixture-1.webp",
-        "thumbnail_url": "/products/triple-dome-lamp-fixture-1-thumb.webp",
+        "url": "/products/triple-dome-lamp-fixture-2.webp",
+        "thumbnail_url": "/products/triple-dome-lamp-fixture-2-thumb.webp",
         "width": 1600,
-        "height": 1598,
-        "alt": "Triple dome lamp fixture with three domes",
-        "credit": "Slaunger via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lamps_EM_Belysning_Viborg_Denmark_2016-12-30-.jpg"
+        "height": 1184,
+        "alt": "Twin dome heat lamp unit with two metal reflector domes on adjustable arms",
+        "credit": "Johnny Briggs via Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/black-and-silver-pendant-lamp-1_DC-t-yfQU",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5081,14 +5141,15 @@
     "sku": "HL-FX-T8-18",
     "images": [
       {
-        "url": "/products/t8-fixture-18in-1.webp",
-        "thumbnail_url": "/products/t8-fixture-18in-1-thumb.webp",
+        "url": "/products/t8-fixture-18in-2.webp",
+        "thumbnail_url": "/products/t8-fixture-18in-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T8 reflector fixture 18 inches",
-        "credit": "Dmitry G via Wikimedia Commons",
+        "height": 1200,
+        "alt": "Recessed square fluorescent ceiling fixture with U-shaped tubes and a guard grille",
+        "credit": "BrokenSphere via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Recessed_U_fluorescent_bulb_ceiling_lighting_with_guard.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5128,14 +5189,15 @@
     "sku": "HL-FX-T8-36",
     "images": [
       {
-        "url": "/products/t8-fixture-36in-1.webp",
-        "thumbnail_url": "/products/t8-fixture-36in-1-thumb.webp",
+        "url": "/products/t8-fixture-36in-2.webp",
+        "thumbnail_url": "/products/t8-fixture-36in-2-thumb.webp",
         "width": 1600,
-        "height": 902,
-        "alt": "T8 reflector fixture 36 inches",
-        "credit": "Dmitry G via Wikimedia Commons",
+        "height": 1200,
+        "alt": "Recessed square fluorescent ceiling fixture with U-shaped tubes",
+        "credit": "BrokenSphere via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Fluorescent_lamp_without_cover.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Recessed_U_fluorescent_bulb_ceiling_lighting_without_guard.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5222,14 +5284,15 @@
     "sku": "HL-LED-PL18",
     "images": [
       {
-        "url": "/products/terrarium-plant-led-light-18in-1.webp",
-        "thumbnail_url": "/products/terrarium-plant-led-light-18in-1-thumb.webp",
+        "url": "/products/terrarium-plant-led-light-18in-2.webp",
+        "thumbnail_url": "/products/terrarium-plant-led-light-18in-2-thumb.webp",
         "width": 1600,
-        "height": 1300,
-        "alt": "Terrarium plant LED light 18 inches",
-        "credit": "Rhododendrites via Wikimedia Commons",
+        "height": 1348,
+        "alt": "Black pendant LED grow light hanging over a bonsai plant",
+        "credit": "Hotmilk400 via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:LED_light_(40979).jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aspect_Black_20W_Growlight_over_Bonsai.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5269,14 +5332,15 @@
     "sku": "HL-LED-PL36",
     "images": [
       {
-        "url": "/products/terrarium-plant-led-light-36in-1.webp",
-        "thumbnail_url": "/products/terrarium-plant-led-light-36in-1-thumb.webp",
-        "width": 1600,
-        "height": 1300,
-        "alt": "Terrarium plant LED light 36 inches",
-        "credit": "Rhododendrites via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:LED_light_(40979).jpg"
+        "url": "/products/terrarium-plant-led-light-36in-2.webp",
+        "thumbnail_url": "/products/terrarium-plant-led-light-36in-2-thumb.webp",
+        "width": 1024,
+        "height": 696,
+        "alt": "Pink LED grow light panel glowing over leafy plants",
+        "credit": "NASA Marshall Space Flight Center via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:LED_panel_and_plants.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5363,14 +5427,15 @@
     "sku": "HL-TS-DUAL",
     "images": [
       {
-        "url": "/products/dual-probe-proportional-thermostat-1.webp",
-        "thumbnail_url": "/products/dual-probe-proportional-thermostat-1-thumb.webp",
+        "url": "/products/dual-probe-proportional-thermostat-2.webp",
+        "thumbnail_url": "/products/dual-probe-proportional-thermostat-2-thumb.webp",
         "width": 1600,
-        "height": 1893,
-        "alt": "Reptile thermostat – Dual-Probe Proportional Thermostat",
-        "credit": "Ayla Yang via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:BC103_thermostat_side_view.png"
+        "height": 1546,
+        "alt": "Digital wall thermostat with glowing orange temperature display",
+        "credit": "TaurusEmerald via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Honeywell_E528_Smart_Digital_Thermostat.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5410,14 +5475,15 @@
     "sku": "HL-TS-PULSE",
     "images": [
       {
-        "url": "/products/pulse-proportional-thermostat-1.webp",
-        "thumbnail_url": "/products/pulse-proportional-thermostat-1-thumb.webp",
+        "url": "/products/pulse-proportional-thermostat-2.webp",
+        "thumbnail_url": "/products/pulse-proportional-thermostat-2-thumb.webp",
         "width": 1600,
-        "height": 1893,
-        "alt": "Reptile thermostat – Pulse Proportional Thermostat",
-        "credit": "Ayla Yang via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:BC103_thermostat_side_view.png"
+        "height": 1043,
+        "alt": "Programmable thermostat with day-of-week display and heat and cool buttons",
+        "credit": "MichaelCousins1 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Honeywell_Magicstat_thermostat_2.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5457,14 +5523,15 @@
     "sku": "HL-TS-3CH",
     "images": [
       {
-        "url": "/products/three-channel-smart-thermostat-1.webp",
-        "thumbnail_url": "/products/three-channel-smart-thermostat-1-thumb.webp",
+        "url": "/products/three-channel-smart-thermostat-2.webp",
+        "thumbnail_url": "/products/three-channel-smart-thermostat-2-thumb.webp",
         "width": 1600,
-        "height": 1893,
-        "alt": "Reptile thermostat – Three-Channel Smart Thermostat with Timer",
-        "credit": "Ayla Yang via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:BC103_thermostat_side_view.png"
+        "height": 1211,
+        "alt": "Smart touch screen thermostat with colour display showing room temperature",
+        "credit": "ThermostatInfo via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:ColorTouch_touch_screen_thermostat.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5504,14 +5571,15 @@
     "sku": "HL-TS-MINI",
     "images": [
       {
-        "url": "/products/digital-mini-thermostat-1.webp",
-        "thumbnail_url": "/products/digital-mini-thermostat-1-thumb.webp",
+        "url": "/products/digital-mini-thermostat-2.webp",
+        "thumbnail_url": "/products/digital-mini-thermostat-2-thumb.webp",
         "width": 1600,
-        "height": 1893,
-        "alt": "Reptile thermostat – Digital Mini Thermostat – On/Off",
-        "credit": "Ayla Yang via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:BC103_thermostat_side_view.png"
+        "height": 2133,
+        "alt": "Plug-in digital thermostat with LCD display and socket",
+        "credit": "Infrarotheizung kaufen - Thomas Schirmer via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Thermostat-fuer-Infrarotheizung.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5598,14 +5666,15 @@
     "sku": "HL-TS-INCU",
     "images": [
       {
-        "url": "/products/incubator-thermostat-1.webp",
-        "thumbnail_url": "/products/incubator-thermostat-1-thumb.webp",
+        "url": "/products/incubator-thermostat-2.webp",
+        "thumbnail_url": "/products/incubator-thermostat-2-thumb.webp",
         "width": 1600,
-        "height": 1893,
-        "alt": "Reptile thermostat – Incubator Thermostat – Precision Digital",
-        "credit": "Ayla Yang via Wikimedia Commons",
+        "height": 1200,
+        "alt": "Digital wall thermostat showing 80 degrees with up and down buttons",
+        "credit": "Ente75 via Wikimedia Commons",
         "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:BC103_thermostat_side_view.png"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hunter_Non-Programmable_Digital_Thermostat.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -5645,14 +5714,15 @@
     "sku": "HL-TS-1000W",
     "images": [
       {
-        "url": "/products/high-wattage-thermostat-1000w-1.webp",
-        "thumbnail_url": "/products/high-wattage-thermostat-1000w-1-thumb.webp",
+        "url": "/products/high-wattage-thermostat-1000w-2.webp",
+        "thumbnail_url": "/products/high-wattage-thermostat-1000w-2-thumb.webp",
         "width": 1600,
-        "height": 1893,
-        "alt": "Reptile thermostat – High-Wattage Thermostat – 1000W",
-        "credit": "Ayla Yang via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:BC103_thermostat_side_view.png"
+        "height": 1239,
+        "alt": "Digital wall thermostat with LCD display and fan and heat switches",
+        "credit": "TaurusEmerald via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Emerson_70_Series_Digital_Termostat.jpg",
+        "representative": true
       }
     ],
     "featured": false,

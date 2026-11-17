@@ -581,14 +581,14 @@
     "sku": "SD-DEC-WDISH",
     "images": [
       {
-        "url": "/products/ceramic-water-dish-large-1.webp",
-        "thumbnail_url": "/products/ceramic-water-dish-large-1-thumb.webp",
+        "url": "/products/ceramic-water-dish-large-2.webp",
+        "thumbnail_url": "/products/ceramic-water-dish-large-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Glazed ceramic bowl",
+        "height": 1067,
+        "alt": "Large white glazed ceramic water dish for reptiles",
         "credit": "W.carter via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Light_green_ceramic_bowl_1.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:White_glazed_stoneware_bowl_made_by_H%C3%B6gan%C3%A4s,_Sweden_2.jpg",
         "representative": true
       }
     ],
@@ -1401,14 +1401,14 @@
     "sku": "SD-SUB-ASP60",
     "images": [
       {
-        "url": "/products/aspen-shavings-bulk-60qt-1.webp",
-        "thumbnail_url": "/products/aspen-shavings-bulk-60qt-1-thumb.webp",
+        "url": "/products/aspen-shavings-bulk-60qt-2.webp",
+        "thumbnail_url": "/products/aspen-shavings-bulk-60qt-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Aspen Shavings Bedding – Bulk 60 qt",
-        "credit": "LavaSnake via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Captive_corn_snake_in_hide_box.jpg",
+        "height": 1067,
+        "alt": "Bulk pile of pale aspen wood shavings bedding",
+        "credit": "Intermountain Region US Forest Service via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wood_Shavings_ET5A7982_(30567130696).jpg",
         "representative": true
       }
     ],
@@ -1497,14 +1497,14 @@
     "sku": "SD-SUB-ORCH24",
     "images": [
       {
-        "url": "/products/orchid-bark-fine-24qt-1.webp",
-        "thumbnail_url": "/products/orchid-bark-fine-24qt-1-thumb.webp",
-        "width": 1024,
-        "height": 768,
-        "alt": "Fine Orchid Bark Substrate – 24 qt",
-        "credit": "Joe Hoover via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Wood_mulch_in_driveway.jpg",
+        "url": "/products/orchid-bark-fine-24qt-2.webp",
+        "thumbnail_url": "/products/orchid-bark-fine-24qt-2-thumb.webp",
+        "width": 1600,
+        "height": 1103,
+        "alt": "Fine orchid bark chips substrate close-up",
+        "credit": "Luksongm MWLLOPPEE via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:HK_%E4%B8%AD%E7%92%B0_Central_%E6%B0%91%E8%80%80%E8%A1%97_Man_Yiu_Street_%E6%81%92%E5%9F%BA%E5%9C%B0%E7%94%A2_Henderson_Land_Development_Central_Yards_%E8%A1%8C%E4%BA%BA%E5%A4%A9%E6%A9%8B_footbridge_pine_bark_chips_texture_March_2026_N13P_02.jpg",
         "representative": true
       }
     ],
@@ -1689,14 +1689,14 @@
     "sku": "SD-SUB-CARP48",
     "images": [
       {
-        "url": "/products/reptile-carpet-liner-48x24-1.webp",
-        "thumbnail_url": "/products/reptile-carpet-liner-48x24-1-thumb.webp",
+        "url": "/products/reptile-carpet-liner-48x24-2.webp",
+        "thumbnail_url": "/products/reptile-carpet-liner-48x24-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Reptile Carpet Liner – 48 x 24 in, 2 Pack",
-        "credit": "ProjectManhattan via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Black_carpet.jpg",
+        "height": 1200,
+        "alt": "Green-grey woven reptile carpet liner texture",
+        "credit": "Titus Tscharntke via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hard_wearing_grey_carpet_texture.jpg",
         "representative": true
       }
     ],
@@ -2166,14 +2166,14 @@
     "sku": "SD-SUB-TROP16",
     "images": [
       {
-        "url": "/products/tropical-bioactive-soil-16qt-1.webp",
-        "thumbnail_url": "/products/tropical-bioactive-soil-16qt-1-thumb.webp",
+        "url": "/products/tropical-bioactive-soil-16qt-2.webp",
+        "thumbnail_url": "/products/tropical-bioactive-soil-16qt-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Tropical Bioactive Soil Mix – 16 qt",
-        "credit": "Wordsmith105 via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Soil_Preps.jpg",
+        "alt": "Hands holding dark tropical bioactive soil mix",
+        "credit": "M Tullottes via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:HandsInSoil.jpg",
         "representative": true
       }
     ],
@@ -2262,14 +2262,14 @@
     "sku": "SD-HID-CORKS",
     "images": [
       {
-        "url": "/products/cork-bark-hide-small-1.webp",
-        "thumbnail_url": "/products/cork-bark-hide-small-1-thumb.webp",
+        "url": "/products/cork-bark-hide-small-2.webp",
+        "thumbnail_url": "/products/cork-bark-hide-small-2-thumb.webp",
         "width": 1600,
-        "height": 1841,
-        "alt": "Cork Bark Hide – Small",
-        "credit": "Cbuske46 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_-_bark_in_Portugal.jpg",
+        "height": 1200,
+        "alt": "Small piece of natural cork bark hide for reptiles",
+        "credit": "Jan Helebrant via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_bark_JHelebrant_004_(28701971803).jpg",
         "representative": true
       }
     ],
@@ -2310,14 +2310,14 @@
     "sku": "SD-HID-CORKL",
     "images": [
       {
-        "url": "/products/cork-bark-hide-large-1.webp",
-        "thumbnail_url": "/products/cork-bark-hide-large-1-thumb.webp",
+        "url": "/products/cork-bark-hide-large-2.webp",
+        "thumbnail_url": "/products/cork-bark-hide-large-2-thumb.webp",
         "width": 1600,
-        "height": 1841,
-        "alt": "Cork Bark Hide – Large",
-        "credit": "Cbuske46 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_-_bark_in_Portugal.jpg",
+        "height": 1200,
+        "alt": "Large chunk of natural cork bark hide for reptiles",
+        "credit": "Jan Helebrant via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_bark_JHelebrant_010_(28699510854).jpg",
         "representative": true
       }
     ],
@@ -2358,14 +2358,14 @@
     "sku": "SD-HID-CORKH",
     "images": [
       {
-        "url": "/products/cork-bark-half-round-hide-1.webp",
-        "thumbnail_url": "/products/cork-bark-half-round-hide-1-thumb.webp",
+        "url": "/products/cork-bark-half-round-hide-2.webp",
+        "thumbnail_url": "/products/cork-bark-half-round-hide-2-thumb.webp",
         "width": 1600,
-        "height": 1841,
-        "alt": "Cork Bark Half Round Hide – Medium",
-        "credit": "Cbuske46 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_-_bark_in_Portugal.jpg",
+        "height": 1200,
+        "alt": "Curved half-round cork bark hide for reptiles",
+        "credit": "Jan Helebrant via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_bark_JHelebrant_014_(28699176774).jpg",
         "representative": true
       }
     ],
@@ -2406,14 +2406,14 @@
     "sku": "SD-HID-HLOGS",
     "images": [
       {
-        "url": "/products/half-log-hide-small-1.webp",
-        "thumbnail_url": "/products/half-log-hide-small-1-thumb.webp",
+        "url": "/products/half-log-hide-small-2.webp",
+        "thumbnail_url": "/products/half-log-hide-small-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Half Log Hide – Small",
-        "credit": "Radomianin via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Pine_log_cross-sections,_Teutendorf,_2016-09-17.jpg",
+        "height": 1090,
+        "alt": "Hollow pine log hide for reptiles",
+        "credit": "W.carter via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hollow_pine_log_at_Holma.jpg",
         "representative": true
       }
     ],
@@ -2502,14 +2502,14 @@
     "sku": "SD-HID-CAVES",
     "images": [
       {
-        "url": "/products/resin-cave-hide-small-1.webp",
-        "thumbnail_url": "/products/resin-cave-hide-small-1-thumb.webp",
+        "url": "/products/resin-cave-hide-small-2.webp",
+        "thumbnail_url": "/products/resin-cave-hide-small-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Resin Rock Cave Hide – Small",
-        "credit": "[Tycho] talk , http://shansov.net via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Phong_Nha-Ke_Bang_cave3.jpg",
+        "height": 1068,
+        "alt": "Rock cave shelter hide for reptile terrariums",
+        "credit": "Dietmar Rabich via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Berdorf_(LU),_Hohllay_--_2015_--_6097-101.jpg",
         "representative": true
       }
     ],
@@ -2550,14 +2550,14 @@
     "sku": "SD-HID-CAVEL",
     "images": [
       {
-        "url": "/products/resin-cave-hide-large-1.webp",
-        "thumbnail_url": "/products/resin-cave-hide-large-1-thumb.webp",
+        "url": "/products/resin-cave-hide-large-2.webp",
+        "thumbnail_url": "/products/resin-cave-hide-large-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Resin Rock Cave Hide – Large",
-        "credit": "[Tycho] talk , http://shansov.net via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Phong_Nha-Ke_Bang_cave3.jpg",
+        "height": 1269,
+        "alt": "Large rock cave hide for reptile terrariums",
+        "credit": "Daniel Schwen via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cave-in-rock_IL.jpg",
         "representative": true
       }
     ],
@@ -2598,14 +2598,14 @@
     "sku": "SD-HID-HUMS",
     "images": [
       {
-        "url": "/products/humid-hide-small-1.webp",
-        "thumbnail_url": "/products/humid-hide-small-1-thumb.webp",
+        "url": "/products/humid-hide-small-2.webp",
+        "thumbnail_url": "/products/humid-hide-small-2-thumb.webp",
         "width": 1600,
         "height": 1067,
-        "alt": "Humid Hide with Moss Tray – Small",
-        "credit": "[Tycho] talk , http://shansov.net via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Phong_Nha-Ke_Bang_cave3.jpg",
+        "alt": "Damp sphagnum moss inside a humid hide for reptiles",
+        "credit": "NC Wetlands from Raleigh, NC via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sphagnum_moss_in_Panthertown_Valley_bog.jpg",
         "representative": true
       }
     ],
@@ -2646,14 +2646,15 @@
     "sku": "SD-HID-CORN",
     "images": [
       {
-        "url": "/products/corner-hide-1.webp",
-        "thumbnail_url": "/products/corner-hide-1-thumb.webp",
+        "url": "/products/corner-hide-2.webp",
+        "thumbnail_url": "/products/corner-hide-2-thumb.webp",
         "width": 1600,
-        "height": 1841,
-        "alt": "Corner Hide for Terrariums",
-        "credit": "Cbuske46 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_-_bark_in_Portugal.jpg"
+        "height": 1200,
+        "alt": "Two pieces of natural cork bark for a corner terrarium hide",
+        "credit": "Jan Helebrant via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_bark_JHelebrant_005_(29214662842).jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2740,14 +2741,15 @@
     "sku": "SD-HID-STONE",
     "images": [
       {
-        "url": "/products/natural-stone-hide-1.webp",
-        "thumbnail_url": "/products/natural-stone-hide-1-thumb.webp",
+        "url": "/products/natural-stone-hide-2.webp",
+        "thumbnail_url": "/products/natural-stone-hide-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Natural Stone Hide – Medium",
-        "credit": "[Tycho] talk , http://shansov.net via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Phong_Nha-Ke_Bang_cave3.jpg"
+        "height": 1063,
+        "alt": "Natural rock shelter cave hide for reptiles",
+        "credit": "Vyacheslav Argenberg via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Mangup-Kale,_Rock_shelter,_Grotto,_Baba-Dag,_Crimea.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2929,14 +2931,14 @@
     "sku": "SD-DEC-CORKFS",
     "images": [
       {
-        "url": "/products/cork-bark-flat-small-1.webp",
-        "thumbnail_url": "/products/cork-bark-flat-small-1-thumb.webp",
+        "url": "/products/cork-bark-flat-small-2.webp",
+        "thumbnail_url": "/products/cork-bark-flat-small-2-thumb.webp",
         "width": 1600,
-        "height": 1841,
-        "alt": "Cork Bark Flat – Small",
-        "credit": "Cbuske46 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_-_bark_in_Portugal.jpg",
+        "height": 1200,
+        "alt": "Small flat piece of natural cork bark for terrarium decor",
+        "credit": "Tangopaso via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Domaine_du_Rayol_-_Quercus_suber_(bark_2).jpg",
         "representative": true
       }
     ],
@@ -3025,14 +3027,14 @@
     "sku": "SD-DEC-CORKRS",
     "images": [
       {
-        "url": "/products/cork-round-tube-small-1.webp",
-        "thumbnail_url": "/products/cork-round-tube-small-1-thumb.webp",
+        "url": "/products/cork-round-tube-small-2.webp",
+        "thumbnail_url": "/products/cork-round-tube-small-2-thumb.webp",
         "width": 1600,
-        "height": 1841,
-        "alt": "Cork Round Tube – Small",
-        "credit": "Cbuske46 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_-_bark_in_Portugal.jpg",
+        "height": 1200,
+        "alt": "Small hollow cork bark tube for reptile terrariums",
+        "credit": "Jan Helebrant via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_bark_JHelebrant_008_(29288877696).jpg",
         "representative": true
       }
     ],
@@ -3073,14 +3075,14 @@
     "sku": "SD-DEC-CORKRL",
     "images": [
       {
-        "url": "/products/cork-round-tube-large-1.webp",
-        "thumbnail_url": "/products/cork-round-tube-large-1-thumb.webp",
-        "width": 1600,
-        "height": 1841,
-        "alt": "Cork Round Tube – Large",
-        "credit": "Cbuske46 via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cork_-_bark_in_Portugal.jpg",
+        "url": "/products/cork-round-tube-large-2.webp",
+        "thumbnail_url": "/products/cork-round-tube-large-2-thumb.webp",
+        "width": 1280,
+        "height": 960,
+        "alt": "Stacked hollow cork bark tubes for reptile terrariums",
+        "credit": "Carsten Niehaus de:Korkeiche via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Quercus_suber_corc.JPG",
         "representative": true
       }
     ],
@@ -3169,14 +3171,14 @@
     "sku": "SD-DEC-MOPS",
     "images": [
       {
-        "url": "/products/mopani-wood-small-1.webp",
-        "thumbnail_url": "/products/mopani-wood-small-1-thumb.webp",
+        "url": "/products/mopani-wood-small-2.webp",
+        "thumbnail_url": "/products/mopani-wood-small-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Mopani Wood – Small Branch",
-        "credit": "Davidbena via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Driftwood_in_Israel.jpg",
+        "height": 1200,
+        "alt": "Small gnarled driftwood branch for reptile terrariums",
+        "credit": "VANOCE2022 via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Samorost_20260101_122254.jpg",
         "representative": true
       }
     ],
@@ -3407,14 +3409,14 @@
     "sku": "SD-DEC-WDISHS",
     "images": [
       {
-        "url": "/products/ceramic-water-dish-small-1.webp",
-        "thumbnail_url": "/products/ceramic-water-dish-small-1-thumb.webp",
+        "url": "/products/ceramic-water-dish-small-2.webp",
+        "thumbnail_url": "/products/ceramic-water-dish-small-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Ceramic Water Dish – Small",
-        "credit": "W.carter via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Light_green_ceramic_bowl_1.jpg",
+        "alt": "Small white speckled ceramic water dish for reptiles",
+        "credit": "Tom Crew on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/closeup-photo-of-white-bowl-on-white-surface-Mz__0nr1AM8",
         "representative": true
       }
     ],
@@ -3455,14 +3457,14 @@
     "sku": "SD-DEC-WDISHM",
     "images": [
       {
-        "url": "/products/ceramic-water-dish-medium-1.webp",
-        "thumbnail_url": "/products/ceramic-water-dish-medium-1-thumb.webp",
+        "url": "/products/ceramic-water-dish-medium-2.webp",
+        "thumbnail_url": "/products/ceramic-water-dish-medium-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Ceramic Water Dish – Medium",
-        "credit": "W.carter via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Light_green_ceramic_bowl_1.jpg",
+        "height": 1334,
+        "alt": "Medium round cream ceramic water dish for reptiles",
+        "credit": "TAN Erica on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/round-white-ceramic-bowl-zCYO9HxEAjI",
         "representative": true
       }
     ],
@@ -3836,14 +3838,14 @@
     "sku": "SD-PL-POTHMQ",
     "images": [
       {
-        "url": "/products/marble-queen-pothos-4in-1.webp",
-        "thumbnail_url": "/products/marble-queen-pothos-4in-1-thumb.webp",
+        "url": "/products/marble-queen-pothos-4in-2.webp",
+        "thumbnail_url": "/products/marble-queen-pothos-4in-2-thumb.webp",
         "width": 1600,
-        "height": 1063,
-        "alt": "Marble Queen Pothos – 4 in Pot",
-        "credit": "Joydeep via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum_31082012.jpg",
+        "height": 1278,
+        "alt": "Marble Queen pothos plant with white variegated leaves in a terracotta pot",
+        "credit": "Spnq via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum_(Marble_Queen)_houseplant_(2).png",
         "representative": true
       }
     ],

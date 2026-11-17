@@ -927,14 +927,15 @@
     "sku": "CA-FD-TONGB10",
     "images": [
       {
-        "url": "/products/bamboo-feeding-tongs-10in-1.webp",
-        "thumbnail_url": "/products/bamboo-feeding-tongs-10in-1-thumb.webp",
-        "width": 1500,
-        "height": 1050,
-        "alt": "Bamboo Feeding Tongs – 10 in",
-        "credit": "Sac86738 at English Wikipedia via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Grilling-tongs.png"
+        "url": "/products/bamboo-feeding-tongs-10in-2.webp",
+        "thumbnail_url": "/products/bamboo-feeding-tongs-10in-2-thumb.webp",
+        "width": 1600,
+        "height": 769,
+        "alt": "Metal pasta tongs on a wooden surface",
+        "credit": "Cornischong at lb.wikipedia via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Spaghettizaang.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -974,14 +975,15 @@
     "sku": "CA-FD-TONGC10",
     "images": [
       {
-        "url": "/products/stainless-feeding-tongs-10in-curved-1.webp",
-        "thumbnail_url": "/products/stainless-feeding-tongs-10in-curved-1-thumb.webp",
-        "width": 1500,
-        "height": 1050,
-        "alt": "Stainless Steel Feeding Tongs – 10 in, Curved",
+        "url": "/products/stainless-feeding-tongs-10in-curved-2.webp",
+        "thumbnail_url": "/products/stainless-feeding-tongs-10in-curved-2-thumb.webp",
+        "width": 1504,
+        "height": 1000,
+        "alt": "Kitchen tongs with red silicone tips on a white background",
         "credit": "Sac86738 at English Wikipedia via Wikimedia Commons",
         "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Grilling-tongs.png"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kitchen-tongs.png",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1021,14 +1023,15 @@
     "sku": "CA-FD-TONG18",
     "images": [
       {
-        "url": "/products/stainless-feeding-tongs-18in-1.webp",
-        "thumbnail_url": "/products/stainless-feeding-tongs-18in-1-thumb.webp",
-        "width": 1500,
-        "height": 1050,
-        "alt": "Stainless Steel Feeding Tongs – 18 in",
-        "credit": "Sac86738 at English Wikipedia via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Grilling-tongs.png"
+        "url": "/products/stainless-feeding-tongs-18in-2.webp",
+        "thumbnail_url": "/products/stainless-feeding-tongs-18in-2-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Metal grill tongs turning steaks on a barbecue",
+        "credit": "Frettie via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Grilled_steaks_turned_by_grill_tongs_near_Host%C3%A1kov,_Vladislav,_T%C5%99eb%C3%AD%C4%8D_District.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1068,14 +1071,15 @@
     "sku": "CA-FD-TONG24",
     "images": [
       {
-        "url": "/products/feeding-tongs-24in-1.webp",
-        "thumbnail_url": "/products/feeding-tongs-24in-1-thumb.webp",
-        "width": 1500,
-        "height": 1050,
-        "alt": "Stainless Steel Feeding Tongs – 24 in",
-        "credit": "Sac86738 at English Wikipedia via Wikimedia Commons",
+        "url": "/products/feeding-tongs-24in-2.webp",
+        "thumbnail_url": "/products/feeding-tongs-24in-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Two long stainless steel tongs on a blue cloth",
+        "credit": "User:आशीष भटनागर via Wikimedia Commons",
         "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Grilling-tongs.png"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Tongs_steel.JPG",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1162,14 +1166,15 @@
     "sku": "CA-FD-WORMD",
     "images": [
       {
-        "url": "/products/worm-feeding-dish-1.webp",
-        "thumbnail_url": "/products/worm-feeding-dish-1-thumb.webp",
+        "url": "/products/worm-feeding-dish-2.webp",
+        "thumbnail_url": "/products/worm-feeding-dish-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Smooth Worm Feeding Dish",
-        "credit": "W.carter via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Light_green_ceramic_bowl_1.jpg"
+        "height": 900,
+        "alt": "Shallow terracotta ceramic feeding dish for worms and insects",
+        "credit": "Viviane Okubo on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/empty-bowl-BgIOYG835og",
+        "representative": true
       }
     ],
     "featured": false,
@@ -1305,14 +1310,14 @@
     "sku": "CA-FD-DBFOOD",
     "images": [
       {
-        "url": "/products/dubia-roach-food-8oz-1.webp",
-        "thumbnail_url": "/products/dubia-roach-food-8oz-1-thumb.webp",
-        "width": 1024,
-        "height": 632,
-        "alt": "Dubia Roach Food – 8 oz",
-        "credit": "Nicky.Animals via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Dubia-cockroach-female-near-ruler.jpg",
+        "url": "/products/dubia-roach-food-8oz-2.webp",
+        "thumbnail_url": "/products/dubia-roach-food-8oz-2-thumb.webp",
+        "width": 1600,
+        "height": 903,
+        "alt": "Small dry feed pellets",
+        "credit": "RICHI Machinery via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:2mm_feed_pellets_produced_by_richi_machinery.jpg",
         "representative": true
       }
     ],
@@ -1449,14 +1454,14 @@
     "sku": "CA-HD-HOOK24",
     "images": [
       {
-        "url": "/products/snake-hook-24in-1.webp",
-        "thumbnail_url": "/products/snake-hook-24in-1-thumb.webp",
+        "url": "/products/snake-hook-24in-2.webp",
+        "thumbnail_url": "/products/snake-hook-24in-2-thumb.webp",
         "width": 1600,
-        "height": 1201,
-        "alt": "Stainless Steel Snake Hook – 24 in",
-        "credit": "ROCKY via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Snake_hook_-_%E0%A6%B8%E0%A6%BE%E0%A6%AA_%E0%A6%A7%E0%A6%B0%E0%A6%BE%E0%A6%B0_%E0%A6%B9%E0%A7%81%E0%A6%95_-_DSC00648.jpg",
+        "height": 1067,
+        "alt": "Handler holding a snake with a long snake hook indoors",
+        "credit": "U.S. Marine Corps photo by Sgt. Cristian Bestul via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:MRF-D_24_3-_U_S_Sailors_participate_in_snake_handling_course_(8492635).jpg",
         "representative": true
       }
     ],
@@ -1497,14 +1502,14 @@
     "sku": "CA-HD-HOOK38",
     "images": [
       {
-        "url": "/products/snake-hook-38in-1.webp",
-        "thumbnail_url": "/products/snake-hook-38in-1-thumb.webp",
+        "url": "/products/snake-hook-38in-2.webp",
+        "thumbnail_url": "/products/snake-hook-38in-2-thumb.webp",
         "width": 1600,
-        "height": 1201,
-        "alt": "Stainless Steel Snake Hook – 38 in",
-        "credit": "Pogrebnoj-Alexandroff via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hook_for_snakes.JPG",
+        "height": 1274,
+        "alt": "Snake handled outdoors with a long metal snake hook",
+        "credit": "JonRichfield via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Naja_nivea_handling_with_a_snake_hook_IMG_0792.JPG",
         "representative": true
       }
     ],
@@ -1545,14 +1550,14 @@
     "sku": "CA-HD-STONG25",
     "images": [
       {
-        "url": "/products/snake-handling-tongs-25in-1.webp",
-        "thumbnail_url": "/products/snake-handling-tongs-25in-1-thumb.webp",
-        "width": 1500,
-        "height": 1050,
-        "alt": "Snake Handling Tongs – 25 in",
-        "credit": "Sac86738 at English Wikipedia via Wikimedia Commons",
+        "url": "/products/snake-handling-tongs-25in-2.webp",
+        "thumbnail_url": "/products/snake-handling-tongs-25in-2-thumb.webp",
+        "width": 1600,
+        "height": 1755,
+        "alt": "Snake held securely with long-handled snake tongs",
+        "credit": "U.S. Fish and Wildlife Service - Midwest Region via Wikimedia Commons",
         "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Grilling-tongs.png",
+        "source_url": "https://commons.wikimedia.org/wiki/File:An_eastern_massasauga_rattlesnake_captured_using_tongs_(53719673167).jpg",
         "representative": true
       }
     ],
@@ -1879,14 +1884,15 @@
     "sku": "CA-MN-MINMAX",
     "images": [
       {
-        "url": "/products/min-max-thermometer-1.webp",
-        "thumbnail_url": "/products/min-max-thermometer-1-thumb.webp",
-        "width": 1200,
-        "height": 1600,
-        "alt": "Min/Max Digital Thermometer",
-        "credit": "TCdeOLiveira via Wikimedia Commons",
+        "url": "/products/min-max-thermometer-2.webp",
+        "thumbnail_url": "/products/min-max-thermometer-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Digital thermometer with max/min memory display reading 98.6",
+        "credit": "Famartin via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Common_mercury_thermometer_-_term%C3%B4metro.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:2025-06-24_19_37_32_Nimbus_digital_thermometer_displaying_a_high_temperature_of_98.6_degrees_Fahrenheit_along_Aquetong_Lane_in_the_Mountainview_section_of_Ewing_Township,_Mercer_County,_New_Jersey.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2212,14 +2218,14 @@
     "sku": "CA-HU-PRES15",
     "images": [
       {
-        "url": "/products/pressurized-mister-1-5l-1.webp",
-        "thumbnail_url": "/products/pressurized-mister-1-5l-1-thumb.webp",
-        "width": 960,
-        "height": 1280,
-        "alt": "Pressurized Mister – 1.5 L",
-        "credit": "Kaviyadharshini Selvakumar via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:SPRAY_BOTTLE.jpg",
+        "url": "/products/pressurized-mister-1-5l-2.webp",
+        "thumbnail_url": "/products/pressurized-mister-1-5l-2-thumb.webp",
+        "width": 1600,
+        "height": 905,
+        "alt": "Vintage yellow manual pump sprayer with its canister",
+        "credit": "Unknown author via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Flit_Manual_Hand_Sprayer_-_DPLA_-_9809e6e8eca63aa3eb45a7ec67a59755.jpg",
         "representative": true
       }
     ],
@@ -2260,14 +2266,14 @@
     "sku": "CA-HU-HAND2Q",
     "images": [
       {
-        "url": "/products/handheld-mister-2qt-1.webp",
-        "thumbnail_url": "/products/handheld-mister-2qt-1-thumb.webp",
-        "width": 960,
-        "height": 1280,
-        "alt": "Handheld Mister – 2 qt",
-        "credit": "Kaviyadharshini Selvakumar via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:SPRAY_BOTTLE.jpg",
+        "url": "/products/handheld-mister-2qt-2.webp",
+        "thumbnail_url": "/products/handheld-mister-2qt-2-thumb.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Woman misting a potted plant with a handheld spray mister",
+        "credit": "Vitaly Gariev on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/woman-sprays-water-on-a-potted-plant-NXwZFQ1jgsE",
         "representative": true
       }
     ],
@@ -2403,14 +2409,15 @@
     "sku": "CA-HU-CTRL",
     "images": [
       {
-        "url": "/products/humidity-controller-1.webp",
-        "thumbnail_url": "/products/humidity-controller-1-thumb.webp",
+        "url": "/products/humidity-controller-2.webp",
+        "thumbnail_url": "/products/humidity-controller-2-thumb.webp",
         "width": 1600,
-        "height": 1230,
-        "alt": "Digital Humidity Controller (Hygrostat)",
-        "credit": "Jacek Halicki via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:2023_Czujnik_temperatury_i_wilgotno%C5%9Bci_Xiaomi_(2).jpg"
+        "height": 1064,
+        "alt": "Hand holding a digital thermostat controller showing room temperature",
+        "credit": "Shixart1985 via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Person_holds_a_thermostat_showing_room_temperature_in_a_home_setting.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -2546,14 +2553,14 @@
     "sku": "CA-CL-DIS32",
     "images": [
       {
-        "url": "/products/disinfectant-concentrate-32oz-1.webp",
-        "thumbnail_url": "/products/disinfectant-concentrate-32oz-1-thumb.webp",
+        "url": "/products/disinfectant-concentrate-32oz-2.webp",
+        "thumbnail_url": "/products/disinfectant-concentrate-32oz-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Reptile-Safe Disinfectant Concentrate – 32 oz",
-        "credit": "Shixart1985 via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Person_using_a_spray_bottle_and_cleaning_cloth_while_wearing_yellow_gloves_in_a_bright_indoor_space.jpg",
+        "height": 2019,
+        "alt": "Disinfectant spray bottles",
+        "credit": "N509FZ via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hynaut-Inohv_alcohol_spray_in_two_formats_(20221224162547).jpg",
         "representative": true
       }
     ],
@@ -2594,14 +2601,14 @@
     "sku": "CA-CL-WIPES",
     "images": [
       {
-        "url": "/products/habitat-cleaner-wipes-1.webp",
-        "thumbnail_url": "/products/habitat-cleaner-wipes-1-thumb.webp",
+        "url": "/products/habitat-cleaner-wipes-2.webp",
+        "thumbnail_url": "/products/habitat-cleaner-wipes-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Habitat Cleaner Wipes – 50 Pack",
-        "credit": "Shixart1985 via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Person_using_a_spray_bottle_and_cleaning_cloth_while_wearing_yellow_gloves_in_a_bright_indoor_space.jpg",
+        "height": 1200,
+        "alt": "Single disinfectant cleaning wipe on a countertop",
+        "credit": "MrBeastRapper via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Disinfectant_wipes.jpg",
         "representative": true
       }
     ],
@@ -2880,14 +2887,14 @@
     "sku": "CA-CL-DEOD8",
     "images": [
       {
-        "url": "/products/habitat-deodorizer-spray-1.webp",
-        "thumbnail_url": "/products/habitat-deodorizer-spray-1-thumb.webp",
+        "url": "/products/habitat-deodorizer-spray-2.webp",
+        "thumbnail_url": "/products/habitat-deodorizer-spray-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Habitat Deodorizer Spray – 8 oz",
-        "credit": "Shixart1985 via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Person_using_a_spray_bottle_and_cleaning_cloth_while_wearing_yellow_gloves_in_a_bright_indoor_space.jpg",
+        "height": 2133,
+        "alt": "Hand holding a spray bottle with a window wiper while cleaning a window",
+        "credit": "Asurnipal via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dornbirn-Kaercher_KW1_Plus-Electric_Window_Vac_Set-Spray_bottle_and_wiping_cloth_(Window_cleaning)-05ASD.jpg",
         "representative": true
       }
     ],
@@ -2976,14 +2983,14 @@
     "sku": "CA-BR-INCU25",
     "images": [
       {
-        "url": "/products/reptile-egg-incubator-25l-1.webp",
-        "thumbnail_url": "/products/reptile-egg-incubator-25l-1-thumb.webp",
+        "url": "/products/reptile-egg-incubator-25l-2.webp",
+        "thumbnail_url": "/products/reptile-egg-incubator-25l-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Reptile Egg Incubator – 25 L, Heating & Cooling",
+        "alt": "White egg incubator with viewing windows on a wooden floor",
         "credit": "Alex Ford from Raleigh, NC, USA via Wikimedia Commons",
         "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Small_Chicken_Egg_Incubator_overhead.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Small_Chicken_Egg_Incubator.jpg",
         "representative": true
       }
     ],
@@ -3024,14 +3031,15 @@
     "sku": "CA-BR-THERM",
     "images": [
       {
-        "url": "/products/digital-incubator-thermostat-probe-1.webp",
-        "thumbnail_url": "/products/digital-incubator-thermostat-probe-1-thumb.webp",
-        "width": 1600,
-        "height": 1893,
-        "alt": "Digital Incubator Thermostat with Probe",
-        "credit": "Ayla Yang via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:BC103_thermostat_side_view.png"
+        "url": "/products/digital-incubator-thermostat-probe-2.webp",
+        "thumbnail_url": "/products/digital-incubator-thermostat-probe-2-thumb.webp",
+        "width": 1028,
+        "height": 764,
+        "alt": "Thermostat with a metal temperature probe on a capillary tube",
+        "credit": "Mottsarah via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:PECO_T125_Regulating_Thermostat.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -3071,14 +3079,14 @@
     "sku": "CA-BR-EGBOX6",
     "images": [
       {
-        "url": "/products/egg-box-6qt-1.webp",
-        "thumbnail_url": "/products/egg-box-6qt-1-thumb.webp",
+        "url": "/products/egg-box-6qt-2.webp",
+        "thumbnail_url": "/products/egg-box-6qt-2-thumb.webp",
         "width": 1600,
-        "height": 1205,
-        "alt": "Reptile Egg Box – 6 qt with Lid",
-        "credit": "Gpkp via Wikimedia Commons",
+        "height": 1030,
+        "alt": "Shelves of lidded plastic storage boxes in assorted colours",
+        "credit": "Kaviya Rajendran via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plastic_box_(2026).jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:A_Kaleidoscope_of_Kitchen_and_Home_Storage.jpg",
         "representative": true
       }
     ],
@@ -3167,14 +3175,14 @@
     "sku": "CA-BR-DELI8",
     "images": [
       {
-        "url": "/products/deli-cups-8oz-50-1.webp",
-        "thumbnail_url": "/products/deli-cups-8oz-50-1-thumb.webp",
-        "width": 960,
-        "height": 678,
-        "alt": "Deli Cups with Lids – 8 oz, 50 Pack",
-        "credit": "Lenny Maidana created this photo. Vitor Perrut (MiloFriburguense) edited this photo! :) via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Party_red_plastic_cup.png",
+        "url": "/products/deli-cups-8oz-50-2.webp",
+        "thumbnail_url": "/products/deli-cups-8oz-50-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Hands stacking small blue plastic cups",
+        "credit": "en:User:MastaIroh (English Wikipedia) via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sport-Stacking.jpg",
         "representative": true
       }
     ],
@@ -3263,14 +3271,14 @@
     "sku": "CA-BR-DELI32",
     "images": [
       {
-        "url": "/products/deli-cups-32oz-25-1.webp",
-        "thumbnail_url": "/products/deli-cups-32oz-25-1-thumb.webp",
-        "width": 960,
-        "height": 678,
-        "alt": "Deli Cups with Lids – 32 oz, 25 Pack",
-        "credit": "Lenny Maidana created this photo. Vitor Perrut (MiloFriburguense) edited this photo! :) via Wikimedia Commons",
+        "url": "/products/deli-cups-32oz-25-2.webp",
+        "thumbnail_url": "/products/deli-cups-32oz-25-2-thumb.webp",
+        "width": 1600,
+        "height": 1129,
+        "alt": "Red plastic cup on a table",
+        "credit": "Heylenny via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Party_red_plastic_cup.png",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Party_red_plastic_cup.jpg",
         "representative": true
       }
     ],
@@ -3358,14 +3366,14 @@
     "sku": "CA-BK-CGMAN",
     "images": [
       {
-        "url": "/products/crested-gecko-care-guide-book-1.webp",
-        "thumbnail_url": "/products/crested-gecko-care-guide-book-1-thumb.webp",
+        "url": "/products/crested-gecko-care-guide-book-2.webp",
+        "thumbnail_url": "/products/crested-gecko-care-guide-book-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Crested Gecko Care Guide (Book)",
-        "credit": "Vsnary via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Super_Empty_Back_Crested_Gecko.jpg",
+        "height": 1066,
+        "alt": "Row of old hardcover books",
+        "credit": "Tom Murphy VII via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Old_book_bindings.jpg",
         "representative": true
       }
     ],
@@ -3598,14 +3606,14 @@
     "sku": "CA-BK-BTSMAN",
     "images": [
       {
-        "url": "/products/blue-tongue-skink-care-guide-book-1.webp",
-        "thumbnail_url": "/products/blue-tongue-skink-care-guide-book-1-thumb.webp",
+        "url": "/products/blue-tongue-skink-care-guide-book-2.webp",
+        "thumbnail_url": "/products/blue-tongue-skink-care-guide-book-2-thumb.webp",
         "width": 1600,
-        "height": 863,
-        "alt": "Blue Tongue Skink Care Guide (Book)",
-        "credit": "Michael Gäbler via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tiliqua_scincoides_(White,_1790).jpg",
+        "height": 1200,
+        "alt": "Open book beside a coffee cup and reading glasses",
+        "credit": "Sincerely Media on Unsplash",
+        "license": "Unsplash License",
+        "source_url": "https://unsplash.com/photos/book-near-eyeglasses-and-cappuccino-nGrfKmtwv24",
         "representative": true
       }
     ],
@@ -3742,14 +3750,14 @@
     "sku": "CA-BK-BIOACT",
     "images": [
       {
-        "url": "/products/bioactive-terrarium-guide-book-1.webp",
-        "thumbnail_url": "/products/bioactive-terrarium-guide-book-1-thumb.webp",
+        "url": "/products/bioactive-terrarium-guide-book-2.webp",
+        "thumbnail_url": "/products/bioactive-terrarium-guide-book-2-thumb.webp",
         "width": 1600,
-        "height": 758,
-        "alt": "Bioactive Terrarium Guide (Book)",
-        "credit": "HCA via Wikimedia Commons",
+        "height": 1067,
+        "alt": "Planted glass vivarium with bromeliads and ferns",
+        "credit": "Burkhard Mücke via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bioactive_Terrarium_Cleanup_Crew.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BCro-Terrarium_04.jpg",
         "representative": true
       }
     ],

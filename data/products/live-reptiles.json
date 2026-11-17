@@ -1330,14 +1330,15 @@
     "sku": "LR-FT-NORM",
     "images": [
       {
-        "url": "/products/african-fat-tailed-gecko-1.webp",
-        "thumbnail_url": "/products/african-fat-tailed-gecko-1-thumb.webp",
-        "width": 1200,
-        "height": 1057,
-        "alt": "African fat-tailed geckos on sand in a terrarium",
-        "credit": "Stolbovsky via Wikimedia Commons",
+        "url": "/products/african-fat-tailed-gecko-2.webp",
+        "thumbnail_url": "/products/african-fat-tailed-gecko-2-thumb.webp",
+        "width": 1600,
+        "height": 899,
+        "alt": "African fat-tailed gecko sleeping",
+        "credit": "User:Kevronichebroni via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Hemitheconyx_caudicinctus_in_Yaroslavl_Zoo.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Fat-Tailed_Gecko_Sleeping.jpeg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -4549,14 +4550,15 @@
     "sku": "LR-MS-SINA",
     "images": [
       {
-        "url": "/products/sinaloan-milk-snake-1.webp",
-        "thumbnail_url": "/products/sinaloan-milk-snake-1-thumb.webp",
-        "width": 1570,
-        "height": 1086,
-        "alt": "Sinaloan milk snake with wide scarlet bands",
+        "url": "/products/sinaloan-milk-snake-2.webp",
+        "thumbnail_url": "/products/sinaloan-milk-snake-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Sinaloan milk snake, red black and white bands",
         "credit": "Danny Steaven via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lampropeltis-triangulum-sinaloae-013.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lampropeltis-triangulum-sinaloae-0-23.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -6180,14 +6182,15 @@
     "sku": "LR-LZ-INDO",
     "images": [
       {
-        "url": "/products/indonesian-blue-tongued-skink-1.webp",
-        "thumbnail_url": "/products/indonesian-blue-tongued-skink-1-thumb.webp",
+        "url": "/products/indonesian-blue-tongued-skink-2.webp",
+        "thumbnail_url": "/products/indonesian-blue-tongued-skink-2-thumb.webp",
         "width": 1600,
-        "height": 1019,
-        "alt": "Indonesian blue-tongued skink with dark bands and blue tongue on forest floor",
-        "credit": "Шатилло Г.В. via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tiliqua_gigas_Grodno_1608.jpg"
+        "height": 1109,
+        "alt": "Indonesian blue-tongued skink with brown and black banded body",
+        "credit": "Ltshears - Trisha M Shears via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_Tongued_Skink_001.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -6792,14 +6795,15 @@
     "sku": "LR-LZ-GOLD",
     "images": [
       {
-        "url": "/products/gold-tegu-1.webp",
-        "thumbnail_url": "/products/gold-tegu-1-thumb.webp",
+        "url": "/products/gold-tegu-2.webp",
+        "thumbnail_url": "/products/gold-tegu-2-thumb.webp",
         "width": 1600,
         "height": 1067,
-        "alt": "Gold tegu with golden-yellow banding resting on substrate",
-        "credit": "Crisco 1492 via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gold_tegu_(Tupinambis_teguixin),_Gembira_Loka_Zoo,_Yogyakarta_2015-03-15.jpg"
+        "alt": "Gold tegu (Tupinambis teguixin) on a tree stump",
+        "credit": "Kristof Zyskowski & Yulia Bereshpolova via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Teiidae-_Tupinambis_teguixin_(Gold_Tegu).jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -10662,14 +10666,14 @@
     "sku": "LR-CG-YELL",
     "images": [
       {
-        "url": "/products/crested-gecko-yellow-1.webp",
-        "thumbnail_url": "/products/crested-gecko-yellow-1-thumb.webp",
+        "url": "/products/crested-gecko-yellow-2.webp",
+        "thumbnail_url": "/products/crested-gecko-yellow-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Crested gecko (Correlophus ciliatus)",
-        "credit": "Lennart Hudel via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Correlophus_ciliatus_33605230.jpg",
+        "height": 1200,
+        "alt": "Yellow crested gecko perched on a display box",
+        "credit": "istolethetv via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Mellow_yellow_fellow_(3458245904).jpg",
         "representative": true
       }
     ],
@@ -10854,14 +10858,14 @@
     "sku": "LR-GG-RDBL",
     "images": [
       {
-        "url": "/products/gargoyle-gecko-red-blotch-1.webp",
-        "thumbnail_url": "/products/gargoyle-gecko-red-blotch-1-thumb.webp",
-        "width": 1024,
-        "height": 768,
-        "alt": "Gargoyle gecko (Rhacodactylus auriculatus)",
-        "credit": "Fungus Guy via Wikimedia Commons",
+        "url": "/products/gargoyle-gecko-red-blotch-2.webp",
+        "thumbnail_url": "/products/gargoyle-gecko-red-blotch-2-thumb.webp",
+        "width": 1600,
+        "height": 1098,
+        "alt": "Red blotch gargoyle gecko with vivid orange-red stripes on bark",
+        "credit": "Generish via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gargoyle_gecko_(Rhacodactylus_auriculatus),_Entomica_1.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gargoylegecko_20172_cutted.png",
         "representative": true
       }
     ],
@@ -10950,14 +10954,14 @@
     "sku": "LR-GG-YLBL",
     "images": [
       {
-        "url": "/products/gargoyle-gecko-yellow-blotch-1.webp",
-        "thumbnail_url": "/products/gargoyle-gecko-yellow-blotch-1-thumb.webp",
+        "url": "/products/gargoyle-gecko-yellow-blotch-2.webp",
+        "thumbnail_url": "/products/gargoyle-gecko-yellow-blotch-2-thumb.webp",
         "width": 1024,
         "height": 768,
-        "alt": "Gargoyle gecko (Rhacodactylus auriculatus)",
+        "alt": "Pale cream-yellow gargoyle gecko resting on a branch in its enclosure",
         "credit": "Fungus Guy via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gargoyle_gecko_(Rhacodactylus_auriculatus),_Entomica_1.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gargoyle_gecko_(Rhacodactylus_auriculatus),_Entomica_2.jpg",
         "representative": true
       }
     ],
@@ -11991,14 +11995,14 @@
     "sku": "LR-GK-PBLU",
     "images": [
       {
-        "url": "/products/tokay-gecko-powder-blue-1.webp",
-        "thumbnail_url": "/products/tokay-gecko-powder-blue-1-thumb.webp",
+        "url": "/products/tokay-gecko-powder-blue-2.webp",
+        "thumbnail_url": "/products/tokay-gecko-powder-blue-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Tokay gecko (Gekko gecko)",
-        "credit": "Snakelover54321 via Wikimedia Commons",
+        "height": 1601,
+        "alt": "Grey-blue tokay gecko on rock",
+        "credit": "MishkatMukit via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tokay_Gecko_(Gekko_gecko)_2.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Tokay_gecko_20260614_mishkatmukit.jpg",
         "representative": true
       }
     ],
@@ -12039,14 +12043,14 @@
     "sku": "LR-GK-HRED",
     "images": [
       {
-        "url": "/products/tokay-gecko-high-red-1.webp",
-        "thumbnail_url": "/products/tokay-gecko-high-red-1-thumb.webp",
+        "url": "/products/tokay-gecko-high-red-2.webp",
+        "thumbnail_url": "/products/tokay-gecko-high-red-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "Tokay gecko (Gekko gecko)",
-        "credit": "Snakelover54321 via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tokay_Gecko_(Gekko_gecko)_2.jpg",
+        "height": 1142,
+        "alt": "Red-spotted tokay gecko",
+        "credit": "Len Worthington via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gekko_gecko_(Linnaeus,_1758)_Red-spotted_Tokay_(23092299140).jpg",
         "representative": true
       }
     ],
@@ -14843,15 +14847,15 @@
     "sku": "LR-PC-DSUA",
     "images": [
       {
-        "url": "/products/panther-chameleon-diego-suarez-1.webp",
-        "thumbnail_url": "/products/panther-chameleon-diego-suarez-1-thumb.webp",
+        "url": "/products/panther-chameleon-diego-suarez-2.webp",
+        "thumbnail_url": "/products/panther-chameleon-diego-suarez-2-thumb.webp",
         "width": 1600,
         "height": 1067,
-        "alt": "Panther chameleon (Furcifer pardalis)",
-        "credit": "Charles J. Sharp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Nosy_Be.jpg",
-        "representative": true
+        "alt": "Panther chameleon from the Diego Suarez area of Madagascar",
+        "credit": "Marco Schmidt [1] via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Chamaeleon_MS5669.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -14891,15 +14895,15 @@
     "sku": "LR-PC-REUN",
     "images": [
       {
-        "url": "/products/panther-chameleon-reunion-1.webp",
-        "thumbnail_url": "/products/panther-chameleon-reunion-1-thumb.webp",
-        "width": 1600,
-        "height": 1067,
-        "alt": "Panther chameleon (Furcifer pardalis)",
-        "credit": "Charles J. Sharp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Nosy_Be.jpg",
-        "representative": true
+        "url": "/products/panther-chameleon-reunion-2.webp",
+        "thumbnail_url": "/products/panther-chameleon-reunion-2-thumb.webp",
+        "width": 1306,
+        "height": 1530,
+        "alt": "Female panther chameleon from Reunion Island",
+        "credit": "B.navez via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:FurciferPardalisFemale.JPG",
+        "representative": false
       }
     ],
     "featured": false,
@@ -15035,15 +15039,15 @@
     "sku": "LR-PC-NOSF",
     "images": [
       {
-        "url": "/products/panther-chameleon-nosy-be-female-1.webp",
-        "thumbnail_url": "/products/panther-chameleon-nosy-be-female-1-thumb.webp",
+        "url": "/products/panther-chameleon-nosy-be-female-2.webp",
+        "thumbnail_url": "/products/panther-chameleon-nosy-be-female-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Panther chameleon (Furcifer pardalis)",
-        "credit": "Charles J. Sharp via Wikimedia Commons",
+        "height": 1074,
+        "alt": "Female panther chameleon from Nosy Be, Madagascar",
+        "credit": "Anai171 via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Nosy_Be.jpg",
-        "representative": true
+        "source_url": "https://commons.wikimedia.org/wiki/File:Furcifer_pardalis,_femelle.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -15227,14 +15231,14 @@
     "sku": "LR-CH-JKFE",
     "images": [
       {
-        "url": "/products/jacksons-chameleon-female-1.webp",
-        "thumbnail_url": "/products/jacksons-chameleon-female-1-thumb.webp",
+        "url": "/products/jacksons-chameleon-female-2.webp",
+        "thumbnail_url": "/products/jacksons-chameleon-female-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Jackson's chameleon (Trioceros jacksonii)",
-        "credit": "Marius Burger via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Trioceros_jacksonii_114285602.jpg",
+        "height": 1067,
+        "alt": "Female Jackson's chameleon, bright green and hornless, on a branch",
+        "credit": "AMMuench via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Female_Jackson%27s_Chameleon_-_Big_Island_Hawaii_June_12_2025.jpg",
         "representative": true
       }
     ],
@@ -15508,14 +15512,15 @@
     "sku": "LR-CH-BITA",
     "images": [
       {
-        "url": "/products/side-striped-chameleon-1.webp",
-        "thumbnail_url": "/products/side-striped-chameleon-1-thumb.webp",
+        "url": "/products/side-striped-chameleon-2.webp",
+        "thumbnail_url": "/products/side-striped-chameleon-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Side-striped chameleon (Trioceros bitaeniatus)",
-        "credit": "Charles J. Sharp via Wikimedia Commons",
+        "height": 1364,
+        "alt": "Side-striped chameleon with pale lateral stripe, perched on a hand",
+        "credit": "Dwergenpaartje via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Glaw%27s_chameleon_(Calumma_glawi)_Ranomafana.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Trioceros_bitaeniatus_mtkenya_side.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -15789,14 +15794,15 @@
     "sku": "LR-CH-GRAC",
     "images": [
       {
-        "url": "/products/graceful-four-horned-chameleon-1.webp",
-        "thumbnail_url": "/products/graceful-four-horned-chameleon-1-thumb.webp",
-        "width": 1600,
-        "height": 1067,
-        "alt": "Graceful four-horned chameleon (Trioceros quadricornis gracilior)",
-        "credit": "Charles J. Sharp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rough_chameleon_(Trioceros_rudis).jpg"
+        "url": "/products/graceful-four-horned-chameleon-2.webp",
+        "thumbnail_url": "/products/graceful-four-horned-chameleon-2-thumb.webp",
+        "width": 1132,
+        "height": 722,
+        "alt": "Graceful four-horned chameleon, green-yellow with small snout horns, on a twig",
+        "credit": "Zoologisches Forschungsmuseum Alexander Koenig via Wikimedia Commons",
+        "license": "No restrictions",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bonn_zoological_bulletin_-_Trioceros_quadricornis.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -16855,14 +16861,15 @@
     "sku": "LR-CH-PARS",
     "images": [
       {
-        "url": "/products/parsons-chameleon-1.webp",
-        "thumbnail_url": "/products/parsons-chameleon-1-thumb.webp",
+        "url": "/products/parsons-chameleon-2.webp",
+        "thumbnail_url": "/products/parsons-chameleon-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Parson's chameleon (Calumma parsonii)",
-        "credit": "Charles J. Sharp via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Parson%27s_chameleon_(Calumma_parsonii_cristifer)_female_Andasibe_2.jpg"
+        "height": 1051,
+        "alt": "Parson's chameleon head close-up, green with tall casque",
+        "credit": "Bernard DUPONT from FRANCE via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Parson%27s_Chameleon_(Calumma_parsonii)_(9654374927).jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -17967,15 +17974,15 @@
     "sku": "LR-BD-HYPO",
     "images": [
       {
-        "url": "/products/bearded-dragon-hypo-1.webp",
-        "thumbnail_url": "/products/bearded-dragon-hypo-1-thumb.webp",
-        "width": 1600,
-        "height": 1067,
-        "alt": "Bearded Dragon - Hypo (Pogona vitticeps)",
-        "credit": "George Chernilevsky via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Pogona_vitticeps_close-up_2009_G3.jpg",
-        "representative": true
+        "alt": "Pale hypo bearded dragon (Pogona vitticeps) on a log in a terrarium",
+        "credit": "Pit1233 via Wikimedia Commons",
+        "height": 1024,
+        "license": "CC0",
+        "representative": true,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bdg_zoo_terrarium_17_01-2015.jpg",
+        "thumbnail_url": "/products/bearded-dragon-hypo-2-thumb.webp",
+        "url": "/products/bearded-dragon-hypo-2.webp",
+        "width": 1365
       }
     ],
     "featured": false,
@@ -18015,15 +18022,15 @@
     "sku": "LR-BD-ZERO",
     "images": [
       {
-        "url": "/products/bearded-dragon-zero-1.webp",
-        "thumbnail_url": "/products/bearded-dragon-zero-1-thumb.webp",
+        "url": "/products/bearded-dragon-zero-2.webp",
+        "thumbnail_url": "/products/bearded-dragon-zero-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Bearded Dragon - Zero (Pogona vitticeps)",
-        "credit": "George Chernilevsky via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Pogona_vitticeps_close-up_2009_G3.jpg",
-        "representative": true
+        "height": 1200,
+        "alt": "White patternless zero morph bearded dragon",
+        "credit": "Jpkaiser2 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Zero-bearded-dragon.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -18207,15 +18214,15 @@
     "sku": "LR-BD-RED",
     "images": [
       {
-        "url": "/products/bearded-dragon-red-1.webp",
-        "thumbnail_url": "/products/bearded-dragon-red-1-thumb.webp",
+        "url": "/products/bearded-dragon-red-2.webp",
+        "thumbnail_url": "/products/bearded-dragon-red-2-thumb.webp",
         "width": 1600,
         "height": 1067,
-        "alt": "Bearded Dragon - Red (Pogona vitticeps)",
-        "credit": "George Chernilevsky via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Pogona_vitticeps_close-up_2009_G3.jpg",
-        "representative": true
+        "alt": "Red bearded dragon close-up",
+        "credit": "Daniel Ramirez from Honolulu, USA via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Red_Bearded_Dragon_(9163070211).jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -18255,15 +18262,15 @@
     "sku": "LR-BD-ORAN",
     "images": [
       {
-        "url": "/products/bearded-dragon-orange-1.webp",
-        "thumbnail_url": "/products/bearded-dragon-orange-1-thumb.webp",
+        "url": "/products/bearded-dragon-orange-2.webp",
+        "thumbnail_url": "/products/bearded-dragon-orange-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Bearded Dragon - Orange (Pogona vitticeps)",
-        "credit": "George Chernilevsky via Wikimedia Commons",
+        "height": 1200,
+        "alt": "Orange bearded dragon close-up",
+        "credit": "HTO via Wikimedia Commons",
         "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Pogona_vitticeps_close-up_2009_G3.jpg",
-        "representative": true
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pogona_vitticeps,_head_04.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -18639,14 +18646,14 @@
     "sku": "LR-BT-KEI",
     "images": [
       {
-        "url": "/products/kei-island-blue-tongued-skink-1.webp",
-        "thumbnail_url": "/products/kei-island-blue-tongued-skink-1-thumb.webp",
+        "url": "/products/kei-island-blue-tongued-skink-2.webp",
+        "thumbnail_url": "/products/kei-island-blue-tongued-skink-2-thumb.webp",
         "width": 1600,
-        "height": 1019,
-        "alt": "Kei Island Blue-Tongued Skink (Tiliqua gigas keiensis)",
-        "credit": "Шатилло Г.В. via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tiliqua_gigas_Grodno_1608.jpg",
+        "height": 1067,
+        "alt": "Kei Island blue-tongued skink with heavily speckled black and tan pattern",
+        "credit": "lienyuan lee via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:%E5%B7%A8%E5%9E%8B%E8%97%8D%E8%88%8C%E8%9C%A5_Tiliqua_gigas_-_panoramio.jpg",
         "representative": true
       }
     ],
@@ -18831,14 +18838,14 @@
     "sku": "LR-BT-HALM",
     "images": [
       {
-        "url": "/products/halmahera-blue-tongued-skink-1.webp",
-        "thumbnail_url": "/products/halmahera-blue-tongued-skink-1-thumb.webp",
+        "url": "/products/halmahera-blue-tongued-skink-2.webp",
+        "thumbnail_url": "/products/halmahera-blue-tongued-skink-2-thumb.webp",
         "width": 1600,
-        "height": 1019,
-        "alt": "Halmahera Blue-Tongued Skink (Tiliqua gigas gigas)",
-        "credit": "Шатилло Г.В. via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Tiliqua_gigas_Grodno_1608.jpg",
+        "height": 849,
+        "alt": "Halmahera blue-tongued skink, dark heavily banded body",
+        "credit": "Bjoertvedt via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Tiliqua_gigas_Giant_blue-tounged_skink_LoroParque_IMG_6870.JPG",
         "representative": true
       }
     ],
@@ -22411,14 +22418,14 @@
     "sku": "LR-TT-SALE",
     "images": [
       {
-        "url": "/products/south-african-leopard-tortoise-1.webp",
-        "thumbnail_url": "/products/south-african-leopard-tortoise-1-thumb.webp",
-        "width": 1536,
-        "height": 1024,
-        "alt": "South African Leopard Tortoise (Stigmochelys pardalis pardalis)",
-        "credit": "Charles J. Sharp via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Leopard_tortoise_(Stigmochelys_pardalis)_head.jpg",
+        "url": "/products/south-african-leopard-tortoise-2.webp",
+        "thumbnail_url": "/products/south-african-leopard-tortoise-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Adult leopard tortoise walking, showing its patterned domed shell",
+        "credit": "Liuthalas via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Stigmochelys_pardalis_Tierwelt_Herberstein_01.jpg",
         "representative": true
       }
     ],
@@ -22603,14 +22610,14 @@
     "sku": "LR-TT-ALEO",
     "images": [
       {
-        "url": "/products/albino-leopard-tortoise-1.webp",
-        "thumbnail_url": "/products/albino-leopard-tortoise-1-thumb.webp",
-        "width": 1536,
-        "height": 1024,
-        "alt": "Albino Leopard Tortoise (Stigmochelys pardalis)",
+        "url": "/products/albino-leopard-tortoise-2.webp",
+        "thumbnail_url": "/products/albino-leopard-tortoise-2-thumb.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Juvenile leopard tortoise with bold yellow and black shell pattern",
         "credit": "Charles J. Sharp via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Leopard_tortoise_(Stigmochelys_pardalis)_head.jpg",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leopard_tortoise_(Stigmochelys_pardalis)_juvenile.jpg",
         "representative": true
       }
     ],
@@ -22651,14 +22658,14 @@
     "sku": "LR-TT-HYPO",
     "images": [
       {
-        "url": "/products/hypo-red-footed-tortoise-1.webp",
-        "thumbnail_url": "/products/hypo-red-footed-tortoise-1-thumb.webp",
+        "url": "/products/hypo-red-footed-tortoise-2.webp",
+        "thumbnail_url": "/products/hypo-red-footed-tortoise-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Hypo Red-Footed Tortoise (Chelonoidis carbonarius)",
-        "credit": "Jstuby via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Chelonoidis_carbonarius_Cleveland_Aquarium_20231227.jpg",
+        "alt": "Red-footed tortoise on bark chips",
+        "credit": "Tzim78 via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Red-footed_tortoise.jpg",
         "representative": true
       }
     ],
@@ -23123,14 +23130,14 @@
     "sku": "LR-TT-HWLE",
     "images": [
       {
-        "url": "/products/high-white-leopard-tortoise-1.webp",
-        "thumbnail_url": "/products/high-white-leopard-tortoise-1-thumb.webp",
-        "width": 1536,
-        "height": 1024,
-        "alt": "High-White Leopard Tortoise (Stigmochelys pardalis)",
-        "credit": "Charles J. Sharp via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Leopard_tortoise_(Stigmochelys_pardalis)_head.jpg",
+        "url": "/products/high-white-leopard-tortoise-2.webp",
+        "thumbnail_url": "/products/high-white-leopard-tortoise-2-thumb.webp",
+        "width": 1600,
+        "height": 1022,
+        "alt": "Adult leopard tortoise drinking from a puddle",
+        "credit": "Bernard DUPONT via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leopard_Tortoise_(Stigmochelys_pardalis)_drinking_rain_water.jpg",
         "representative": true
       }
     ],
@@ -23218,14 +23225,15 @@
     "sku": "LR-TU-TTOE",
     "images": [
       {
-        "url": "/products/three-toed-box-turtle-1.webp",
-        "thumbnail_url": "/products/three-toed-box-turtle-1-thumb.webp",
+        "url": "/products/three-toed-box-turtle-2.webp",
+        "thumbnail_url": "/products/three-toed-box-turtle-2-thumb.webp",
         "width": 1600,
-        "height": 1101,
-        "alt": "Three-Toed Box Turtle (Terrapene carolina triunguis)",
-        "credit": "Peter Paplanus via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Three-Toed_Box_Turtle_(Terrapene_carolina_triunguis)_(50125424418).jpg"
+        "height": 1200,
+        "alt": "Three-toed box turtle, side view",
+        "credit": "Original uploaded by Carnopod (Transfered by L.tak ) via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Three-toed_Box_Turtle.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -23265,14 +23273,15 @@
     "sku": "LR-TU-GCBO",
     "images": [
       {
-        "url": "/products/gulf-coast-box-turtle-1.webp",
-        "thumbnail_url": "/products/gulf-coast-box-turtle-1-thumb.webp",
+        "url": "/products/gulf-coast-box-turtle-2.webp",
+        "thumbnail_url": "/products/gulf-coast-box-turtle-2-thumb.webp",
         "width": 1600,
         "height": 1067,
-        "alt": "Gulf Coast Box Turtle (Terrapene carolina major)",
-        "credit": "“Jonathan Zander ( Digon3 )\" via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Box_Turtle_Digon3.jpg"
+        "alt": "Gulf Coast box turtle with domed brown shell, front view",
+        "credit": "Viva.Chelonia via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrapene_carolina_major_-_52877319263.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -23406,14 +23415,14 @@
     "sku": "LR-TU-AEBO",
     "images": [
       {
-        "url": "/products/albino-eastern-box-turtle-1.webp",
-        "thumbnail_url": "/products/albino-eastern-box-turtle-1-thumb.webp",
+        "url": "/products/albino-eastern-box-turtle-2.webp",
+        "thumbnail_url": "/products/albino-eastern-box-turtle-2-thumb.webp",
         "width": 1600,
         "height": 1067,
-        "alt": "Albino Eastern Box Turtle (Terrapene carolina carolina)",
-        "credit": "“Jonathan Zander ( Digon3 )\" via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Box_Turtle_Digon3.jpg",
+        "alt": "Eastern box turtle with bright orange and black shell in grass",
+        "credit": "Jasper Shide via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Terrapene_carolina_ssp._carolina_-_Eastern_Box_Turtle_(6-01-23)_01.jpg",
         "representative": true
       }
     ],
@@ -24396,14 +24405,15 @@
     "sku": "LR-TU-ODIA",
     "images": [
       {
-        "url": "/products/ornate-diamondback-terrapin-1.webp",
-        "thumbnail_url": "/products/ornate-diamondback-terrapin-1-thumb.webp",
+        "url": "/products/ornate-diamondback-terrapin-2.webp",
+        "thumbnail_url": "/products/ornate-diamondback-terrapin-2-thumb.webp",
         "width": 1600,
-        "height": 1071,
-        "alt": "Ornate Diamondback Terrapin (Malaclemys terrapin macrospilota)",
-        "credit": "Zihao Wang via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Malaclemys_terrapin_ssp._terrapin.jpg"
+        "height": 900,
+        "alt": "Ornate diamondback terrapin in a tank, pale spotted head and orange shell rim",
+        "credit": "MatthewHoobin via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pearl_the_diamondback_terrapin_at_Herp_Hobby_Shop,_Oldsmar,_Florida,_Oct_2020.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -25621,15 +25631,15 @@
     "sku": "LR-DF-PATR",
     "images": [
       {
-        "url": "/products/patricia-dart-frog-1.webp",
-        "thumbnail_url": "/products/patricia-dart-frog-1-thumb.webp",
+        "url": "/products/patricia-dart-frog-2.webp",
+        "thumbnail_url": "/products/patricia-dart-frog-2-thumb.webp",
         "width": 1600,
-        "height": 1237,
-        "alt": "Patricia Dart Frog (Dendrobates tinctorius)",
-        "credit": "Michael Gäbler via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Dendrobates_azureus_(Dendrobates_tinctorius)_Edit.jpg",
-        "representative": true
+        "height": 1098,
+        "alt": "Patricia dyeing dart frog, yellow with black markings and blue legs",
+        "credit": "H. Zell via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dendrobates_tinctorius_-_Karlsruhe_Zoo_03.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -26382,14 +26392,15 @@
     "sku": "LR-PF-CRAN",
     "images": [
       {
-        "url": "/products/cranwells-pacman-frog-1.webp",
-        "thumbnail_url": "/products/cranwells-pacman-frog-1-thumb.webp",
-        "width": 1024,
-        "height": 768,
-        "alt": "Cranwell's Pacman Frog (Ceratophrys cranwelli)",
-        "credit": "Fungus Guy via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cranwell%27s_horned_frog_(Ceratophrys_cranwelli),_Entomica.jpg"
+        "url": "/products/cranwells-pacman-frog-2.webp",
+        "thumbnail_url": "/products/cranwells-pacman-frog-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Cranwell's horned frog (pacman frog), green and brown",
+        "credit": "Pablo H Capovilla via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ceratophrys_cranwelli_126037780.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -26665,15 +26676,15 @@
     "sku": "LR-AX-LEUC",
     "images": [
       {
-        "url": "/products/leucistic-axolotl-1.webp",
-        "thumbnail_url": "/products/leucistic-axolotl-1-thumb.webp",
+        "url": "/products/leucistic-axolotl-2.webp",
+        "thumbnail_url": "/products/leucistic-axolotl-2-thumb.webp",
         "width": 1600,
-        "height": 1308,
-        "alt": "Leucistic Axolotl (Ambystoma mexicanum)",
-        "credit": "FakirNL via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_in_Ouwehands_Dierenpark_01.jpg",
-        "representative": true
+        "height": 1067,
+        "alt": "Leucistic axolotl, white with dark eyes and red gills",
+        "credit": "Henry Mühlpfordt via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leucistic_Axolotl_front_2010-02-24.JPG",
+        "representative": false
       }
     ],
     "featured": false,
@@ -26761,15 +26772,15 @@
     "sku": "LR-AX-ALBI",
     "images": [
       {
-        "url": "/products/albino-axolotl-1.webp",
-        "thumbnail_url": "/products/albino-axolotl-1-thumb.webp",
+        "url": "/products/albino-axolotl-2.webp",
+        "thumbnail_url": "/products/albino-axolotl-2-thumb.webp",
         "width": 1600,
-        "height": 1308,
-        "alt": "Albino Axolotl (Ambystoma mexicanum)",
-        "credit": "FakirNL via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_in_Ouwehands_Dierenpark_01.jpg",
-        "representative": true
+        "height": 1182,
+        "alt": "Albino axolotl, pale pink with red gills",
+        "credit": "Bernard DUPONT from FRANCE via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Albino_Axolotl_(Ambystoma_mexicanum)_(13532447665).jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -27375,14 +27386,15 @@
     "sku": "LR-BP-LESS",
     "images": [
       {
-        "url": "/products/lesser-ball-python-1.webp",
-        "thumbnail_url": "/products/lesser-ball-python-1-thumb.webp",
+        "url": "/products/lesser-ball-python-2.webp",
+        "thumbnail_url": "/products/lesser-ball-python-2-thumb.webp",
         "width": 1600,
-        "height": 1143,
-        "alt": "Ball Python – Lesser with soft lavender-grey tones and faded patterning",
-        "credit": "Holger Krisp via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Python-regius-kopf-k%C3%B6nigspython.jpg"
+        "height": 1237,
+        "alt": "Lesser ball python with faded tan and cream patterning",
+        "credit": "Eclipse Exotics via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lesser_Platinum_Black_Back_Ball_Python.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -27614,15 +27626,15 @@
     "sku": "LR-BP-BLPA",
     "images": [
       {
-        "url": "/products/black-pastel-ball-python-1.webp",
-        "thumbnail_url": "/products/black-pastel-ball-python-1-thumb.webp",
+        "url": "/products/black-pastel-ball-python-2.webp",
+        "thumbnail_url": "/products/black-pastel-ball-python-2-thumb.webp",
         "width": 1600,
-        "height": 1143,
-        "alt": "Ball Python – Black Pastel with deep dark browns and blacks with velvety contrast",
-        "credit": "Holger Krisp via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Python-regius-kopf-k%C3%B6nigspython.jpg",
-        "representative": true
+        "height": 900,
+        "alt": "Black pastel ball python with dark black-brown patterning",
+        "credit": "Kaorte via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Black_Pastel_Ball_Python.JPG",
+        "representative": false
       }
     ],
     "featured": false,
@@ -27902,15 +27914,15 @@
     "sku": "LR-BP-LALB",
     "images": [
       {
-        "url": "/products/lavender-albino-ball-python-1.webp",
-        "thumbnail_url": "/products/lavender-albino-ball-python-1-thumb.webp",
+        "url": "/products/lavender-albino-ball-python-2.webp",
+        "thumbnail_url": "/products/lavender-albino-ball-python-2-thumb.webp",
         "width": 1600,
-        "height": 1143,
-        "alt": "Ball Python – Lavender Albino with soft lavender and yellow tones with pink eyes",
-        "credit": "Holger Krisp via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Python-regius-kopf-k%C3%B6nigspython.jpg",
-        "representative": true
+        "height": 900,
+        "alt": "Lavender albino ball python with pale lavender and yellow patterning",
+        "credit": "Kaorte via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lavender_Albino_Ball_Python.JPG",
+        "representative": false
       }
     ],
     "featured": false,
@@ -27950,15 +27962,15 @@
     "sku": "LR-BP-ALBI",
     "images": [
       {
-        "url": "/products/albino-ball-python-1.webp",
-        "thumbnail_url": "/products/albino-ball-python-1-thumb.webp",
-        "width": 1600,
-        "height": 1143,
-        "alt": "Ball Python – Albino with bright yellow and white patterning with red eyes",
-        "credit": "Holger Krisp via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Python-regius-kopf-k%C3%B6nigspython.jpg",
-        "representative": true
+        "url": "/products/albino-ball-python-2.webp",
+        "thumbnail_url": "/products/albino-ball-python-2-thumb.webp",
+        "width": 1596,
+        "height": 1368,
+        "alt": "Albino ball python with yellow and white patterning",
+        "credit": "WingedWolfPsion via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Albino_ball_python.png",
+        "representative": false
       }
     ],
     "featured": false,
@@ -29726,14 +29738,14 @@
     "sku": "LR-BP-HGHW",
     "images": [
       {
-        "url": "/products/highway-ball-python-1.webp",
-        "thumbnail_url": "/products/highway-ball-python-1-thumb.webp",
+        "url": "/products/highway-ball-python-2.webp",
+        "thumbnail_url": "/products/highway-ball-python-2-thumb.webp",
         "width": 1600,
-        "height": 1143,
-        "alt": "Ball Python – Highway with bold, clean patterning with yellowbelly and gravel influence",
-        "credit": "Holger Krisp via Wikimedia Commons",
-        "license": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Python-regius-kopf-k%C3%B6nigspython.jpg",
+        "height": 1067,
+        "alt": "Highway ball python showing its yellow dorsal striping",
+        "credit": "Dr.Zoidberg2186 via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pyton_kr%C3%B3lewski_%22Highway%22.jpg",
         "representative": true
       }
     ],
@@ -30062,14 +30074,14 @@
     "sku": "LR-CS-SCAL",
     "images": [
       {
-        "url": "/products/scaleless-corn-snake-1.webp",
-        "thumbnail_url": "/products/scaleless-corn-snake-1-thumb.webp",
+        "url": "/products/scaleless-corn-snake-2.webp",
+        "thumbnail_url": "/products/scaleless-corn-snake-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Corn Snake – Scaleless with smooth, scaleless skin with a soft matte look",
-        "credit": "Killarnee via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Corn_snake_(Pantherophis_guttatus)_2.jpg",
+        "height": 1171,
+        "alt": "Scaleless corn snake showing smooth scaleless skin",
+        "credit": "Dr.Zoidberg2186 via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:W%C4%85%C5%BC_zbo%C5%BCowy_Amel_Anery_Motley_Scaleless.jpg",
         "representative": true
       }
     ],
@@ -30254,14 +30266,14 @@
     "sku": "LR-CS-GHOS",
     "images": [
       {
-        "url": "/products/ghost-corn-snake-1.webp",
-        "thumbnail_url": "/products/ghost-corn-snake-1-thumb.webp",
+        "url": "/products/ghost-corn-snake-2.webp",
+        "thumbnail_url": "/products/ghost-corn-snake-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Corn Snake – Ghost with pale grey tones with soft, washed-out saddles",
-        "credit": "Killarnee via Wikimedia Commons",
+        "height": 900,
+        "alt": "Ghost morph corn snake curled up on a log",
+        "credit": "Mboychuk via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Corn_snake_(Pantherophis_guttatus)_2.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ghost_morph_Corn_snake_(Pantherophis_guttatus)_curled_up_on_log.jpg",
         "representative": true
       }
     ],
@@ -30446,14 +30458,14 @@
     "sku": "LR-CS-MOTL",
     "images": [
       {
-        "url": "/products/motley-corn-snake-1.webp",
-        "thumbnail_url": "/products/motley-corn-snake-1-thumb.webp",
+        "url": "/products/motley-corn-snake-2.webp",
+        "thumbnail_url": "/products/motley-corn-snake-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Corn Snake – Motley with a clean, connected dorsal pattern with a plain belly",
-        "credit": "Killarnee via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Corn_snake_(Pantherophis_guttatus)_2.jpg",
+        "height": 1216,
+        "alt": "Motley corn snake with reduced yellow patterning",
+        "credit": "Fullmerdvm via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gigi_a_motley_yellow_corn_snake.jpg",
         "representative": true
       }
     ],
@@ -31310,15 +31322,15 @@
     "sku": "LR-KS-ACAL",
     "images": [
       {
-        "url": "/products/albino-california-kingsnake-1.webp",
-        "thumbnail_url": "/products/albino-california-kingsnake-1-thumb.webp",
+        "url": "/products/albino-california-kingsnake-2.webp",
+        "thumbnail_url": "/products/albino-california-kingsnake-2-thumb.webp",
         "width": 1600,
-        "height": 1043,
-        "alt": "Albino California Kingsnake with white and yellow banding with red eyes",
-        "credit": "Calibas via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Californiakingsnake.jpg",
-        "representative": true
+        "height": 2133,
+        "alt": "Albino California kingsnake head, white and pink with red eyes",
+        "credit": "TheChanel via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Albino_California_Kingsnake.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -32116,15 +32128,15 @@
     "sku": "LR-MS-AHON",
     "images": [
       {
-        "url": "/products/albino-honduran-milk-snake-1.webp",
-        "thumbnail_url": "/products/albino-honduran-milk-snake-1-thumb.webp",
-        "width": 900,
-        "height": 675,
-        "alt": "Albino Honduran Milk Snake with bright red, orange and white banding with red eyes",
-        "credit": "Dick Culbert via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lampropeltis_triangulum_hondurensis,_a_Hondurian_Milksnake.jpg",
-        "representative": true
+        "url": "/products/albino-honduran-milk-snake-2.webp",
+        "thumbnail_url": "/products/albino-honduran-milk-snake-2-thumb.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Young albino Honduran milk snake, red and white bands",
+        "credit": "Old Time Music Fan via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Albino_Honduran_Milk_Snake.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -32212,14 +32224,14 @@
     "sku": "LR-MS-APUE",
     "images": [
       {
-        "url": "/products/apricot-pueblan-milk-snake-1.webp",
-        "thumbnail_url": "/products/apricot-pueblan-milk-snake-1-thumb.webp",
+        "url": "/products/apricot-pueblan-milk-snake-2.webp",
+        "thumbnail_url": "/products/apricot-pueblan-milk-snake-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Apricot Pueblan Milk Snake with soft apricot-orange banding with pale cream",
-        "credit": "John via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Nelson%27s_milksnakes_het_female_bah_(2).jpg",
+        "height": 1096,
+        "alt": "Pueblan milk snake coiled around her eggs",
+        "credit": "Bernard DUPONT from FRANCE via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pueblan_Milksnake_(Lampropeltis_triangulum_campbelli)_female_with_eggs_..._(36140365626).jpg",
         "representative": true
       }
     ],
@@ -32734,15 +32746,15 @@
     "sku": "LR-BC-ALB",
     "images": [
       {
-        "url": "/products/albino-boa-constrictor-1.webp",
-        "thumbnail_url": "/products/albino-boa-constrictor-1-thumb.webp",
+        "url": "/products/albino-boa-constrictor-2.webp",
+        "thumbnail_url": "/products/albino-boa-constrictor-2-thumb.webp",
         "width": 1600,
-        "height": 854,
-        "alt": "Albino Boa Constrictor with bright yellow and orange tones with red eyes",
-        "credit": "Aitor via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Boa_imperator_77301615.jpg",
-        "representative": true
+        "height": 777,
+        "alt": "Albino boa constrictor with white and orange pattern",
+        "credit": "B a y L e e ' s 8 Legged Art via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Albino_boa.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -33310,15 +33322,15 @@
     "sku": "LR-BC-SONO",
     "images": [
       {
-        "url": "/products/sonoran-desert-boa-1.webp",
-        "thumbnail_url": "/products/sonoran-desert-boa-1-thumb.webp",
+        "url": "/products/sonoran-desert-boa-2.webp",
+        "thumbnail_url": "/products/sonoran-desert-boa-2-thumb.webp",
         "width": 1600,
-        "height": 854,
-        "alt": "Sonoran Desert Boa with pale desert tones with clean, bold saddles",
-        "credit": "Aitor via Wikimedia Commons",
+        "height": 1296,
+        "alt": "Sonoran desert boa (Boa sigma) in a tree",
+        "credit": "Francisco Farriols Sarabia via Wikimedia Commons",
         "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Boa_imperator_77301615.jpg",
-        "representative": true
+        "source_url": "https://commons.wikimedia.org/wiki/File:Boa_sigma_24840591.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -33501,15 +33513,15 @@
     "sku": "LR-RB-DESE",
     "images": [
       {
-        "url": "/products/desert-rosy-boa-1.webp",
-        "thumbnail_url": "/products/desert-rosy-boa-1-thumb.webp",
+        "url": "/products/desert-rosy-boa-2.webp",
+        "thumbnail_url": "/products/desert-rosy-boa-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Desert Rosy Boa with pale desert tones with clean striping",
-        "credit": "Robb Hannawacker, while working for Joshua Tree National Park via Wikimedia Commons",
-        "license": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Rosy_boa_(Lichanura_trivirgata).jpg",
-        "representative": true
+        "height": 2133,
+        "alt": "Desert rosy boa at Los Angeles Zoo",
+        "credit": "Superraptor123 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Desert_rosy_boa,_Los_Angeles_Zoo,_October_2026.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -33741,14 +33753,14 @@
     "sku": "LR-SB-ALB",
     "images": [
       {
-        "url": "/products/albino-kenyan-sand-boa-1.webp",
-        "thumbnail_url": "/products/albino-kenyan-sand-boa-1-thumb.webp",
+        "url": "/products/albino-kenyan-sand-boa-2.webp",
+        "thumbnail_url": "/products/albino-kenyan-sand-boa-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Albino Kenyan Sand Boa with bright yellow and orange with red eyes",
-        "credit": "Viki at German Wikipedia via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gongylophis_colubrinus_loveridgei.jpg",
+        "height": 1060,
+        "alt": "Albino Kenyan sand boa, pale yellow and white, coiled",
+        "credit": "B a y L e e ' s 8 Legged Art via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eryx_colubrinus_albino_morph.jpg",
         "representative": true
       }
     ],
@@ -33789,14 +33801,14 @@
     "sku": "LR-SB-ANER",
     "images": [
       {
-        "url": "/products/anery-kenyan-sand-boa-1.webp",
-        "thumbnail_url": "/products/anery-kenyan-sand-boa-1-thumb.webp",
+        "url": "/products/anery-kenyan-sand-boa-2.webp",
+        "thumbnail_url": "/products/anery-kenyan-sand-boa-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Anery Kenyan Sand Boa with silvery grey tones with reduced orange pigment",
-        "credit": "Viki at German Wikipedia via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gongylophis_colubrinus_loveridgei.jpg",
+        "height": 1067,
+        "alt": "Kenyan sand boa close-up showing dark and orange blotched pattern",
+        "credit": "The Reptilarium via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eryx_colubrinus_close_up.jpg",
         "representative": true
       }
     ],
@@ -33837,14 +33849,14 @@
     "sku": "LR-SB-SNOW",
     "images": [
       {
-        "url": "/products/snow-kenyan-sand-boa-1.webp",
-        "thumbnail_url": "/products/snow-kenyan-sand-boa-1-thumb.webp",
+        "url": "/products/snow-kenyan-sand-boa-2.webp",
+        "thumbnail_url": "/products/snow-kenyan-sand-boa-2-thumb.webp",
         "width": 1600,
         "height": 1200,
-        "alt": "Snow Kenyan Sand Boa with pale white and yellow tones",
+        "alt": "Kenyan sand boa with yellow and dark brown blotches on sand",
         "credit": "Viki at German Wikipedia via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Gongylophis_colubrinus_loveridgei.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gongylophis_colubrinus_loveridgei2.jpg",
         "representative": true
       }
     ],
@@ -34123,15 +34135,15 @@
     "sku": "LR-HN-SCON",
     "images": [
       {
-        "url": "/products/superconda-western-hognose-1.webp",
-        "thumbnail_url": "/products/superconda-western-hognose-1-thumb.webp",
+        "url": "/products/superconda-western-hognose-2.webp",
+        "thumbnail_url": "/products/superconda-western-hognose-2-thumb.webp",
         "width": 1600,
-        "height": 775,
-        "alt": "Western Hognose Snake – Superconda with a near-patternless, clean look",
-        "credit": "NasserHalaweh via Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Dipsadidae_Heterodon_nasicus_1.jpg",
-        "representative": true
+        "height": 1126,
+        "alt": "Toffee superconda western hognose snake, patternless tan",
+        "credit": "Dr.Zoidberg2186 via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Heterodon_zachodni_-_Toffee_Superconda.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -34505,14 +34517,15 @@
     "sku": "LR-GT-EAST",
     "images": [
       {
-        "url": "/products/eastern-garter-snake-1.webp",
-        "thumbnail_url": "/products/eastern-garter-snake-1-thumb.webp",
+        "url": "/products/eastern-garter-snake-2.webp",
+        "thumbnail_url": "/products/eastern-garter-snake-2-thumb.webp",
         "width": 1600,
-        "height": 981,
-        "alt": "Eastern Garter Snake with classic yellow stripes on a dark, checkered body",
-        "credit": "Jaden Clark via Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:California_Red-Sided_Garter_Snake_(Thamnophis_sirtalis_infernalis).jpg"
+        "height": 1067,
+        "alt": "Eastern garter snake head close-up, yellow stripes on dark body",
+        "credit": "Jasper Shide via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_ssp._sirtalis_-_Eastern_Garter_Snake.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -34552,14 +34565,15 @@
     "sku": "LR-GT-CHEC",
     "images": [
       {
-        "url": "/products/checkered-garter-snake-1.webp",
-        "thumbnail_url": "/products/checkered-garter-snake-1-thumb.webp",
-        "width": 1600,
-        "height": 1198,
-        "alt": "Checkered Garter Snake with bold checkered patterning with pale stripes",
-        "credit": "Nick Loveland via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Thamnophis_marcianus_186822611.jpg"
+        "url": "/products/checkered-garter-snake-2.webp",
+        "thumbnail_url": "/products/checkered-garter-snake-2-thumb.webp",
+        "width": 1563,
+        "height": 1080,
+        "alt": "Checkered garter snake coiled on asphalt",
+        "credit": "Jay Phagan via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Checkered_Garter_Snake_(6984593316).jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -34929,14 +34943,15 @@
     "sku": "LR-RS-TEXA",
     "images": [
       {
-        "url": "/products/texas-rat-snake-1.webp",
-        "thumbnail_url": "/products/texas-rat-snake-1-thumb.webp",
+        "url": "/products/texas-rat-snake-2.webp",
+        "thumbnail_url": "/products/texas-rat-snake-2-thumb.webp",
         "width": 1600,
-        "height": 844,
-        "alt": "Texas Rat Snake with variable tones from grey to brown with dark blotches",
-        "credit": "Chuck Homler, Focus On Wildlife via Wikimedia Commons",
+        "height": 800,
+        "alt": "Texas rat snake coiled on a branch in Texas",
+        "credit": "Wilafa via Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Black_Rat_Snake_(Pantherophis_obsoletus).jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Texas_Rat_Snake_(Pantherophis_obsoletus)_photographed_in_Liberty_Co.,_Texas._W._L._Farr.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -35212,14 +35227,15 @@
     "sku": "LR-PS-SDGO",
     "images": [
       {
-        "url": "/products/san-diego-gopher-snake-1.webp",
-        "thumbnail_url": "/products/san-diego-gopher-snake-1-thumb.webp",
+        "url": "/products/san-diego-gopher-snake-2.webp",
+        "thumbnail_url": "/products/san-diego-gopher-snake-2-thumb.webp",
         "width": 1600,
-        "height": 2133,
-        "alt": "San Diego Gopher Snake with bold dark blotches on a warm tan ground",
-        "credit": "Chris M Morris via Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Pituophis_catenifer_annectens_(14528940382).jpg"
+        "height": 900,
+        "alt": "Gopher snake head close-up",
+        "credit": "Jstuby via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gophersnake_Pituophis_catenifer_20260330.jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -35448,14 +35464,15 @@
     "sku": "LR-HS-BROW",
     "images": [
       {
-        "url": "/products/brown-house-snake-1.webp",
-        "thumbnail_url": "/products/brown-house-snake-1-thumb.webp",
+        "url": "/products/brown-house-snake-2.webp",
+        "thumbnail_url": "/products/brown-house-snake-2-thumb.webp",
         "width": 1600,
-        "height": 1163,
-        "alt": "Brown House Snake with glossy brown with a subtle iridescent sheen",
-        "credit": "Ltshears via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:African_House_Snake_005.jpg"
+        "height": 1065,
+        "alt": "Brown house snake (Boaedon fuliginosus) coiled",
+        "credit": "Marius Burger via Wikimedia Commons",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Boaedon_fuliginosus_in_Zambia_186836107.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -35590,14 +35607,15 @@
     "sku": "LR-PY-DIAM",
     "images": [
       {
-        "url": "/products/diamond-python-1.webp",
-        "thumbnail_url": "/products/diamond-python-1-thumb.webp",
+        "url": "/products/diamond-python-2.webp",
+        "thumbnail_url": "/products/diamond-python-2-thumb.webp",
         "width": 1600,
-        "height": 870,
-        "alt": "Diamond Python with black with striking cream diamond rosettes",
-        "credit": "LiquidGhoul via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Morelia_spilota_head.jpg"
+        "height": 1200,
+        "alt": "Diamond python, black with white and yellow diamond spots, coiled on rock",
+        "credit": "grace_kat via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Diamond_Python_(5636867710).jpg",
+        "representative": true
       }
     ],
     "featured": false,
@@ -35731,15 +35749,15 @@
     "sku": "LR-PY-ADAR",
     "images": [
       {
-        "url": "/products/albino-darwin-carpet-python-1.webp",
-        "thumbnail_url": "/products/albino-darwin-carpet-python-1-thumb.webp",
+        "url": "/products/albino-darwin-carpet-python-2.webp",
+        "thumbnail_url": "/products/albino-darwin-carpet-python-2-thumb.webp",
         "width": 1600,
-        "height": 1353,
-        "alt": "Albino Darwin Carpet Python with bright yellow and white with red eyes",
-        "credit": "Jebulon via Wikimedia Commons",
-        "license": "CC0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Morelia_spilota_variegata_MNHN.jpg",
-        "representative": true
+        "height": 1067,
+        "alt": "Albino Darwin carpet python, white and yellow",
+        "credit": "U.S. Marine Corps photo by Sgt. Cristian Bestul via Wikimedia Commons",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:MRF-D_24_3-_U_S_Sailors_participate_in_snake_handling_course_(8492631).jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -35827,14 +35845,14 @@
     "sku": "LR-PY-CARA",
     "images": [
       {
-        "url": "/products/caramel-carpet-python-1.webp",
-        "thumbnail_url": "/products/caramel-carpet-python-1-thumb.webp",
+        "url": "/products/caramel-carpet-python-2.webp",
+        "thumbnail_url": "/products/caramel-carpet-python-2-thumb.webp",
         "width": 1600,
-        "height": 870,
-        "alt": "Caramel Carpet Python with warm caramel tones with soft, clean patterning",
-        "credit": "LiquidGhoul via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Morelia_spilota_head.jpg",
+        "height": 1200,
+        "alt": "Coastal carpet python in grass, head raised, tongue flicking",
+        "credit": "JustinReptile via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Adult_Coastal_Carpet_Python.jpg",
         "representative": true
       }
     ],
@@ -36157,15 +36175,15 @@
     "sku": "LR-PY-GTPA",
     "images": [
       {
-        "url": "/products/green-tree-python-aru-1.webp",
-        "thumbnail_url": "/products/green-tree-python-aru-1-thumb.webp",
-        "width": 1600,
-        "height": 1067,
-        "alt": "Green Tree Python – Aru with bright green with bold white vertebral markings",
-        "credit": "JJ Harrison via Wikimedia Commons",
+        "url": "/products/green-tree-python-aru-2.webp",
+        "thumbnail_url": "/products/green-tree-python-aru-2-thumb.webp",
+        "width": 1200,
+        "height": 1600,
+        "alt": "Green tree python from the Aru Islands",
+        "credit": "Ruggerone Isacco via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Green_Tree_Python_0A2A0428.jpg",
-        "representative": true
+        "source_url": "https://commons.wikimedia.org/wiki/File:Morelia_Viridis_Aru.JPG",
+        "representative": false
       }
     ],
     "featured": false,
@@ -36204,15 +36222,15 @@
     "sku": "LR-PY-GTPS",
     "images": [
       {
-        "url": "/products/green-tree-python-sorong-1.webp",
-        "thumbnail_url": "/products/green-tree-python-sorong-1-thumb.webp",
+        "url": "/products/green-tree-python-sorong-2.webp",
+        "thumbnail_url": "/products/green-tree-python-sorong-2-thumb.webp",
         "width": 1600,
-        "height": 1067,
-        "alt": "Green Tree Python – Sorong with vivid green with a clean, classic look",
-        "credit": "JJ Harrison via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Green_Tree_Python_0A2A0428.jpg",
-        "representative": true
+        "height": 1200,
+        "alt": "Green tree python, Sorong form, coiled on a branch",
+        "credit": "Jens Raschendorf via Wikimedia Commons",
+        "license": "CC BY-SA 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Mviridis_Sorong.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -36439,15 +36457,15 @@
     "sku": "LR-PY-GTPY",
     "images": [
       {
-        "url": "/products/yellow-neo-green-tree-python-1.webp",
-        "thumbnail_url": "/products/yellow-neo-green-tree-python-1-thumb.webp",
+        "url": "/products/yellow-neo-green-tree-python-2.webp",
+        "thumbnail_url": "/products/yellow-neo-green-tree-python-2-thumb.webp",
         "width": 1600,
         "height": 1067,
-        "alt": "Green Tree Python – Yellow Neo with bright yellow juvenile colouring that turns green with age",
+        "alt": "Yellow juvenile green tree python coiled on a branch",
         "credit": "JJ Harrison via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Green_Tree_Python_0A2A0428.jpg",
-        "representative": true
+        "source_url": "https://commons.wikimedia.org/wiki/File:Green_Tree_Python_juvenile_A22I6572.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -36533,15 +36551,15 @@
     "sku": "LR-BC-NETB",
     "images": [
       {
-        "url": "/products/northern-emerald-tree-boa-1.webp",
-        "thumbnail_url": "/products/northern-emerald-tree-boa-1-thumb.webp",
+        "url": "/products/northern-emerald-tree-boa-2.webp",
+        "thumbnail_url": "/products/northern-emerald-tree-boa-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Northern Emerald Tree Boa with vivid green with bold white dorsal markings",
-        "credit": "Jyothis via Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Corallus_caninus.JPG",
-        "representative": true
+        "height": 2133,
+        "alt": "Northern emerald tree boa (Corallus caninus) coiled on a rope",
+        "credit": "Edeag3 via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:C_Caninus_Full.jpg",
+        "representative": false
       }
     ],
     "featured": false,
@@ -36580,15 +36598,15 @@
     "sku": "LR-BC-ABET",
     "images": [
       {
-        "url": "/products/amazon-basin-emerald-tree-boa-1.webp",
-        "thumbnail_url": "/products/amazon-basin-emerald-tree-boa-1-thumb.webp",
+        "url": "/products/amazon-basin-emerald-tree-boa-2.webp",
+        "thumbnail_url": "/products/amazon-basin-emerald-tree-boa-2-thumb.webp",
         "width": 1600,
-        "height": 1200,
-        "alt": "Amazon Basin Emerald Tree Boa with bright green with a bold white vertebral stripe",
-        "credit": "Jyothis via Wikimedia Commons",
+        "height": 1216,
+        "alt": "Amazon basin emerald tree boa (Corallus batesii) in Peru",
+        "credit": "Erfil via Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Corallus_caninus.JPG",
-        "representative": true
+        "source_url": "https://commons.wikimedia.org/wiki/File:Corallus_batesi_Peru.JPG",
+        "representative": false
       }
     ],
     "featured": false,
