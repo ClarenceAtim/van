@@ -13,12 +13,12 @@ const isHttps = (process.env.NEXT_PUBLIC_SITE_URL ?? "").startsWith("https://");
  */
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com${isDev ? " 'unsafe-eval'" : ""}`,
+  `script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://embed.tawk.to${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
-  `img-src 'self' data: blob: ${storageUrl ? storageUrl.origin : ""}`,
-  "font-src 'self'",
-  "connect-src 'self' https://challenges.cloudflare.com",
-  "frame-src https://challenges.cloudflare.com",
+  `img-src 'self' data: blob: https://*.tawk.to ${storageUrl ? storageUrl.origin : ""}`,
+  "font-src 'self' https://*.tawk.to",
+  "connect-src 'self' https://challenges.cloudflare.com https://*.tawk.to wss://*.tawk.to",
+  "frame-src https://challenges.cloudflare.com https://*.tawk.to",
   "frame-ancestors 'none'",
   "form-action 'self'",
   "base-uri 'self'",
