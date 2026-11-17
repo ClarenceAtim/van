@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
-import { productFileSchema, type ProductInput } from "./schema";
+import { parseProductData } from "./parse";
+import type { ProductInput } from "./schema";
 
 export const PRODUCTS_DIR = path.join(process.cwd(), "data", "products");
 
@@ -20,11 +21,8 @@ export function productFiles(dir = PRODUCTS_DIR) {
 
 /** Reads and validates every data/products/*.json file. Throws ProductValidationError with readable messages. */
 export function loadProductData(dir = PRODUCTS_DIR): ProductInput[] {
+  const files: { name: string; raw: unknown }[] = [];
   const problems: string[] = [];
-  const all: ProductInput[] = [];
-  const seenSlugs = new Map<string, string>();
-  const seenSkus = new Map<string, string>();
-
   for (const file of productFiles(dir)) {
     const name = path.basename(file);
     let raw: unknown;
@@ -34,25 +32,9 @@ export function loadProductData(dir = PRODUCTS_DIR): ProductInput[] {
       problems.push(`${name}: not valid JSON (${(e as Error).message})`);
       continue;
     }
-    const parsed = productFileSchema.safeParse(raw);
-    if (!parsed.success) {
-      for (const issue of parsed.error.issues) {
-        const [index, ...rest] = issue.path;
-        const slug = typeof index === "number" ? (raw as { slug?: string }[])[index]?.slug : undefined;
-        problems.push(`${name} → product #${String(index)}${slug ? ` (${slug})` : ""} → ${rest.join(".") || "(root)"}: ${issue.message}`);
-      }
-      continue;
-    }
-    for (const p of parsed.data) {
-      const prevSlug = seenSlugs.get(p.slug);
-      if (prevSlug) problems.push(`${name}: duplicate slug "${p.slug}" (also in ${prevSlug})`);
-      const prevSku = seenSkus.get(p.sku);
-      if (prevSku) problems.push(`${name}: duplicate sku "${p.sku}" (also in ${prevSku})`);
-      seenSlugs.set(p.slug, name);
-      seenSkus.set(p.sku, name);
-      all.push(p);
-    }
+    files.push({ name, raw });
   }
-  if (problems.length) throw new ProductValidationError(problems);
-  return all;
+  const { products, problems: allProblems } = parseProductData(files, problems);
+  if (allProblems.length) throw new ProductValidationError(allProblems);
+  return products;
 }

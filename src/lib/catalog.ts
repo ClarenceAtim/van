@@ -1,9 +1,15 @@
 import "server-only";
 import { unstable_cache } from "next/cache";
 import categoriesJson from "../../data/categories.json";
+import careAccessoriesJson from "../../data/products/care-accessories.json";
+import enclosuresJson from "../../data/products/enclosures.json";
+import foodSupplementsJson from "../../data/products/food-supplements.json";
+import heatingLightingJson from "../../data/products/heating-lighting.json";
+import liveReptilesJson from "../../data/products/live-reptiles.json";
+import substrateDecorJson from "../../data/products/substrate-decor.json";
 import * as repo from "@/lib/db/catalog";
 import { db, isDatabaseConfigured } from "@/lib/db/pool";
-import { loadProductData } from "@/lib/products/load";
+import { parseProductData } from "@/lib/products/parse";
 import type { Product, ProductImage } from "@/lib/products/schema";
 
 export type Category = (typeof categoriesJson)[number];
@@ -17,7 +23,19 @@ const REVALIDATE_SECONDS = 3600;
 /** Repo JSON fallback so the site works before the database is connected. */
 function fromJson(): CatalogProduct[] {
   const stamp = "2026-11-01T00:00:00.000Z";
-  return loadProductData()
+  // Static imports (alphabetical, like the old directory listing). Reading
+  // these files with fs at runtime made the deploy trace the whole project —
+  // including every product photo — into the serverless functions.
+  const { products, problems } = parseProductData([
+    { name: "care-accessories.json", raw: careAccessoriesJson },
+    { name: "enclosures.json", raw: enclosuresJson },
+    { name: "food-supplements.json", raw: foodSupplementsJson },
+    { name: "heating-lighting.json", raw: heatingLightingJson },
+    { name: "live-reptiles.json", raw: liveReptilesJson },
+    { name: "substrate-decor.json", raw: substrateDecorJson },
+  ]);
+  if (problems.length) throw new Error(`Product data is invalid: ${problems.join(" | ")}`);
+  return products
     .filter((p) => p.active)
     .map(({ image_search: _hint, ...p }, i) => ({ ...p, id: p.slug, created_at: stamp, updated_at: stamp, sales_count: p.featured ? 50 - (i % 10) : i % 7 }));
 }
