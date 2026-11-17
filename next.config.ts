@@ -14,9 +14,10 @@ const isHttps = (process.env.NEXT_PUBLIC_SITE_URL ?? "").startsWith("https://");
 const csp = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://embed.tawk.to${isDev ? " 'unsafe-eval'" : ""}`,
-  "style-src 'self' 'unsafe-inline'",
-  `img-src 'self' data: blob: https://*.tawk.to ${storageUrl ? storageUrl.origin : ""}`,
-  "font-src 'self' https://*.tawk.to",
+  "style-src 'self' 'unsafe-inline' https://*.tawk.to https://fonts.googleapis.com",
+  `img-src 'self' data: blob: https://*.tawk.to https://s3.amazonaws.com https://tawk.link ${storageUrl ? storageUrl.origin : ""}`,
+  "font-src 'self' https://*.tawk.to https://fonts.gstatic.com",
+  "media-src 'self' https://*.tawk.to",
   "connect-src 'self' https://challenges.cloudflare.com https://*.tawk.to wss://*.tawk.to",
   "frame-src https://challenges.cloudflare.com https://*.tawk.to",
   "frame-ancestors 'none'",
