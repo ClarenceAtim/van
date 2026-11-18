@@ -87,9 +87,9 @@ export type EmailOrderDetails = {
   emailOnly?: boolean;
 };
 
-/** The "New order" email to the store inbox, via FormSubmit. Replying to it writes to the customer. */
-export function sendOrderEmailToOwner(d: EmailOrderDetails): Promise<boolean> {
-  const fields: Record<string, string> = {
+/** The order fields of the "New order" email, shared by the server send and the browser send. */
+function orderEmailFieldList(d: EmailOrderDetails): Record<string, string> {
+  return {
     "Order number": d.orderNumber,
     "Customer name": d.customerName,
     "Customer email": d.email,
@@ -108,7 +108,32 @@ export function sendOrderEmailToOwner(d: EmailOrderDetails): Promise<boolean> {
       ? { Note: "This order arrived by email because the store database was unavailable — it is NOT in the admin panel and stock was NOT reserved. Please confirm availability when you reply with the shipping cost and payment details." }
       : {}),
   };
-  return sendViaFormSubmit(fields, `New order ${d.orderNumber} — ${d.total} + shipping`, d.email);
+}
+
+/**
+ * Builds the "New order" email (endpoint + ready-to-post fields) without sending it. The
+ * checkout form posts it from the customer's browser: FormSubmit refuses server-side posts
+ * from our hosting provider (HTTP 403 in the Vercel logs, 2026-11-18) but accepts the same
+ * post from a real browser. The customer's address goes in both `email` and `_replyto` so
+ * replying to the order email writes straight to the customer.
+ */
+export function orderEmailFields(d: EmailOrderDetails): { endpoint: string; fields: Record<string, string> } {
+  return {
+    endpoint: `https://formsubmit.co/ajax/${ownerEmail()}`,
+    fields: {
+      ...orderEmailFieldList(d),
+      email: d.email,
+      _replyto: d.email,
+      _subject: `New order ${d.orderNumber} — ${d.total} + shipping`,
+      _template: "table",
+      _captcha: "false",
+    },
+  };
+}
+
+/** The "New order" email to the store inbox, via FormSubmit. Replying to it writes to the customer. */
+export function sendOrderEmailToOwner(d: EmailOrderDetails): Promise<boolean> {
+  return sendViaFormSubmit(orderEmailFieldList(d), `New order ${d.orderNumber} — ${d.total} + shipping`, d.email);
 }
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");

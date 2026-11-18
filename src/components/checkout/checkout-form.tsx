@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ChevronDown, Lock } from "lucide-react";
-import { placeOrder } from "@/app/actions/checkout";
+import { clearCartAfterEmailOrder, placeOrder } from "@/app/actions/checkout";
 import { Turnstile } from "@/components/turnstile";
 import { Button } from "@/components/ui/button";
 import { REGIONS, type Country } from "@/config/countries";
@@ -204,6 +204,31 @@ export function CheckoutForm(p: Props) {
     try {
       const res = await placeOrder(values);
       if (res.ok && "confirmationUrl" in res && res.confirmationUrl) {
+        if ("emailEndpoint" in res && res.emailEndpoint) {
+          // Database down: the order email goes from this browser, because FormSubmit
+          // refuses the same post from the site's server. Only continue once it is sent.
+          let sent = false;
+          try {
+            const data = (await fetch(res.emailEndpoint, {
+              method: "POST",
+              headers: { "Content-Type": "application/json", Accept: "application/json" },
+              body: JSON.stringify(res.emailFields),
+            }).then((r) => r.json().catch(() => null))) as { success?: string } | null;
+            sent = data?.success === "true";
+          } catch {
+            sent = false;
+          }
+          if (!sent) {
+            setMessage(`We couldn't send your order right now. Please email ${siteConfig.contact.email} with your order and we'll take it from there.`);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            return;
+          }
+          try {
+            await clearCartAfterEmailOrder();
+          } catch {
+            /* a stale cart clears on the next visit */
+          }
+        }
         try {
           localStorage.removeItem(STORAGE_KEY);
         } catch {

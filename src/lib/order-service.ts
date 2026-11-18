@@ -127,13 +127,26 @@ function emailOrderNumber(now: Date) {
   return `SH-${day}${Math.floor(1000 + Math.random() * 9000)}`;
 }
 
+/** An email order prepared for the browser to send: validation and totals are done here, the FormSubmit post happens in the checkout form (see orderEmailFields). */
+export type EmailOrderPrepared = {
+  ok: true;
+  orderId: string;
+  orderNumber: string;
+  emailEndpoint: string;
+  emailFields: Record<string, string>;
+};
+
 /**
- * Places an order by email when the database is unavailable (quota, outage): same validation and
- * server-side totals as placeOrderRequest, but instead of a database row the order goes straight
- * to the store inbox, and the customer sees the confirmation page with ?emailed=1. Stock is NOT
+ * Prepares an order for email when the database is unavailable (quota, outage): same validation
+ * and server-side totals as placeOrderRequest, but instead of a database row the order email is
+ * handed to the checkout form, which posts it to the store inbox from the customer's browser —
+ * FormSubmit refuses the same post from our server (HTTP 403). The customer sees the
+ * confirmation page with ?emailed=1 once the browser confirms the email was sent. Stock is NOT
  * reserved — the email says so, and the store confirms availability in their reply.
  */
-export async function placeEmailOrderRequest(input: { form: CheckoutInput; lines: PricedLine[]; now?: Date }): Promise<PlaceOrderResult> {
+export async function prepareEmailOrderRequest(
+  input: { form: CheckoutInput; lines: PricedLine[]; now?: Date },
+): Promise<EmailOrderPrepared | { ok: false; message: string; errors?: Record<string, string> }> {
   const { lines } = input;
   const now = input.now ?? new Date();
   if (!lines.length) return { ok: false, message: "Your cart is empty." };
@@ -152,7 +165,7 @@ export async function placeEmailOrderRequest(input: { form: CheckoutInput; lines
   const orderNumber = emailOrderNumber(now);
   const money = (c: number) => formatMoney(c, siteConfig.currency);
   const cityLine = [f.city, f.region ? regionName(f.country, f.region) : "", f.postalCode].filter(Boolean).join(", ");
-  const sent = await email.sendOrderEmailToOwner({
+  const { endpoint, fields } = email.orderEmailFields({
     orderNumber,
     customerName: f.fullName,
     email: f.email,
@@ -170,9 +183,8 @@ export async function placeEmailOrderRequest(input: { form: CheckoutInput; lines
     containsLiveAnimals: totals.containsLiveAnimals,
     emailOnly: true,
   });
-  if (!sent) return { ok: false, message: `We couldn't send your order right now. Please email ${siteConfig.contact.email} with your order and we'll take it from there.` };
   // No database row exists for an email order; the order number stands in for the id.
-  return { ok: true, orderId: orderNumber, orderNumber };
+  return { ok: true, orderId: orderNumber, orderNumber, emailEndpoint: endpoint, emailFields: fields };
 }
 
 // ───────────── Order confirmation (admin) ─────────────
