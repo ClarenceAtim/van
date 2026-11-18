@@ -26,10 +26,24 @@ export async function placeOrder(form: CheckoutInput): Promise<PlaceOrderRespons
   }
   if (!isDatabaseConfigured()) return { ok: false, message: `Ordering isn't available right now. Please email ${siteConfig.contact.email}.` };
 
-  const [user, cart, cartId] = await Promise.all([getUser(), getCart(), currentCartId()]);
-  const result = await placeOrderRequest({ q: db(), transaction }, { form, lines: cart.lines, userId: user?.id ?? null, cartId });
-  if (!result.ok) return result;
+  try {
+    const [user, cart, cartId] = await Promise.all([getUser(), getCart(), currentCartId()]);
+    const result = await placeOrderRequest({ q: db(), transaction }, { form, lines: cart.lines, userId: user?.id ?? null, cartId });
+    if (!result.ok) return result;
 
-  if (cartId) await clearCartById(cartId);
-  return { ...result, confirmationUrl: `/checkout/confirmation/${result.orderNumber}?t=${orderToken(result.orderNumber)}` };
+    if (cartId) {
+      try {
+        await clearCartById(cartId);
+      } catch (error) {
+        // Order is placed; a stale cart is harmless.
+        console.error("Failed to clear cart after order:", error);
+      }
+    }
+    return { ...result, confirmationUrl: `/checkout/confirmation/${result.orderNumber}?t=${orderToken(result.orderNumber)}` };
+  } catch (error) {
+    // Database unavailable (quota exceeded, outage) → the order can't be
+    // recorded; fail with the same clear message as the unconfigured case.
+    console.error("Order placement failed (database unavailable):", error);
+    return { ok: false, message: `Ordering isn't available right now. Please email ${siteConfig.contact.email}.` };
+  }
 }
