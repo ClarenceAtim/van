@@ -68,12 +68,47 @@ async function cookieEntries(): Promise<Entry[]> {
   }
 }
 
+async function writeCookieEntry(slug: string, quantity: number) {
+  const entries = (await cookieEntries()).filter((e) => e.slug !== slug);
+  if (quantity > 0) entries.push({ slug, quantity });
+  (await cookies()).set(CART_DATA_COOKIE, sign(JSON.stringify(entries)), COOKIE_OPTIONS);
+}
+
+/**
+ * One-time migration: items saved in the cookie cart while the database was
+ * unavailable move into the database cart once it works again, so a visitor
+ * doesn't lose their cart when the database recovers. Failure-safe: if the
+ * database is still unhappy, the cookie stays in place as the fallback.
+ */
+async function migrateCookieCart(cartId: string | null) {
+  if (!cartId) return;
+  const entries = await cookieEntries();
+  if (entries.length === 0) return;
+  try {
+    const current = new Map((await carts.cartEntries(db(), cartId)).map((e) => [e.slug, e.quantity]));
+    for (const e of entries) {
+      await carts.setCartItem(db(), cartId, e.slug, Math.min((current.get(e.slug) ?? 0) + e.quantity, MAX_QUANTITY_PER_LINE));
+    }
+    (await cookies()).delete(CART_DATA_COOKIE);
+  } catch {
+    // Database still unavailable — the cookie remains the fallback.
+  }
+}
+
 // ───────────── Public API ─────────────
 
 export async function readEntries(): Promise<Entry[]> {
   if (!isDatabaseConfigured()) return cookieEntries();
-  const id = await findCartId(false);
-  return id ? carts.cartEntries(db(), id) : [];
+  try {
+    const id = await findCartId(false);
+    if (id) await migrateCookieCart(id);
+    return id ? carts.cartEntries(db(), id) : [];
+  } catch (error) {
+    // Database unavailable (quota exceeded, outage) → serve the cookie cart
+    // instead of failing the whole cart. The next read retries the database.
+    console.error("Cart database read failed, falling back to cookie cart:", error);
+    return cookieEntries();
+  }
 }
 
 /** Sets the quantity for a product (0 removes it). `mode: "add"` adds to the existing quantity. */
@@ -91,19 +126,30 @@ export async function setQuantity(slug: string, quantity: number, mode: "set" | 
   }
 
   if (isDatabaseConfigured()) {
-    const cartId = await findCartId(next > 0);
-    if (cartId) await carts.setCartItem(db(), cartId, slug, next);
+    try {
+      const cartId = await findCartId(next > 0);
+      if (cartId) await carts.setCartItem(db(), cartId, slug, next);
+      await migrateCookieCart(cartId);
+    } catch (error) {
+      // Database unavailable → keep the cart in the signed cookie instead.
+      console.error("Cart database write failed, falling back to cookie cart:", error);
+      await writeCookieEntry(slug, next);
+    }
   } else {
-    const entries = (await cookieEntries()).filter((e) => e.slug !== slug);
-    if (next > 0) entries.push({ slug, quantity: next });
-    (await cookies()).set(CART_DATA_COOKIE, sign(JSON.stringify(entries)), COOKIE_OPTIONS);
+    await writeCookieEntry(slug, next);
   }
   return { notice };
 }
 
 /** The current visitor's cart id (stored on the order). */
 export async function currentCartId() {
-  return isDatabaseConfigured() ? findCartId(false) : null;
+  if (!isDatabaseConfigured()) return null;
+  try {
+    return await findCartId(false);
+  } catch (error) {
+    console.error("Cart id lookup failed, treating as no cart:", error);
+    return null;
+  }
 }
 
 /** Empties a cart by id. Used after an order is placed. */
