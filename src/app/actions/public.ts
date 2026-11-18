@@ -37,14 +37,18 @@ export async function sendContactMessage(_prev: FormState, form: FormData): Prom
   if (!(await verifyTurnstile(parsed.data.turnstileToken))) return { ok: false, message: BOT_MESSAGE };
 
   const { turnstileToken: _t, ...message } = parsed.data;
+  let saved = !isDatabaseConfigured();
   if (isDatabaseConfigured()) {
     try {
       await addContactMessage(db(), message);
+      saved = true;
     } catch (e) {
+      // Database unavailable — the email below is the fallback, so don't fail yet.
       console.error("contact:", (e as Error).message);
-      return { ok: false, message: "We couldn't send your message. Please email us instead." };
+      saved = false;
     }
   }
-  await sendContactNotification(message);
+  const emailed = await sendContactNotification(message);
+  if (!saved && !emailed) return { ok: false, message: "We couldn't send your message. Please email us instead." };
   return { ok: true, message: "Thanks — we'll reply within one business day." };
 }

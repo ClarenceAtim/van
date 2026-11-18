@@ -3,6 +3,7 @@ import { Fraunces, Geist } from "next/font/google";
 import Script from "next/script";
 import { CartProvider } from "@/components/cart/cart-provider";
 import { JsonLd } from "@/components/json-ld";
+import { ContactTab } from "@/components/layout/contact-tab";
 import { Footer } from "@/components/layout/footer";
 import { DeferredUi } from "@/components/layout/deferred-ui";
 import { Header } from "@/components/layout/header";
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             {children}
           </main>
           <Footer />
+          <ContactTab />
           <DeferredUi />
         </CartProvider>
         <JsonLd data={organizationJsonLd()} />

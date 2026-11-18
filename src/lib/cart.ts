@@ -160,6 +160,11 @@ export async function clearCartById(cartId: string) {
   await carts.clearCart(db(), cartId);
 }
 
+/** Empties the signed-cookie cart. Used after an order placed while the database was down. */
+export async function clearCookieCart() {
+  (await cookies()).delete(CART_DATA_COOKIE);
+}
+
 /** After sign-in, move items from the guest cart into the user's cart. */
 export async function mergeGuestCart(userId: string) {
   if (!isDatabaseConfigured()) return;

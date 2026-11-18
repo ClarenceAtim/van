@@ -2,19 +2,22 @@
 
 import { siteConfig } from "@/config/site";
 import { getUser } from "@/lib/auth/server";
-import { clearCartById, currentCartId, getCart } from "@/lib/cart";
+import { clearCartById, clearCookieCart, currentCartId, getCart } from "@/lib/cart";
 import type { CheckoutInput } from "@/lib/checkout-schema";
 import { db, isDatabaseConfigured, transaction } from "@/lib/db/pool";
 import { orderToken } from "@/lib/order-token";
-import { placeOrderRequest, type PlaceOrderResult } from "@/lib/order-service";
+import { placeEmailOrderRequest, placeOrderRequest, type PlaceOrderResult } from "@/lib/order-service";
+import type { PricedLine } from "@/lib/pricing";
 import { rateLimit } from "@/lib/rate-limit";
 import { verifyTurnstile } from "@/lib/turnstile";
 
 /**
  * Checkout = an order request. No payment is taken here: the customer ticks how they'd like to pay,
  * the order is created with stock reserved, and the store emails the shipping cost and payment
- * details from /admin. (To add an online payment provider later, check the chosen method's `kind`
- * after the order is created and redirect to the provider from here.)
+ * details from /admin. When the database is unavailable (quota, outage) the order is emailed
+ * straight to the store inbox instead (same validation, stock not reserved), and the customer
+ * still gets a confirmation page. (To add an online payment provider later, check the chosen
+ * method's `kind` after the order is created and redirect to the provider from here.)
  */
 
 export type PlaceOrderResponse = (PlaceOrderResult & { confirmationUrl?: string }) | { ok: false; message: string; errors?: Record<string, string> };
@@ -24,26 +27,54 @@ export async function placeOrder(form: CheckoutInput): Promise<PlaceOrderRespons
   if (!(await verifyTurnstile(typeof form?.turnstileToken === "string" ? form.turnstileToken : null))) {
     return { ok: false, message: "Please complete the security check and try again." };
   }
-  if (!isDatabaseConfigured()) return { ok: false, message: `Ordering isn't available right now. Please email ${siteConfig.contact.email}.` };
 
+  // The cart is fetched before the database attempt so the email fallback still has the lines.
+  let lines: PricedLine[] = [];
+  let cartId: string | null = null;
   try {
-    const [user, cart, cartId] = await Promise.all([getUser(), getCart(), currentCartId()]);
-    const result = await placeOrderRequest({ q: db(), transaction }, { form, lines: cart.lines, userId: user?.id ?? null, cartId });
+    const [user, cart, id] = await Promise.all([getUser(), getCart(), currentCartId()]);
+    lines = cart.lines;
+    cartId = id;
+    if (!lines.length) return { ok: false, message: "Your cart is empty." };
+    if (!isDatabaseConfigured()) return emailOrder(form, lines, cartId);
+
+    const result = await placeOrderRequest({ q: db(), transaction }, { form, lines, userId: user?.id ?? null, cartId });
     if (!result.ok) return result;
 
-    if (cartId) {
-      try {
-        await clearCartById(cartId);
-      } catch (error) {
-        // Order is placed; a stale cart is harmless.
-        console.error("Failed to clear cart after order:", error);
-      }
-    }
+    await clearCarts(cartId);
     return { ...result, confirmationUrl: `/checkout/confirmation/${result.orderNumber}?t=${orderToken(result.orderNumber)}` };
   } catch (error) {
-    // Database unavailable (quota exceeded, outage) → the order can't be
-    // recorded; fail with the same clear message as the unconfigured case.
-    console.error("Order placement failed (database unavailable):", error);
-    return { ok: false, message: `Ordering isn't available right now. Please email ${siteConfig.contact.email}.` };
+    if (!lines.length) {
+      // The cart itself couldn't be read; there's nothing to email.
+      console.error("Order placement failed (cart unavailable):", error);
+      return { ok: false, message: `Ordering isn't available right now. Please email ${siteConfig.contact.email}.` };
+    }
+    // Database unavailable (quota exceeded, outage) → email the order to the
+    // store inbox instead of turning the customer away.
+    console.error("Order placement failed (database unavailable), emailing order instead:", error);
+    return emailOrder(form, lines, cartId);
   }
+}
+
+async function clearCarts(cartId: string | null) {
+  if (cartId) {
+    try {
+      await clearCartById(cartId);
+    } catch (error) {
+      // Order is placed; a stale cart is harmless.
+      console.error("Failed to clear cart after order:", error);
+    }
+  }
+  try {
+    await clearCookieCart();
+  } catch (error) {
+    console.error("Failed to clear cookie cart after order:", error);
+  }
+}
+
+async function emailOrder(form: CheckoutInput, lines: PricedLine[], cartId: string | null): Promise<PlaceOrderResponse> {
+  const result = await placeEmailOrderRequest({ form, lines });
+  if (!result.ok) return result;
+  await clearCarts(cartId);
+  return { ...result, confirmationUrl: `/checkout/confirmation/${result.orderNumber}?t=${orderToken(result.orderNumber)}&emailed=1` };
 }

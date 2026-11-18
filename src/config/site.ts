@@ -18,8 +18,8 @@ export const siteConfig = {
   /** Tax/VAT added to the order total. Off by default. Example for VAT: { enabled: true, rate: 0.21, label: "VAT (21%)", note: "Prices exclude VAT." } */
   tax: { enabled: false as boolean, rate: 0 as number, label: "Sales tax" as string, note: "" as string },
   contact: {
-    email: "hello@heavenreptiles.example",
-    phone: "+1 (555) 013-2040",
+    email: "scareheavenreptiles@gmail.com",
+    phone: "+1 (917) 323-1461",
     hours: "Mon–Fri, 9am–5pm Central",
     address: { street: "1200 Riverbend Rd", city: "Austin", region: "TX", postalCode: "78701", country: "US" },
   },

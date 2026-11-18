@@ -19,11 +19,21 @@ export const metadata = pageMetadata({ title: "Order received", description: "Or
 const formatDay = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString(siteConfig.locale, { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" });
 
 /** Shown after "Place Order". Visible with the signed link from checkout, or to the signed-in customer. */
-export default async function ConfirmationPage({ params, searchParams }: { params: Promise<{ orderNumber: string }>; searchParams: Promise<{ t?: string }> }) {
-  const [{ orderNumber }, { t }] = await Promise.all([params, searchParams]);
+export default async function ConfirmationPage({ params, searchParams }: { params: Promise<{ orderNumber: string }>; searchParams: Promise<{ t?: string; emailed?: string }> }) {
+  const [{ orderNumber }, { t, emailed }] = await Promise.all([params, searchParams]);
   if (!/^SH-\d{4,}$/.test(orderNumber) || !isDatabaseConfigured()) notFound();
-  const order = await getOrderByNumber(db(), orderNumber);
-  if (!order) notFound();
+  let order: Awaited<ReturnType<typeof getOrderByNumber>> = null;
+  try {
+    order = await getOrderByNumber(db(), orderNumber);
+  } catch (error) {
+    console.error("Confirmation order lookup failed (database unavailable):", error);
+  }
+  if (!order) {
+    // Email-only order (placed while the database was down): no order row exists, so show a
+    // generic confirmation — but only with a valid signed link, as for database orders.
+    if (emailed === "1" && verifyOrderToken(orderNumber, t)) return <EmailOnlyConfirmation orderNumber={orderNumber} />;
+    notFound();
+  }
   if (!verifyOrderToken(orderNumber, t)) {
     const user = await getUser();
     if (!user || user.id !== order.user_id) notFound();
@@ -121,6 +131,35 @@ export default async function ConfirmationPage({ params, searchParams }: { param
             View order
           </Link>
         )}
+        <Link href="/shop" className={buttonVariants({ size: "lg" })}>
+          Keep shopping
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+/** Confirmation for an order placed by email while the database was down: no order row exists, so there's no summary to show — just the order number and what happens next. */
+function EmailOnlyConfirmation({ orderNumber }: { orderNumber: string }) {
+  return (
+    <div className="mx-auto max-w-2xl px-4 py-12">
+      <RefreshCart />
+      <div className="text-center">
+        <CheckCircle2 className="mx-auto size-14 text-primary" aria-hidden />
+        <h1 className="mt-4 text-3xl font-semibold sm:text-4xl">
+          Thank you — your order <span className="whitespace-nowrap">{orderNumber}</span> has been received
+        </h1>
+      </div>
+
+      <div className="mt-8 flex items-start gap-3 rounded-2xl border border-primary/40 bg-primary/5 p-5">
+        <Mail className="mt-0.5 size-6 shrink-0 text-primary" aria-hidden />
+        <div>
+          <p className="font-semibold">We&apos;ll email you within {paymentSettings.confirmWithinHours} hours with your shipping cost and payment details.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Nothing has been charged. Your order was sent directly to the store, and we&apos;ll confirm availability when we write back.</p>
+        </div>
+      </div>
+
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link href="/shop" className={buttonVariants({ size: "lg" })}>
           Keep shopping
         </Link>

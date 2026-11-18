@@ -5,7 +5,7 @@ import { paymentMethodName, paymentMethodsLabel, paymentSettings } from "@/confi
 import { siteConfig } from "@/config/site";
 import { formatDate, formatMoney } from "@/lib/format";
 import type { Order } from "@/lib/orders";
-import { absoluteUrl } from "@/lib/seo";
+import { absoluteUrl, siteOrigin } from "@/lib/seo";
 
 /**
  * Addresses come from env variables so they can change when you get a domain:
@@ -38,6 +38,77 @@ let transport: EmailTransport = resendTransport;
 /** Tests swap in a fake transport to inspect what would be sent. */
 export function setEmailTransport(t: EmailTransport | null) {
   transport = t ?? resendTransport;
+}
+
+// ───────────── FormSubmit fallback (no Resend key needed) ─────────────
+
+/**
+ * Sends a message to the store inbox via FormSubmit (free, no API key): the store owner replies
+ * from their own inbox, and the reply goes straight to the customer because the customer's
+ * address is sent both as the `email` field and as `_replyto` (FormSubmit ignores `_replyto`
+ * without a field named `email`). Used when RESEND_API_KEY isn't set, and for orders placed
+ * while the database is down. One-time setup: the owner must click "Activate Form" in the
+ * activation email FormSubmit sends to the store inbox; until then this returns false.
+ */
+async function sendViaFormSubmit(fields: Record<string, string>, subject: string, replyToEmail: string): Promise<boolean> {
+  try {
+    const res = await fetch(`https://formsubmit.co/ajax/${ownerEmail()}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json", Origin: siteOrigin, Referer: `${siteOrigin}/` },
+      body: JSON.stringify({ ...fields, email: replyToEmail, _replyto: replyToEmail, _subject: subject, _template: "table", _captcha: "false" }),
+    });
+    const data = (await res.json().catch(() => null)) as { success?: string; message?: string } | null;
+    if (data?.success === "true") return true;
+    console.error("[email] FormSubmit send failed:", data?.message ?? `HTTP ${res.status}`);
+    return false;
+  } catch (e) {
+    console.error("[email] FormSubmit send failed:", (e as Error).message);
+    return false;
+  }
+}
+
+export type EmailOrderDetails = {
+  orderNumber: string;
+  customerName: string;
+  email: string;
+  phone: string;
+  company?: string | null;
+  items: { name: string; quantity: number; lineTotal: string }[];
+  subtotal: string;
+  tax?: string | null;
+  taxLabel?: string;
+  total: string;
+  shipTo: string;
+  paymentMethods: string;
+  notes?: string | null;
+  preferredDeliveryDate?: string | null;
+  containsLiveAnimals: boolean;
+  /** True when the order arrived by email because the database was down: not in /admin, stock not reserved. */
+  emailOnly?: boolean;
+};
+
+/** The "New order" email to the store inbox, via FormSubmit. Replying to it writes to the customer. */
+export function sendOrderEmailToOwner(d: EmailOrderDetails): Promise<boolean> {
+  const fields: Record<string, string> = {
+    "Order number": d.orderNumber,
+    "Customer name": d.customerName,
+    "Customer email": d.email,
+    "Customer phone": d.phone,
+    ...(d.company ? { Company: d.company } : {}),
+    "Ship to": d.shipTo,
+    Items: d.items.map((i) => `${i.name} × ${i.quantity} — ${i.lineTotal}`).join("\n"),
+    Subtotal: d.subtotal,
+    ...(d.tax ? { [d.taxLabel ?? "Tax"]: d.tax } : {}),
+    "Total (before shipping)": d.total,
+    "Payment method": d.paymentMethods,
+    ...(d.preferredDeliveryDate ? { "Preferred delivery date": d.preferredDeliveryDate } : {}),
+    ...(d.containsLiveAnimals ? { "Live animals": "yes (18+ and policy confirmed)" } : {}),
+    ...(d.notes ? { "Order notes": d.notes } : {}),
+    ...(d.emailOnly
+      ? { Note: "This order arrived by email because the store database was unavailable — it is NOT in the admin panel and stock was NOT reserved. Please confirm availability when you reply with the shipping cost and payment details." }
+      : {}),
+  };
+  return sendViaFormSubmit(fields, `New order ${d.orderNumber} — ${d.total} + shipping`, d.email);
 }
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -178,6 +249,31 @@ export function sendOrderCancelled(o: Order, reason: string) {
 // ───────────── To the store owner ─────────────
 
 export function sendNewOrderNotification(o: Order) {
+  if (!process.env.RESEND_API_KEY) {
+    // No Resend key set: email the order to the store inbox via FormSubmit instead, so the
+    // owner still gets every order and can reply to the customer with the shipping cost and
+    // payment details. (Customer emails still need Resend — they go to the customer, not the inbox.)
+    const a = o.shipping_address;
+    return sendOrderEmailToOwner({
+      orderNumber: o.order_number,
+      customerName: o.customer_name ?? "Customer",
+      email: o.email,
+      phone: o.phone ?? "",
+      company: o.company,
+      items: (o.order_items ?? []).map((i) => ({ name: i.product_name, quantity: i.quantity, lineTotal: formatMoney(i.line_total_cents, o.currency) })),
+      subtotal: formatMoney(o.subtotal_cents, o.currency),
+      tax: o.tax_cents ? formatMoney(o.tax_cents, o.currency) : null,
+      taxLabel: siteConfig.tax.label,
+      total: formatMoney(o.total_cents, o.currency),
+      shipTo: a
+        ? `${a.name ?? ""}${a.company ? `, ${a.company}` : ""}, ${a.line1}, ${[a.city, a.state ? regionName(a.country ?? "", a.state) : "", a.postal_code].filter(Boolean).join(", ")}, ${countryName(a.country)}`
+        : "",
+      paymentMethods: methods(o),
+      notes: o.delivery_notes,
+      preferredDeliveryDate: o.preferred_delivery_date ? formatDate(o.preferred_delivery_date) : null,
+      containsLiveAnimals: o.contains_live_animals,
+    });
+  }
   return send(
     ownerEmail(),
     `New order ${o.order_number} — ${formatMoney(o.total_cents, o.currency)} + shipping · ${countryName(o.shipping_address?.country)}`,
@@ -194,6 +290,13 @@ export function sendNewOrderNotification(o: Order) {
 }
 
 export function sendContactNotification(m: { name: string; email: string; subject: string; message: string }) {
+  if (!process.env.RESEND_API_KEY) {
+    return sendViaFormSubmit(
+      { Name: m.name, "Customer email": m.email, Subject: m.subject, Message: m.message },
+      `Contact form: ${m.subject.slice(0, 80)}`,
+      m.email,
+    );
+  }
   return send(
     process.env.CONTACT_INBOX_EMAIL || ownerEmail(),
     `Contact form: ${m.subject.slice(0, 80)}`,

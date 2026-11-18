@@ -1,5 +1,5 @@
 import "server-only";
-import { countryName } from "@/config/countries";
+import { countryName, regionName } from "@/config/countries";
 import { paymentMethodName, paymentMethods, paymentMethodsLabel, paymentSettings } from "@/config/payments";
 import { siteConfig } from "@/config/site";
 import { checkoutSchema, errorMap, type CheckoutInput } from "@/lib/checkout-schema";
@@ -119,6 +119,60 @@ export async function placeOrderRequest(
     `Customer chose: ${paymentMethodsLabel(order.payment_methods, order.payment_other)}. "Order received" email ${toCustomer ? "sent" : "not sent (email isn't set up)"}; owner notification ${toOwner ? "sent" : "not sent"}.`,
   );
   return { ok: true, orderId: order.id, orderNumber: order.order_number };
+}
+
+/** Order number for email-only orders: SH-YYYYMMDD + 4 random digits. Matches the confirmation page's SH-\d{4,} pattern and never collides with the database sequence. */
+function emailOrderNumber(now: Date) {
+  const day = now.toISOString().slice(0, 10).replaceAll("-", "");
+  return `SH-${day}${Math.floor(1000 + Math.random() * 9000)}`;
+}
+
+/**
+ * Places an order by email when the database is unavailable (quota, outage): same validation and
+ * server-side totals as placeOrderRequest, but instead of a database row the order goes straight
+ * to the store inbox, and the customer sees the confirmation page with ?emailed=1. Stock is NOT
+ * reserved — the email says so, and the store confirms availability in their reply.
+ */
+export async function placeEmailOrderRequest(input: { form: CheckoutInput; lines: PricedLine[]; now?: Date }): Promise<PlaceOrderResult> {
+  const { lines } = input;
+  const now = input.now ?? new Date();
+  if (!lines.length) return { ok: false, message: "Your cart is empty." };
+  const problems = validateLines(lines);
+  if (problems.length) return { ok: false, message: problems.map((p) => p.message).join(" ") };
+
+  const totals = computeTotals(lines);
+  const parsed = checkoutSchema({ containsLiveAnimals: totals.containsLiveAnimals, deliveryDates: liveDeliveryDates(now) }).safeParse(input.form);
+  if (!parsed.success) return { ok: false, message: "Please check the highlighted fields.", errors: errorMap(parsed.error) };
+  const f = parsed.data;
+
+  if (f.expectedTotalCents !== totals.totalCents) {
+    return { ok: false, message: `Your order total changed to ${formatMoney(totals.totalCents)} (a price or stock change). Please check your order and place it again.` };
+  }
+
+  const orderNumber = emailOrderNumber(now);
+  const money = (c: number) => formatMoney(c, siteConfig.currency);
+  const cityLine = [f.city, f.region ? regionName(f.country, f.region) : "", f.postalCode].filter(Boolean).join(", ");
+  const sent = await email.sendOrderEmailToOwner({
+    orderNumber,
+    customerName: f.fullName,
+    email: f.email,
+    phone: f.phone,
+    company: f.company || null,
+    items: lines.map((l) => ({ name: l.name, quantity: l.quantity, lineTotal: money(l.unitPriceCents * l.quantity) })),
+    subtotal: money(totals.subtotalCents),
+    tax: totals.taxCents ? money(totals.taxCents) : null,
+    taxLabel: siteConfig.tax.label,
+    total: money(totals.totalCents),
+    shipTo: `${f.fullName}${f.company ? `, ${f.company}` : ""}, ${f.address}, ${cityLine}, ${countryName(f.country)}`,
+    paymentMethods: paymentMethodsLabel(f.paymentMethods, f.paymentMethods.includes("other") ? f.paymentOther : null),
+    notes: f.notes || null,
+    preferredDeliveryDate: totals.containsLiveAnimals ? formatDate(f.preferredDate) : null,
+    containsLiveAnimals: totals.containsLiveAnimals,
+    emailOnly: true,
+  });
+  if (!sent) return { ok: false, message: `We couldn't send your order right now. Please email ${siteConfig.contact.email} with your order and we'll take it from there.` };
+  // No database row exists for an email order; the order number stands in for the id.
+  return { ok: true, orderId: orderNumber, orderNumber };
 }
 
 // ───────────── Order confirmation (admin) ─────────────
