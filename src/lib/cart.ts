@@ -102,7 +102,10 @@ export async function readEntries(): Promise<Entry[]> {
   try {
     const id = await findCartId(false);
     if (id) await migrateCookieCart(id);
-    return id ? carts.cartEntries(db(), id) : [];
+    // No database cart for this visitor: a cookie cart may still exist
+    // (written while the database was down), so read it instead of
+    // reporting an empty cart.
+    return id ? carts.cartEntries(db(), id) : cookieEntries();
   } catch (error) {
     // Database unavailable (quota exceeded, outage) → serve the cookie cart
     // instead of failing the whole cart. The next read retries the database.
