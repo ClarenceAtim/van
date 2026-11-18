@@ -157,7 +157,15 @@ export async function getLiveStock(slugs: string[]): Promise<Map<string, number>
     const all = await getProductsBySlugs(slugs);
     return new Map(all.map((p) => [p.slug, p.stock_quantity]));
   }
-  return repo.liveStock(db(), slugs);
+  try {
+    return await repo.liveStock(db(), slugs);
+  } catch (error) {
+    // Database unavailable (quota exceeded, outage) → stock from the repo
+    // catalogue instead of failing the cart/checkout.
+    console.error("Live stock database query failed, falling back to repo stock:", error);
+    const all = await getProductsBySlugs(slugs);
+    return new Map(all.map((p) => [p.slug, p.stock_quantity]));
+  }
 }
 
 /** Lightweight shape sent to client components (keeps page payloads small). */
