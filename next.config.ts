@@ -18,7 +18,8 @@ const csp = [
   `img-src 'self' data: blob: https://*.tawk.to https://s3.amazonaws.com https://tawk.link ${storageUrl ? storageUrl.origin : ""}`,
   "font-src 'self' https://*.tawk.to https://fonts.gstatic.com",
   "media-src 'self' https://*.tawk.to",
-  "connect-src 'self' https://challenges.cloudflare.com https://*.tawk.to wss://*.tawk.to",
+  // formsubmit.co: the checkout form posts email-only orders to it from the browser.
+  "connect-src 'self' https://challenges.cloudflare.com https://*.tawk.to wss://*.tawk.to https://formsubmit.co",
   "frame-src https://challenges.cloudflare.com https://*.tawk.to",
   "frame-ancestors 'none'",
   "form-action 'self'",
