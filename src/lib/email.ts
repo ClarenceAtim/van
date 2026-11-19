@@ -104,9 +104,6 @@ function orderEmailFieldList(d: EmailOrderDetails): Record<string, string> {
     ...(d.preferredDeliveryDate ? { "Preferred delivery date": d.preferredDeliveryDate } : {}),
     ...(d.containsLiveAnimals ? { "Live animals": "yes (18+ and policy confirmed)" } : {}),
     ...(d.notes ? { "Order notes": d.notes } : {}),
-    ...(d.emailOnly
-      ? { Note: "This order arrived by email because the store database was unavailable — it is NOT in the admin panel and stock was NOT reserved. Please confirm availability when you reply with the shipping cost and payment details." }
-      : {}),
   };
 }
 
