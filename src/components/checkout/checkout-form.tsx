@@ -14,6 +14,7 @@ import { siteConfig } from "@/config/site";
 import { checkoutSchema, errorMap, postalCodeRequired, regionRequired } from "@/lib/checkout-schema";
 import type { Address } from "@/lib/db/account";
 import { formatMoney } from "@/lib/format";
+import { postToFormSubmit } from "@/lib/formsubmit-client";
 import { liveAnimalShippingProblem } from "@/lib/pricing";
 
 export type CheckoutLine = { slug: string; name: string; quantity: number; unitPriceCents: number; lineTotalCents: number; image: { url: string; alt: string } | null };
@@ -207,17 +208,7 @@ export function CheckoutForm(p: Props) {
         if ("emailEndpoint" in res && res.emailEndpoint) {
           // Database down: the order email goes from this browser, because FormSubmit
           // refuses the same post from the site's server. Only continue once it is sent.
-          let sent = false;
-          try {
-            const data = (await fetch(res.emailEndpoint, {
-              method: "POST",
-              headers: { "Content-Type": "application/json", Accept: "application/json" },
-              body: JSON.stringify(res.emailFields),
-            }).then((r) => r.json().catch(() => null))) as { success?: string } | null;
-            sent = data?.success === "true";
-          } catch {
-            sent = false;
-          }
+          const sent = await postToFormSubmit(res.emailEndpoint, res.emailFields);
           if (!sent) {
             setMessage(`We couldn't send your order right now. Please email ${siteConfig.contact.email} with your order and we'll take it from there.`);
             window.scrollTo({ top: 0, behavior: "smooth" });

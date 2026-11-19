@@ -136,6 +136,46 @@ export function sendOrderEmailToOwner(d: EmailOrderDetails): Promise<boolean> {
   return sendViaFormSubmit(orderEmailFieldList(d), `New order ${d.orderNumber} — ${d.total} + shipping`, d.email);
 }
 
+/** The contact fields of the "Contact" email, shared by the server send and the browser send. */
+function contactEmailFieldList(m: { name: string; email: string; subject: string; message: string }): Record<string, string> {
+  return { Name: m.name, "Customer email": m.email, Subject: m.subject, Message: m.message };
+}
+
+/**
+ * Builds the "Contact" email (endpoint + ready-to-post fields) without sending it. The
+ * contact form posts it from the customer's browser when the message couldn't be saved to
+ * the database — FormSubmit refuses server-side posts from our hosting provider (HTTP 403)
+ * but accepts the same post from a real browser.
+ */
+export function contactEmailFields(m: { name: string; email: string; subject: string; message: string }): { endpoint: string; fields: Record<string, string> } {
+  return {
+    endpoint: `https://formsubmit.co/ajax/${ownerEmail()}`,
+    fields: {
+      ...contactEmailFieldList(m),
+      email: m.email,
+      _replyto: m.email,
+      _subject: `Contact: ${m.subject}`,
+      _template: "table",
+      _captcha: "false",
+    },
+  };
+}
+
+/** Builds the "New newsletter signup" email (endpoint + ready-to-post fields) without sending it — same browser fallback as the contact form. */
+export function newsletterEmailFields(email: string): { endpoint: string; fields: Record<string, string> } {
+  return {
+    endpoint: `https://formsubmit.co/ajax/${ownerEmail()}`,
+    fields: {
+      "Subscriber email": email,
+      email,
+      _replyto: email,
+      _subject: "New newsletter signup",
+      _template: "table",
+      _captcha: "false",
+    },
+  };
+}
+
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 
 /** Plain text (as typed in /admin) → safe HTML paragraphs. */
@@ -316,11 +356,7 @@ export function sendNewOrderNotification(o: Order) {
 
 export function sendContactNotification(m: { name: string; email: string; subject: string; message: string }) {
   if (!process.env.RESEND_API_KEY) {
-    return sendViaFormSubmit(
-      { Name: m.name, "Customer email": m.email, Subject: m.subject, Message: m.message },
-      `Contact form: ${m.subject.slice(0, 80)}`,
-      m.email,
-    );
+    return sendViaFormSubmit(contactEmailFieldList(m), `Contact form: ${m.subject.slice(0, 80)}`, m.email);
   }
   return send(
     process.env.CONTACT_INBOX_EMAIL || ownerEmail(),
