@@ -24,7 +24,7 @@
     "@base-ui/react": "^1.9.0",
     "@marsidev/react-turnstile": "^1.6.3",
     "@neon/auth": "^0.8.2",
-    "@neon/env": "^1.6.8",
+    "@neon/env": "^2.1.7",
     "@upstash/ratelimit": "^2.2.0",
     "@upstash/redis": "^1.41.0",
     "@vercel/functions": "^3.11.1",
